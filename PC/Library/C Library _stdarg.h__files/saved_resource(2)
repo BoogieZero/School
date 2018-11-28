@@ -1,0 +1,146 @@
+var ADFMediaURLs='';
+var ADF_clickTag='http://adclick.g.doubleclick.net/aclk?sa=L&ai=CvP3o9CmVVvSHHMv77AbHrJm4BsvV0bsFg6mY7HzAjbcBEAEgAGDMgYCA3C6CARdjYS1wdWItNzEzMzM5NTc3ODIwMTAyOcgBCakCxb3oRn2Fgz6oAwGqBJsBT9AUcFSgc_hJokjDcl3glSUkDROvF7xiSY5oHY27JNu4nFgZzSZojiPXVPm5DbMKVjLIHsR8SmUC9JUETLAycMTdLwr9tR9uPdaLXPlL5q5LoYwgcCyQZBnXNUnSZdDo_2nIod4skQkGt16j-O28zODua3cs9bhtn95o40QGySoGGbVTLfFtheKu7b39sEHj-gd8bGlOs8EmmkuABtqCytCvhsuHeaAGIdgHAA&num=1&sig=AOD64_2Kcb2aY_XbnjF3KC2PzR9hxeELfA&client=ca-pub-7133395778201029&adurl=https://server.adformdsp.net/C/?bn=11109447;crtbwp=VpUp9AAHA_QK2z3LAAZWR4bZl80Ny89bSUvHQg;crtbdata=2QJAxd6f3S42i5g8jWiWOUj2U_3SCUpweqFwWtw1n5rQ1drtyN5qfw6lzVbaIVSCcxzPfJYx-7iNkYvuzthATer9v09yISPJvCdn0rWOSXG4tbYbZC-6e7LUhU4qU7VjX1ToENRk0M_2IWVetrt8hnNivEuc35ajaZK6kFKEplGeB8mJh5G4c22-tCga__ifZ6AFguqyeVKFimlo389sGp6kB_yodYGF_CgPwvNpbaVrsikpVbQjFUj4VJSoZsAEZqPykt0MhL1b0HKmfYvmMA2;adfibeg=0;cdata=cIqkIyxpUZ8curmOoOZwZrtLLZlIctuj06xvdfW--sZ3qFLBavj2MMJq_d-ljOvS4_QAojZOy2KFrUMYz1bI6GwagXFQTxbuyROZcP7XbLq6p6mbL0ndyg2;;CREFURL=http%3a%2f%2fwww.tutorialspoint.com%2fc_standard_library%2fstdarg_h.htm';
+var ADF_ClickEvent='https://server.adformdsp.net/CE/?bn=11109447';
+var ADFtagID='1x';
+var ADFafbanID='11109447';
+var FlashObjectID='FlashID1x';
+var ADFDomain='https://s1.adformdsp.net/Banners/';
+var ADFDomainCDN='https://files.adform.net/Banners/';
+var ADFVideoCDN='rtmp://s1yx966tga68s8.cloudfront.net/cfx/st/';
+var ADFVideoCDNList=['rtmp://s1yx966tga68s8.cloudfront.net/cfx/st/'];
+var ADFBanVer='514-560';
+var ADFBanVerBak='0-560';
+var ADFbu=false;
+var ADFerrTimeout = 15*24*60*60*1000;
+var ADFTemplateVersion;
+var ADFClientSiteId;
+var ADFTemplateId;
+var ADFGroupId;
+var ADFbanID='10865509';
+var ADFmembID='459572';
+var ADFcmpgnID='201722';
+var ADFassetID='0';
+var ADFbanPlacID='893218';
+var ADFUnloadID='8234981909680170657';
+var ADFGeoData='68258;25016;203';
+Adform=window.Adform||{};
+Adform.cache="560";
+Adform.locationInfo={Country: 'Czech Republic', Region: 'Stredocesky Kraj', City: 'Dobris', Latitude: '49.781380', Longitude: '14.166590'};
+
+(function () {
+try{
+var i = Adform.ADFBannerUtils.getInstance()
+i.addBannerAttribute("1x", "bn", 11109447);
+i.addBannerAttribute("1x", "rotseqno", "1");
+i.addBannerAttribute("1x", "cookieID", "8474566652180277051");
+i.addBannerAttribute("1x", "smid", "0");
+i.addBannerAttribute("1x", "unloadID", "8234981909680170657");
+i.addBannerAttribute("1x", "height", 250);
+i.addBannerAttribute("1x", "width", 300);
+i.addBannerAttribute("1x", "clickEvent", "https://server.adformdsp.net/CE/?bn=11109447");
+i.addBannerAttribute("1x", "pm", "201722");
+i.addBannerAttribute("1x", "visibilityArea", [90]);
+i.addBannerAttribute("1x", "visibilityTime", [2]);
+i.addBannerAttribute("1x", "ms", "459572");
+i.addBannerAttribute("1x", "ban", "10865509");
+i.addBannerAttribute("1x", "stubFileURL", "%2fadform%2fIFrameManager.html");
+i.addBannerAttribute("1x", "serverTime", 1452616187513);
+i.addBannerAttribute("1x", "bnpl", "893218");
+i.addBannerAttribute("1x", "sendUnloadData", 1);
+i.addBannerAttribute("1x", "unloadScriptVersion", 13);
+i.addBannerAttribute("1x", "isDSPTag", true);
+i.addBannerAttribute("1x", "isEventsEnabled", 1);
+i.addBannerAttribute("1x", "rtbInventorySourceId", "1");
+i.addBannerAttribute("1x", "rtbReqId", "569529f4000703f40adb3dcb67065647_1");
+i.setBannerRegisteredStatus("1x");
+}catch(e){}
+})();
+
+
+
+<!--
+var ADFtagid1099818941 = (typeof(ADFafbanID)!="undefined") ? ADFafbanID : 0;
+var ADFclickTagString1099818941 = (typeof(ADF_clickTag)!="undefined") ? escape(ADF_clickTag) : escape('https://server.adformdsp.net/C/?bn='+ADFtagid1099818941);
+var ADFclickTagParameters1099818941 = (typeof(ADF_clickTagPars)!="undefined") ? escape(ADF_clickTagPars) : '';
+var ADFclickEventString = (typeof(ADF_ClickEvent) != "undefined") ? escape(ADF_ClickEvent) : escape('https://server.adformdsp.net/C/?bn='+ADFtagid1099818941+';bsqno=1;li=1;cset=');
+var FlashObjectID=(typeof(FlashObjectID)!="undefined") ? FlashObjectID : 'adftest';
+var ADFDomain=(typeof(ADFDomain)!="undefined") ? ADFDomain : '';
+var ADFDomainCDN=(typeof(ADFDomainCDN)!="undefined") ? ADFDomainCDN : '';
+var ADFVideoCDN=(typeof(ADFVideoCDN)!="undefined") ? ADFVideoCDN : '';
+var ADFClientSiteId=(typeof(ADFClientSiteId)!="undefined") ? ADFClientSiteId : '';
+var ADFTemplateVersion=(typeof(ADFTemplateVersion)!="undefined") ? ADFTemplateVersion : '1099818941';
+var ADFTemplateId=(typeof(ADFTemplateId)!="undefined") ? ADFTemplateId : '';
+var ADFGroupId=(typeof(ADFGroupId)!="undefined") ? ADFGroupId : '';
+var ADFGeoData=(typeof ADFGeoData != "undefined" || ADFGeoData != null) ? ADFGeoData : '0;0;0';
+var ADFBanVer=(typeof(ADFBanVer)!="undefined") ? ADFBanVer : '1099818941';
+var ADFBanVerBak=(typeof(ADFBanVerBak)!="undefined") ? ADFBanVerBak : '1099818941';
+var ADFtagID=(typeof(ADFtagID)!="undefined") ? ADFtagID : '1x';
+if (typeof(ADFbu)=="undefined") ADFbu=false;
+
+var ADFcmpgnID = (typeof(ADFcmpgnID) != "undefined") ? ADFcmpgnID : '0';
+var ADFmembID = (typeof(ADFmembID) != "undefined") ? ADFmembID : '0';
+var ADFbanID = (typeof(ADFbanID) != "undefined") ? ADFbanID : '0';
+var ADFbanPlacID = (typeof(ADFbanPlacID) != "undefined") ? ADFbanPlacID : '0';
+var ADFUnloadID = (typeof(ADFUnloadID) != "undefined") ? ADFUnloadID : '0';
+
+
+var ADFclickTagVariables1099818941 = 'backupClickUrl='+ADFclickTagString1099818941+';C=1'+ADFclickTagParameters1099818941+'&clickTAG='+ADFclickTagString1099818941+';C=2'+ADFclickTagParameters1099818941+'&backupClickURL='+ADFclickTagString1099818941+';C=3'+ADFclickTagParameters1099818941+'';
+if (ADFMediaURLs) ADFclickTagVariables1099818941 = ADFMediaURLs;
+
+
+
+if(typeof Adform == "undefined") {var Adform = {};};
+Adform.BannerData                    = {};
+Adform.Data                          = Adform.BannerData;
+Adform.RMBData                       = Adform.BannerData;
+Adform.RMBData.type                  = 'standard';
+Adform.RMBData.subtype               = 'rmb';
+Adform.BannerData.timestamp          = '201512111023155773'; // std @timestamp@ rev. @version@
+Adform.BannerData.ADFFlash           =  ADFDomain +'Elements/Files/20230/723053/CZ_a_300x250_cursiva_ban_rtb_adform_HTML5ae12837200bce8ce88ec2fb5d6f1035e7/723053.js?ADFassetID=723053&bv='+ADFBanVer;
+Adform.BannerData.ADFBuckup          =  ADFDomain +'Elements/Files/20230/723054.gif?bv='+ADFBanVerBak;
+
+Adform.BannerData.ADFBuckupClickURL  =  ADF_clickTag+';C=1';
+Adform.BannerData.width              = "300";
+Adform.BannerData.height             = "250";
+Adform.BannerData.ADFid              = ADFtagID;
+Adform.BannerData.ADFban             = (typeof(ADFafbanID)!="undefined") ? ADFafbanID : 0;
+Adform.BannerData.wmode              = "opaque";
+Adform.RMBData.landingPageTarget     = "_blank";
+Adform.BannerData.quality            = "Autohigh";
+Adform.BannerData.bannerAlign        = "";
+Adform.BannerData.clicktags          = 'cid='+ADFClientSiteId+'&geo='+ADFGeoData+'&gid='+ADFGroupId+'&tv='+ADFTemplateVersion+'&tid='+ADFTemplateId+'&domain='+ ADFDomain +'&bv='+ADFBanVer+'&ADFid='+ADFtagID+'&'+ADFclickTagVariables1099818941+'';
+Adform.BannerData.clicktags         += '&ADFcmpgnID='+ADFcmpgnID+'&ADFmembID='+ADFmembID+'&ADFbanID='+ADFbanID+'&ADFbanPlacID='+ADFbanPlacID+'&unloadID='+ADFUnloadID;
+Adform.BannerData.clicktags         += "&bn="+ADFtagid1099818941;
+Adform.BannerData.clicktags         += "&wmode=opaque";
+Adform.BannerData.clicktags         += "&evtBaseLink="+ADFclickEventString;
+
+Adform.BannerData.clicktags         += "&settingsXML=" +  ADFDomain + ADFbanID  + "/settings.xml?bv="+ADFBanVer;
+Adform.BannerData.clicktags         += "&ADFDomain=" + ( ADFDomain ).replace(/\/$/, "");
+
+
+
+
+
+Adform.RMBData.css =  ADFDomain  + "scripts/assets/css/Adform.RMB.css?bv="+ADFBanVer;
+Adform.RMBData.socializeURL = "";
+
+
+
+
+
+
+
+
+
+Adform.BannerList = Adform.BannerList || [];
+Adform.BannerList.push(Adform.BannerData);
+
+if (!Adform.RMB || !Adform.RMB.AdConstructor) {
+	// Load constructor script
+	document.write('<scr' + 'ipt type="text/javascript" src="'+ ADFDomain +'scripts/rmb/Adform.RMB.js?bv='+ Adform.cache +'"></scr' + 'ipt>');
+} else {
+	// Run loaded constructor
+	Adform.RMB.AdConstructor.build();
+}
+//-->
+

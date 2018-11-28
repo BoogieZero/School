@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Pozice\ getPozice()
+comment0.text=\r\n\ Vr\u00E1t\u00ED\ odkaz\ na\ instanci\ t\u0159\u00EDdy\ Pozice\ reprezentuj\u00EDc\u00ED\ pozici\ p\u00E1ru.\r\n\ \r\n\ @return\ pozice\ \ \ \ odkaz\ na\ instanci\ t\u0159\u00EDdy\ Pozice\ reprezentuj\u00EDc\u00ED\ pozici\ p\u00E1ru\r\n
+comment1.params=pozice
+comment1.target=void\ setPozice(Pozice)
+comment1.text=\r\n\ Nastav\u00ED\ pozici\ p\u00E1ru\ na\ novou\ pozici.\r\n\ \r\n\ \ \ @param\ pozice\ \ \ nov\u00E1\ pozice\ p\u00E1ru\r\n
+comment2.params=x\ y
+comment2.target=void\ setPozice(int,\ int)
+comment2.text=\r\n\ Nastav\u00ED\ pozici\ p\u00E1ru\ na\ novou\ pozici.\r\n\ \r\n\ \ \ @param\ x\ \ \ \ x-ov\u00E1\ sou\u0159adnice\ nov\u00E9\ pozice\ p\u00E1ru\r\n\ \ \ @param\ y\ \ \ \ y-ov\u00E1\ sou\u0159adnice\ nov\ pozice\ p\u00E1ru\r\n
+comment3.params=kreslitko
+comment3.target=void\ nakresli(Kreslitko)
+comment3.text=\r\n\ Vykresl\u00ED\ p\u00E1r\ na\ pl\u00E1tno.\r\n\ \r\n\ @param\ kreslitko\ \ n\u00E1stroj\ pro\ kreslen\u00ED\r\n
+comment4.params=
+comment4.target=Rozmer\ getRozmer()
+comment4.text=\r\n\ Vr\u00E1t\u00ED\ rozm\u011Br\ p\u00E1ru.\r\n\ \r\n\ \ \ @return\ \ \ \ \ rozm\u011Br\ p\u00E1ru\r\n
+comment5.params=
+comment5.target=int\ getVyska()
+comment5.text=\r\n\ Vr\u00E1t\u00ED\ v\u00FD\u0161ku\ p\u00E1ru.\r\n\ \r\n\ \ \ @return\ v\u00FD\u0161ka\ p\u00E1ru\r\n
+comment6.params=
+comment6.target=int\ getSirka()
+comment6.text=\r\n\ Vr\u00E1t\u00ED\ \u0161\u00ED\u0159ku\ p\u00E1ru.\r\n\ \r\n\ \ \ @return\ \ \ \ \ \u0161\u00ED\u0159ka\ p\u00E1ru\r\n
+comment7.params=rande
+comment7.target=Par(Rande)
+comment7.text=\r\n\ P\u0159iprav\u00ED\ novou\ instanci\ t\u0159\u00EDdy\ podle\ t\u0159\u00EDdy\ Rande.\r\n\ \ \ \r\n\ \ \ @param\ rande\ \ \ \ odkaz\ na\ instanci\ t\u0159\u00EDdy\ Rande\ ze\ kter\u00E9\ se\ vytvo\u0159\u00ED\ p\u00E1r\r\n
+numComments=8

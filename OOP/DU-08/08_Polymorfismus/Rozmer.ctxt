@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=int\ getVyska()
+comment0.text=\r\n\ Vr\u00E1t\u00ED\ v\u00FD\u0161ku.\r\n\ \r\n\ @return\ v\u00FD\u0161ka\r\n
+comment1.params=
+comment1.target=int\ getSirka()
+comment1.text=\r\n\ Vr\u00E1t\u00ED\ \u0161\u00ED\u0159ku.\r\n\ \r\n\ @return\ \u0161\u00ED\u0159ka\r\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\r\n\ Vr\u00E1t\u00ED\ \u0159et\u011Bzec\ String\ ve\ tvaru\:\ \r\n\ \ "Rozm\u011Br[sirka\=SIRKA,\ vyska\="VYSKA]"\ kde\:\r\n\ \ \ \ \ \ SIRKA\ \ \ je\ \u0161\u00ED\u0159ka\ objektu\r\n\ \ \ \ \ \ VYSKA\ \ \ je\ v\u00FD\u0161ka\ objektu\r\n\ \ \ \ \ \ \r\n\ @return\ popis\ rozm\u011Br\u016F\ objektu\r\n
+comment3.params=sirka\ vyska
+comment3.target=Rozmer(int,\ int)
+comment3.text=\r\n\ P\u0159iprav\u00ED\ novou\ instanci\ rozm\u011Bru\ se\ zadan\u00FDmi\ parametry.\r\n\ \r\n\ @param\ vyska\ \ \ \ \ vyska\ objektu\r\n\ @param\ sirka\ \ \ \ \ sirka\ objektu\r\n
+comment4.params=
+comment4.target=Rozmer()
+comment4.text=\r\n\ P\u0159iprav\u00ED\ novou\ instanci\ rozm\u011Bru\ s\ po\u010D\u00E1te\u010Dn\u00EDmi\ parametry.\r\n\ \r\n\ \ v\u00FD\u0161ka\ \=\ \u0161\u00ED\u0159ka\ \=\ 0\r\n
+numComments=5

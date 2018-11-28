@@ -1,0 +1,47 @@
+#BlueJ class context
+comment0.params=g
+comment0.target=Kreslitko(java.awt.Graphics2D)
+comment0.text=\r\n\ Inicializuje\ atribut\ adaptovan\u00FDm\ objektem.\r\n\ P\u0159edpokl\u00E1d\u00E1\ pouze\ spolupr\u00E1ci\ se\ spr\u00E1vcem\ pl\u00E1tna,\r\n\ kter\u00FD\ bude\ ve\ stejn\u00E9m\ bal\u00ED\u010Dku\ -\ proto\ je\ package\ private.\r\n<p>\r\n\ Vytvo\u0159\u00ED\ nov\u00E9\ kresl\u00EDtko\ jako\ obalov\u00FD\ typ\r\n\ kolem\ zadan\u00E9\ instance\ t\u0159\u00EDdy\ <code>java.awt.Graphics2D</code>.\r\n\r\n\ @param\ g\ Obalovan\u00E1\ instance\r\n
+comment1.params=
+comment1.target=java.awt.Font\ getFont()
+comment1.text=\r\n\ Vr\u00E1t\u00ED\ font,\ kter\u00FDm\ se\ s\u00E1z\u00ED\ vypisovan\u00E9\ texty.\r\n\r\n\ @return\ Aktu\u00E1ln\u011B\ pou\u017E\u00EDvan\u00FD\ font\r\n
+comment10.params=x\ y\ barva
+comment10.target=void\ kresliPolygon(int[],\ int[],\ Barva)
+comment10.text=\r\n\ Vykresl\u00ED\ zadanou\ barvou\ nevypln\u011Bn\u00FD\ mnoho\u00FAheln\u00EDk\ se\ zadn\u00FDmi\ vrcholy.\r\n\r\n\ @param\ x\ \ \ \ \ Pole\ x-ov\u00FDch\ sou\u0159adnic\ vrchol\u016F,\ x\=0\ m\u00E1\ lev\u00FD\ okraj\ pl\u00E1tna\r\n\ @param\ y\ \ \ \ \ Pole\ y-ov\u00FDch\ sou\u0159adnic\ vrchol\u016F,\ y\=0\ m\u00E1\ horn\u00ED\ okraj\ pl\u00E1tna\r\n\ @param\ barva\ Barva\ kreslen\u00E9ho\ polygonu\r\n
+comment11.params=x\ y\ barva
+comment11.target=void\ vyplnPolygon(int[],\ int[],\ Barva)
+comment11.text=\r\n\ Vykresl\u00ED\ zadanou\ barvou\ vypln\u011Bn\u00FD\ mnoho\u00FAheln\u00EDk\ se\ zadn\u00FDmi\ vrcholy.\r\n\r\n\ @param\ x\ \ \ \ \ Pole\ x-ov\u00FDch\ sou\u0159adnic\ vrchol\u016F,\ x\=0\ m\u00E1\ lev\u00FD\ okraj\ pl\u00E1tna\r\n\ @param\ y\ \ \ \ \ Pole\ y-ov\u00FDch\ sou\u0159adnic\ vrchol\u016F,\ y\=0\ m\u00E1\ horn\u00ED\ okraj\ pl\u00E1tna\r\n\ @param\ barva\ Barva\ kreslen\u00E9ho\ polygonu\r\n
+comment12.params=x1\ y1\ x2\ y2\ barva
+comment12.target=void\ kresliCaru(int,\ int,\ int,\ int,\ Barva)
+comment12.text=\r\n\ Zadanou\ barvou\ nakresl\u00ED\ \u00FAse\u010Dku\ se\ zadan\u00FDmi\ krajn\u00EDmi\ body.\r\n\r\n\ @param\ x1\ \ \ \ \ \ x-ov\u00E1\ sou\u0159adnice\ po\u010D\u00E1tku,\ x\=0\ m\u00E1\ lev\u00FD\ okraj\ pl\u00E1tna\r\n\ @param\ y1\ \ \ \ \ \ y-ov\u00E1\ sou\u0159adnice\ po\u010D\u00E1tku,\ y\=0\ m\u00E1\ horn\u00ED\ okraj\ pl\u00E1tna\r\n\ @param\ x2\ \ \ \ \ \ x-ov\u00E1\ sou\u0159adnice\ konce\r\n\ @param\ y2\ \ \ \ \ \ y-ov\u00E1\ sou\u0159adnice\ konce\r\n\ @param\ barva\ Barva\ kreslen\u00E9\ \u00FAse\u010Dky\r\n
+comment13.params=text\ x\ y\ barva
+comment13.target=void\ kresliText(java.lang.String,\ int,\ int,\ Barva)
+comment13.text=\r\n\ Vykresl\u00ED\ p\u0159ednastaven\u00FDm\ p\u00EDsmem\ zadan\u00FD\ trext\ na\ zadan\u00FDch\ sou\u0159adnic\u00EDch\r\n\ a\ zadanou\ barvou.\r\n\r\n\ @param\ text\ \ Zobrazovan\u00FD\ text\r\n\ @param\ x\ \ \ \ \ Vodorovn\u00E1\ sou\u0159adnice\ lev\u00E9ho\ horn\u00EDho\ rohu\ opsan\u00E9ho\ obd\u00E9ln\u00EDku\r\n\ @param\ y\ \ \ \ \ Svisl\u00E1\ sou\u0159adnice\ lev\u00E9ho\ horn\u00EDho\ rohu\ opsan\u00E9ho\ obd\u00E9ln\u00EDku\r\n\ @param\ barva\ Barva\ vykreslovan\u00E9ho\ textu\r\n
+comment14.params=x\ y\ obrazek\ at
+comment14.target=void\ kresliObrazek(int,\ int,\ java.awt.Image,\ java.awt.geom.AffineTransform)
+comment14.text=\r\n\ Nakresl\u00ED\ zadan\u00FD\ obr\u00E1zek\ na\ zadan\u00E9\ sou\u0159adnice.\r\n\ \r\n\ @param\ x\ \ \ \ \ \ \ Vodorovn\u00E1\ sou\u0159adnice\ lev\u00E9ho\ horn\u00EDho\ rohu\r\n\ @param\ y\ \ \ \ \ \ \ Svisl\u00E1\ sou\u0159adnice\ lev\u00E9ho\ horn\u00EDho\ rohu\r\n\ @param\ obrazek\ Kreslen\u00FD\ obr\u00E1zek\r\n\ @param\ at\ \ \ \ \ \ Afinn\u00ED\ transformace\ pou\u017Eit\u00E1\ p\u0159i\ zm\u011Bn\u011B\ rozm\u011Bru\ obr\u00E1zku\r\n
+comment2.params=font
+comment2.target=void\ setFont(java.awt.Font)
+comment2.text=\r\n\ Nastav\u00ED\ font,\ kter\u00FDm\ se\ budou\ s\u00E1zet\ vypisovan\u00E9\ texty.\r\n\ V\u0161echny\ n\u00E1sleduj\u00EDc\u00ED\ operace\ pou\u017E\u00EDvaj\u00ED\ tento\ font.\r\n\ Parametr\ {@code\ null}\ je\ ti\u0161e\ ignorov\u00E1n.\r\n\r\n\ @param\ font\ \ Nastavovan\u00E9\ p\u00EDsmo.\r\n
+comment3.params=
+comment3.target=Barva\ getPozadi()
+comment3.text=\r\n\ Vr\u00E1t\u00ED\ aktu\u00E1ln\u011B\ pou\u017E\u00EDvanou\ barvu\ pozad\u00ED.\r\n\r\n\ @return\ Aktu\u00E1ln\u011B\ pou\u017E\u00EDvan\u00E1\ barva\ pozad\u00ED\r\n
+comment4.params=barva
+comment4.target=void\ setPozadi(Barva)
+comment4.text=\r\n\ Nastav\u00ED\ barvu\ pozad\u00ED.\r\n\r\n\ @param\ barva\ Nastavovan\u00E1\ barva\ pozad\u00ED\r\n
+comment5.params=
+comment5.target=java.awt.Graphics2D\ getGraphics()
+comment5.text=\r\n\ Vr\u00E1t\u00ED\ zabalen\u00FD\ grafick\u00FD\ kontext.\r\n\r\n\ @return\ Zabalen\u00FD\ grafick\u00FD\ kontext\r\n
+comment6.params=x\ y\ sirka\ vyska\ barva
+comment6.target=void\ kresliOval(int,\ int,\ int,\ int,\ Barva)
+comment6.text=\r\n\ Vykresl\u00ED\ zadanou\ barvou\ na\ zadan\u00FDch\ sou\u0159adnic\u00EDch\ nevypln\u011Bn\u00FD\ ov\u00E1l\r\n\ zadan\u00E9ho\ rozm\u011Bru.\ Sou\u0159adnic\u00ED\ elipsyse\ p\u0159itom\ rozum\u00ED\ sou\u0159adnice\r\n\ lev\u00E9ho\ horn\u00EDho\ rohu\ opsan\u00E9ho\ obd\u00E9ln\u00EDku.\r\n\r\n\ @param\ x\ \ \ \ \ \ \ x-ov\u00E1\ sou\u0159adnice\ instance,\ x\=0\ m\u00E1\ lev\u00FD\ okraj\ pl\u00E1tna\r\n\ @param\ y\ \ \ \ \ \ \ y-ov\u00E1\ sou\u0159adnice\ instance,\ y\=0\ m\u00E1\ horn\u00ED\ okraj\ pl\u00E1tna\r\n\ @param\ sirka\ \ \ \u0160\u00ED\u0159ka\ kreslen\u00E9ho\ ov\u00E1lu\r\n\ @param\ vyska\ \ \ V\u00FD\u0161ka\ kreslen\u00E9ho\ ov\u00E1lu\r\n\ @param\ barva\ \ \ Barva\ kreslen\u00E9ho\ ov\u00E1lu\r\n
+comment7.params=x\ y\ sirka\ vyska\ barva
+comment7.target=void\ vyplnOval(int,\ int,\ int,\ int,\ Barva)
+comment7.text=\r\n\ Vykresl\u00ED\ zadanou\ barvou\ na\ zadan\u00FDch\ sou\u0159adnic\u00EDch\ vypln\u011Bn\u00FD\ ov\u00E1l\r\n\ zadan\u00E9ho\ rozm\u011Bru.\ Sou\u0159adnic\u00ED\ elipsyse\ p\u0159itom\ rozum\u00ED\ sou\u0159adnice\r\n\ lev\u00E9ho\ horn\u00EDho\ rohu\ opsan\u00E9ho\ obd\u00E9ln\u00EDku.\r\n\r\n\ @param\ x\ \ \ \ \ \ \ x-ov\u00E1\ sou\u0159adnice\ instance,\ x\=0\ m\u00E1\ lev\u00FD\ okraj\ pl\u00E1tna\r\n\ @param\ y\ \ \ \ \ \ \ y-ov\u00E1\ sou\u0159adnice\ instance,\ y\=0\ m\u00E1\ horn\u00ED\ okraj\ pl\u00E1tna\r\n\ @param\ sirka\ \ \ \u0160\u00ED\u0159ka\ kreslen\u00E9ho\ ov\u00E1lu\r\n\ @param\ vyska\ \ \ V\u00FD\u0161ka\ kreslen\u00E9ho\ ov\u00E1lu\r\n\ @param\ barva\ \ \ Barva\ kreslen\u00E9ho\ ov\u00E1lu\r\n
+comment8.params=x\ y\ sirka\ vyska\ barva
+comment8.target=void\ kresliRam(int,\ int,\ int,\ int,\ Barva)
+comment8.text=\r\n\ Vykresl\u00ED\ zadanou\ barvou\ na\ zadan\u00FDch\ sou\u0159adnic\u00EDch\ nevypln\u011Bn\u00FD\ obd\u00E9ln\u00EDk\r\n\ zadan\u00E9ho\ rozm\u011Bru.\ Sou\u0159adnic\u00ED\ obd\u00E9ln\u00EDku\ se\ p\u0159itom\ rozum\u00ED\ sou\u0159adnice\r\n\ jeho\ lev\u00E9ho\ horn\u00EDho\ rohu.\r\n\r\n\ @param\ x\ \ \ \ \ \ \ x-ov\u00E1\ sou\u0159adnice\ instance,\ x\=0\ m\u00E1\ lev\u00FD\ okraj\ pl\u00E1tna\r\n\ @param\ y\ \ \ \ \ \ \ y-ov\u00E1\ sou\u0159adnice\ instance,\ y\=0\ m\u00E1\ horn\u00ED\ okraj\ pl\u00E1tna\r\n\ @param\ sirka\ \ \ \u0160\u00ED\u0159ka\ kreslen\u00E9ho\ obd\u00E9ln\u00EDku\r\n\ @param\ vyska\ \ \ V\u00FD\u0161ka\ kreslen\u00E9ho\ obd\u00E9ln\u00EDku\r\n\ @param\ barva\ \ \ Barva\ kreslen\u00E9ho\ obd\u00E9ln\u00EDku\r\n
+comment9.params=x\ y\ sirka\ vyska\ barva
+comment9.target=void\ vyplnRam(int,\ int,\ int,\ int,\ Barva)
+comment9.text=\r\n\ Vykresl\u00ED\ zadanou\ barvou\ na\ zadan\u00FDch\ sou\u0159adnic\u00EDch\ vypln\u011Bn\u00FD\ obd\u00E9ln\u00EDk\r\n\ zadan\u00E9ho\ rozm\u011Bru.\ Sou\u0159adnic\u00ED\ obd\u00E9ln\u00EDku\ se\ p\u0159itom\ rozum\u00ED\ sou\u0159adnice\r\n\ jeho\ lev\u00E9ho\ horn\u00EDho\ rohu.\r\n\r\n\ @param\ x\ \ \ \ \ \ \ x-ov\u00E1\ sou\u0159adnice\ instance,\ x\=0\ m\u00E1\ lev\u00FD\ okraj\ pl\u00E1tna\r\n\ @param\ y\ \ \ \ \ \ \ y-ov\u00E1\ sou\u0159adnice\ instance,\ y\=0\ m\u00E1\ horn\u00ED\ okraj\ pl\u00E1tna\r\n\ @param\ sirka\ \ \ \u0160\u00ED\u0159ka\ kreslen\u00E9ho\ obd\u00E9ln\u00EDku\r\n\ @param\ vyska\ \ \ V\u00FD\u0161ka\ kreslen\u00E9ho\ obd\u00E9ln\u00EDku\r\n\ @param\ barva\ \ \ Barva\ kreslen\u00E9ho\ obd\u00E9ln\u00EDku\r\n
+numComments=15

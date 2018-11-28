@@ -1,0 +1,5 @@
+"C:\School\POT\Workspace\Workspace_POT\Simulated_IO\main.s"
+-I "C:\School\POT\Workspace\Workspace_POT\Simulated_IO"
+--gdwarf2
+-o "C:\School\POT\Workspace\Workspace_POT\Simulated_IO\Debug\main.o"
+-alsh="C:\School\POT\Workspace\Workspace_POT\Simulated_IO\Debug\main.lis"

@@ -1,0 +1,40 @@
+\select@language {czech}
+\contentsline {section}{\numberline {1}Zad\IeC {\'a}n\IeC {\'\i }}{2}
+\contentsline {section}{\numberline {2}Anal\IeC {\'y}za probl\IeC {\'e}mu a n\IeC {\'a}vrh \IeC {\v r}e\IeC {\v s}en\IeC {\'\i }}{3}
+\contentsline {subsection}{\numberline {2.1}Souborov\IeC {\'y} syst\IeC {\'e}m FAT}{3}
+\contentsline {subsubsection}{\numberline {2.1.1}Cluster}{3}
+\contentsline {subsubsection}{\numberline {2.1.2}FAT tabulka}{3}
+\contentsline {subsection}{\numberline {2.2}Struktura souborov\IeC {\'e}ho syst\IeC {\'e}mu}{4}
+\contentsline {subsubsection}{\numberline {2.2.1}Soubor}{5}
+\contentsline {subsubsection}{\numberline {2.2.2}Adres\IeC {\'a}\IeC {\v r}}{5}
+\contentsline {subsection}{\numberline {2.3}Informace o souborov\IeC {\'e}m syst\IeC {\'e}mu}{6}
+\contentsline {subsection}{\numberline {2.4}Kontrola souborov\IeC {\'e}ho syst\IeC {\'e}mu}{6}
+\contentsline {subsubsection}{\numberline {2.4.1}Hled\IeC {\'a}n\IeC {\'\i } chyb}{6}
+\contentsline {paragraph}{hit test}{6}
+\contentsline {paragraph}{vlastnosti souboru}{6}
+\contentsline {paragraph}{sekund\IeC {\'a}rn\IeC {\'\i } FAT tabulka}{7}
+\contentsline {subsubsection}{\numberline {2.4.2}Oprava chyb}{7}
+\contentsline {paragraph}{P\IeC {\v r}\IeC {\'\i }pady hit testu:}{7}
+\contentsline {paragraph}{Ostatn\IeC {\'\i } p\IeC {\v r}\IeC {\'\i }pady:}{9}
+\contentsline {section}{\numberline {3}Implementace}{10}
+\contentsline {subsubsection}{\numberline {3.0.1}Hlavn\IeC {\'\i } \IeC {\v c}\IeC {\'a}sti programu}{10}
+\contentsline {paragraph}{\texttt {main}}{10}
+\contentsline {paragraph}{\texttt {import\_file}}{10}
+\contentsline {paragraph}{\texttt {create\_directory}}{10}
+\contentsline {paragraph}{\texttt {get\_directory\_cluster}}{10}
+\contentsline {paragraph}{\texttt {get\_record}}{10}
+\contentsline {paragraph}{\texttt {check\_structure}}{10}
+\contentsline {paragraph}{\texttt {hit\_test\_arr}}{10}
+\contentsline {paragraph}{\texttt {file\_recovery}}{11}
+\contentsline {section}{\numberline {4}U\IeC {\v z}ivatelsk\IeC {\'a} p\IeC {\v r}\IeC {\'\i }ru\IeC {\v c}ka}{11}
+\contentsline {subsubsection}{\numberline {4.0.1}Ovl\IeC {\'a}d\IeC {\'a}n\IeC {\'\i } programu (p\IeC {\v r}ep\IeC {\'\i }na\IeC {\v c}e)}{11}
+\contentsline {paragraph}{\texttt {ZOS\_FAT.exe soubor.dat -a S1 ADR}}{11}
+\contentsline {paragraph}{\texttt {ZOS\_FAT.exe soubor.dat -f S1}}{11}
+\contentsline {paragraph}{\texttt {ZOS\_FAT.exe soubor.dat -c S1}}{11}
+\contentsline {paragraph}{\texttt {ZOS\_FAT.exe soubor.dat -m ADR ADR2}}{11}
+\contentsline {paragraph}{\texttt {ZOS\_FAT.exe soubor.dat -r ADR}}{11}
+\contentsline {paragraph}{\texttt {ZOS\_FAT.exe soubor.dat -l S1}}{11}
+\contentsline {paragraph}{\texttt {ZOS\_FAT.exe soubor.dat -p}}{11}
+\contentsline {paragraph}{\texttt {ZOS\_FAT.exe soubor.dat -s}}{12}
+\contentsline {paragraph}{\texttt {ZOS\_FAT.exe soubor.dat -e}}{12}
+\contentsline {section}{\numberline {5}Z\IeC {\'a}v\IeC {\v e}r}{12}

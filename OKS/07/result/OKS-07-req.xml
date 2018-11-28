@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<requirement-specification>
+<req_spec title="Funkčnost formuláře - hlavní tok"  doc_id="RQS.01"  >
+<revision><![CDATA[1]]></revision>
+
+<type><![CDATA[1]]></type>
+
+<node_order><![CDATA[0]]></node_order>
+
+<total_req><![CDATA[0]]></total_req>
+<scope>
+<![CDATA[
+
+
+
+<p>
+	Oček&aacute;van&aacute; funkčnost formul&aacute;ře - hlavn&iacute; tok (Happy day scenario)</p>
+
+
+
+]]>
+</scope>
+	<requirement>
+		<docid><![CDATA[RQM.01.01]]></docid>
+		<title><![CDATA[Happy day scenario]]></title>
+		<version>1</version>
+		<revision>1</revision>
+		<node_order>1</node_order>
+		<description><![CDATA[
+
+
+
+
+<ul>
+	<li>
+		po stisku tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong>
+		<ul>
+			<li>
+				vyp&iacute;&scaron;e dolů do formul&aacute;ře label <strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo</strong> n&aacute;sledovan&yacute; vygenerovan&yacute;m osobn&iacute;m č&iacute;slem</li>
+		</ul>
+	</li>
+	<li>
+		osobn&iacute; č&iacute;slo na ZČU se sest&aacute;v&aacute; z pěti (&scaron;esti) č&aacute;st&iacute; - FrrTppppfN, např. A12B0987P, kde:
+		<ul>
+			<li>
+				F = Fakulta
+				<ul>
+					<li>
+						A = FAV - Fakulta aplikovan&yacute;ch věd</li>
+					<li>
+						D = FDU - Fakulta designu a uměn&iacute; Ladislava Sutnara</li>
+					<li>
+						K = FEK - Fakulta ekonomick&aacute;</li>
+					<li>
+						E = FEL - Fakulta elektrotechnick&aacute;</li>
+					<li>
+						F = FF - Fakulta filosofick&aacute;</li>
+					<li>
+						P = FPE - Fakulta pedagogick&aacute;</li>
+					<li>
+						R = FPR - Fakulta pr&aacute;vnick&aacute;</li>
+					<li>
+						S = FST - Fakulta strojn&iacute;</li>
+					<li>
+						Z = FZS - Fakulta zdravotnick&yacute;ch studi&iacute;</li>
+				</ul>
+			</li>
+			<li>
+				rr = rok n&aacute;stupu na studia
+				<ul>
+					<li>
+						posledn&iacute; dvojč&iacute;sl&iacute; roku n&aacute;stupu na studia</li>
+					<li>
+						jsou ignorov&aacute;ny b&iacute;l&eacute; znaky na zač&aacute;tku a na konci zadan&eacute;ho řetězce
+						<ul>
+							<li>
+								tyto b&iacute;l&eacute; znaky jsou po odesl&aacute;n&iacute; formul&aacute;ře ze zadan&eacute;ho řetězce bez varov&aacute;n&iacute; odstraněny</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				T = typ studia
+				<ul>
+					<li>
+						B = bakal&aacute;řsk&yacute;</li>
+					<li>
+						N = navazuj&iacute;c&iacute;</li>
+					<li>
+						P = doktorsk&yacute;</li>
+					<li>
+						M = magistersk&yacute;</li>
+				</ul>
+			</li>
+			<li>
+				pppp = pořadov&eacute; č&iacute;slo
+				<ul>
+					<li>
+						čtyřm&iacute;stn&eacute; č&iacute;slo s nev&yacute;znamov&yacute;mi nulami, zač&iacute;n&aacute; od 0001</li>
+					<li>
+						jsou ignorov&aacute;ny b&iacute;l&eacute; znaky na zač&aacute;tku a na konci zadan&eacute;ho řetězce
+						<ul>
+							<li>
+								tyto b&iacute;l&eacute; znaky jsou po odesl&aacute;n&iacute; formul&aacute;ře ze zadan&eacute;ho řetězce bez varov&aacute;n&iacute; odstraněny</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				f = forma studia
+				<ul>
+					<li>
+						P = prezenčn&iacute;</li>
+					<li>
+						K = kombinovan&aacute;</li>
+					<li>
+						D = distančn&iacute;</li>
+				</ul>
+			</li>
+			<li>
+				N = nepovinn&eacute;
+				<ul>
+					<li>
+						je-li položka vybr&aacute;na, bude na konci v&yacute;sledn&eacute;ho osobn&iacute;ho č&iacute;sla p&iacute;smeno <strong>I</strong> jako označen&iacute; mezin&aacute;rodn&iacute;ch (international) studentů</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>
+
+
+
+
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[1]]></expected_coverage>
+		
+	</requirement>
+	<requirement>
+		<docid><![CDATA[RQM.01.02]]></docid>
+		<title><![CDATA[Vymazání formuláře]]></title>
+		<version>1</version>
+		<revision>1</revision>
+		<node_order>1</node_order>
+		<description><![CDATA[
+
+
+
+
+<ul>
+	<li>
+		po stisku tlač&iacute;tka <strong>Vymaž formul&aacute;ř</strong>
+		<ul>
+			<li>
+				vymaže obě vstupn&iacute; pole a nastav&iacute; jim zobrazen&eacute; n&aacute;povědy</li>
+			<li>
+				oba v&yacute;běrov&eacute; seznamy nastav&iacute; na předvyplněn&eacute; hodnody</li>
+			<li>
+				v bloku radio-buttonů nebude vybr&aacute;na ž&aacute;dn&aacute; hodnota</li>
+			<li>
+				check-box nebude vybr&aacute;n</li>
+			<li>
+				v&scaron;echna př&iacute;padn&aacute; chybov&aacute; hl&aacute;&scaron;en&iacute; vypsan&aacute; při předchoz&iacute;m generov&aacute;n&iacute; budou vymaz&aacute;na</li>
+			<li>
+				bude vymaz&aacute;no i př&iacute;padn&eacute; v&yacute;sledn&eacute; vygenerovan&eacute; osobn&iacute; č&iacute;slo včetně sv&eacute;ho labelu</li>
+		</ul>
+	</li>
+</ul>
+
+
+
+
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[1]]></expected_coverage>
+		
+	</requirement>
+</req_spec><req_spec title="Záložky"  doc_id="RQS.02"  >
+<revision><![CDATA[1]]></revision>
+
+<type><![CDATA[1]]></type>
+
+<node_order><![CDATA[1]]></node_order>
+
+<total_req><![CDATA[0]]></total_req>
+<scope>
+<![CDATA[
+
+
+
+<p>
+	Z&aacute;ložky aplikace - &Uacute;vod, Osobn&iacute; č&iacute;slo, N&aacute;pověda</p>
+
+
+
+]]>
+</scope>
+	<requirement>
+		<docid><![CDATA[RQM.02.01]]></docid>
+		<title><![CDATA[Úvod]]></title>
+		<version>1</version>
+		<revision>1</revision>
+		<node_order>1</node_order>
+		<description><![CDATA[
+
+
+
+
+<p>
+	Existuje funkčn&iacute; z&aacute;ložka &Uacute;vod</p>
+
+
+
+
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[1]]></expected_coverage>
+		
+	</requirement>
+	<requirement>
+		<docid><![CDATA[RQM.02.02]]></docid>
+		<title><![CDATA[Generování]]></title>
+		<version>1</version>
+		<revision>1</revision>
+		<node_order>1</node_order>
+		<description><![CDATA[
+
+
+
+
+<p>
+	Existuje funkčn&iacute; z&aacute;ložka Generov&aacute;n&iacute;</p>
+
+
+
+
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[1]]></expected_coverage>
+		
+	</requirement>
+	<requirement>
+		<docid><![CDATA[RQM.02.03]]></docid>
+		<title><![CDATA[Nápověda]]></title>
+		<version>1</version>
+		<revision>1</revision>
+		<node_order>1</node_order>
+		<description><![CDATA[
+
+
+
+
+<p>
+	Existuje funkčn&iacute; z&aacute;ložka N&aacute;pověda</p>
+
+
+
+
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[1]]></expected_coverage>
+		
+	</requirement>
+</req_spec><req_spec title="Stránka Úvod"  doc_id="RQS.03"  >
+<revision><![CDATA[1]]></revision>
+
+<type><![CDATA[1]]></type>
+
+<node_order><![CDATA[2]]></node_order>
+
+<total_req><![CDATA[0]]></total_req>
+<scope>
+<![CDATA[
+
+
+
+<p>
+	Str&aacute;nka &Uacute;vod</p>
+
+
+
+]]>
+</scope>
+	<requirement>
+		<docid><![CDATA[RQM.03.01]]></docid>
+		<title><![CDATA[Odkaz na KIV/OKS]]></title>
+		<version>1</version>
+		<revision>1</revision>
+		<node_order>1</node_order>
+		<description><![CDATA[
+
+
+
+
+<p>
+	Funkčn&iacute; odkaz na webovou str&aacute;nku s informacemi o předmětu KIV/OKS (na univerzitn&iacute;m Port&aacute;lu)</p>
+
+
+
+
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[1]]></expected_coverage>
+		
+	</requirement>
+	<requirement>
+		<docid><![CDATA[RQM.03.02]]></docid>
+		<title><![CDATA[Odkaz na KIV]]></title>
+		<version>1</version>
+		<revision>1</revision>
+		<node_order>1</node_order>
+		<description><![CDATA[
+
+
+
+
+<p>
+	Funkčn&iacute; odkaz na webovou str&aacute;nku KIV - http://www.kiv.zcu.cz/</p>
+
+
+
+
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[1]]></expected_coverage>
+		
+	</requirement>
+	<requirement>
+		<docid><![CDATA[RQM.03.03]]></docid>
+		<title><![CDATA[Odkaz na ZČU]]></title>
+		<version>1</version>
+		<revision>1</revision>
+		<node_order>1</node_order>
+		<description><![CDATA[
+
+
+
+
+<p>
+	Funkčn&iacute; odkaz na webovou str&aacute;nku ZČU - http://www.zcu.cz/</p>
+
+
+
+
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[1]]></expected_coverage>
+		
+	</requirement>
+</req_spec><req_spec title="Stránka Generování"  doc_id="RQS.04"  >
+<revision><![CDATA[1]]></revision>
+
+<type><![CDATA[1]]></type>
+
+<node_order><![CDATA[3]]></node_order>
+
+<total_req><![CDATA[0]]></total_req>
+<scope>
+<![CDATA[
+
+
+
+<p>
+	Str&aacute;nka Generov&aacute;n&iacute;</p>
+
+
+
+]]>
+</scope>
+<req_spec title="Položky formuláře"  doc_id="RQS.04.01"  >
+<revision><![CDATA[1]]></revision>
+
+<type><![CDATA[1]]></type>
+
+<node_order><![CDATA[0]]></node_order>
+
+<total_req><![CDATA[0]]></total_req>
+<scope>
+<![CDATA[
+
+
+
+<p>
+	Specifikuje v&scaron;echny položky formul&aacute;ře a jejich pořad&iacute;</p>
+
+
+
+]]>
+</scope>
+	<requirement>
+		<docid><![CDATA[RQM.04.01.01]]></docid>
+		<title><![CDATA[Fakulta]]></title>
+		<version>1</version>
+		<revision>1</revision>
+		<node_order>0</node_order>
+		<description><![CDATA[
+
+
+
+
+<ul>
+	<li>
+		povinn&aacute; položka</li>
+	<li>
+		tool-tip: <strong>Vyberte fakultu</strong></li>
+	<li>
+		realizov&aacute;na pomoc&iacute; v&yacute;běrov&eacute;ho seznamu s položkami:
+		<ul>
+			<li>
+				<strong>--- neuvedeno ---</strong></li>
+			<li>
+				<strong>FAV - Fakulta aplikovan&yacute;ch věd</strong></li>
+			<li>
+				<strong>FDU - Fakulta designu a uměn&iacute; Ladislava Sutnara</strong></li>
+			<li>
+				<strong>FEK - Fakulta ekonomick&aacute;</strong></li>
+			<li>
+				<strong>FEL - Fakulta elektrotechnick&aacute;</strong></li>
+			<li>
+				<strong>FF - Fakulta filosofick&aacute;</strong></li>
+			<li>
+				<strong>FPE - Fakulta pedagogick&aacute;</strong></li>
+			<li>
+				<strong>FPR - Fakulta pr&aacute;vnick&aacute;</strong></li>
+			<li>
+				<strong>FST - Fakulta strojn&iacute;</strong></li>
+			<li>
+				<strong>FZS - Fakulta zdravotnick&yacute;ch studi&iacute;</strong></li>
+		</ul>
+	</li>
+	<li>
+		položka <strong>--- neuvedeno ---</strong> je předvybr&aacute;na<br />
+		&nbsp;</li>
+</ul>
+
+
+
+
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[1]]></expected_coverage>
+		
+	</requirement>
+	<requirement>
+		<docid><![CDATA[RQM.04.01.02]]></docid>
+		<title><![CDATA[Rok nástupu na ZČU]]></title>
+		<version>1</version>
+		<revision>1</revision>
+		<node_order>1</node_order>
+		<description><![CDATA[
+<ul>
+	<li>
+		povinn&aacute; položka</li>
+	<li>
+		tool-tip: Zadejte posledn&iacute; dvojč&iacute;sl&iacute; kalend&aacute;řn&iacute;ho roku</li>
+	<li>
+		realizov&aacute;na pomoc&iacute; vstupn&iacute;ho pole</li>
+	<li>
+		pole m&aacute; zobrazenou n&aacute;povědu form&aacute;tu pomoc&iacute; hodnoty &quot;08&quot;
+		<ul>
+			<li>
+				tato hodnota nen&iacute; předvyplněn&iacute;</li>
+		</ul>
+	</li>
+</ul>
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[1]]></expected_coverage>
+		
+	</requirement>
+	<requirement>
+		<docid><![CDATA[RQM.04.01.03]]></docid>
+		<title><![CDATA[Typ studia]]></title>
+		<version>1</version>
+		<revision>1</revision>
+		<node_order>2</node_order>
+		<description><![CDATA[
+<ul>
+	<li>
+		povinn&aacute; položka</li>
+	<li>
+		tool-tip:&nbsp;Vyberte typ studia</li>
+	<li>
+		realizov&aacute;na pomoc&iacute; v&yacute;běrov&eacute;ho seznamu s položkami:
+		<ul>
+			<li>
+				bakal&aacute;řsk&yacute;</li>
+			<li>
+				navazuj&iacute;c&iacute;</li>
+			<li>
+				doktorsk&yacute;</li>
+			<li>
+				magistersk&yacute;</li>
+		</ul>
+	</li>
+	<li>
+		položka&nbsp;bakal&aacute;řsk&yacute;&nbsp;je předvybr&aacute;na</li>
+</ul>
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[1]]></expected_coverage>
+		
+	</requirement>
+	<requirement>
+		<docid><![CDATA[RQM.04.01.04]]></docid>
+		<title><![CDATA[Pořadové číslo]]></title>
+		<version>1</version>
+		<revision>1</revision>
+		<node_order>3</node_order>
+		<description><![CDATA[
+<ul>
+	<li>
+		povinn&aacute; položka</li>
+	<li>
+		tool-tip:&nbsp;Zadejte nez&aacute;porn&eacute; cel&eacute; č&iacute;slo, max. 4 č&iacute;slice</li>
+	<li>
+		realizov&aacute;na pomoc&iacute; vstupn&iacute;ho pole</li>
+	<li>
+		pole m&aacute; zobrazenou n&aacute;povědu form&aacute;tu pomoc&iacute; hodnoty 0001
+		<ul>
+			<li>
+				tato hodnota nen&iacute; předvyplněn&iacute;</li>
+		</ul>
+	</li>
+</ul>
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[1]]></expected_coverage>
+		
+	</requirement>
+	<requirement>
+		<docid><![CDATA[RQM.04.01.05]]></docid>
+		<title><![CDATA[Forma studia]]></title>
+		<version>1</version>
+		<revision>1</revision>
+		<node_order>4</node_order>
+		<description><![CDATA[
+<ul>
+	<li>
+		povinn&aacute; položka</li>
+	<li>
+		tool-tip:&nbsp;Vyberte formu studia</li>
+	<li>
+		realizov&aacute;na pomoc&iacute; bloku radio-buttonů s hodnotami:
+		<ul>
+			<li>
+				prezenčn&iacute;</li>
+			<li>
+				kombinovan&aacute;</li>
+			<li>
+				distančn&iacute;</li>
+		</ul>
+	</li>
+	<li>
+		nen&iacute; předvybr&aacute;na ž&aacute;dn&aacute; položka</li>
+</ul>
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[1]]></expected_coverage>
+		
+	</requirement>
+	<requirement>
+		<docid><![CDATA[RQM.04.01.06]]></docid>
+		<title><![CDATA[Zahraniční student]]></title>
+		<version>1</version>
+		<revision>1</revision>
+		<node_order>5</node_order>
+		<description><![CDATA[
+<ul>
+	<li>
+		nepovinn&aacute; položka</li>
+	<li>
+		tool-tip:&nbsp;Za&scaron;krtněte, jedn&aacute;-li se o zahraničn&iacute;ho studenta</li>
+	<li>
+		realizov&aacute;na pomoc&iacute; check-boxu</li>
+	<li>
+		po spu&scaron;těn&iacute; aplikace nen&iacute; položka vybr&aacute;na</li>
+</ul>
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[1]]></expected_coverage>
+		
+	</requirement>
+	<requirement>
+		<docid><![CDATA[RQM.04.01.07]]></docid>
+		<title><![CDATA[Generuj osobní číslo]]></title>
+		<version>1</version>
+		<revision>1</revision>
+		<node_order>6</node_order>
+		<description><![CDATA[
+<ul>
+	<li>
+		realizov&aacute;no pomoc&iacute; tlač&iacute;tka</li>
+	<li>
+		tool-tip:&nbsp;Stiskněte po zad&aacute;n&iacute; v&scaron;ech hodnot</li>
+	<li>
+		ode&scaron;le v&scaron;echny zadan&eacute; hodnoty na server, kde jsou zkontrolov&aacute;ny</li>
+</ul>
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[1]]></expected_coverage>
+		
+	</requirement>
+	<requirement>
+		<docid><![CDATA[RQM.04.01.08]]></docid>
+		<title><![CDATA[Vymaž]]></title>
+		<version>1</version>
+		<revision>1</revision>
+		<node_order>7</node_order>
+		<description><![CDATA[
+
+
+
+
+<ul>
+	<li>
+		realizov&aacute;no pomoc&iacute; tlač&iacute;tka</li>
+	<li>
+		tool-tip: <strong>Vymaz&aacute;n&iacute; v&scaron;ech hodnot</strong></li>
+	<li>
+		po&scaron;le zpr&aacute;vu serveru</li>
+</ul>
+
+
+
+
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[1]]></expected_coverage>
+		
+	</requirement>
+</req_spec><req_spec title="Funkčnost - možnosti parametrů"  doc_id="RQS.04.02"  >
+<revision><![CDATA[1]]></revision>
+
+<type><![CDATA[1]]></type>
+
+<node_order><![CDATA[2]]></node_order>
+
+<total_req><![CDATA[0]]></total_req>
+<scope>
+<![CDATA[
+
+
+
+<p>
+	Možn&eacute; hodnoty jednotliv&yacute;ch vstupn&iacute;ch parametrů</p>
+
+
+
+]]>
+</scope>
+	<requirement>
+		<docid><![CDATA[RQM.04.02.01]]></docid>
+		<title><![CDATA[Fakulta]]></title>
+		<version>1</version>
+		<revision>1</revision>
+		<node_order>0</node_order>
+		<description><![CDATA[
+
+
+
+
+<p>
+	Vyzkou&scaron;et možnosti pro každou fakultu</p>
+<ul>
+	<li>
+		A = FAV - Fakulta aplikovan&yacute;ch věd</li>
+	<li>
+		D = FDU - Fakulta designu a uměn&iacute; Ladislava Sutnara</li>
+	<li>
+		K = FEK - Fakulta ekonomick&aacute;</li>
+	<li>
+		E = FEL - Fakulta elektrotechnick&aacute;</li>
+	<li>
+		F = FF - Fakulta filosofick&aacute;</li>
+	<li>
+		P = FPE - Fakulta pedagogick&aacute;</li>
+	<li>
+		R = FPR - Fakulta pr&aacute;vnick&aacute;</li>
+	<li>
+		S = FST - Fakulta strojn&iacute;</li>
+	<li>
+		Z = FZS - Fakulta zdravotnick&yacute;ch studi&iacute;</li>
+</ul>
+
+
+
+
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[9]]></expected_coverage>
+		
+	</requirement>
+	<requirement>
+		<docid><![CDATA[RQM.04.02.02]]></docid>
+		<title><![CDATA[Rok nástupu na ZČU]]></title>
+		<version>1</version>
+		<revision>3</revision>
+		<node_order>1</node_order>
+		<description><![CDATA[
+<p>
+	Zad&aacute;v&aacute;n&iacute; roku n&aacute;stupu na ZČU dvojč&iacute;sl&iacute;m.</p>
+<ul>
+	<li>
+		Posledn&iacute; dvě č&iacute;slice dan&eacute;ho roku včetně př&iacute;padn&eacute; prvn&iacute; nuly (např. 05).
+		<ul>
+			<li>
+				Hodnota 00 je povolena a ud&aacute;v&aacute; rok 2000.</li>
+		</ul>
+	</li>
+	<li>
+		B&iacute;l&eacute; znaky jsou ignorov&aacute;ny a před odesl&aacute;n&iacute;m jsou z řetězce odstraněny.</li>
+</ul>
+<p>
+	&nbsp;</p>
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[5]]></expected_coverage>
+		
+	</requirement>
+	<requirement>
+		<docid><![CDATA[RQM.04.02.03]]></docid>
+		<title><![CDATA[Typ studia]]></title>
+		<version>1</version>
+		<revision>4</revision>
+		<node_order>2</node_order>
+		<description><![CDATA[
+<p>
+	Vyzkou&scaron;et možnosti pro každ&yacute; typ studia.</p>
+<ul>
+	<li>
+		Bakal&aacute;řsk&yacute;</li>
+	<li>
+		Navazuj&iacute;c&iacute;</li>
+	<li>
+		Doktorsk&yacute;</li>
+	<li>
+		Magistersk&yacute;</li>
+</ul>
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[4]]></expected_coverage>
+		
+	</requirement>
+	<requirement>
+		<docid><![CDATA[RQM.04.02.04]]></docid>
+		<title><![CDATA[Pořadové číslo]]></title>
+		<version>1</version>
+		<revision>3</revision>
+		<node_order>3</node_order>
+		<description><![CDATA[
+<ul>
+	<li>
+		Nez&aacute;porn&eacute; cel&eacute; č&iacute;slo.</li>
+	<li>
+		Maxim&aacute;lně čtyřcifern&eacute;.</li>
+	<li>
+		Pr&aacute;zdn&eacute; znaky na zač&aacute;tku a na konci řetězce jsou ignorov&aacute;ny a před odesl&aacute;n&iacute;m jsou z řetězce odstraněny.</li>
+	<li>
+		Nev&yacute;znamov&eacute; nuly jsou povoleny, ale nejsou povinn&eacute;.</li>
+	<li>
+		Hodnota 0 nen&iacute; povolena (jedn&aacute; se o pořad&iacute;).</li>
+</ul>
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[7]]></expected_coverage>
+		
+	</requirement>
+	<requirement>
+		<docid><![CDATA[RQM.04.02.05]]></docid>
+		<title><![CDATA[Forma studia]]></title>
+		<version>1</version>
+		<revision>4</revision>
+		<node_order>4</node_order>
+		<description><![CDATA[
+<p>
+	Vyzkou&scaron;et v&scaron;echny možnosti radio-buttonů.</p>
+<ul>
+	<li>
+		Prezenčn&iacute;.</li>
+	<li>
+		Kombinovan&aacute;.</li>
+	<li>
+		Distančn&iacute;.</li>
+</ul>
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[3]]></expected_coverage>
+		
+	</requirement>
+	<requirement>
+		<docid><![CDATA[RQM.04.02.06]]></docid>
+		<title><![CDATA[Zahraniční student]]></title>
+		<version>1</version>
+		<revision>1</revision>
+		<node_order>5</node_order>
+		<description><![CDATA[
+
+
+
+
+<p>
+	Vyzkou&scaron;et možnost pro zahraničn&iacute;ho studenta - na konci osobn&iacute;ho č&iacute;sla je I</p>
+
+
+
+
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[1]]></expected_coverage>
+		
+	</requirement>
+</req_spec><req_spec title="Funkčnost - alternativní toky"  doc_id="RQS.04.03"  >
+<revision><![CDATA[1]]></revision>
+
+<type><![CDATA[1]]></type>
+
+<node_order><![CDATA[3]]></node_order>
+
+<total_req><![CDATA[0]]></total_req>
+<scope>
+<![CDATA[
+
+
+
+<p>
+	Alternativn&iacute; toky formul&aacute;ře</p>
+
+
+
+]]>
+</scope>
+	<requirement>
+		<docid><![CDATA[RQM.04.03.01]]></docid>
+		<title><![CDATA[Fakulta]]></title>
+		<version>1</version>
+		<revision>1</revision>
+		<node_order>0</node_order>
+		<description><![CDATA[
+
+
+
+
+<p>
+	Pokud nen&iacute; po stisku tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong> vybr&aacute;na někter&aacute; z nab&iacute;zen&yacute;ch fakult:</p>
+<ul>
+	<li>
+		v&yacute;běrov&yacute; seznam bude červeně or&aacute;mov&aacute;n</li>
+	<li>
+		vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <strong>Fakulta nezvolena</strong></li>
+</ul>
+
+
+
+
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[1]]></expected_coverage>
+		
+	</requirement>
+	<requirement>
+		<docid><![CDATA[RQM.04.03.02]]></docid>
+		<title><![CDATA[Rok nástupu na ZČU]]></title>
+		<version>1</version>
+		<revision>1</revision>
+		<node_order>1</node_order>
+		<description><![CDATA[
+<p>
+	pokud po stisku tlač&iacute;tka Generuj osobn&iacute; č&iacute;slo:</p>
+<ul>
+	<li>
+		Nen&iacute; zad&aacute;na ž&aacute;dn&aacute; hodnota.&nbsp;bude vstupn&iacute; pole or&aacute;mov&aacute;no červeně a vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; Pr&aacute;zdn&yacute; vstup.</li>
+	<li>
+		Jsou zad&aacute;ny pouze b&iacute;l&eacute; znaky. Bude vstupn&iacute; pole or&aacute;mov&aacute;no červeně a vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; Pr&aacute;zdn&yacute; vstup.</li>
+	<li>
+		Je zad&aacute;na pouze jedna dekadick&aacute; č&iacute;slice. Bude vstupn&iacute; pole or&aacute;mov&aacute;no červeně, zadan&eacute; č&iacute;slo v něm zůstane a vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; Je požadov&aacute;no dvojč&iacute;sl&iacute;.</li>
+	<li>
+		<div>
+			Jsou zad&aacute;ny v&iacute;ce než dvě dekadick&eacute; č&iacute;slice. Bude vstupn&iacute; pole or&aacute;mov&aacute;no červeně, zadan&eacute; č&iacute;slo v něm zůstane a vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; Je požadov&aacute;no dvojč&iacute;sl&iacute;.</div>
+	</li>
+	<li>
+		<div>
+			Je zad&aacute;na neč&iacute;seln&aacute; hodnota. Bude vstupn&iacute; pole or&aacute;mov&aacute;no červeně, zadan&yacute; řetězec v něm zůstane a vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; Nen&iacute; dekadick&eacute; č&iacute;slo.</div>
+	</li>
+	<li>
+		<div>
+			Je zad&aacute;no znam&eacute;nko (+1 nebo -1). Bude vstupn&iacute; pole or&aacute;mov&aacute;no červeně, zadan&yacute; řetězec v něm zůstane a vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; Znam&eacute;nko nen&iacute; povoleno.</div>
+	</li>
+	<li>
+		<div>
+			Je použita desetinn&aacute; tečka nebo č&aacute;rka (.1 1. ,1 1,). Bude vstupn&iacute; pole or&aacute;mov&aacute;no červeně, zadan&yacute; řetězec v něm zůstane a vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; Re&aacute;ln&eacute; č&iacute;slo nen&iacute; povoleno.</div>
+	</li>
+	<li>
+		<div>
+			Je použita vědeck&aacute; notace v libovoln&eacute; formě (1e2, 1E2, 1e-2, 1E-2). Bude vstupn&iacute; pole or&aacute;mov&aacute;no červeně, zadan&yacute; řetězec v něm zůstane a vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; Nepovolen&yacute; z&aacute;pis č&iacute;sla.</div>
+	</li>
+</ul>
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[8]]></expected_coverage>
+		
+	</requirement>
+	<requirement>
+		<docid><![CDATA[RQM.04.03.03]]></docid>
+		<title><![CDATA[Pořadové číslo]]></title>
+		<version>1</version>
+		<revision>1</revision>
+		<node_order>2</node_order>
+		<description><![CDATA[
+<p>
+	Pokud po stisku tlač&iacute;tka Generuj osobn&iacute; č&iacute;slo:</p>
+<ul>
+	<li>
+		nen&iacute; zad&aacute;na ž&aacute;dn&aacute; hodnota&nbsp;bude vstupn&iacute; pole or&aacute;mov&aacute;no červeně a vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; Pr&aacute;zdn&yacute; vstup</li>
+	<li>
+		jsou zad&aacute;ny pouze b&iacute;l&eacute; znaky&nbsp;bude vstupn&iacute; pole or&aacute;mov&aacute;no červeně a vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; Pr&aacute;zdn&yacute; vstup</li>
+	<li>
+		je zad&aacute;na nula jednou až čtyřmi č&iacute;slicemi (0, 00, 000, 0000) bude vstupn&iacute; pole or&aacute;mov&aacute;no červeně, zadan&yacute; řetězec v něm zůstane a vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; Nula nen&iacute; povolena</li>
+	<li>
+		<div>
+			jsou zad&aacute;ny v&iacute;ce než čtyři dekadick&eacute; č&iacute;slice bude vstupn&iacute; pole or&aacute;mov&aacute;no červeně, zadan&eacute; č&iacute;slo v něm zůstane a vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; V&iacute;ce než čtyři č&iacute;slice</div>
+	</li>
+	<li>
+		<div>
+			je zad&aacute;na neč&iacute;seln&aacute; hodnota bude vstupn&iacute; pole or&aacute;mov&aacute;no červeně, zadan&yacute; řetězec v něm zůstane a vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; Nen&iacute; dekadick&eacute; č&iacute;slo</div>
+	</li>
+	<li>
+		<div>
+			je zad&aacute;no znam&eacute;nko (+1 nebo -1) bude vstupn&iacute; pole or&aacute;mov&aacute;no červeně, zadan&yacute; řetězec v něm zůstane a vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; Znam&eacute;nko nen&iacute; povoleno</div>
+	</li>
+	<li>
+		<div>
+			je použita desetinn&aacute; tečka nebo č&aacute;rka (.1 1. ,1 1,) bude vstupn&iacute; pole or&aacute;mov&aacute;no červeně, zadan&yacute; řetězec v něm zůstane a vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; Re&aacute;ln&eacute; č&iacute;slo nen&iacute; povoleno</div>
+	</li>
+	<li>
+		<div>
+			je použita vědeck&aacute; notace v libovoln&eacute; formě (1e2, 1E2, 1e-2, 1E-2) bude vstupn&iacute; pole or&aacute;mov&aacute;no červeně, zadan&yacute; řetězec v něm zůstane a vpravo se v červen&eacute;m</div>
+		<div>
+			r&aacute;mečku objev&iacute; Nepovolen&yacute; z&aacute;pis č&iacute;sla</div>
+	</li>
+</ul>
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[8]]></expected_coverage>
+		
+	</requirement>
+	<requirement>
+		<docid><![CDATA[RQM.04.03.04]]></docid>
+		<title><![CDATA[Forma studia]]></title>
+		<version>1</version>
+		<revision>1</revision>
+		<node_order>3</node_order>
+		<description><![CDATA[
+<p>
+	Pokud nen&iacute; po stisku tlač&iacute;tka Generuj osobn&iacute; č&iacute;slo vybr&aacute;na někter&aacute; z nab&iacute;zen&yacute;ch forem studia, vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; Forma nezvolena.</p>
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[1]]></expected_coverage>
+		
+	</requirement>
+	<requirement>
+		<docid><![CDATA[RQM.04.03.05]]></docid>
+		<title><![CDATA[Generuj osobní číslo]]></title>
+		<version>1</version>
+		<revision>1</revision>
+		<node_order>4</node_order>
+		<description><![CDATA[
+
+
+
+
+<p>
+	Po stisku tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong> v př&iacute;padě zad&aacute;n&iacute;:</p>
+<ul>
+	<li>
+		nespr&aacute;vn&yacute;ch hodnot:
+		<ul>
+			<li>
+				vyp&iacute;&scaron;e hlavn&iacute; chybov&eacute; hl&aacute;&scaron;en&iacute;
+				<ul>
+					<li>
+						je-li jak&aacute;koliv vstupn&iacute; položka chybně vyplněna, vyp&iacute;&scaron;e pod formul&aacute;řem červeně: <strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></li>
+				</ul>
+			</li>
+			<li>
+				každ&aacute; konkr&eacute;tn&iacute; vstupn&iacute; položka s nevalidn&iacute;mi hodnotami je zv&yacute;razněna a je u n&iacute; vyps&aacute;n podrobněj&scaron;&iacute; popis chyby
+				<ul>
+					<li>
+						způsob zv&yacute;razněn&iacute; a jednotliv&aacute; detailn&iacute; chybov&aacute; hl&aacute;&scaron;en&iacute; jsou pops&aacute;na u každ&eacute; položky - viz jednotliv&eacute; alternativn&iacute; toky</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li>
+		nevyplněn&eacute;ho jak&eacute;hokoliv povinn&eacute;ho pole:
+		<ul>
+			<li>
+				toto se považuje za jeden z př&iacute;padů v&yacute;&scaron;e popsan&yacute;ch nespr&aacute;vn&yacute;ch hodnot</li>
+		</ul>
+	</li>
+</ul>
+
+
+
+
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[2]]></expected_coverage>
+		
+	</requirement>
+</req_spec><req_spec title="Funkčnost - Vymaž"  doc_id="RQS.04.04"  >
+<revision><![CDATA[1]]></revision>
+
+<type><![CDATA[1]]></type>
+
+<node_order><![CDATA[4]]></node_order>
+
+<total_req><![CDATA[0]]></total_req>
+<scope>
+<![CDATA[
+
+<p>
+	Vymaže položky formul&aacute;ře</p>
+
+]]>
+</scope>
+	<requirement>
+		<docid><![CDATA[RQM.04.04.01]]></docid>
+		<title><![CDATA[Vymazání formuláře]]></title>
+		<version>1</version>
+		<revision>1</revision>
+		<node_order>1</node_order>
+		<description><![CDATA[
+
+
+<p>
+	Po stisku tlač&iacute;tka <strong>Vymaž</strong></p>
+<ul>
+	<li>
+		vymaže obě vstupn&iacute; pole a nastav&iacute; jim zobrazen&eacute; n&aacute;povědy</li>
+	<li>
+		oba v&yacute;běrov&eacute; seznamy nastav&iacute; na předvyplněn&eacute; hodnody</li>
+	<li>
+		v bloku radio-buttonů nebude vybr&aacute;na ž&aacute;dn&aacute; hodnota</li>
+	<li>
+		check-box nebude vybr&aacute;n</li>
+	<li>
+		v&scaron;echna př&iacute;padn&aacute; chybov&aacute; hl&aacute;&scaron;en&iacute; vypsan&aacute; při předchoz&iacute;m generov&aacute;n&iacute; budou vymaz&aacute;na</li>
+	<li>
+		bude vymaz&aacute;no i př&iacute;padn&eacute; v&yacute;sledn&eacute; vygenerovan&eacute; osobn&iacute; č&iacute;slo včetně sv&eacute;ho labelu</li>
+</ul>
+
+
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[1]]></expected_coverage>
+		
+	</requirement>
+</req_spec></req_spec><req_spec title="Stránka Nápověda"  doc_id="RQS.05"  >
+<revision><![CDATA[1]]></revision>
+
+<type><![CDATA[1]]></type>
+
+<node_order><![CDATA[4]]></node_order>
+
+<total_req><![CDATA[0]]></total_req>
+<scope>
+<![CDATA[
+
+
+
+<p>
+	Str&aacute;nka N&aacute;pověda</p>
+
+
+
+]]>
+</scope>
+	<requirement>
+		<docid><![CDATA[RQM.05.01]]></docid>
+		<title><![CDATA[Odkaz na Generování]]></title>
+		<version>1</version>
+		<revision>1</revision>
+		<node_order>1</node_order>
+		<description><![CDATA[
+
+
+
+
+<p>
+	Funkčn&iacute; odkaz na str&aacute;nku Generov&aacute;n&iacute;</p>
+
+
+
+
+]]></description>
+		<status><![CDATA[D]]></status>
+		<type><![CDATA[3]]></type>
+		<expected_coverage><![CDATA[1]]></expected_coverage>
+		
+	</requirement>
+</req_spec></requirement-specification>

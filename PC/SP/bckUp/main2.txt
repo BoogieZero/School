@@ -1,0 +1,115 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+const char available[] = "Available frequencies:\n";
+const char radius[] = "Transmission radius:\n";
+const char transmitters[] = "Transmitters:\n";
+char line[25];
+
+/*
+Returns coresponding number of given line otherwise return 0
+	"Available frequencies:\n"	- 1
+	"Transmission radius:\n"	- 2
+	"Transmitters:\n"			- 3
+	otherwise					- 0
+*/
+int get_block_number(char line[]){
+	if(strncmp(line, available, sizeof available) == 0){
+   		//printf("%s\n", "Found Available frequencies");
+   		return 1;
+	}
+	if(strncmp(line, radius, sizeof radius) == 0){
+		//printf("%s\n", "Found Transmission radius");
+		return 2;
+	}
+	if(strncmp(line, transmitters, sizeof transmitters) == 0){
+		//printf("%s\n", "Found Transmitters");
+		return 3;
+	}
+	return 0;
+}
+
+int load_available_frequencies(FILE *fr){
+	printf("\n%s\n", "Available frequencies");
+	unsigned int a,b;
+	fgets(line, sizeof line, fr);
+
+   	if(get_block_number(line) != 1){
+   		printf("%s\n", "Wrong format of ""Available frequencies"" ");
+   		return -1;
+	}
+   	
+   	while(	fgets(line, sizeof line, fr) != NULL
+	   		&& get_block_number(line) == 0){
+	   			
+   		sscanf(line, "%d %d", &a, &b);
+		printf("%d %d\n", a, b);
+	}
+	return 0;
+}
+
+int load_radius(FILE *fr){
+	printf("\n%s\n", "Transmission radius");
+	unsigned int a;
+	
+	if(get_block_number(line) != 2){
+   		printf("%s\n", "Wrong format of ""Transmission radius"" ");
+   		return -2;
+	}
+	
+	fgets(line, sizeof line, fr);	
+	
+	sscanf(line, "%d", &a);
+	printf("%d\n",a);
+	fgets(line, sizeof line, fr);
+}
+
+int load_transmitters(FILE *fr){
+	printf("\n%s\n", "Transmitters");
+	unsigned int a;
+	float c,d;
+	
+	if(get_block_number(line) != 3){
+   		printf("%s\n", "Wrong format of ""Transmitters"" ");
+   		return -3;
+	}
+	
+	while(	fgets(line, sizeof line, fr) != NULL
+			&& get_block_number(line) == 0){
+				
+   		sscanf(line, "%d %f %f", &a, &c, &d);
+		printf("%d %f %f\n", a, c, d);
+	}
+}
+
+void test(char loa[]){
+	unsigned int a,b,c,d;
+	printf("%s",loa);
+	sscanf(loa, "%d %d %d %d", &a, &b, &c, &d);
+	printf("%d\n %d\n %d\n %d\n", a, b, c, d);
+	
+}
+
+int main(int argc, char *argv[]) {
+	FILE *fr; 
+	unsigned int a, b;
+	float c, d;
+	char loa[] = "1 2 3 4";
+	
+	test(loa);
+	return 0;
+	
+	printf("%s\n", "Loading file ");
+	
+   	fr = fopen ("vysilace-25.txt", "r");
+   	
+	load_available_frequencies(fr);
+	load_radius(fr);
+	load_transmitters(fr);
+	
+	
+	printf("%s\n", "File loaded ");
+	fclose(fr);
+   	
+	return 0;
+}

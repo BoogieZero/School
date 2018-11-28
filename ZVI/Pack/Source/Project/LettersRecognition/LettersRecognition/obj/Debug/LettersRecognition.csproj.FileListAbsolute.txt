@@ -1,0 +1,10 @@
+C:\GitHub\School\ZVI\LettersRecognition\LettersRecognition\bin\Debug\LettersRecognition.exe.config
+C:\GitHub\School\ZVI\LettersRecognition\LettersRecognition\obj\Debug\LettersRecognition.csprojResolveAssemblyReference.cache
+C:\GitHub\School\ZVI\LettersRecognition\LettersRecognition\obj\Debug\LettersRecognition.Properties.Resources.resources
+C:\GitHub\School\ZVI\LettersRecognition\LettersRecognition\obj\Debug\LettersRecognition.csproj.GenerateResource.Cache
+C:\GitHub\School\ZVI\LettersRecognition\LettersRecognition\obj\Debug\LettersRecognition.Form1.resources
+C:\GitHub\School\ZVI\LettersRecognition\LettersRecognition\bin\Debug\LettersRecognition.exe
+C:\GitHub\School\ZVI\LettersRecognition\LettersRecognition\bin\Debug\LettersRecognition.pdb
+C:\GitHub\School\ZVI\LettersRecognition\LettersRecognition\obj\Debug\LettersRecognition.exe
+C:\GitHub\School\ZVI\LettersRecognition\LettersRecognition\obj\Debug\LettersRecognition.pdb
+C:\GitHub\School\ZVI\LettersRecognition\LettersRecognition\obj\Debug\LettersRecognition.FragmentDetailForm.resources

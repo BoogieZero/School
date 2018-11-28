@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Trojuhelnik\ getZnak()
+comment0.text=\r\n\ Vr\u00E1t\u00ED\ odkaz\ na\ instanci\ t\u0159\u00EDdy\ {@code\ Trojuhelnik}\ reprezentuj\u00EDc\u00ED\ znak\ supermana.\r\n\ \r\n\ \ @return\ znak\ \ \ \ odkaz\ na\ instanci\ t\u0159\u00EDdy\ {@code\ Trojuhelnik}\r\n
+comment1.params=x\ y
+comment1.target=void\ setPozice(int,\ int)
+comment1.text=\r\n\ Nastav\u00ED\ novou\ pozici\ osoby\ (opsan\u00E9ho\ obdeln\u00EDku\ osoby).\ D\u00E1le\ nastav\u00ED\ i\ pozici\ znaku\r\n\ supermana\ vzhledem\ k\ jeho\ t\u011Blu.\r\n\ \r\n\ \ @param\ x\ \ \ \ nov\u00E1\ sou\u0159adnice\ X\ opsan\u00E9ho\ obdeln\u00EDku\ osoby\r\n\ \ @param\ y\ \ \ \ nov\u00E1\ sou\u0159adnice\ Y\ opsanho\ obdeln\u00EDku\ osoby\r\n
+comment2.params=p
+comment2.target=void\ setPozice(Pozice)
+comment2.text=\r\n\ Nastav\u00ED\ novou\ pozici\ osoby\ (opsan\u00E9ho\ obdeln\u00EDku\ osoby).\ D\u00E1le\ nastav\u00ED\ i\ pozici\ znaku\r\n\ supermana\ vzhledem\ k\ jeho\ t\u011Blu.\r\n\ \r\n\ \ @param\ p\ \ \ \ nov\u00E1\ pozice\ osoby\ reprezentovan\u00E1\ instanc\u00ED\ t\u0159\u00EDdy\ {@code\ Pozice}\r\n
+comment3.params=kreslitko
+comment3.target=void\ nakresli(Kreslitko)
+comment3.text=\r\n\ Vykresl\u00ED\ na\ pl\u00E1tno\ osobu\ i\ se\ znakem.\r\n\ \r\n\ \ @param\ kreslitko\ \ \ \ \ n\u00E1stroj\ pro\ kreslen\u00ED\r\n
+comment4.params=pozice\ velikostHlavy
+comment4.target=Superman(Pozice,\ int)
+comment4.text=\r\n\ vytvo\u0159\u00ED\ instanci\ libovoln\u00E9ho\ rozm\u011Bru\ na\ zadan\u00E9\ pozici\r\n\ t\u011Blo\ je\ v\u017Edy\ modr\u00E9,\ standardn\u00EDch\ rozm\u011Br\u016F\ Osoby\r\n\ znak\ je\ v\u017Edy\ \u010Derven\u00FD\ orientovan\u00FD\ vrcholem\ dol\u016F\r\n\ znak\ je\ v\ pom\u011Bru\ k\ t\u011Blu\ a\ je\ odsazen\ o\ {@code\ posunZnaku}\r\n\ v\u016F\u010Di\ X\ i\ Y\ sou\u0159adnici\ t\u011Bla\r\n\ \r\n\ \ @param\ pozice\ \ \ \ \ \ \ \ \ \ \ pozice\ zobrazen\u00ED\r\n\ \ @param\ velikostHlavy\ \ \ \ velikost\ hlavy,\ podle\ kter\u00E9\ se\ vytvo\u0159\u00ED\ pom\u011Brov\u011B\ osoba\r\n
+comment5.params=pozice
+comment5.target=Superman(Pozice)
+comment5.text=\r\n\ Vytvo\u0159\u00ED\ instanci\ standardn\u00EDho\ rozm\u011Bru\ na\ zadan\u00E9\ pozici.\r\n\ \r\n\ \ @param\ pozice\ \ \ pozice\ zobrazen\u00ED\r\n
+comment6.params=
+comment6.target=Superman()
+comment6.text=\r\n\ Vytvo\u0159\u00ED\ instanci\ standardn\u00EDho\ rozm\u011Bru\ v\ lev\u00E9m\ horn\u00EDm\ rohu\ pl\u00E1tna.\r\n
+numComments=7

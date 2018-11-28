@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.boogiezero.todolist.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vBox_main"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/colorPrimary"
+            android:id="@+id/list_main"
+            android:layout_weight="0.99" >
+        </ListView>
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_height="35dp"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="btToggle_onClick"
+            android:textColor="@color/brightText"
+            android:textOff="@string/btToggle_off_main"
+            android:textOn="@string/btToggle_on_main" />
+
+        <Button
+            android:id="@+id/bt_add_main"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:onClick="btAdd_onClick"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/brightText"
+            android:textSize="18sp"
+            android:text="@string/title_task_add" />
+
+    </LinearLayout>
+</RelativeLayout>

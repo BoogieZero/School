@@ -1,0 +1,58 @@
+\begin{thebibliography}{1}
+
+\bibitem{corel}
+Yixin Chen, Jinbo Bi, and James~Z Wang.
+\newblock Miles: Multiple-instance learning via embedded instance selection.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, 28(12):1931--1947, 2006.
+
+\bibitem{caltech101}
+L.~Fei-Fei, R.~Fergus, and P.~Perona.
+\newblock One-shot learning of object categories.
+\newblock In {\em Pattern Recognition and Machine Intelligence}, 2004.
+
+\bibitem{caltech256_report}
+Griffin G., Holub AD., and Perona P.
+\newblock The caltech 256.
+\newblock Technical report, California Institute of Technology, 2006.
+
+\bibitem{Metrics_fmeasure}
+Powers and David~M. W.
+\newblock Evaluation: From precision, recall and f-measure to roc,
+  informedness, markedness \& correlation.
+\newblock {\em Journal of Machine Learning Technologies}, pages 37--63, 2011.
+
+\bibitem{Relevance_feedback}
+Y.~Rui, T.~S. Huang, M.~Ortega, and S.~Mehrotra.
+\newblock Relevance feedback: A power tool for interactive content-based image
+  retrieval.
+\newblock {\em IEEE Transactions on Circuits and Systems for Video Technology},
+  8(5):644--655, 1998.
+
+\bibitem{ILSVRC15}
+Olga Russakovsky, Jia Deng, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma,
+  Zhiheng Huang, Andrej Karpathy, Aditya Khosla, Michael Bernstein,
+  Alexander~C. Berg, and Li~Fei-Fei.
+\newblock {ImageNet Large Scale Visual Recognition Challenge}.
+\newblock {\em International Journal of Computer Vision (IJCV)},
+  115(3):211--252, 2015.
+
+\bibitem{DeepLearning_comprehensive}
+Ji~Wan, Dayong Wang, Steven C.~H. Hoi, Pengcheng Wu, Jianke Zhu, Yongdong
+  Zhang, and Jintao Li.
+\newblock Deep learning for content-based image retrieval: A comprehensive
+  study.
+\newblock In {\em ACM Multimedia}, 2014.
+
+\bibitem{Average_precision}
+Ethan Zhang and Yi~Zhang.
+\newblock {\em Average Precision}, pages 192--193.
+\newblock Springer US, Boston, MA, 2009.
+
+\bibitem{Recent_advanceCBIR}
+Wengang Zhou, Houqiang Li, and Qi~Tian.
+\newblock Recent advance in content-based image retrieval: {A} literature
+  survey.
+\newblock {\em CoRR}, abs/1706.06064, 2017.
+
+\end{thebibliography}

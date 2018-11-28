@@ -1,0 +1,46 @@
+\select@language {czech}
+\contentsline {section}{\numberline {1}Zad\IeC {\'a}n\IeC {\'\i }}{2}
+\contentsline {section}{\numberline {2}Anal\IeC {\'y}za probl\IeC {\'e}mu a n\IeC {\'a}vrh \IeC {\v r}e\IeC {\v s}en\IeC {\'\i }}{2}
+\contentsline {subsection}{\numberline {2.1}Segmentace}{3}
+\contentsline {subsubsection}{\numberline {2.1.1}Freeman\IeC {\r u}v \IeC {\v r}et\IeC {\v e}zov\IeC {\'y} k\IeC {\'o}d a jeho vyu\IeC {\v z}it\IeC {\'\i } pro segmentaci}{3}
+\contentsline {paragraph}{Freeman\IeC {\r u}v \IeC {\v r}et\IeC {\v e}zov\IeC {\'y} k\IeC {\'o}d}{3}
+\contentsline {paragraph}{Vyu\IeC {\v z}it\IeC {\'\i } pro segmentaci}{4}
+\contentsline {subsubsection}{\numberline {2.1.2}Ozna\IeC {\v c}en\IeC {\'\i } zpracovan\IeC {\'y}ch bod\IeC {\r u}}{4}
+\contentsline {subsection}{\numberline {2.2}Parametrizace}{5}
+\contentsline {subsubsection}{\numberline {2.2.1}Minim\IeC {\'a}ln\IeC {\'\i } opsan\IeC {\'y} \IeC {\v c}ty\IeC {\v r}\IeC {\'u}heln\IeC {\'\i }k}{5}
+\contentsline {subsubsection}{\numberline {2.2.2}Podlouhlost}{6}
+\contentsline {subsubsection}{\numberline {2.2.3}Obsah}{6}
+\contentsline {subsubsection}{\numberline {2.2.4}Te\IeC {\v z}i\IeC {\v s}t\IeC {\v e}}{6}
+\contentsline {subsubsection}{\numberline {2.2.5}Nejdel\IeC {\v s}\IeC {\'\i } spojnice}{7}
+\contentsline {subsubsection}{\numberline {2.2.6}Kruhovitost}{7}
+\contentsline {subsubsection}{\numberline {2.2.7}Po\IeC {\v c}et d\IeC {\v e}r}{7}
+\contentsline {subsection}{\numberline {2.3}Klasifikace}{8}
+\contentsline {subsubsection}{\numberline {2.3.1}Etalonov\IeC {\'y} klasifik\IeC {\'a}tor}{8}
+\contentsline {section}{\numberline {3}Implementace (popis \IeC {\v r}e\IeC {\v s}en\IeC {\'\i })}{9}
+\contentsline {subsection}{\numberline {3.1}\texttt {Program}}{9}
+\contentsline {paragraph}{\texttt {main()}}{9}
+\contentsline {paragraph}{\texttt {evaluateBitmap()}}{9}
+\contentsline {subsection}{\numberline {3.2}Image}{9}
+\contentsline {paragraph}{\texttt {process()}}{9}
+\contentsline {paragraph}{\texttt {openBitmap()}}{9}
+\contentsline {subsubsection}{\numberline {3.2.1}Image.Fragment}{9}
+\contentsline {subsection}{\numberline {3.3}Description}{10}
+\contentsline {subsection}{\numberline {3.4}DefaultDescriptor}{10}
+\contentsline {paragraph}{\texttt {getDescription()}}{10}
+\contentsline {paragraph}{\texttt {setAttributes()}}{10}
+\contentsline {subsection}{\numberline {3.5}DistanceClassifier}{10}
+\contentsline {paragraph}{\texttt {addTrainCase()}}{10}
+\contentsline {paragraph}{\texttt {evaluate()}}{10}
+\contentsline {paragraph}{\texttt {saveModel()}}{10}
+\contentsline {section}{\numberline {4}U\IeC {\v z}ivatelsk\IeC {\'a} p\IeC {\v r}\IeC {\'\i }ru\IeC {\v c}ka}{11}
+\contentsline {subsection}{\numberline {4.1}Spu\IeC {\v s}t\IeC {\v e}n\IeC {\'\i } programu}{11}
+\contentsline {subsubsection}{\numberline {4.1.1}Form\IeC {\'a}t ulo\IeC {\v z}en\IeC {\'y}ch dat}{11}
+\contentsline {paragraph}{Vstupn\IeC {\'\i } sn\IeC {\'\i }mek}{11}
+\contentsline {paragraph}{Tr\IeC {\'e}novac\IeC {\'\i } data}{11}
+\contentsline {paragraph}{Datov\IeC {\'y} model}{11}
+\contentsline {subsubsection}{\numberline {4.1.2}Grafick\IeC {\'e} u\IeC {\v z}ivatelsk\IeC {\'e} rozhran\IeC {\'\i } GUI}{12}
+\contentsline {paragraph}{Hlavn\IeC {\'\i } okno}{12}
+\contentsline {paragraph}{Okno detailu}{12}
+\contentsline {section}{\numberline {5}Testov\IeC {\'a}n\IeC {\'\i }}{12}
+\contentsline {subsection}{\numberline {5.1}Testov\IeC {\'a}n\IeC {\'\i } klasifik\IeC {\'a}toru}{13}
+\contentsline {section}{\numberline {6}Z\IeC {\'a}v\IeC {\v e}r}{13}

@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfApplication1_openTK.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:WinForms="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        xmlns:local="clr-namespace:WpfApplication1_openTK"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <WindowsFormsHost Initialized="WindowsFormsHost_Initialized" Margin="0,0,140.209,0.183">
+        </WindowsFormsHost>
+        <Label x:Name="label1" Content="FPS" HorizontalAlignment="Right" Margin="0,10,61,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=g
+comment0.target=Kreslitko(java.awt.Graphics2D)
+comment0.text=\r\n\ Inicializuje\ atribut\ adaptovan\u00FDm\ objektem.\r\n\ P\u0159edpokl\u00E1d\u00E1\ pouze\ spolupr\u00E1ci\ se\ spr\u00E1vcem\ pl\u00E1tna,\r\n\ kter\u00FD\ bude\ ve\ stejn\u00E9m\ bal\u00ED\u010Dku\ -\ proto\ je\ package\ private.\r\n<p>\r\n\ Vytvo\u0159\u00ED\ nov\u00E9\ kresl\u00EDtko\ jako\ obalov\u00FD\ typ\r\n\ kolem\ zadan\u00E9\ instance\ t\u0159\u00EDdy\ <code>java.awt.Graphics2D</code>.\r\n\r\n\ @param\ g\ Obalovan\u00E1\ instance\r\n
+comment1.params=
+comment1.target=java.awt.Font\ getFont()
+comment1.text=\r\n\ Vr\u00E1t\u00ED\ font,\ kter\u00FDm\ se\ s\u00E1z\u00ED\ vypisovan\u00E9\ texty.\r\n\r\n\ @return\ Aktu\u00E1ln\u011B\ pou\u017E\u00EDvan\u00FD\ font\r\n
+comment2.params=font
+comment2.target=void\ setFont(java.awt.Font)
+comment2.text=\r\n\ Nastav\u00ED\ font,\ kter\u00FDm\ se\ budou\ s\u00E1zet\ vypisovan\u00E9\ texty.\r\n\ V\u0161echny\ n\u00E1sleduj\u00EDc\u00ED\ operace\ pou\u017E\u00EDvaj\u00ED\ tento\ font.\r\n\ Parametr\ {@code\ null}\ je\ ti\u0161e\ ignorov\u00E1n.\r\n\r\n\ @param\ font\ \ Nastavovan\u00E9\ p\u00EDsmo.\r\n
+comment3.params=
+comment3.target=java.awt.Graphics2D\ getGraphics()
+comment3.text=\r\n\ Vr\u00E1t\u00ED\ zabalen\u00FD\ grafick\u00FD\ kontext.\r\n\r\n\ @return\ Zabalen\u00FD\ grafick\u00FD\ kontext\r\n
+comment4.params=x\ y\ obrazek\ at
+comment4.target=void\ kresliObrazek(int,\ int,\ java.awt.Image,\ java.awt.geom.AffineTransform)
+comment4.text=\r\n\ Nakresl\u00ED\ zadan\u00FD\ obr\u00E1zek\ na\ zadan\u00E9\ sou\u0159adnice.\r\n\ \r\n\ @param\ x\ \ \ \ \ \ \ Vodorovn\u00E1\ sou\u0159adnice\ lev\u00E9ho\ horn\u00EDho\ rohu\r\n\ @param\ y\ \ \ \ \ \ \ Svisl\u00E1\ sou\u0159adnice\ lev\u00E9ho\ horn\u00EDho\ rohu\r\n\ @param\ obrazek\ Kreslen\u00FD\ obr\u00E1zek\r\n\ @param\ at\ \ \ \ \ \ Afinn\u00ED\ transformace\ pou\u017Eit\u00E1\ p\u0159i\ zm\u011Bn\u011B\ rozm\u011Bru\ obr\u00E1zku\r\n
+numComments=5

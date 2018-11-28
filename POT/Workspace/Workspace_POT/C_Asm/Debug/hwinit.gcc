@@ -1,0 +1,12 @@
+-c -x c
+-ms -ms2600
+-I "c:\program files\renesas\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\h8300-elf\optlibinc"
+-I "c:\program files\renesas\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\lib\gcc\h8300-elf\4.5-GNUH8_v11.02\optlibinc"
+-D DEBUG
+-Wa,-alhdn="D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\hwinit.lst"
+-nostdinc
+"D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\hwinit.c"
+-mno-quickcall
+-g
+-g2
+-o "D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\hwinit.o"

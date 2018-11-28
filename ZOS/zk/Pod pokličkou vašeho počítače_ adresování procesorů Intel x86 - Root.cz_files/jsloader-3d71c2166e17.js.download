@@ -1,0 +1,209 @@
+var iinfo = iinfo || {};
+iinfo.dropdownMenu = iinfo.dropdownMenu || {};
+
+/* Toto zajistuje, aby menu zmizelo, jakmile se z nej odjede mysi na dobu delsi nez
+300 ms. Pokud se mysi setrva na seznamu nebo tlacitku Dalsi, tak se menu nezavre.
+Pokud je uzivatel na dotykovem zarizeni, seznam se zobrazi/schova kliknutim na 
+hamburger. Kliknutim mimo vyjizdeci navigaci se seznam take zavre. */
+iinfo.dropdownMenu.onHoverAnimation = function(wrapper, menuInHamburger, buttonSeeMore) {
+
+	var openMenu = 0;
+	var hideTimer;
+	var hideMenuFunc = function() {
+		clearTimeout(hideTimer);
+		$(wrapper + ' ' + menuInHamburger).hide();
+		openMenu = 0;
+	};
+
+	$(wrapper + ' ' + menuInHamburger + ', ' + wrapper + ' ' + buttonSeeMore).hover(
+		function() {
+			if (openMenu && hideTimer) {
+				clearTimeout(hideTimer);
+				hideTimer = null;
+			}
+		},
+		function() {
+			if (openMenu) {
+				hideTimer = setTimeout(hideMenuFunc, 300);
+			}
+		}
+	);
+
+	$('body').bind('touchend', /* keep in mind that the event "touchend" is used at the end of "scroll" */
+		function() {
+			$(wrapper + ' ' + menuInHamburger).hide();
+			openMenu = 0;
+		}
+	);
+
+	$(buttonSeeMore).bind('mouseenter touchend', /* keep in mind that the event "touchend" is used at the end of "scroll" */
+		function(event) {
+			event.preventDefault();
+						
+			if (openMenu == 0) {
+				$(wrapper + ' ' + menuInHamburger).show();
+				openMenu = 1;
+			} else if (event.type == 'touchend') { /* close dropdown if menu is open and event is of 'touchend' type */
+				$(wrapper + ' ' + menuInHamburger).hide();
+				openMenu = 0;
+			}
+		}
+	);
+}
+var NavigationResponsive = function(options) {
+
+	this.settings = {
+		elements: { /* [future] unify the structure with "options" at specific navigation creation (add "elements" there, remove it here) */
+			ids: options.ids || {},
+			classes: options.classes,
+			cssRules: options.cssRules,
+			innerHtml: options.innerHtml || {}
+		},
+		isHamburgerAlwaysVisible: options.isHamburgerAlwaysVisible || false, // some navigations might to have dropdown icon visibile all the time (it used to be on redesigned Lupa before changes in [LU-200])
+		turnOffBreakpointMin: options.turnOffBreakpointMin
+	}
+
+	if (typeof options.callback != 'undefined') {
+		this.settings.callback = options.callback;
+	}
+	if (typeof options.resizeCallback != 'undefined') {
+		this.settings.resizeCallback = options.resizeCallback;
+	}
+}
+
+NavigationResponsive.prototype = {
+
+	init: function(options) {
+		var that = this;
+		if (typeof options != 'undefined' && typeof options === 'object') {
+			this.settings = $.extend(true, {}, this.settings, options);
+		}
+
+		if ($(that.settings.elements.cssRules.buttonSeeMore).length == 0) { // it creates a button to show more items (that are not visibile at that moment) if there is none on the page
+			var buttonHtml = [];
+			buttonHtml.push('<div');
+			if (typeof that.settings.elements.classes.buttonSeeMore != 'undefined' && that.settings.elements.classes.buttonSeeMore.length > 0) {
+				buttonHtml.push(' class="' + that.settings.elements.classes.buttonSeeMore + '"');
+			}
+			if (typeof that.settings.elements.ids.buttonSeeMore != 'undefined' && that.settings.elements.ids.buttonSeeMore.length > 0) {
+				buttonHtml.push(' id="' + that.settings.elements.ids.buttonSeeMore + '"'); /* original solution uses ids to style elements. [future] remove this whole workaround (buttonHtml) when only one solution exists ( [ZPR-192] ) */
+			}
+			buttonHtml.push(' style="display: none;">');
+			buttonHtml.push(that.settings.elements.innerHtml.buttonSeeMore);
+			buttonHtml.push('</div>');
+			$(that.settings.elements.cssRules.wrapper + ' ' + that.settings.elements.cssRules.wrapperContent).append(buttonHtml.join(''));
+		}
+
+		if ($(that.settings.elements.cssRules.menuInHamburger).length == 0) { // it creates a list for items in dropdown menu if there is none on the page
+			var menuHtml = [];
+			menuHtml.push('<ul');
+			if (typeof that.settings.elements.classes.menuInHamburger != 'undefined' && that.settings.elements.classes.menuInHamburger.length > 0) {
+				menuHtml.push(' class="' + that.settings.elements.classes.menuInHamburger + '"');
+			}
+			if (typeof that.settings.elements.ids.menuInHamburger != 'undefined' && that.settings.elements.ids.menuInHamburger.length > 0) {
+				menuHtml.push(' id="' + that.settings.elements.ids.menuInHamburger + '"'); /* original solution uses ids and classes to style elements. [future] remove this whole workaround (menuHtml) when only one solution exists ( [ZPR-192] ) */
+			}
+			menuHtml.push(' style="display: none;"></ul>');
+			$(that.settings.elements.cssRules.wrapper + ' ' + that.settings.elements.cssRules.buttonSeeMore).append(menuHtml.join(''));
+		}
+
+		// Pri najeti mysi na tlacitko Dalsi se rozbali menu dalsich polozek
+		$(that.settings.elements.cssRules.wrapper + ' ' + that.settings.elements.cssRules.buttonSeeMore).hover(function() {
+			$(that.settings.elements.cssRules.wrapper + ' ' + that.settings.elements.cssRules.menuInHamburger).slideDown('fast');
+		});
+
+
+		iinfo.dropdownMenu.onHoverAnimation(
+			that.settings.elements.cssRules.wrapper,
+			that.settings.elements.cssRules.menuInHamburger,
+			that.settings.elements.cssRules.buttonSeeMore
+		);
+
+
+		$(document).ready(function() {
+			that.resize();
+		});
+		$(window).resize(function() {
+			that.resize(); /* [future] do not call the function on every pixel change */
+		});
+
+		if (typeof that.settings.callback != 'undefined' && typeof that.settings.callback === 'function') {
+			that.settings.callback();
+		}
+	},
+
+	/*
+	 * Detekce polozek, ktere se nevejdou do prvniho radku.
+	 * Zobrazene polozky maji position 0.
+	 * Polozky, které pretekly na dalsi radek maji position.top vetsi nez 0.
+	 * Temto položkám se nastavi class that.settings.elements.classes.addItemToMenu. Pokud se polozky po zmene velikosti
+	 * okna vejdou, nastavi se jim zpet class that.settings.elements.classes.removeItemToMenu
+	 */
+	resize: function() {
+		var that = this;
+		var nextLine = false;
+
+		if ((typeof that.settings.turnOffBreakpointMin === 'undefined') || (typeof that.settings.turnOffBreakpointMin != 'undefined' && window.matchMedia('(min-width: ' + that.settings.turnOffBreakpointMin + 'px)').matches)) {
+			$(that.settings.elements.cssRules.wrapper + ' ' + that.settings.elements.cssRules.items).each(function(index) {
+				var item = $(this);
+				/* item top position might be even between "0" and "1" (subpixels), thus compare the value to "1" to avoid the subpixels values */
+				if (item.position().top >= 1 || item.hasClass(that.settings.elements.classes.alwaysInMenu)) { /* [future] it checks position versus its parent while white-space at the top of an item can break this */
+					item.addClass(that.settings.elements.classes.addItemToMenu);
+					item.removeClass(that.settings.elements.classes.removeItemToMenu);
+					nextLine = true;
+
+				} else if (item.position().top < 1) {
+					item.addClass(that.settings.elements.classes.removeItemToMenu);
+					item.removeClass(that.settings.elements.classes.addItemToMenu);
+					$(that.settings.elements.cssRules.wrapper + ' ' + that.settings.elements.cssRules.removeItemToMenu + ':last').removeClass(that.settings.elements.classes.lastNormalItem); /* [future] what is this for?! */
+				}
+			});
+
+			// Abych nemusel porovnavat, ktere polozky jiz v seznamu jsou a ktere ne, tak seznam polozek vymazu a sestavim ho znovu
+			$(that.settings.elements.cssRules.wrapper + ' ' + that.settings.elements.cssRules.menuInHamburger).empty();
+			$(that.settings.elements.cssRules.wrapper + ' ' + that.settings.elements.cssRules.addItemToMenu).clone(true).prependTo(that.settings.elements.cssRules.menuInHamburger); /* [future] it creates duplicated links in the sumbenu */
+
+			// Pokud polozky v menu pretecou, nastavi se nextLine na TRUE a dle toho se zobrazuje/skryva tlacitko Dalsi
+			if (nextLine) {
+				$(that.settings.elements.cssRules.wrapper + ' ' + that.settings.elements.cssRules.buttonSeeMore).show();
+			} else if (!that.settings.isHamburgerAlwaysVisible) {
+				$(that.settings.elements.cssRules.wrapper + ' ' + that.settings.elements.cssRules.buttonSeeMore).hide();
+			}
+		}
+
+		/* [RO-411] if the navigation menu is hidden in styles, the solution above with "item.position().top" will always return zero (it's jQuery feature - position() does not work on hidden elements)
+			but the hamburger is always visible in such situation, thus it has to be shown separately
+		*/
+		if (typeof that.settings.turnOffBreakpointMin != 'undefined' && window.matchMedia('(max-width: ' + (that.settings.turnOffBreakpointMin - 1) + 'px)').matches) {
+			$(that.settings.elements.cssRules.wrapper + ' ' + that.settings.elements.cssRules.buttonSeeMore).show();
+		}
+		/* // see above */
+
+		if (typeof that.settings.resizeCallback != 'undefined' && typeof that.settings.resizeCallback == 'function') {
+			that.settings.resizeCallback();
+		}
+	}
+}
+var iinfo = iinfo || {};
+iinfo.iinfobarNavigation = new NavigationResponsive({
+	classes: {
+		addItemToMenu: 'js-add-to-menu',
+		removeItemToMenu: 'js-remove-to-menu',
+		lastNormalItem: 'lastNormalItem',
+		buttonSeeMore: 'iinfobar__button--see-more iinfobar__link',
+		menuInHamburger: 'iinfobar__servers--added-to-menu list-reset'
+	},
+	cssRules: {
+		wrapper: '.iinfobar-wrapper',
+		wrapperContent: '.iinfobar__content',
+		items: '.iinfobar__server',
+		buttonSeeMore: '.iinfobar__button--see-more',
+		menuInHamburger: '.iinfobar__servers--added-to-menu',
+		addItemToMenu: '.js-add-to-menu',
+		removeItemToMenu: '.js-remove-to-menu'
+	},
+	innerHtml: {
+		buttonSeeMore: 'dal\u0161\u00ed'
+	}
+});
+iinfo.iinfobarNavigation.init();

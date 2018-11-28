@@ -1,0 +1,57 @@
+# formát příjmení, jméno, zkratka fakulty, rok nástupu, zkratka typu studia, zkratka formy studia, nepovinne
+# bakaláři
+Novák, Josef, fav, 2014, b, p
+Aldus, Pavel, fav, 2014, B, p
+Želé, Jakub, fav, 2014, b, P, i
+Divoký, René, fav, 2014, B, P, I, něco navíc
+
+# navazující
+Platnost, Karel, fav, 2014, n, p
+Plát, Josef, Fav, 2014, n, p
+Plátno, Miloš, FAv, 2014, n, p
+Plankton, Richard, FAV, 2014, n, p
+Plachta, Jiří, fav, 2014, N, p
+Plášť, Rudolf, fav, 2014, n, P
+Plahočení, Petr, fav, 2014, n, k
+Plánička, Jan, fav, 2014, n, K
+Platno, Václav, fav, 2014, N, k
+Placebo, Jindřich, fav, 2014, N, K
+Plaňka, David, fav, 2014, n, p
+Plat, Michal, fav, 2014, n, p
+Plánička, Jaroslav, fav, 2014, n, p
+Platnost, Alfréd, fav, 2014, n, p
+
+# doktorandi
+Dlouhý, Roman, fav, 2014, p, p
+Široký, Stanislav, fav, 2014, P, p
+Bystrozraký, Martin, fav, 2014, P, P
+
+# magistři z FPR
+Právník, René, FPR, 2014, m, p
+Právník, Daniel, FPR, 2014, M, p
+Právník, Alois, FPR, 2014, M, P, I
+
+# bakaláři z jiných fakult správně zadaní
+Strojař, Pavel, fst, 2014, b, p
+Pedagog, Pavel, FPE, 2014, b, p
+Elektrikář, Pavel, fel, 2014, b, p
+Ekonom, Pavel, fEk, 2014, b, p
+Umělec, Pavel, fDU, 2014, b, p
+Zdravotník, Pavel, fzS, 2014, b, p
+Filosof, Pavel, fF, 2014, b, p
+
+# chybně zadané
+Chybný, Radomil, fuj, 2014, b, p
+Chybný, Dalimil, fav, 2014, x, p
+Chybný, Čestmír, fav, 2014, b, x
+Chybný, Vladan, fuj, 2014, x, x
+Chybný, Břetislav, fav, 2014, b
+Chybný, Pravoslav, fav, 2014
+Chybný, Radovan, fav
+Chybný, Ctirad
+Chybný
+Chybný, Drahoslav, fav, 14, b, p
+Chybný, Vladislav, fav, 0x2014, b, p
+Chybný, Sebastian, fav, 02014, b, p
+Chybný, Slavomír, fav, 4, b, p
+

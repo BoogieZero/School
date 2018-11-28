@@ -1,0 +1,4 @@
+"D:\MCU\H8S\Asembler H8S\Workspace_POT\Dec_to_bin\main.s"
+-I "D:\MCU\H8S\Asembler H8S\Workspace_POT\Dec_to_bin"
+--gdwarf2
+-o "D:\MCU\H8S\Asembler H8S\Workspace_POT\Dec_to_bin\Debug\main.o"

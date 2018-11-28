@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Rozmer\ getRozmer()
+comment0.text=\r\n\ Vr\u00E1t\u00ED\ instanci\ t\u0159\u00EDdy\ {@code\ Rozmer}\ s\ aktu\u00E1ln\u00EDmi\ rozm\u011Bry\ instance.\r\n\r\n\ @return\ \ \ Instance\ t\u0159\u00EDdy\ {@code\ Rozmer}\ s\ aktu\u00E1ln\u00EDmi\ rozm\u011Bry\ instance\r\n
+comment1.params=rozmer
+comment1.target=void\ setRozmer(Rozmer)
+comment1.text=\r\n\ Nastav\u00ED\ nov\u00E9\ rozm\u011Bry\ instance.\r\n\r\n\ @param\ rozmer\ \ Nov\u011B\ nastavovan\u00FD\ rozm\u011Br\r\n
+comment2.params=sirka\ vyska
+comment2.target=void\ setRozmer(int,\ int)
+comment2.text=\r\n\ Nastav\u00ED\ nov\u00E9\ rozm\u011Bry\ instance.\ Nastavovan\u00E9\ rozm\u011Bry\ mus\u00ED\ b\u00FDt\ nez\u00E1porn\u00E9,\r\n\ m\u00EDsto\ nulov\u00E9ho\ rozm\u011Bru\ se\ nastav\u00ED\ rozm\u011Br\ rovn\u00FD\ jedn\u00E9.\r\n\r\n\ @param\ sirka\ \ \ \ Nov\u011B\ nastavovan\u00E1\ \u0161\u00ED\u0159ka;\ \u0161\u00ED\u0159ka\ &gt;\=\ 0\r\n\ @param\ vyska\ \ \ \ Nov\u011B\ nastavovan\u00E1\ v\u00FD\u0161ka;\ v\u00FD\u0161ka\ &gt;\=\ 0\r\n
+numComments=3

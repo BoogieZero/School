@@ -1,0 +1,20 @@
+body{
+	background-color: lightblue;
+}
+
+h1{
+	color: navy;
+	margin-left: 20px;
+}
+
+p{
+	text-align: justify;
+}
+
+.rounded{
+	border-style: solid;
+	border-width: 2px;
+	border-color: lightskyblue;
+	border-radius: 15px;
+	margin-left: 20px;
+}

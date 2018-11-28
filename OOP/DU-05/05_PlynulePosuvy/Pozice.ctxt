@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=x\ y
+comment0.target=Pozice(int,\ int)
+comment0.text=\r\n\ Vytvo\u0159\u00ED\ p\u0159epravku\ uchov\u00E1vaj\u00EDc\u00ED\ zadan\u00E9\ sou\u0159adnice.\r\n\r\n\ @param\ x\ \ Vodorovn\u00E1\ sou\u0159adnice\r\n\ @param\ y\ \ Svisl\u00E1\ sou\u0159adnice\r\n
+comment1.params=
+comment1.target=int\ getX()
+comment1.text=\r\n\ Vr\u00E1t\u00ED\ ulo\u017Eenou\ velikost\ vodorovn\u00E9\ sou\u0159adnice.\r\n\r\n\ @return\ \ Po\u017Eadovan\u00E1\ hodnota\r\n
+comment2.params=
+comment2.target=int\ getY()
+comment2.text=\r\n\ Vr\u00E1t\u00ED\ ulo\u017Eenou\ velikost\ svisl\u00E9\ sou\u0159adnice.\r\n\r\n\ @return\ \ Po\u017Eadovan\u00E1\ hodnota\r\n
+comment3.params=o
+comment3.target=boolean\ equals(java.lang.Object)
+comment3.text=\r\n\ Vr\u00E1t\u00ED\ informaci\ o\ tom,\ p\u0159edstavuje-li\ instance\ zadan\u00E1\ v\ parametru\r\n\ stejnou\ pozici.\r\n\r\n\ @param\ \ o\ \ \ Testovan\u00E1\ instance\r\n\ @return\ Je-li\ zadan\u00E1\ instance\ pozic\u00ED\ se\ stejn\u00FDmi\ hodnotami\ atribut\u016F,\r\n\ \ \ \ \ \ \ \ \ vr\u00E1t\u00ED\ {@code\ true},\ jinak\ vr\u00E1t\u00ED\ {@code\ false}.\r\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\r\n\ Vrac\u00ED\ textovou\ reprezentaci\ (podpis)\ dan\u00E9\ instance\r\n\ pou\u017E\u00EDvanou\ p\u0159edev\u0161\u00EDm\ k\ ladic\u00EDm\ \u00FA\u010Del\u016Fm.\r\n\r\n\ @return\ Podpis\ dan\u00E9\ instance\r\n
+numComments=5

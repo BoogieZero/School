@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="700.0" maxWidth="600.0" minHeight="350.0" minWidth="600.0" prefHeight="700.0" prefWidth="600.0" style="-fx-background-color: LightGray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="upg.controllers.InfoWindowController">
+   <children>
+      <Label fx:id="OBJECT_X" layoutX="52.0" layoutY="51.0" text="Souřadnice X: " AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="75.0">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="OBJECT_Y" layoutX="52.0" layoutY="101.0" text="Souřadnice Y: " AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="125.0">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="OBJECT_ID" layoutX="52.0" layoutY="153.0" text="ID Objektu: " AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="175.0">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="SIMULATION_TIME" layoutX="320.0" layoutY="51.0" text="Simulační čas: " AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="75.0">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="OBJECT_PROPERTY" layoutX="320.0" layoutY="101.0" text="Kapacita: " AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="125.0">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="268.0" layoutY="349.0" mnemonicParsing="false" onAction="#okButton" prefHeight="35.0" prefWidth="160.0" text="OK" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="130.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="252.0" layoutY="30.0" text="Informace o objektu" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="Calibri Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="LEVEL_IN_PERCENT" layoutX="300.0" layoutY="178.0" text="Hladina (%): " AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="175.0">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="LEVEL_IN_METERS" layoutX="15.0" layoutY="236.0" text="Hladina (m3):" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="225.0">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <LineChart fx:id="PERCENT_GRAPH" layoutX="15.0" layoutY="300.0" prefHeight="350.0" prefWidth="240.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="300.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <LineChart fx:id="METERS_GRAPH" layoutX="280.0" layoutY="348.0" prefHeight="350.0" prefWidth="240.0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="300.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>

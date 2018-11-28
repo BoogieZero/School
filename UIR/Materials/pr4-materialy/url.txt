@@ -1,0 +1,16 @@
+https://www.tipsport.cz/clanek/3507-clovek-vs-umela-inteligence-ve-hre-go
+
+http://technet.idnes.cz/vedci-vytvorili-umely-zivot-priblizila-se-geneticka-revoluce-nebo-zkaza-lidstva-g1v-/tec_technika.aspx?c=A100520_234125_tec_technika_kuz
+
+----
+
+http://technet.idnes.cz/goodai-marek-rosa-rozhovor-umela-inteligence-fnw-/sw_internet.aspx?c=A150716_104454_sw_internet_pka
+
+http://technet.idnes.cz/sikanovany-robot-0zf-/tec_technika.aspx?c=A160225_153215_tec_technika_mla
+
+----
+minimax only
+https://www.youtube.com/watch?v=6ELUvkSkCts
+
+minimax + alfa beta prorezavani
+https://www.youtube.com/watch?v=J1GoI5WHBto 

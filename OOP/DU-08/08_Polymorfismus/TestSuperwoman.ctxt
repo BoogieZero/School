@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ setUp()
+comment0.text=\r\n\ Inicializace\ p\u0159edch\u00E1zej\u00EDc\u00ED\ spu\u0161t\u011Bn\u00ED\ ka\u017Ed\u00E9ho\ testu\ a\ p\u0159ipravuj\u00EDc\u00ED\ tzv.\r\n\ p\u0159\u00EDpravek\ (fixture),\ co\u017E\ je\ sada\ objekt\u016F,\ s\ nimi\u017E\ budou\ testy\ pracovat.\r\n
+comment1.params=
+comment1.target=void\ tearDown()
+comment1.text=\r\n\ \u00DAklid\ po\ testu\ -\ tato\ metoda\ se\ spust\u00ED\ po\ vykon\u00E1n\u00ED\ ka\u017Ed\u00E9ho\ testu.\r\n
+comment10.params=
+comment10.target=void\ testSetPozicePoz()
+comment2.params=po\ ps\ nazevInstance
+comment2.target=void\ testPozice(Pozice,\ Pozice,\ java.lang.String)
+comment2.text=\r\n\ @param\ po\ o\u010Dek\u00E1van\u00E1\ pozice\r\n\ @param\ ps\ skute\u010Dn\u00E1\ pozice\r\n\ @param\ nazevInstance\ n\u00E1zev\ testovan\u00E9\ instance\r\n
+comment3.params=
+comment3.target=void\ testKompletniKonstruktor()
+comment4.params=
+comment4.target=void\ testVelkaSuperwoman()
+comment5.params=
+comment5.target=void\ testBezparKonstruktor()
+comment6.params=
+comment6.target=void\ testKonstruktorPozice()
+comment7.params=
+comment7.target=void\ testPresun()
+comment8.params=
+comment8.target=void\ testZvyrazneni()
+comment9.params=
+comment9.target=void\ testSetPoziceXY()
+numComments=11

@@ -1,0 +1,8 @@
+-T "D:\MCU\H8S\Asembler H8S\Workspace_POT\Dec_to_bin\Debug\Dec_to_bin_Debug_auto.gsi"
+-T "D:\MCU\H8S\Asembler H8S\Workspace_POT\Dec_to_bin\Debug\Dec_to_bin_input.tmp" 
+-L "c:\program files (x86)\renesas\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\lib\gcc\h8300-elf\4.5-GNUH8_v11.02\h8300s"
+-L "D:\MCU\H8S\Asembler H8S\Workspace_POT\Dec_to_bin\Debug"
+-Map "D:\MCU\H8S\Asembler H8S\Workspace_POT\Dec_to_bin\Debug\Dec_to_bin.map"
+-( -l "gcc" -l "Dec_to_bin" -)
+-o "D:\MCU\H8S\Asembler H8S\Workspace_POT\Dec_to_bin\Debug\Dec_to_bin.x"
+-e _start

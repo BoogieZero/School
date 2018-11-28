@@ -1,0 +1,11 @@
+-c -x c
+-ms -ms2600
+-I "c:\school\pot\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\h8300-elf\optlibinc"
+-I "c:\school\pot\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\lib\gcc\h8300-elf\4.5-GNUH8_v11.02\optlibinc"
+-D DEBUG
+-Wa,-alshdn="C:\School\POT\Workspace\Workspace_POT\Simulated_IO\Debug\vects.lst"
+-nostdinc
+"C:\School\POT\Workspace\Workspace_POT\Simulated_IO\vects.c"
+-g
+-g2
+-o "C:\School\POT\Workspace\Workspace_POT\Simulated_IO\Debug\vects.o"

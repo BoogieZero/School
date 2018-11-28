@@ -1,0 +1,24 @@
+\select@language {czech}
+\contentsline {section}{\numberline {1}Zad\IeC {\'a}n\IeC {\'\i }}{2}{section.1}
+\contentsline {section}{\numberline {2}\IeC {\'U}vod}{2}{section.2}
+\contentsline {section}{\numberline {3}Anal\IeC {\'y}za}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}Vyhled\IeC {\'a}v\IeC {\'a}n\IeC {\'\i } obr\IeC {\'a}zk\IeC {\r u} na z\IeC {\'a}klad\IeC {\v e} obsahu}{3}{subsection.3.1}
+\contentsline {paragraph}{SIFT}{3}{section*.2}
+\contentsline {subsection}{\numberline {3.2}Neuronov\IeC {\'a} s\IeC {\'\i }\IeC {\v t}}{3}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Zp\IeC {\v e}tn\IeC {\'a} propagace}{4}{subsubsection.3.2.1}
+\contentsline {subsection}{\numberline {3.3}Konvolu\IeC {\v c}n\IeC {\'\i } neuronov\IeC {\'a} s\IeC {\'\i }\IeC {\v t}}{4}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Konvolu\IeC {\v c}n\IeC {\'\i } oper\IeC {\'a}tor}{5}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Nelinearita a \textit {pooling}}{6}{subsubsection.3.3.2}
+\contentsline {subsection}{\numberline {3.4}Autoencoder}{6}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Datov\IeC {\'e} sady obr\IeC {\'a}zk\IeC {\r u}}{7}{subsection.3.5}
+\contentsline {paragraph}{Caltech 101(256)\cite {caltech101}\cite {caltech256_report}}{7}{section*.9}
+\contentsline {paragraph}{Corel\cite {corel}}{7}{section*.10}
+\contentsline {paragraph}{ImageNet}{7}{section*.11}
+\contentsline {paragraph}{CIFAR10}{8}{section*.12}
+\contentsline {subsection}{\numberline {3.6}Metrika}{8}{subsection.3.6}
+\contentsline {subsubsection}{\numberline {3.6.1}P\IeC {\v r}esnost}{8}{subsubsection.3.6.1}
+\contentsline {subsubsection}{\numberline {3.6.2}\IeC {\'U}plnost}{9}{subsubsection.3.6.2}
+\contentsline {subsubsection}{\numberline {3.6.3}F-m\IeC {\'\i }ra}{9}{subsubsection.3.6.3}
+\contentsline {subsubsection}{\numberline {3.6.4}Pr\IeC {\r u}m\IeC {\v e}rn\IeC {\'a} p\IeC {\v r}esnost}{10}{subsubsection.3.6.4}
+\contentsline {paragraph}{St\IeC {\v r}edn\IeC {\'\i } pr\IeC {\r u}m\IeC {\v e}rn\IeC {\'a} p\IeC {\v r}esnost}{10}{section*.13}
+\contentsline {section}{\numberline {4}Z\IeC {\'a}v\IeC {\v e}r}{11}{section.4}

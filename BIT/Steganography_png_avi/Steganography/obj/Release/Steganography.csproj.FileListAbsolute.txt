@@ -1,0 +1,13 @@
+C:\GitHub\School\BIT\Steganography_png_avi\Steganography\bin\Release\Steganography.exe.config
+C:\GitHub\School\BIT\Steganography_png_avi\Steganography\bin\Release\Steganography.exe
+C:\GitHub\School\BIT\Steganography_png_avi\Steganography\bin\Release\Steganography.pdb
+C:\GitHub\School\BIT\Steganography_png_avi\Steganography\obj\Release\Steganography.exe
+C:\GitHub\School\BIT\Steganography_png_avi\Steganography\obj\Release\Steganography.pdb
+C:\GitHub\School\BIT\Steganography_png_avi\Steganography\bin\Release\AForge.dll
+C:\GitHub\School\BIT\Steganography_png_avi\Steganography\bin\Release\AForge.Video.dll
+C:\GitHub\School\BIT\Steganography_png_avi\Steganography\bin\Release\AForge.Video.FFMPEG.dll
+C:\GitHub\School\BIT\Steganography_png_avi\Steganography\bin\Release\AForge.xml
+C:\GitHub\School\BIT\Steganography_png_avi\Steganography\bin\Release\AForge.Video.xml
+C:\GitHub\School\BIT\Steganography_png_avi\Steganography\bin\Release\AForge.Video.FFMPEG.xml
+C:\GitHub\School\BIT\Steganography_png_avi\Steganography\obj\Release\Steganography.Properties.Resources.resources
+C:\GitHub\School\BIT\Steganography_png_avi\Steganography\obj\Release\Steganography.csproj.GenerateResource.Cache

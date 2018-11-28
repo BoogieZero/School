@@ -1,0 +1,5 @@
+"C:\School\POT\Workspace\Workspace_POT\Program_1\main.s"
+-I "C:\School\POT\Workspace\Workspace_POT\Program_1"
+--gdwarf2
+-o "C:\School\POT\Workspace\Workspace_POT\Program_1\Debug\main.o"
+-alsh="C:\School\POT\Workspace\Workspace_POT\Program_1\Debug\main.lis"

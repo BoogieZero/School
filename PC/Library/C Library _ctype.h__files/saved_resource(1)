@@ -1,0 +1,146 @@
+var ADFMediaURLs='';
+var ADF_clickTag='http://adclick.g.doubleclick.net/aclk?sa=L&ai=CGnJziimVVtnoA9e-Wo-bnSjL1dG7BavBmux8wI23ARABIABgzIGAgNwuggEXY2EtcHViLTcxMzMzOTU3NzgyMDEwMjnIAQmpAsW96EZ9hYM-qAMBqgSjAU_Qyc-4QqxWlrJRmLUweZ_tfwlmqUaDwHwaABf2FTlChMy5qiAg_-M2ziVUZtV5kcl6j7MUIXhYhpvchXEB2iV0iAaYIUIQcmEX0POYy5nW_98gg6D1ILwuH2_7BQzt8DU5yV_H-XC5YThffDh7-kxaARnnL89F02uYlxwr0l8_bOlpiKdCxQeODd1YngZM0Kb2TL_1spGKhdjcmLleJ9MRaWeABuiupZng4bmByQGgBiHYBwA&num=1&sig=AOD64_2X4dYNlYlwsnOLxMo03atORi9l6Q&client=ca-pub-7133395778201029&adurl=https://server.adformdsp.net/C/?bn=11109443;crtbwp=VpUpigAA9FkKFp9XAAdNj6HHAwZKax5GO9AiTA;crtbdata=2QJAxd6f3S7jZmymMo880iwOU-Fds5CJ_5bTDOcocHcy3j6FqM4z0Q6lzVbaIVSCcxzPfJYx-7iNkYvuzthATer9v09yISPJ85H3fvuug9q4tbYbZC-6e7LUhU4qU7VjX1ToENRk0M_2IWVetrt8hnNivEuc35ajMC5ZEDVhLA5oy1J1kCYFwh7hsIzl8oQy1TCUFBvhnIkL32Yz9AP1mHW-WYsBdxHgrp7irXF8kx1x2V-0Mliamtfov_VwGnscHe8nZgX4t05k9JUJFwE_MQ2;adfibeg=0;cdata=dBHwuG9wt7YcurmOoOZwZrtLLZlIctuj06xvdfW--sbWiGwrTH85v3Uy_InV0BaH4_QAojZOy2Ik4Fb0ltO3LmwagXFQTxbunqtT3LOASpW6p6mbL0ndyg2;;CREFURL=http%3a%2f%2fwww.tutorialspoint.com';
+var ADF_ClickEvent='https://server.adformdsp.net/CE/?bn=11109443';
+var ADFtagID='1x';
+var ADFafbanID='11109443';
+var FlashObjectID='FlashID1x';
+var ADFDomain='https://s1.adformdsp.net/Banners/';
+var ADFDomainCDN='https://files.adform.net/Banners/';
+var ADFVideoCDN='rtmp://s1yx966tga68s8.cloudfront.net/cfx/st/';
+var ADFVideoCDNList=['rtmp://s1yx966tga68s8.cloudfront.net/cfx/st/'];
+var ADFBanVer='512-560';
+var ADFBanVerBak='0-560';
+var ADFbu=false;
+var ADFerrTimeout = 15*24*60*60*1000;
+var ADFTemplateVersion;
+var ADFClientSiteId;
+var ADFTemplateId;
+var ADFGroupId;
+var ADFbanID='11276886';
+var ADFmembID='459572';
+var ADFcmpgnID='201722';
+var ADFassetID='0';
+var ADFbanPlacID='893218';
+var ADFUnloadID='1773190543638990874';
+var ADFGeoData='68258;25016;203';
+Adform=window.Adform||{};
+Adform.cache="560";
+Adform.locationInfo={Country: 'Czech Republic', Region: 'Stredocesky Kraj', City: 'Dobris', Latitude: '49.781380', Longitude: '14.166590'};
+
+(function () {
+try{
+var i = Adform.ADFBannerUtils.getInstance()
+i.addBannerAttribute("1x", "bn", 11109443);
+i.addBannerAttribute("1x", "rotseqno", "1");
+i.addBannerAttribute("1x", "cookieID", "8474566652180277051");
+i.addBannerAttribute("1x", "smid", "0");
+i.addBannerAttribute("1x", "unloadID", "1773190543638990874");
+i.addBannerAttribute("1x", "height", 250);
+i.addBannerAttribute("1x", "width", 250);
+i.addBannerAttribute("1x", "clickEvent", "https://server.adformdsp.net/CE/?bn=11109443");
+i.addBannerAttribute("1x", "pm", "201722");
+i.addBannerAttribute("1x", "visibilityArea", [90]);
+i.addBannerAttribute("1x", "visibilityTime", [2]);
+i.addBannerAttribute("1x", "ms", "459572");
+i.addBannerAttribute("1x", "ban", "11276886");
+i.addBannerAttribute("1x", "stubFileURL", "%2fadform%2fIFrameManager.html");
+i.addBannerAttribute("1x", "serverTime", 1452616087968);
+i.addBannerAttribute("1x", "bnpl", "893218");
+i.addBannerAttribute("1x", "sendUnloadData", 1);
+i.addBannerAttribute("1x", "unloadScriptVersion", 13);
+i.addBannerAttribute("1x", "isDSPTag", true);
+i.addBannerAttribute("1x", "isEventsEnabled", 1);
+i.addBannerAttribute("1x", "rtbInventorySourceId", "1");
+i.addBannerAttribute("1x", "rtbReqId", "5695298a0000f4590a169f5705074d8f_1");
+i.setBannerRegisteredStatus("1x");
+}catch(e){}
+})();
+
+
+
+<!--
+var ADFtagid1906723289 = (typeof(ADFafbanID)!="undefined") ? ADFafbanID : 0;
+var ADFclickTagString1906723289 = (typeof(ADF_clickTag)!="undefined") ? escape(ADF_clickTag) : escape('https://server.adformdsp.net/C/?bn='+ADFtagid1906723289);
+var ADFclickTagParameters1906723289 = (typeof(ADF_clickTagPars)!="undefined") ? escape(ADF_clickTagPars) : '';
+var ADFclickEventString = (typeof(ADF_ClickEvent) != "undefined") ? escape(ADF_ClickEvent) : escape('https://server.adformdsp.net/C/?bn='+ADFtagid1906723289+';bsqno=1;li=1;cset=');
+var FlashObjectID=(typeof(FlashObjectID)!="undefined") ? FlashObjectID : 'adftest';
+var ADFDomain=(typeof(ADFDomain)!="undefined") ? ADFDomain : '';
+var ADFDomainCDN=(typeof(ADFDomainCDN)!="undefined") ? ADFDomainCDN : '';
+var ADFVideoCDN=(typeof(ADFVideoCDN)!="undefined") ? ADFVideoCDN : '';
+var ADFClientSiteId=(typeof(ADFClientSiteId)!="undefined") ? ADFClientSiteId : '';
+var ADFTemplateVersion=(typeof(ADFTemplateVersion)!="undefined") ? ADFTemplateVersion : '1906723289';
+var ADFTemplateId=(typeof(ADFTemplateId)!="undefined") ? ADFTemplateId : '';
+var ADFGroupId=(typeof(ADFGroupId)!="undefined") ? ADFGroupId : '';
+var ADFGeoData=(typeof ADFGeoData != "undefined" || ADFGeoData != null) ? ADFGeoData : '0;0;0';
+var ADFBanVer=(typeof(ADFBanVer)!="undefined") ? ADFBanVer : '1906723289';
+var ADFBanVerBak=(typeof(ADFBanVerBak)!="undefined") ? ADFBanVerBak : '1906723289';
+var ADFtagID=(typeof(ADFtagID)!="undefined") ? ADFtagID : '1x';
+if (typeof(ADFbu)=="undefined") ADFbu=false;
+
+var ADFcmpgnID = (typeof(ADFcmpgnID) != "undefined") ? ADFcmpgnID : '0';
+var ADFmembID = (typeof(ADFmembID) != "undefined") ? ADFmembID : '0';
+var ADFbanID = (typeof(ADFbanID) != "undefined") ? ADFbanID : '0';
+var ADFbanPlacID = (typeof(ADFbanPlacID) != "undefined") ? ADFbanPlacID : '0';
+var ADFUnloadID = (typeof(ADFUnloadID) != "undefined") ? ADFUnloadID : '0';
+
+
+var ADFclickTagVariables1906723289 = 'backupClickUrl='+ADFclickTagString1906723289+';C=1'+ADFclickTagParameters1906723289+'&clickTAG='+ADFclickTagString1906723289+';C=2'+ADFclickTagParameters1906723289+'';
+if (ADFMediaURLs) ADFclickTagVariables1906723289 = ADFMediaURLs;
+
+
+
+if(typeof Adform == "undefined") {var Adform = {};};
+Adform.BannerData                    = {};
+Adform.Data                          = Adform.BannerData;
+Adform.RMBData                       = Adform.BannerData;
+Adform.RMBData.type                  = 'standard';
+Adform.RMBData.subtype               = 'rmb';
+Adform.BannerData.timestamp          = '201512151742161573'; // std @timestamp@ rev. @version@
+Adform.BannerData.ADFFlash           =  ADFDomain +'Elements/Files/20230/782366/CZ_a_250x250_cursiva_ban_rtb_adform_HTML5accc76ced81bfdf852000073ab57d6ad0/782366.js?ADFassetID=782366&bv='+ADFBanVer;
+Adform.BannerData.ADFBuckup          =  ADFDomain +'Elements/Files/20230/782367.gif?bv='+ADFBanVerBak;
+
+Adform.BannerData.ADFBuckupClickURL  =  ADF_clickTag+';C=1';
+Adform.BannerData.width              = "250";
+Adform.BannerData.height             = "250";
+Adform.BannerData.ADFid              = ADFtagID;
+Adform.BannerData.ADFban             = (typeof(ADFafbanID)!="undefined") ? ADFafbanID : 0;
+Adform.BannerData.wmode              = "opaque";
+Adform.RMBData.landingPageTarget     = "_blank";
+Adform.BannerData.quality            = "Autohigh";
+Adform.BannerData.bannerAlign        = "";
+Adform.BannerData.clicktags          = 'cid='+ADFClientSiteId+'&geo='+ADFGeoData+'&gid='+ADFGroupId+'&tv='+ADFTemplateVersion+'&tid='+ADFTemplateId+'&domain='+ ADFDomain +'&bv='+ADFBanVer+'&ADFid='+ADFtagID+'&'+ADFclickTagVariables1906723289+'';
+Adform.BannerData.clicktags         += '&ADFcmpgnID='+ADFcmpgnID+'&ADFmembID='+ADFmembID+'&ADFbanID='+ADFbanID+'&ADFbanPlacID='+ADFbanPlacID+'&unloadID='+ADFUnloadID;
+Adform.BannerData.clicktags         += "&bn="+ADFtagid1906723289;
+Adform.BannerData.clicktags         += "&wmode=opaque";
+Adform.BannerData.clicktags         += "&evtBaseLink="+ADFclickEventString;
+
+Adform.BannerData.clicktags         += "&settingsXML=" +  ADFDomain + ADFbanID  + "/settings.xml?bv="+ADFBanVer;
+Adform.BannerData.clicktags         += "&ADFDomain=" + ( ADFDomain ).replace(/\/$/, "");
+
+
+
+
+
+Adform.RMBData.css =  ADFDomain  + "scripts/assets/css/Adform.RMB.css?bv="+ADFBanVer;
+Adform.RMBData.socializeURL = "";
+
+
+
+
+
+
+
+
+
+Adform.BannerList = Adform.BannerList || [];
+Adform.BannerList.push(Adform.BannerData);
+
+if (!Adform.RMB || !Adform.RMB.AdConstructor) {
+	// Load constructor script
+	document.write('<scr' + 'ipt type="text/javascript" src="'+ ADFDomain +'scripts/rmb/Adform.RMB.js?bv='+ Adform.cache +'"></scr' + 'ipt>');
+} else {
+	// Run loaded constructor
+	Adform.RMB.AdConstructor.build();
+}
+//-->
+

@@ -1,0 +1,241 @@
+var footerCarouselConfig = {
+	linksEnabled: true,
+	visibleItemsCount: 0,
+	items: []
+};
+
+$jquery1_11(function($) {
+
+	var carousel = carousel || {};
+	carousel.elements = carousel.elements || {};
+	carousel.elements.wrapper = $('.promo');
+	carousel.elements.classes = carousel.elements.classes || {};
+	carousel.elements.classes.responsiveXxs = 'promo--responsive-xxs';
+
+	carousel.setFullWidth = function (isTurnedOn) {
+		if (isTurnedOn) {
+			carousel.elements.wrapper.addClass(carousel.elements.classes.responsiveXxs);
+		} else {
+			carousel.elements.wrapper.removeClass(carousel.elements.classes.responsiveXxs);
+		}
+	}
+
+	$('.owl-lazy').removeClass('hide');
+
+	if (footerCarouselConfig.linksEnabled) {
+		$(".promo__inner a[data-url]").mousedown(function () {
+			var $this = $(this);
+			// replace href attribute
+			$this.attr('href', $this.attr('data-url'));
+		});
+	}
+
+	var $carousel = $(".promo__inner");
+
+	/**
+	 * update display count for first time visible promos
+	 * when the promos are currently visible or when user
+	 * scroll to them
+	 */
+	/* this event must be defined before Owl Carousel initialization below
+		(see https://github.com/smashingboxes/OwlCarousel2/issues/305
+		 and http://www.owlcarousel.owlgraphic.com/demos/events.html)
+	*/
+	$carousel.on("initialized.owl.carousel", function(carouselEvent) {
+		if (!footerCarouselConfig.linksEnabled || carouselEvent.item.index <= 0) return;
+
+		/**
+		 * checks if the promo area is visible
+		 * @return { boolean }
+		 */
+		var isPromoAreaVisible = function() {
+			var hT = $('.promo__inner').offset().top,
+				wH = $(window).height(),
+				wS = $(this).scrollTop();
+			// number "10" is experimental height as "top part" of the element
+			return (wS > (hT - wH + 10));
+		};
+
+		/**
+		 * increment display count for particular promos through ajax call
+		 * @param { number } promosCount count of promos to display
+		 */
+		var incrementDisplayCount = function(promosCount) {
+			for (var i = 0; i < promosCount; i++) {
+				var item = footerCarouselConfig.items[i];
+				if (item.displayed) continue;
+
+				// necessary to call inside anonymous function, because item is mutable
+				(function(item) {
+					$.get(item.onDisplayUrl, function () {
+						item.displayed = true;
+					});
+				})(item);
+			}
+		};
+
+		if (isPromoAreaVisible()) {
+			incrementDisplayCount(carouselEvent.item.index);
+		} else {
+			$(window).on("scroll", function(scrollEvent) {
+				if (!isPromoAreaVisible()) return;
+				incrementDisplayCount(carouselEvent.item.index);
+				// delete current handler from the event, we don't need call it anymore
+				$(this).off(scrollEvent);
+			});
+		}
+	});
+
+	$carousel.owlCarousel({
+		callbacks: true,
+		loop: true,
+		items: footerCarouselConfig.visibleItemsCount,
+		dots: false,
+		nav: true,
+		navRewind: false,
+		lazyLoad: true,
+		navText: [
+			"<i class='zurueck'><</i>",
+			"<i class='vorn'>></i>"
+		],
+		responsiveBaseElement: '.promo',
+		responsive: {
+			0: {
+				items: 1,
+				onLoadedLazy: function () {
+					carousel.setFullWidth(true);
+				},
+				onResized: function () {
+					carousel.setFullWidth(true);
+				},
+				onChanged: function () {
+					carousel.setFullWidth(true);
+				}
+				// nav:true
+			},
+			368: {
+				items: 2,
+				onLoadedLazy: function () {
+					carousel.setFullWidth(false);
+				},
+				onResized: function () {
+					carousel.setFullWidth(false);
+				},
+				onChanged: function () {
+					carousel.setFullWidth(false);
+				}
+				// nav:false
+			},
+			552: {
+				items: 3,
+				onLoadedLazy: function () {
+					carousel.setFullWidth(false);
+				},
+				onResized: function () {
+					carousel.setFullWidth(false);
+				},
+				onChanged: function () {
+					carousel.setFullWidth(false);
+				}
+				// nav:false
+			},
+			736: {
+				items: 4,
+				onLoadedLazy: function () {
+					carousel.setFullWidth(false);
+				},
+				onResized: function () {
+					carousel.setFullWidth(false);
+				},
+				onChanged: function () {
+					carousel.setFullWidth(false);
+				}
+				// nav:false
+			},
+			920: {
+				items: 5,
+				onLoadedLazy: function () {
+					carousel.setFullWidth(false);
+				},
+				onResized: function () {
+					carousel.setFullWidth(false);
+				},
+				onChanged: function () {
+					carousel.setFullWidth(false);
+				}
+				// nav:true,
+				// loop:false
+			},
+			1104: {
+				items: 6,
+				onLoadedLazy: function () {
+					carousel.setFullWidth(false);
+				},
+				onResized: function () {
+					carousel.setFullWidth(false);
+				},
+				onChanged: function () {
+					carousel.setFullWidth(false);
+				}
+				// nav:true,
+				// loop:false
+			},
+			1288: {
+				items: 7,
+				onLoadedLazy: function () {
+					carousel.setFullWidth(false);
+				},
+				onResized: function () {
+					carousel.setFullWidth(false);
+				},
+				onChanged: function () {
+					carousel.setFullWidth(false);
+				}
+				// nav:true,
+				// loop:false
+			}
+		}
+	});
+
+	$carousel.on("translated.owl.carousel", function(event) {
+		if (!footerCarouselConfig.linksEnabled) return;
+
+		// calculate range of visible items indexes
+		var visibleIndexes = [];
+		var index = event.item.index > event.item.count
+			? event.item.count - footerCarouselConfig.visibleItemsCount + (event.item.index - event.item.count)
+			: event.item.index - footerCarouselConfig.visibleItemsCount;
+		for (var i = 0; i < footerCarouselConfig.visibleItemsCount; i++) {
+			if (index === event.item.count) {
+				index = 0;
+			}
+			visibleIndexes.push(index++);
+		}
+
+		// call ajax callback for current visible items
+		for (i = 0; i < visibleIndexes.length; i++) {
+			var item = footerCarouselConfig.items[visibleIndexes[i]];
+			if (typeof item != 'undefined') {
+				// item was already displayed
+				if (item.displayed) continue;
+
+				// necessary to call inside anonymous function, because item is mutable
+				(function(item) {
+					$.get(item.onDisplayUrl, function () {
+						item.displayed = true;
+					});
+				})(item);
+			}
+		}
+	});
+
+	/* [workaround] for [RO-209] */
+	$('.promo__inner .owl-prev').bind('click', function() {
+		$carousel.trigger('prev.owl.carousel');
+	});
+
+	$('.promo__inner .owl-next').bind('click', function() {
+		$carousel.trigger('next.owl.carousel');
+	});
+	/* // see above */
+});

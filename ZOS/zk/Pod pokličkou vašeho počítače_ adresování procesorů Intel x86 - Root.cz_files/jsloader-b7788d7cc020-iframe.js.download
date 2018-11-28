@@ -1,0 +1,40 @@
+var iinfo = iinfo || {};
+
+/**
+ * Registr iframe reklam podle značek "mark"
+ *
+ * @type {object}
+ */
+iinfo.adIframes = iinfo.adIframes || {};
+
+/**
+ * Iframe reklama
+ *
+ * @param {string} className
+ * @param {string} url
+ * @constructor
+ */
+iinfo.AdIframe = function (className, url) {
+	this.iframeElement = document.querySelector('.' + className);
+	this.url = url.replace(/&amp;/g, '&');
+};
+
+iinfo.AdIframe.prototype.resize = function () {
+	this.iframeElement.height = this.iframeElement.contentWindow.document.body.scrollHeight + 'px';
+	this.iframeElement.width = this.iframeElement.contentWindow.document.body.scrollWidth + 'px';
+};
+
+iinfo.AdIframe.prototype.load = function (onLoadCallback) {
+	var that = this;
+	this.iframeElement.addEventListener('load', function () {
+		setTimeout(function () {
+			that.resize();
+
+			if (typeof onLoadCallback === 'function') {
+				onLoadCallback.apply(that, []);
+			}
+		}, 250);
+	});
+
+	this.iframeElement.setAttribute('src', this.url);
+};

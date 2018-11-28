@@ -1,0 +1,226 @@
+Archive member included because of file (symbol)
+
+c:\program files\renesas\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\h8300-elf\lib\h8300s\liboptc.a(exit.o)
+                              D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\start.o (exit)
+c:\program files\renesas\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\h8300-elf\lib\h8300s\liboptc.a(_exit.o)
+                              c:\program files\renesas\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\h8300-elf\lib\h8300s\liboptc.a(exit.o) (_exit)
+
+Allocating common symbols
+Common symbol       size              file
+
+bbb                 0x2               D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm.o
+ccc                 0x1               D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+.vects          0x00000000        0x8
+ *(.vects)
+ .vects         0x00000000        0x8 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\vects.o
+                0x00000000                HardwareVectors
+
+.text           0x00000400       0xf4
+ *(.text)
+ .text          0x00000400        0x0 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\vects.o
+ .text          0x00000400       0x50 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\start.o
+                0x00000400                start
+ .text          0x00000450        0xc D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\inthandler.o
+                0x00000450                INT_Manual_Reset
+ .text          0x0000045c        0xc D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\hwinit.o
+                0x0000045c                hw_initialise
+ .text          0x00000468       0x74 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm.o
+                0x00000468                main
+                0x000004aa                proc2
+ .text          0x000004dc        0x6 c:\program files\renesas\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\h8300-elf\lib\h8300s\liboptc.a(exit.o)
+                0x000004dc                exit
+ *fill*         0x000004e2        0x2 00
+ .text          0x000004e4       0x10 c:\program files\renesas\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\h8300-elf\lib\h8300s\liboptc.a(_exit.o)
+                0x000004e4                _exit
+ *(.text.*)
+                0x000004f4                etext = .
+
+.init
+ *(.init)
+
+.fini
+ *(.fini)
+
+.got
+ *(.got)
+ *(.got.plt)
+
+.rodata         0x000004f4        0x0
+ *(.rodata)
+ *(.rodata.*)
+                0x000004f4                _erodata = .
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame
+ *(.eh_frame)
+
+.jcr
+ *(.jcr)
+
+.tors           0x000004f4        0x0
+                0x000004f4                __CTOR_LIST__ = .
+                0x000004f4                ___ctors = .
+ *(.ctors)
+                0x000004f4                ___ctors_end = .
+                0x000004f4                __CTOR_END__ = .
+                0x000004f4                __DTOR_LIST__ = .
+                0x000004f4                ___dtors = .
+ *(.dtors)
+                0x000004f4                ___dtors_end = .
+                0x000004f4                __DTOR_END__ = .
+                0x000004f4                _mdata = .
+
+.data           0x00ff4000       0x10 load address 0x000004f4
+                0x00ff4000                _data = .
+ *(.data)
+ .data          0x00ff4000        0x0 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\vects.o
+ .data          0x00ff4000        0x0 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\start.o
+ .data          0x00ff4000        0x0 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\inthandler.o
+ .data          0x00ff4000        0x0 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\hwinit.o
+ .data          0x00ff4000       0x10 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm.o
+                0x00ff4000                aaa
+ .data          0x00ff4010        0x0 c:\program files\renesas\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\h8300-elf\lib\h8300s\liboptc.a(exit.o)
+ .data          0x00ff4010        0x0 c:\program files\renesas\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\h8300-elf\lib\h8300s\liboptc.a(_exit.o)
+ *(.data.*)
+                0x00ff4010                _edata = .
+
+.gcc_exc
+ *(.gcc_exc)
+
+.bss            0x00ff4010        0x3 load address 0x00000504
+                0x00ff4010                _bss = .
+ *(.bss)
+ .bss           0x00ff4010        0x0 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\vects.o
+ .bss           0x00ff4010        0x0 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\start.o
+ .bss           0x00ff4010        0x0 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\inthandler.o
+ .bss           0x00ff4010        0x0 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\hwinit.o
+ .bss           0x00ff4010        0x0 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm.o
+ .bss           0x00ff4010        0x0 c:\program files\renesas\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\h8300-elf\lib\h8300s\liboptc.a(exit.o)
+ .bss           0x00ff4010        0x0 c:\program files\renesas\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\h8300-elf\lib\h8300s\liboptc.a(_exit.o)
+ *(.bss.*)
+ *(COMMON)
+ COMMON         0x00ff4010        0x3 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm.o
+                0x00ff4010                bbb
+                0x00ff4012                ccc
+                0x00ff4013                _ebss = .
+                0x00ff4013                _end = .
+
+.stack          0x00ffc000        0x0
+                0x00ffc000                _stack = .
+LOAD D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\vects.o
+LOAD D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\start.o
+LOAD D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\inthandler.o
+LOAD D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\hwinit.o
+LOAD D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm.o
+START GROUP
+LOAD c:\program files\renesas\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\lib\gcc\h8300-elf\4.5-GNUH8_v11.02\h8300s\libgcc.a
+LOAD c:\program files\renesas\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\h8300-elf\lib\h8300s\liboptc.a
+LOAD c:\program files\renesas\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\h8300-elf\lib\h8300s\liboptm.a
+END GROUP
+OUTPUT(D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm.x elf32-h8300)
+
+.debug_abbrev   0x00000000      0x150
+ .debug_abbrev  0x00000000       0x4e D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\vects.o
+ .debug_abbrev  0x0000004e       0x14 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\start.o
+ .debug_abbrev  0x00000062       0x27 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\inthandler.o
+ .debug_abbrev  0x00000089       0x27 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\hwinit.o
+ .debug_abbrev  0x000000b0       0xa0 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm.o
+
+.debug_info     0x00000000      0x258
+ .debug_info    0x00000000       0x52 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\vects.o
+ .debug_info    0x00000052       0x9b D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\start.o
+ .debug_info    0x000000ed       0x37 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\inthandler.o
+ .debug_info    0x00000124       0x37 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\hwinit.o
+ .debug_info    0x0000015b       0xfd D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm.o
+
+.debug_line     0x00000000      0x260
+ .debug_line    0x00000000       0x5b D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\vects.o
+ .debug_line    0x0000005b       0x7e D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\start.o
+ .debug_line    0x000000d9       0x70 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\inthandler.o
+ .debug_line    0x00000149       0x6c D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\hwinit.o
+ .debug_line    0x000001b5       0xab D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm.o
+
+.debug_pubnames
+                0x00000000       0xae
+ .debug_pubnames
+                0x00000000       0x26 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\vects.o
+ .debug_pubnames
+                0x00000026       0x27 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\inthandler.o
+ .debug_pubnames
+                0x0000004d       0x24 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\hwinit.o
+ .debug_pubnames
+                0x00000071       0x3d D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm.o
+
+.debug_pubtypes
+                0x00000000       0x12
+ .debug_pubtypes
+                0x00000000       0x12 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\vects.o
+
+.debug_str      0x00000000      0x148
+ .debug_str     0x00000000       0x6d D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\vects.o
+ .debug_str     0x0000006d       0x4a D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\inthandler.o
+                                 0x61 (size before relaxing)
+ .debug_str     0x000000b7       0x43 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\hwinit.o
+                                 0x5a (size before relaxing)
+ .debug_str     0x000000fa       0x4e D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm.o
+                                 0x77 (size before relaxing)
+
+.comment        0x00000000       0x1c
+ .comment       0x00000000       0x1c D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\vects.o
+                                 0x1d (size before relaxing)
+ .comment       0x00000000       0x1d D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\inthandler.o
+ .comment       0x00000000       0x1d D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\hwinit.o
+ .comment       0x00000000       0x1d D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm.o
+ .comment       0x00000000       0x1d c:\program files\renesas\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\h8300-elf\lib\h8300s\liboptc.a(exit.o)
+
+.debug_aranges  0x00000000       0x80
+ .debug_aranges
+                0x00000000       0x20 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\start.o
+ .debug_aranges
+                0x00000020       0x20 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\inthandler.o
+ .debug_aranges
+                0x00000040       0x20 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\hwinit.o
+ .debug_aranges
+                0x00000060       0x20 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm.o
+
+.debug_frame    0x00000000       0xd0
+ .debug_frame   0x00000000       0x38 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\inthandler.o
+ .debug_frame   0x00000038       0x38 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\hwinit.o
+ .debug_frame   0x00000070       0x60 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm.o
+
+.debug_loc      0x00000000       0xb0
+ .debug_loc     0x00000000       0x2c D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\inthandler.o
+ .debug_loc     0x0000002c       0x2c D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\hwinit.o
+ .debug_loc     0x00000058       0x58 D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm.o
+
+
+==============================================================
+
+Listfile generated by KPIT GNUH8 [ELF]-v11.02 on Thursday, February 23, 2012, 14:00:25
+
+Build options:
+
+-T "D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm_Debug_auto.gsi"
+-T "D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm_input.tmp" 
+-L "c:\program files\renesas\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\lib\gcc\h8300-elf\4.5-GNUH8_v11.02\h8300s"
+-L "c:\program files\renesas\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\h8300-elf\lib\h8300s"
+-Map "D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm.map"
+-( -l "gcc" -l "optc" -l "optm" -)
+-o "D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm.x"
+-e _start
+INPUT("D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\vects.o")
+INPUT("D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\start.o")
+INPUT("D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\inthandler.o")
+INPUT("D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\hwinit.o")
+INPUT("D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm.o")

@@ -1,0 +1,3 @@
+\select@language {czech}
+\contentsline {section}{\numberline {1}Zad\IeC {\'a}n\IeC {\'\i }}{2}
+\contentsline {paragraph}{\texttt {Spln\IeC {\v e}no:}}{2}

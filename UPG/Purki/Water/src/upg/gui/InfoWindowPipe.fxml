@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="700.0" minWidth="600.0" prefHeight="700.0" prefWidth="600.0" style="-fx-background-color: LightGray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="upg.controllers.InfoWindowPipeController">
+   <children>
+      <Button layoutX="267.0" layoutY="655.0" mnemonicParsing="false" onAction="#okButton" text="OK" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="262.0" layoutY="37.0" text="Nastaveni ventilu trubky" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="78.0" text="Otevreni ventilu trubky (%):" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="70.0" />
+      <ChoiceBox fx:id="VALVE_OPENESS" layoutX="166.0" layoutY="66.0" prefWidth="150.0" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="65.0" />
+      <Label fx:id="CROSS_SECTION" layoutX="15.0" layoutY="119.0" text="Prumer trubky: " />
+      <Label fx:id="WATER_FLOW" layoutX="15.0" layoutY="167.0" text="Proud vody trubkou (m3): " />
+      <LineChart fx:id="VALVE_OPENESS_GRAPH" layoutX="-6.0" layoutY="214.0" maxHeight="350.0" maxWidth="240.0" minHeight="350.0" minWidth="240.0" prefHeight="350.0" prefWidth="240.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="300.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <LineChart fx:id="WATER_FLOW_GRAPH" layoutX="111.0" layoutY="136.0" maxHeight="350.0" maxWidth="240.0" minHeight="350.0" minWidth="240.0" prefHeight="350.0" prefWidth="240.0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="300.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>

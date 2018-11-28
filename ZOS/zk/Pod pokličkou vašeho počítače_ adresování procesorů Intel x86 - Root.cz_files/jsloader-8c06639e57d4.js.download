@@ -1,0 +1,1555 @@
+/*! modernizr 3.0.0 (Custom Build) | MIT *
+ * http://modernizr.com/download/?-csscalc-flexbox-mediaqueries-svg-mq-shiv !*/
+!function(e,t,n){function r(e){var t=C.className,n=Modernizr._config.classPrefix||"";if(E&&(t=t.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+n+"no-js(\\s|$)");t=t.replace(r,"$1"+n+"js$2")}Modernizr._config.enableClasses&&(t+=" "+n+e.join(" "+n),E?C.className.baseVal=t:C.className=t)}function o(e,t){return typeof e===t}function a(){var e,t,n,r,a,i,s;for(var l in S){if(e=[],t=S[l],t.name&&(e.push(t.name.toLowerCase()),t.options&&t.options.aliases&&t.options.aliases.length))for(n=0;n<t.options.aliases.length;n++)e.push(t.options.aliases[n].toLowerCase());for(r=o(t.fn,"function")?t.fn():t.fn,a=0;a<e.length;a++)i=e[a],s=i.split("."),1===s.length?Modernizr[s[0]]=r:(!Modernizr[s[0]]||Modernizr[s[0]]instanceof Boolean||(Modernizr[s[0]]=new Boolean(Modernizr[s[0]])),Modernizr[s[0]][s[1]]=r),y.push((r?"":"no-")+s.join("-"))}}function i(){return"function"!=typeof t.createElement?t.createElement(arguments[0]):E?t.createElementNS.call(t,"http://www.w3.org/2000/svg",arguments[0]):t.createElement.apply(t,arguments)}function s(){var e=t.body;return e||(e=i(E?"svg":"body"),e.fake=!0),e}function l(e,n,r,o){var a,l,c,u,f="modernizr",d=i("div"),m=s();if(parseInt(r,10))for(;r--;)c=i("div"),c.id=o?o[r]:f+(r+1),d.appendChild(c);return a=i("style"),a.type="text/css",a.id="s"+f,(m.fake?m:d).appendChild(a),m.appendChild(d),a.styleSheet?a.styleSheet.cssText=e:a.appendChild(t.createTextNode(e)),d.id=f,m.fake&&(m.style.background="",m.style.overflow="hidden",u=C.style.overflow,C.style.overflow="hidden",C.appendChild(m)),l=n(d,e),m.fake?(m.parentNode.removeChild(m),C.style.overflow=u,C.offsetHeight):d.parentNode.removeChild(d),!!l}function c(e){return e.replace(/([a-z])-([a-z])/g,function(e,t,n){return t+n.toUpperCase()}).replace(/^-/,"")}function u(e,t){return!!~(""+e).indexOf(t)}function f(e,t){return function(){return e.apply(t,arguments)}}function d(e,t,n){var r;for(var a in e)if(e[a]in t)return n===!1?e[a]:(r=t[e[a]],o(r,"function")?f(r,n||t):r);return!1}function m(e){return e.replace(/([A-Z])/g,function(e,t){return"-"+t.toLowerCase()}).replace(/^ms-/,"-ms-")}function p(t,r){var o=t.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(m(t[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var a=[];o--;)a.push("("+m(t[o])+":"+r+")");return a=a.join(" or "),l("@supports ("+a+") { #modernizr { position: absolute; } }",function(e){return"absolute"==getComputedStyle(e,null).position})}return n}function h(e,t,r,a){function s(){f&&(delete z.style,delete z.modElem)}if(a=o(a,"undefined")?!1:a,!o(r,"undefined")){var l=p(e,r);if(!o(l,"undefined"))return l}for(var f,d,m,h,g,v=["modernizr","tspan"];!z.style;)f=!0,z.modElem=i(v.shift()),z.style=z.modElem.style;for(m=e.length,d=0;m>d;d++)if(h=e[d],g=z.style[h],u(h,"-")&&(h=c(h)),z.style[h]!==n){if(a||o(r,"undefined"))return s(),"pfx"==t?h:!0;try{z.style[h]=r}catch(y){}if(z.style[h]!=g)return s(),"pfx"==t?h:!0}return s(),!1}function g(e,t,n,r,a){var i=e.charAt(0).toUpperCase()+e.slice(1),s=(e+" "+N.join(i+" ")+i).split(" ");return o(t,"string")||o(t,"undefined")?h(s,t,r,a):(s=(e+" "+T.join(i+" ")+i).split(" "),d(s,t,n))}function v(e,t,r){return g(e,n,n,t,r)}var y=[],C=t.documentElement,E="svg"===C.nodeName.toLowerCase();E||!function(e,t){function n(e,t){var n=e.createElement("p"),r=e.getElementsByTagName("head")[0]||e.documentElement;return n.innerHTML="x<style>"+t+"</style>",r.insertBefore(n.lastChild,r.firstChild)}function r(){var e=C.elements;return"string"==typeof e?e.split(" "):e}function o(e,t){var n=C.elements;"string"!=typeof n&&(n=n.join(" ")),"string"!=typeof e&&(e=e.join(" ")),C.elements=n+" "+e,c(t)}function a(e){var t=y[e[g]];return t||(t={},v++,e[g]=v,y[v]=t),t}function i(e,n,r){if(n||(n=t),f)return n.createElement(e);r||(r=a(n));var o;return o=r.cache[e]?r.cache[e].cloneNode():h.test(e)?(r.cache[e]=r.createElem(e)).cloneNode():r.createElem(e),!o.canHaveChildren||p.test(e)||o.tagUrn?o:r.frag.appendChild(o)}function s(e,n){if(e||(e=t),f)return e.createDocumentFragment();n=n||a(e);for(var o=n.frag.cloneNode(),i=0,s=r(),l=s.length;l>i;i++)o.createElement(s[i]);return o}function l(e,t){t.cache||(t.cache={},t.createElem=e.createElement,t.createFrag=e.createDocumentFragment,t.frag=t.createFrag()),e.createElement=function(n){return C.shivMethods?i(n,e,t):t.createElem(n)},e.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+r().join().replace(/[\w\-:]+/g,function(e){return t.createElem(e),t.frag.createElement(e),'c("'+e+'")'})+");return n}")(C,t.frag)}function c(e){e||(e=t);var r=a(e);return!C.shivCSS||u||r.hasCSS||(r.hasCSS=!!n(e,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),f||l(e,r),e}var u,f,d="3.7.3",m=e.html5||{},p=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,h=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,g="_html5shiv",v=0,y={};!function(){try{var e=t.createElement("a");e.innerHTML="<xyz></xyz>",u="hidden"in e,f=1==e.childNodes.length||function(){t.createElement("a");var e=t.createDocumentFragment();return"undefined"==typeof e.cloneNode||"undefined"==typeof e.createDocumentFragment||"undefined"==typeof e.createElement}()}catch(n){u=!0,f=!0}}();var C={elements:m.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",version:d,shivCSS:m.shivCSS!==!1,supportsUnknownElements:f,shivMethods:m.shivMethods!==!1,type:"default",shivDocument:c,createElement:i,createDocumentFragment:s,addElements:o};e.html5=C,c(t),"object"==typeof module&&module.exports&&(module.exports=C)}("undefined"!=typeof e?e:this,t);var S=[],b={_version:"3.0.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,t){var n=this;setTimeout(function(){t(n[e])},0)},addTest:function(e,t,n){S.push({name:e,fn:t,options:n})},addAsyncTest:function(e){S.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=b,Modernizr=new Modernizr,Modernizr.addTest("svg",!!t.createElementNS&&!!t.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect);var x=b._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):[];b._prefixes=x,Modernizr.addTest("csscalc",function(){var e="width:",t="calc(10px);",n=i("a");return n.style.cssText=e+x.join(t+e),!!n.style.length});var w=function(){var t=e.matchMedia||e.msMatchMedia;return t?function(e){var n=t(e);return n&&n.matches||!1}:function(t){var n=!1;return l("@media "+t+" { #modernizr { position: absolute; } }",function(t){n="absolute"==(e.getComputedStyle?e.getComputedStyle(t,null):t.currentStyle).position}),n}}();b.mq=w,Modernizr.addTest("mediaqueries",w("only all"));var _="Moz O ms Webkit",N=b._config.usePrefixes?_.split(" "):[];b._cssomPrefixes=N;var T=b._config.usePrefixes?_.toLowerCase().split(" "):[];b._domPrefixes=T;var j={elem:i("modernizr")};Modernizr._q.push(function(){delete j.elem});var z={style:j.elem.style};Modernizr._q.unshift(function(){delete z.style}),b.testAllProps=g,b.testAllProps=v,Modernizr.addTest("flexbox",v("flexBasis","1px",!0)),a(),r(y),delete b.addTest,delete b.addAsyncTest;for(var k=0;k<Modernizr._q.length;k++)Modernizr._q[k]();e.Modernizr=Modernizr}(window,document);$("html").addClass("js-on");
+
+function emailDecode(email) {
+	email = email.replace(/ \(?zavin\u00e1\u010d\)? /i, '@');
+	email = email.replace(/ \(?te\u010dka\)? /gi, '.');
+	email = email.replace(/(([^ .@]+\.)*[^ .@]+@([^ .@]+\.)+[^ .@]+)/g,
+			'<a href="mailto:$1">$1</a>');
+	return email;
+}
+
+function emailDecodeByTagName(tagName) {
+	var alltags = document.getElementsByTagName(tagName);
+	for (i = 0; i < alltags.length; i++) {
+			alltags[i].innerHTML = emailDecode(alltags[i].innerHTML);
+	}
+}
+
+function emailDecodeById(id) {
+	element = document.getElementById(id);
+	if (element) {
+			element.innerHTML = emailDecode(element.innerHTML);
+	}
+}
+
+function setInputHelp(inputSelector, helpContent) {
+	$(inputSelector).css("color", "#AAA").val(helpContent)
+		.focus(function() {
+			var $this = $(this);
+			if ($this.val() == helpContent) {
+				$this.val("");
+				$this.css("color", "black");
+			}
+		})
+		.blur(function() {
+			var $this = $(this);
+			if ($this.val() == "") {
+				$this.val(helpContent);
+				$this.css("color", "#AAA");
+			}
+		});
+}
+
+/**
+* AJAX Nette Framework plugin for jQuery
+*
+* @copyright   Copyright (c) 2009 Jan Marek
+* @license MIT
+* @link http://nettephp.com/cs/extras/jquery-ajax
+* @version 0.2
+*/
+$.extend({
+	nette: {
+		updateSnippet: function(id, html) {
+			$("#" + id).html(html);
+		},
+
+		success: function(payload) {
+			// redirect
+			if (payload.redirect) {
+				window.location.href = payload.redirect;
+				return;
+			}
+
+			// snippets
+			if (payload.snippets) {
+				for (var i in payload.snippets) {
+					$.nette.updateSnippet(i, payload.snippets[i]);
+				}
+			}
+		}
+   }
+});
+
+// prevzato z JQuery Cookie pluginu
+function cookie(name, value, options) {
+	if (typeof value != 'undefined') { // name and value given, set cookie
+		options = options || {};
+		if (value === null) {
+			value = '';
+			options.expires = -1;
+		}
+		var expires = '';
+		if (options.expires && (typeof options.expires == 'number' || options.expires.toUTCString)) {
+			var date;
+			if (typeof options.expires == 'number') {
+				date = new Date();
+				date.setTime(date.getTime() + (options.expires * 24 * 60 * 60 * 1000));
+			} else {
+				date = options.expires;
+			}
+			expires = '; expires=' + date.toUTCString(); // use expires attribute, max-age is not supported by IE
+		}
+		// CAUTION: Needed to parenthesize options.path and options.domain
+		// in the following expressions, otherwise they evaluate to undefined
+		// in the packed version for some reason...
+		var path = options.path ? '; path=' + (options.path) : '';
+		var domain = options.domain ? '; domain=' + (options.domain) : '';
+		var secure = options.secure ? '; secure' : '';
+		document.cookie = [name, '=', encodeURIComponent(value), expires, path, domain, secure].join('');
+	} else { // only name given, get cookie
+		var cookieValue = null;
+		if (document.cookie && document.cookie != '') {
+			var cookies = document.cookie.split(';');
+			for (var i = 0; i < cookies.length; i++) {
+				var cookie = cookies[i].replace(/^\s+|\s+$/g, "");
+				// Does this cookie string begin with the name we want?
+				if (cookie.substring(0, name.length + 1) == (name + '=')) {
+					cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+					break;
+				}
+			}
+		}
+		return cookieValue;
+	}
+};
+
+/**
+ * Zavolá subrequest a výsledek předá starému Nette ajaxu ($.nette) pro případné vyvolání překreslení komponent.
+ *
+ * @param {Object|string} anchorOrUrl Element (nejčastěji odkaz <a>), který má v atributu data-ajax-url adresu pro subrequest, nebo přímo string s URL
+ * @param {Function} callback Volitelný callback, který se zavolá po úspěšném získání dat subrequestem
+ * @returns {boolean}
+ */
+function reloadComponent(anchorOrUrl, callback) {
+	var url;
+	if (typeof anchorOrUrl === 'string') {
+		url = anchorOrUrl;
+	} else {
+		url = anchorOrUrl.getAttribute('data-ajax-url');
+	}
+	$.get(url, {}, function (data) {
+		$.nette.success(data);
+		if (typeof callback === 'function') {
+			callback(data);
+		}
+	}, 'json');
+	return false;
+}
+
+var SkyscraperSticker = {
+	sticked: false,
+	getTopPositionForSticking: function () {
+		return 0;
+	},
+	isStickingNecessary: function () {
+		return $(document).scrollTop() > $('#sefa').outerHeight();
+	},
+	start: function () {
+		SkyscraperSticker.sticked = true;
+		$('.skyscraper-sticky').css({
+			'position': 'fixed',
+			'left': ''
+		});
+		$('.ad-skyscraper-sticky-left .skyscraper-sticky, .ad-skyscraper-sticky-right .skyscraper-sticky').css({
+			'top': SkyscraperSticker.getTopPositionForSticking()
+		});
+	},
+	stop: function () {
+		SkyscraperSticker.sticked = false;
+		$('.skyscraper-sticky').css({
+			'position': 'absolute'
+		});
+		$('.ad-skyscraper-sticky-left .skyscraper-sticky, .ad-skyscraper-sticky-right .skyscraper-sticky').css({
+			'top': 'auto'
+		});
+		$('.ad-skyscraper-sticky-left .skyscraper-sticky').css({
+			'left': 0,
+		});
+		$('.ad-skyscraper-sticky-right .skyscraper-sticky').css({
+			'left': 'auto',
+		});
+	},
+	fixPosition: function () {
+		/* Left sticky skyscraper */
+		var adOffsetL = $(".ad-skyscraper-sticky-left").offset();
+		if (adOffsetL/* && !isAndroid*/) {
+			$('.ad-skyscraper-sticky-left .skyscraper-sticky').css({
+				'left': ($(this).scrollLeft() * (-1)) + adOffsetL.left,
+			});
+		}
+	}
+};
+
+/* Horizontalni pozicovacni fixovanych reklamnich pozic */
+var stickyHandler = function () {
+	SkyscraperSticker.fixPosition();
+
+	if (SkyscraperSticker.isStickingNecessary()) {
+		SkyscraperSticker.start();
+	} else {
+		SkyscraperSticker.stop();
+	}
+};
+
+$(window).bind('scroll', stickyHandler);
+$(window).bind('load', stickyHandler);
+$(window).bind('resize', stickyHandler);
+
+//posun reklamní pozice background o 40px, které překrývá firemní lišta, protože AdOcean má výchozí umístění background-position: 50% 0;
+$(document).ready(function(){
+	$('.adp-background').css('background-position','50% 40px');
+});
+
+// vytahne hodnotu parametru z query stringu (vyuzivano v trackovani socialnich
+// interakci pomoci Google Analytics)
+function extractParamFromUri(uri, paramName) {
+	if (!uri) {
+		return;
+	}
+	var regex = new RegExp('[\\?&#]' + paramName + '=([^&#]*)');
+	var params = regex.exec(uri);
+	if (params != null) {
+		return unescape(params[1]);
+	}
+	return;
+}
+
+/* TESTING IF ELEMENT EXISTS */
+$.fn.exists = function(callback) {
+  var args = [].slice.call(arguments, 1);
+
+  if (this.length) {
+	callback.call(this, args);
+  }
+
+  return this;
+};
+
+/* RELATED ARTICLES POP UP BUBBLE */
+var relatedTextsFixed = function(param) {
+	var popUpEnabled = false;
+	var scrollDetected;
+	var $relatedTexts = $('.relatedTexts');
+	var triggerPosition;
+
+	// If called to canclel the pop up
+  	if(param == "cancel") {
+  		$relatedTexts.removeClass('hidden popUp');
+  		$('.relatedTexts .close').remove();
+  	}
+
+  	// Set up the pop up
+  	else {
+
+		// Switch on pop up version and add close button
+		$relatedTexts.addClass('hidden popUp').append( "<a class=\"close\">Zavřít</a>" );
+
+		// Close button hides and disables the popUp, so it does not appear during scrolling again
+		$relatedTexts.find('.close').click(function() {
+		 	$relatedTexts.addClass('hidden');
+		 	popUpEnabled = false;
+		});
+
+
+		// Select random item from the list and hide others
+		var random = Math.floor(Math.random() * $('.relatedTexts .item').length);
+		$('.relatedTexts .item').hide().eq(random).show();
+
+		// Set trigger position
+		var setUpTriggerPosition = function() {
+			triggerPosition = $('#main .urs').offset();
+			triggerPosition = triggerPosition.top + $('#main .urs').height() - $(window).height() * 0.5;
+			popUpEnabled = true;
+		}
+
+		// If document is loaded measure the article's end position
+		if (document.readyState === "complete") {
+			setUpTriggerPosition();
+		} else {
+			$(window).load(function() {
+			setUpTriggerPosition();
+			});
+		}
+
+
+		// When measured end of article is past the middle of viewport - show popUp
+		var popUpFunction = function() {
+			var scrollTop = $(this).scrollTop();
+			if (scrollTop > triggerPosition) {
+				$relatedTexts.removeClass('hidden');
+			}
+		}
+
+		// Checking for scrolling
+		$(window).scroll(function(event){
+				scrollDetected = true;
+		});
+
+		// run popUpFunction when scrolled while popUp is enabled
+		setInterval(function() {
+			if (scrollDetected && popUpEnabled) {
+				popUpFunction();
+				scrollDetected = false;
+			}
+		}, 1000);
+	}
+};
+
+
+/* relatedTextsFixed("cancel"); parameter "cancel" will remove the popup and its CSS */
+
+
+/**
+ * Obaleni pozadovanych casti reklamy Sklik odkazem
+ * Sklik pridava odkaz pouze k nadpisu reklamy, nikoliv k jejim textum
+ * a jeho API neumoznuje odkaz k textum pridat, proto musime v pripade
+ * potreby obalit texty sami.
+ *
+ * @param id ID tagu s reklamou
+ * @param part Cast reklamy, jejiz vnitrek se ma obalit odkazem
+ * (pokud neni vyplnena, obali se vsechny casti)
+ */
+function sklikLinkify(id, part) {
+	if (part == undefined) {
+		sklikLinkify(id, 'text1');
+		sklikLinkify(id, 'text2');
+	} else if (part == 'text1') {
+		var selector = '.sklik-descr1';
+	} else if (part == 'text2') {
+		var selector = '.sklik-descr2';
+	} else {
+		return;
+	}
+	$(document).ready(function() {
+		$('#' + id + ' .sklik-ad').each(function() {
+			var url = $('.sklik-url', $(this)).attr('href');
+			if (url == undefined) {
+				return;
+			}
+			$(selector, $(this)).wrapInner('<a href="' + url + '">');
+		});
+	});
+}
+
+/**
+ * Funkce umožňuje přizpůsobit si zobrazení Sklik reklamy pomocí vlastního html
+ * které obsahuje proměnné, které se nahradí údaji vytaženými
+ * z původního html dodaného sklikem.
+ *
+ * Sklik má současně tři varianty, jejichž struktura se trochu liší (sklik-ad, sklik-drtg-ad, sklik-eta-ad)
+ * Funkce vytvoří html na základě přijatého typu
+ *
+ * Použité proměnné:
+ * - $title - nadpis
+ * - $url - odkaz banneru
+ * - $url_visible - např. http://www.lupa.cz/example
+ * - $url_domain - např. www.lupa.cz (odstraněno http na začátku a na konci všechno za lomítkem
+ * - $text1 - popis 1
+ * - $text2 - popis 2
+ *
+ * @param id ID tagu s reklamou
+ * @param template HTML s proměnnými skliku
+ * */
+function sklikReplace(id, template) {
+	if(id === undefined || $('#'+id).length === 0) {
+		console.error('Sklik id is required');
+		return;
+	}
+	if(template === undefined) {
+		console.error('Template html is required');
+		return;
+	}
+
+	//$(document).ready(function() {
+		setTimeout(function() {
+			var text1 = "";
+			var text2 = "";
+			
+			$('#'+id+' .sklik-ad').each(function() {
+				var tpl = template;
+
+				var title = $('.sklik-title', $(this)).text();
+				var url = $('.sklik-url', $(this)).attr('href');
+				var url_visible = $('.sklik-url', $(this)).text();
+				var url_domain = url_visible.replace('http://', '').replace(/\/(.+)/, '');
+				var text1 = $('.sklik-descr1', $(this)).text();
+				var text2 = $('.sklik-descr2', $(this)).text();
+				var firstLink = $(this).children('a').first();
+
+				if(!firstLink.hasClass('sklik-url')){
+					var imgUrl = firstLink.children('img').attr('src');
+					if(imgUrl !== undefined){
+						tpl = tpl.split('$imgUrl').join(imgUrl);
+					}
+				}
+
+				tpl = tpl.split('$title').join(title);
+				tpl = tpl.split('$url_visible').join(url_visible);
+				tpl = tpl.split('$url_domain').join(url_domain);
+				tpl = tpl.split('$url').join(url);
+				tpl = tpl.split('$text1').join(text1);
+				tpl = tpl.split('$text2').join(text2);
+
+				$(this).html(tpl);
+				$('#'+id).show();
+			});
+
+			/* structure that is used on DRTG sklik ads */
+			$('#'+id+' .sklik-drtg-ad').each(function() {
+				var tpl = template;
+
+				var title = $('.sklik-drtg-title', $(this)).text();
+				var url = $('.sklik-drtg-text a', $(this)).attr('href');
+				var url_visible = $('.sklik-drtg-text a', $(this)).text();
+				var url_domain = url_visible.replace('http://', '').replace(/\/(.+)/, '');
+
+				var imgUrl = $('.sklik-drtg-img a img').attr('src');
+				if(imgUrl !== undefined){
+					tpl = tpl.split('$imgUrl').join(imgUrl);
+				}
+
+				tpl = tpl.split('$url_visible').join(url_visible);
+				tpl = tpl.split('$url_domain').join(url_domain);
+				tpl = tpl.split('$url').join(url);
+				tpl = tpl.split('$title').join(title);
+				tpl = tpl.split('$text1').join(text1);				
+				tpl = tpl.split('$text2').join(text2);
+
+				$(this).html(tpl);
+				$('#'+id).show();
+			});
+
+			/* structure that is used on ETA sklik ads */
+			$('#'+id+' .sklik-eta-ad').each(function() {
+				var tpl = template;
+				var title = $('.sklik-eta-headline1').text() + $('.sklik-eta-dash').text() + $('.sklik-eta-headline2').text();
+				var url = $('.sklik-eta-url a', $(this)).attr('href');
+				var url_visible = $('.sklik-eta-url a', $(this)).text();
+				var url_domain = url_visible.replace('http://', '').replace(/\/(.+)/, '');
+				var text1 = $('.sklik-eta-desc', $(this)).text();
+
+				var imgUrl = $('.sklik-eta-screen a img').attr('src');
+				if(imgUrl !== undefined){
+					tpl = tpl.split('$imgUrl').join(imgUrl);
+				}
+				
+				tpl = tpl.split('$title').join(title);
+				tpl = tpl.split('$url_visible').join(url_visible);
+				tpl = tpl.split('$url_domain').join(url_domain);
+				tpl = tpl.split('$url').join(url);
+				tpl = tpl.split('$text1').join(text1);
+				tpl = tpl.split('$text2').join(text2);
+
+				$(this).html(tpl);
+				$('#'+id).show();
+			});
+		}, 500);
+
+	//});
+}
+// moves content of div to another one
+function move(source, destination) {
+	var dest = $(destination);
+
+	// {* don't do anything if some element doesn't exist *}
+	if ($(source).length <= 0 || dest.length <= 0) return;
+
+	$(source + ' > *').detach().appendTo(dest);
+}
+
+var getHolderId = function (element) {
+	return element.attr('id') + "-holder";
+};
+
+var createHolder = function (element,width) {
+	var id = getHolderId(element);
+	var elementWidth = element.outerWidth();
+	if(width){
+		elementWidth = width;
+	}
+	if (!$('#' + id).length) {
+		$('<div></div>').insertAfter(element).attr('id', id)
+			.css({width: elementWidth, height: element.outerHeight(true)});
+	}
+};
+
+var deleteHolder = function (element) {
+	$('#' + getHolderId(element)).remove();
+};
+
+var doOnlyOnce = (function () {
+	var lastState = {};
+
+	return function (object, state, callback) {
+		if (lastState[object] !== state) {
+			//console.log('lastState[' + object + '] set to ' + state);
+			lastState[object] = state;
+			callback();
+		}
+	};
+})();/* Lazy Load XT 1.1.0 | MIT License */
+!function(a,b,c,d){function e(a,b){return a[b]===d?t[b]:a[b]}function f(){var a=b.pageYOffset;return a===d?r.scrollTop:a}function g(a,b){var c=t["on"+a];c&&(w(c)?c.call(b[0]):(c.addClass&&b.addClass(c.addClass),c.removeClass&&b.removeClass(c.removeClass))),b.trigger("lazy"+a,[b]),k()}function h(b){g(b.type,a(this).off(p,h))}function i(c){if(z.length){c=c||t.forceLoad,A=1/0;var d,e,i=f(),j=b.innerHeight||r.clientHeight,k=b.innerWidth||r.clientWidth;for(d=0,e=z.length;e>d;d++){var l,m=z[d],q=m[0],s=m[n],u=!1,v=c||y(q,o)<0;if(a.contains(r,q)){if(c||!s.visibleOnly||q.offsetWidth||q.offsetHeight){if(!v){var x=q.getBoundingClientRect(),B=s.edgeX,C=s.edgeY;l=x.top+i-C-j,v=i>=l&&x.bottom>-C&&x.left<=k+B&&x.right>-B}if(v){m.on(p,h),g("show",m);var D=s.srcAttr,E=w(D)?D(m):q.getAttribute(D);E&&(q.src=E),u=!0}else A>l&&(A=l)}}else u=!0;u&&(y(q,o,0),z.splice(d--,1),e--)}e||g("complete",a(r))}}function j(){B>1?(B=1,i(),setTimeout(j,t.throttle)):B=0}function k(a){z.length&&(a&&"scroll"===a.type&&a.currentTarget===b&&A>=f()||(B||setTimeout(j,0),B=2))}function l(){v.lazyLoadXT()}function m(){i(!0)}var n="lazyLoadXT",o="lazied",p="load error",q="lazy-hidden",r=c.documentElement||c.body,s=b.onscroll===d||!!b.operamini||!r.getBoundingClientRect,t={autoInit:!0,selector:"img[data-src]",blankImage:"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",throttle:99,forceLoad:s,loadEvent:"pageshow",updateEvent:"load orientationchange resize scroll touchmove focus",forceEvent:"lazyloadall",oninit:{removeClass:"lazy"},onshow:{addClass:q},onload:{removeClass:q,addClass:"lazy-loaded"},onerror:{removeClass:q},checkDuplicates:!0},u={srcAttr:"data-src",edgeX:0,edgeY:0,visibleOnly:!0},v=a(b),w=a.isFunction,x=a.extend,y=a.data||function(b,c){return a(b).data(c)},z=[],A=0,B=0;a[n]=x(t,u,a[n]),a.fn[n]=function(c){c=c||{};var d,f=e(c,"blankImage"),h=e(c,"checkDuplicates"),i=e(c,"scrollContainer"),j=e(c,"show"),l={};a(i).on("scroll",k);for(d in u)l[d]=e(c,d);return this.each(function(d,e){if(e===b)a(t.selector).lazyLoadXT(c);else{var i=h&&y(e,o),m=a(e).data(o,j?-1:1);if(i)return void k();f&&"IMG"===e.tagName&&!e.src&&(e.src=f),m[n]=x({},l),g("init",m),z.push(m),k()}})},a(c).ready(function(){g("start",v),v.on(t.updateEvent,k).on(t.forceEvent,m),a(c).on(t.updateEvent,k),t.autoInit&&(v.on(t.loadEvent,l),l())})}(window.jQuery||window.Zepto||window.$,window,document);/*!
+ * Stickyfill -- `position: sticky` polyfill
+ * v. 1.1.4 | https://github.com/wilddeer/stickyfill
+ * Copyright Oleg Korsunsky | http://wd.dizaina.net/
+ *
+ * MIT License
+ */
+!function(a,b){function c(){y=D=z=A=B=C=K}function d(a,b){for(var c in b)b.hasOwnProperty(c)&&(a[c]=b[c])}function e(a){return parseFloat(a)||0}function f(){F={top:b.pageYOffset,left:b.pageXOffset}}function g(){return b.pageXOffset!=F.left?(f(),void z()):void(b.pageYOffset!=F.top&&(f(),i()))}function h(a){setTimeout(function(){b.pageYOffset!=F.top&&(F.top=b.pageYOffset,i())},0)}function i(){for(var a=H.length-1;a>=0;a--)j(H[a])}function j(a){if(a.inited){var b=F.top<=a.limit.start?0:F.top>=a.limit.end?2:1;a.mode!=b&&p(a,b)}}function k(){for(var a=H.length-1;a>=0;a--)if(H[a].inited){var b=Math.abs(t(H[a].clone)-H[a].docOffsetTop),c=Math.abs(H[a].parent.node.offsetHeight-H[a].parent.height);if(b>=2||c>=2)return!1}return!0}function l(a){isNaN(parseFloat(a.computed.top))||a.isCell||"none"==a.computed.display||(a.inited=!0,a.clone||q(a),"absolute"!=a.parent.computed.position&&"relative"!=a.parent.computed.position&&(a.parent.node.style.position="relative"),j(a),a.parent.height=a.parent.node.offsetHeight,a.docOffsetTop=t(a.clone))}function m(a){var b=!0;a.clone&&r(a),d(a.node.style,a.css);for(var c=H.length-1;c>=0;c--)if(H[c].node!==a.node&&H[c].parent.node===a.parent.node){b=!1;break}b&&(a.parent.node.style.position=a.parent.css.position),a.mode=-1}function n(){for(var a=H.length-1;a>=0;a--)l(H[a])}function o(){for(var a=H.length-1;a>=0;a--)m(H[a])}function p(a,b){var c=a.node.style;switch(b){case 0:c.position="absolute",c.left=a.offset.left+"px",c.right=a.offset.right+"px",c.top=a.offset.top+"px",c.bottom="auto",c.width="auto",c.marginLeft=0,c.marginRight=0,c.marginTop=0;break;case 1:c.position="fixed",c.left=a.box.left+"px",c.right=a.box.right+"px",c.top=a.css.top,c.bottom="auto",c.width="auto",c.marginLeft=0,c.marginRight=0,c.marginTop=0;break;case 2:c.position="absolute",c.left=a.offset.left+"px",c.right=a.offset.right+"px",c.top="auto",c.bottom=0,c.width="auto",c.marginLeft=0,c.marginRight=0}a.mode=b}function q(a){a.clone=document.createElement("div");var b=a.node.nextSibling||a.node,c=a.clone.style;c.height=a.height+"px",c.width=a.width+"px",c.marginTop=a.computed.marginTop,c.marginBottom=a.computed.marginBottom,c.marginLeft=a.computed.marginLeft,c.marginRight=a.computed.marginRight,c.padding=c.border=c.borderSpacing=0,c.fontSize="1em",c.position="static",c.cssFloat=a.computed.cssFloat,a.node.parentNode.insertBefore(a.clone,b)}function r(a){a.clone.parentNode.removeChild(a.clone),a.clone=void 0}function s(a){var b=getComputedStyle(a),c=a.parentNode,d=getComputedStyle(c),f=a.style.position;a.style.position="relative";var g={top:b.top,marginTop:b.marginTop,marginBottom:b.marginBottom,marginLeft:b.marginLeft,marginRight:b.marginRight,cssFloat:b.cssFloat,display:b.display},h={top:e(b.top),marginBottom:e(b.marginBottom),paddingLeft:e(b.paddingLeft),paddingRight:e(b.paddingRight),borderLeftWidth:e(b.borderLeftWidth),borderRightWidth:e(b.borderRightWidth)};a.style.position=f;var i={position:a.style.position,top:a.style.top,bottom:a.style.bottom,left:a.style.left,right:a.style.right,width:a.style.width,marginTop:a.style.marginTop,marginLeft:a.style.marginLeft,marginRight:a.style.marginRight},j=u(a),k=u(c),l={node:c,css:{position:c.style.position},computed:{position:d.position},numeric:{borderLeftWidth:e(d.borderLeftWidth),borderRightWidth:e(d.borderRightWidth),borderTopWidth:e(d.borderTopWidth),borderBottomWidth:e(d.borderBottomWidth)}},m={node:a,box:{left:j.win.left,right:J.clientWidth-j.win.right},offset:{top:j.win.top-k.win.top-l.numeric.borderTopWidth,left:j.win.left-k.win.left-l.numeric.borderLeftWidth,right:-j.win.right+k.win.right-l.numeric.borderRightWidth},css:i,isCell:"table-cell"==b.display,computed:g,numeric:h,width:j.win.right-j.win.left,height:j.win.bottom-j.win.top,mode:-1,inited:!1,parent:l,limit:{start:j.doc.top-h.top,end:k.doc.top+c.offsetHeight-l.numeric.borderBottomWidth-a.offsetHeight-h.top-h.marginBottom}};return m}function t(a){for(var b=0;a;)b+=a.offsetTop,a=a.offsetParent;return b}function u(a){var c=a.getBoundingClientRect();return{doc:{top:c.top+b.pageYOffset,left:c.left+b.pageXOffset},win:c}}function v(){G=setInterval(function(){!k()&&z()},500)}function w(){clearInterval(G)}function x(){I&&(document[L]?w():v())}function y(){I||(f(),n(),b.addEventListener("scroll",g),b.addEventListener("wheel",h),b.addEventListener("resize",z),b.addEventListener("orientationchange",z),a.addEventListener(M,x),v(),I=!0)}function z(){if(I){o();for(var a=H.length-1;a>=0;a--)H[a]=s(H[a].node);n()}}function A(){b.removeEventListener("scroll",g),b.removeEventListener("wheel",h),b.removeEventListener("resize",z),b.removeEventListener("orientationchange",z),a.removeEventListener(M,x),w(),I=!1}function B(){A(),o()}function C(){for(B();H.length;)H.pop()}function D(a){for(var b=H.length-1;b>=0;b--)if(H[b].node===a)return;var c=s(a);H.push(c),I?l(c):y()}function E(a){for(var b=H.length-1;b>=0;b--)H[b].node===a&&(m(H[b]),H.splice(b,1))}var F,G,H=[],I=!1,J=a.documentElement,K=function(){},L="hidden",M="visibilitychange";void 0!==a.webkitHidden&&(L="webkitHidden",M="webkitvisibilitychange"),b.getComputedStyle||c();for(var N=["","-webkit-","-moz-","-ms-"],O=document.createElement("div"),P=N.length-1;P>=0;P--){try{O.style.position=N[P]+"sticky"}catch(Q){}""!=O.style.position&&c()}f(),b.Stickyfill={stickies:H,add:D,remove:E,init:y,rebuild:z,pause:A,stop:B,kill:C}}(document,window),window.jQuery&&!function($){$.fn.Stickyfill=function(a){return this.each(function(){Stickyfill.add(this)}),this}}(window.jQuery);/**
+ *
+ * @param {object} sidebar Sidebar.class.js
+ * @param {int} minHeight Počet pixelů výšky, kterou má mít každá reklama k dispozici. 1. reklama se zobrazí vždy, ostatní jen pokud mohou dostat tuto minimální výšku.
+ * @param {string} selectorWrapper Selektor pro element, uvnitř kterého je obal reklam (např. '.js-sticker-wrapper')
+ * @param {string} selectorWrapperItems Selektor pro element, uvnitř kterého jsou reklamy (např. '.js-sticker-wrapper__items')
+ * @param {string} selectorRelativeContent Selektor "relativního elementu", podle kterého se má řídit dostupná výška pro reklamy (např. '.page')
+ * @param {object[]} ads Pole objektů reklam s klíči 'selector', 'mark', 'showAlways', 'onShow'
+ * @param {string[]|null} selectorsTopFixed Selektory případných nahoře fixovaných elementů, které odsouvají horní okraj pro stickování
+ * @constructor
+ */
+var Sticker = function (sidebar, minHeight, selectorWrapper, selectorWrapperItems, selectorRelativeContent, ads, selectorsTopFixed) {
+	this.sidebar = sidebar;
+
+	/**
+	 * Zjištěný počet reklam po loadu, podle toho, kolik se jich tam vejde
+	 * @type {number}
+	 */
+	this.countOfAds = 0;
+
+	/**
+	 * Minimální výška prostoru pro reklamu
+	 * @type {number}
+	 */
+	this.minHeight = minHeight;
+
+	this._selectorWrapper = selectorWrapper;
+	this.$wrapper = null;
+
+	this._selectorWrapperItems = selectorWrapperItems;
+	this.$wrapperItems = null;
+
+	this._selectorRelativeContent = selectorRelativeContent;
+	this.$relativeContent = null;
+
+	this._ads = ads;
+	this.$ads = [];
+
+	this._selectorsTopFixed = selectorsTopFixed;
+	this.$topFixed = null;
+	this.lastTopFixedHeight = 0;
+};
+
+Sticker.blockNamePrefix = 'js-sticker';
+
+Sticker.elementNameItems = 'items';
+
+Sticker.elementNameItem = 'item';
+
+Sticker.elementNameContent = 'content';
+
+Sticker.modifierNameContentSticky = 'sticky';
+
+Sticker.classNameContentSticky = Sticker.blockNamePrefix + '__' + Sticker.elementNameContent + '--' + Sticker.modifierNameContentSticky;
+
+/**
+ * Vrací výšku prostoru pro reklamu.
+ * [future] it does not solve situation when something else is added BEHIND adverts, between the sticky elements and the end of the wrapper
+ * @returns {number}
+ */
+Sticker.prototype.getSpaceHeightForAds = function () {
+	var wrapperWhiteSpaceBottom = parseInt(this.$wrapper.css('padding-bottom')) + parseInt(this.$wrapper.css('border-bottom-width')); /* substract white that can be set at the bottom of "this.$wrapper" */ /* [future] it is the similar problem as mentioned above (content below sticky elements) */
+	return this.$relativeContent.outerHeight() + this.$relativeContent.offset().top - this.$wrapperItems.offset().top - wrapperWhiteSpaceBottom;
+};
+
+Sticker.prototype.initAd = function (ad) {
+	if (typeof ad.onShow === 'function') {
+		// Reklama má callback
+		ad.onShow.apply(this, []);
+	}
+
+	if (iinfo.adIframes) {
+		var iframeAdInsideAd = iinfo.adIframes[ad.mark];
+		if (iframeAdInsideAd) {
+			// Reklama je iframe
+			// TODO Nastavit klíčová slova
+			iframeAdInsideAd.load(function () {
+				if (this.sidebar.isVisible) {
+					this.recalculateHeight();
+					Stickyfill.rebuild();
+				}
+			}.bind(this));
+		}
+	}
+
+	var $ad = $(ad.selector);
+	this.$ads.push($ad);
+
+	$ad.parent().addClass(Sticker.blockNamePrefix + '__' + Sticker.elementNameItem);
+};
+
+Sticker.prototype.removeAd = function (ad) {
+	IInfoAds.addToIgnore(ad.mark);
+	$(ad.selector).parent().remove();
+};
+
+Sticker.prototype.init = function () {
+	var that = this;
+	$(window).bind('load', function () {
+		that.$wrapper = $(that._selectorWrapper);
+		that.$wrapperItems = $(that._selectorWrapperItems);
+		that.$wrapperItems.addClass(Sticker.blockNamePrefix + '__' + Sticker.elementNameItems);
+		that.$relativeContent = $(that._selectorRelativeContent);
+
+		if (that._selectorsTopFixed) {
+			that.$topFixed = $(that._selectorsTopFixed.join(', '));
+		}
+
+		that.countOfAds = that._ads.length;
+
+		if (that.sidebar.isVisible) {
+			var height = that.getSpaceHeightForAds();
+
+			for (var i = that._ads.length; i > 0; i--) {
+				if (that._ads[i - 1].showAlways || height >= (that.minHeight * i)) {
+					// Na reklamu je místo nebo má vynucené zobrazení vždy
+					that.initAd(that._ads[i - 1]);
+				} else {
+					that.countOfAds--;
+					// Na reklamu není místo
+					that.removeAd(that._ads[i - 1]);
+				}
+			}
+
+			that.start();
+
+		} else {
+			for (var i = that._ads.length; i > 0; i--) {
+				if (that._ads[i - 1].showAlways) {
+					// Reklamu má vynucené zobrazení vždy
+					that.initAd(that._ads[i - 1]);
+				} else {
+					that.countOfAds--;
+					that.removeAd(that._ads[i - 1]);
+				}
+			}
+
+		}
+
+		that.sidebar.onShow(function () {
+			that.start();
+		});
+
+		that.sidebar.onHide(function () {
+			that.stop();
+		});
+
+		$(window).on('resize', function () {
+			that.onResize();
+		});
+	});
+};
+
+Sticker.prototype.recalculateHeight = function () {
+	if (this.$wrapperItems !== null && this.$wrapperItems.length > 0) {
+		this.$wrapperItems.css('height', this.getSpaceHeightForAds());
+	}
+};
+
+/*
+ * to remove attribute "height" for smaller viewport where sticky is disabled
+ */
+Sticker.prototype.resetHeight = function () {
+	this.$wrapperItems.css('height', '');
+};
+
+Sticker.prototype.isStickingNecessary = function () {
+	if (!this.sidebar.isVisible) {
+		return false;
+	}
+
+	var $ad1 = this.$ads[0];
+	return this.countOfAds >= 1 && (this.getSpaceHeightForAds() / this.countOfAds) - $ad1.outerHeight(false) > 0;
+};
+
+/**
+ * Vrací součet výšek případných nahoře fixovaných elementů, které odsouvají horní okraj pro stickování.
+ * @returns {int}
+ */
+Sticker.prototype.getTopFixedHeight = function () {
+	if (!this.$topFixed) return 0;
+
+	return this.$topFixed.toArray().reduce(function (offset, element) {
+		var $element = $(element);
+		if ($element.css('position') === 'fixed') {
+			return offset += $element.outerHeight(false);
+		}
+		return offset;
+	}, 0);
+};
+
+Sticker.prototype.resetTopOffsetsOfAds = function () {
+	var topFixedHeight = this.getTopFixedHeight();
+
+	if (topFixedHeight == this.lastTopFixedHeight) {
+		return;
+	}
+
+	this.lastTopFixedHeight = topFixedHeight;
+
+	// [future] Remove polyfill when all supported browsers have compatibility for "position: sticky"
+	if (Stickyfill.stickies.length > 0) {
+		for (var i = 0; i < Stickyfill.stickies.length; i++) {
+			Stickyfill.stickies[i].css.top = this.lastTopFixedHeight + 'px';
+		}
+		return;
+	}
+
+	for (var i = 0; i < this.$ads.length; i++) {
+		var $ad = $(this.$ads[i]);
+		$ad.css('top', this.lastTopFixedHeight);
+	}
+};
+
+Sticker.prototype.onScroll = function () {
+	this.resetTopOffsetsOfAds();
+};
+
+Sticker.prototype.onResize = function () {
+	if (this.isStickingNecessary()) {
+		this.resetHeight();
+		this.start();
+	} else {
+		this.stop();
+	}
+};
+
+Sticker.prototype.start = function () {
+	if (this.isStickingNecessary()) {
+		this.recalculateHeight();
+
+		this.resetTopOffsetsOfAds();
+
+		for (var i = 0; i < this.$ads.length; i++) {
+			var $ad = $(this.$ads[i]);
+			$ad.addClass(Sticker.classNameContentSticky);
+			// [future] Remove polyfill when all supported browsers have compatibility for "position: sticky"
+			$ad.Stickyfill();
+		}
+
+		// [future] Remove polyfill when all supported browsers have compatibility for "position: sticky"
+		Stickyfill.init();
+
+		$(window).off('scroll.stickerStart');
+		$(window).on('scroll.stickerStart', this.onScroll.bind(this));
+
+	} else {
+		this.resetHeight();
+	}
+};
+
+Sticker.prototype.stop = function () {
+	this.resetHeight();
+
+	$(window).off('scroll.stickerStart');
+
+	// [future] Remove polyfill when all supported browsers have compatibility for "position: sticky"
+	Stickyfill.stop();
+
+	for (var i = 0; i < this.$ads.length; i++) {
+		var $ad = $(this.$ads[i]);
+		$ad.removeClass(Sticker.classNameContentSticky);
+	}
+};
+/**
+ * Umožňuje registrovat callbacky při skrytí/zobrazení sidebaru.
+ *
+ * @param breakpoint Breakpoint šířky v px při které se začíná zobrazovat sidebar (value is for "min-width")
+ * @constructor
+ */
+var Sidebar = function (breakpoint) {
+	this.onShowCallbacks = [];
+	this.onHideCallbacks = [];
+
+	this.breakpoint = breakpoint;
+
+	this.isVisible = window.matchMedia('(min-width: ' + this.breakpoint + 'px)').matches;
+
+	$(document).ready(function () {
+		// bindnem event
+		$(window).resize(this.onSidebarToggle.bind(this));
+
+		// zavolame hned, protoze uz pri nacteni muze byt velikost mensi
+		if (this.isVisible) {
+			this.show();
+		} else {
+			this.hide();
+		}
+		this.onSidebarToggle();
+	}.bind(this));
+};
+
+Sidebar.prototype.show = function () {
+	this.isVisible = true;
+
+	this.onShowCallbacks.forEach(function (callback) {
+		callback();
+	});
+};
+
+Sidebar.prototype.hide = function () {
+	this.isVisible = false;
+
+	this.onHideCallbacks.forEach(function (callback) {
+		callback();
+	});
+};
+
+Sidebar.prototype.onSidebarToggle = function () {
+	if (!window.matchMedia('(min-width: ' + this.breakpoint + 'px)').matches) { // sidebar breakpoint
+		if (this.isVisible) {
+			this.hide();
+		}
+	} else {
+		if (!this.isVisible) {
+			this.show();
+		}
+	}
+};
+
+Sidebar.prototype.onShow = function (callback) {
+	if (typeof callback === 'undefined') {
+		this.onShowCallbacks.forEach(function (callback) {
+			callback();
+		});
+	} else {
+		this.onShowCallbacks.push(callback);
+	}
+};
+
+Sidebar.prototype.onHide = function (callback) {
+	if (typeof callback === 'undefined') {
+		this.onHideCallbacks.forEach(function (callback) {
+			callback();
+		});
+	} else {
+		this.onHideCallbacks.push(callback);
+	}
+};
+var sidebar = new Sidebar(850); /* the same value as "@breakpoints-without-sidebar-min" */
+$(document).ready(function () {
+
+	if (!$('.js-sticker-init').hasClass('js-sticker-init--is-not-active')) {
+
+		var sticker = new Sticker(
+			sidebar,
+			1000,
+			'.js-sticker-wrapper',
+			'.js-sticker-wrapper__items',
+			'.js-sticker-compare-wrapper',
+			[
+				{
+					selector: '#ad-sidebar-sticky-1-wrapper',
+					mark: 'sidebar-sticky-1',
+					showAlways: true,
+				},
+				{
+					selector: '#ad-sidebar-sticky-2-wrapper',
+					mark: 'sidebar-sticky-2',
+					showAlways: false,
+				},
+				{
+					selector: '#ad-sidebar-sticky-3-wrapper',
+					mark: 'sidebar-sticky-3',
+					showAlways: false,
+					onShow: function () {
+						/* [future] why is it undefined on some pages? */
+						if (typeof loadSidebarSticky3 === 'function') {
+							loadSidebarSticky3();
+						}
+					},
+				},
+			],
+			['.js-additional-fixed-element--sticky-adverts']
+		);
+
+		sticker.init();
+	}
+});
+var IInfoAds = {
+
+	ignoreList: [], // contains ignored Ads (position_mark)
+	deliveredAds: [], // contains delivered Ads (position_mark)
+	adList: {}, // contains list of all Ads on page (positionID => position_mark)
+
+	addToIgnore: function(positionName) {
+		IInfoAds.ignoreList.push(positionName);
+	},
+
+	canLoad: function(positionName) {
+		return (IInfoAds.ignoreList.indexOf(positionName) === -1);
+	},
+
+	isDelivered: function(positionName) {
+		return (IInfoAds.deliveredAds.indexOf(positionName) !== -1);
+	},
+
+	adAdpBodyClass: function(positionName) {
+		var body = document.getElementsByTagName("BODY");
+		if (body.length > 0) {
+			body[0].className += ' adp-' + positionName;
+		}
+	},
+
+	onAdDelivery: function(positionID, adDelivered) {
+		if (!adDelivered) return;
+		var adPosition = document.getElementById("bmone2n-" + positionID);
+		if (!adPosition || !adPosition.hasChildNodes()) return;
+		adPosition.parentNode.style.display = "block";
+		IInfoAds.adAdpBodyClass(adPosition.parentNode.getAttribute('data-adp'));
+
+		IInfoAds.deliveredAds.push(IInfoAds.adList[positionID]);
+	},
+
+	onBackgroundDelivery: function(positionID, adDelivered) {
+		IInfoAds.onAdDelivery(positionID, adDelivered);
+		if (!adDelivered) return;
+
+		// HACK - reklamni system zobrazi skyscraper a potom ho schova,
+		// proto musime zajistit odstraneni jeho tridy z body
+		var body = document.getElementsByTagName("BODY");
+		if (body.length > 0) {
+			body[0].className = body[0].className.replace(/\badp-sticky-skyscraper-vpravo\b/,'');
+		}
+	},
+
+	canDisplayHalfPageAd: function() {
+		return $('#main').outerHeight() - $('#sidebar').outerHeight() >= 500;
+	}
+};
+
+var seznamAds;
+
+function addSeznamAd(elementId, zoneId) {
+	(seznamAds = window.seznamAds || []).push(
+		{id: elementId, zoneId: zoneId}
+	);
+}
+
+function loadSeznamAds() {
+	if (seznamAds != undefined) {
+		$.getScript('https://i.imedia.cz/js/im3light.js', function () {
+			im.conf.protocol = 'https';
+			im.getAds(seznamAds);
+		});
+		seznamAds.forEach(function (ad) {
+			IInfoAds.deliveredAds.push(IInfoAds.adList[ad.zoneId]);
+		});
+	}
+}
+/**
+ * NetteForms - simple form validation.
+ *
+ * This file is part of the Nette Framework (https://nette.org)
+ * Copyright (c) 2004 David Grudl (https://davidgrudl.com)
+ */
+
+(function(global, factory) {
+	if (typeof define === 'function' && define.amd) {
+		define(function() {
+			return factory(global);
+		});
+	} else if (typeof module === 'object' && typeof module.exports === 'object') {
+		module.exports = factory(global);
+	} else {
+		global.Nette = factory(global);
+		global.Nette.initOnLoad();
+	}
+
+}(typeof window !== 'undefined' ? window : this, function(window) {
+
+'use strict';
+
+var Nette = {};
+
+/**
+ * Attaches a handler to an event for the element.
+ */
+Nette.addEvent = function(element, on, callback) {
+	var original = element['on' + on];
+	element['on' + on] = function() {
+		if (typeof original === 'function' && original.apply(element, arguments) === false) {
+			return false;
+		}
+		return callback.apply(element, arguments);
+	};
+};
+
+
+/**
+ * Returns the value of form element.
+ */
+Nette.getValue = function(elem) {
+	var i;
+	if (!elem) {
+		return null;
+
+	} else if (!elem.tagName) { // RadioNodeList, HTMLCollection, array
+		return elem[0] ? Nette.getValue(elem[0]) : null;
+
+	} else if (elem.type === 'radio') {
+		var elements = elem.form.elements; // prevents problem with name 'item' or 'namedItem'
+		for (i = 0; i < elements.length; i++) {
+			if (elements[i].name === elem.name && elements[i].checked) {
+				return elements[i].value;
+			}
+		}
+		return null;
+
+	} else if (elem.type === 'file') {
+		return elem.files || elem.value;
+
+	} else if (elem.tagName.toLowerCase() === 'select') {
+		var index = elem.selectedIndex,
+			options = elem.options,
+			values = [];
+
+		if (elem.type === 'select-one') {
+			return index < 0 ? null : options[index].value;
+		}
+
+		for (i = 0; i < options.length; i++) {
+			if (options[i].selected) {
+				values.push(options[i].value);
+			}
+		}
+		return values;
+
+	} else if (elem.name && elem.name.match(/\[\]$/)) { // multiple elements []
+		var elements = elem.form.elements[elem.name].tagName ? [elem] : elem.form.elements[elem.name],
+			values = [];
+
+		for (i = 0; i < elements.length; i++) {
+			if (elements[i].type !== 'checkbox' || elements[i].checked) {
+				values.push(elements[i].value);
+			}
+		}
+		return values;
+
+	} else if (elem.type === 'checkbox') {
+		return elem.checked;
+
+	} else if (elem.tagName.toLowerCase() === 'textarea') {
+		return elem.value.replace("\r", '');
+
+	} else {
+		return elem.value.replace("\r", '').replace(/^\s+|\s+$/g, '');
+	}
+};
+
+
+/**
+ * Returns the effective value of form element.
+ */
+Nette.getEffectiveValue = function(elem) {
+	var val = Nette.getValue(elem);
+	if (elem.getAttribute) {
+		if (val === elem.getAttribute('data-nette-empty-value')) {
+			val = '';
+		}
+	}
+	return val;
+};
+
+
+/**
+ * Validates form element against given rules.
+ */
+Nette.validateControl = function(elem, rules, onlyCheck, value) {
+	elem = elem.tagName ? elem : elem[0]; // RadioNodeList
+	rules = rules || Nette.parseJSON(elem.getAttribute('data-nette-rules'));
+	value = value === undefined ? {value: Nette.getEffectiveValue(elem)} : value;
+
+	for (var id = 0, len = rules.length; id < len; id++) {
+		var rule = rules[id],
+			op = rule.op.match(/(~)?([^?]+)/),
+			curElem = rule.control ? elem.form.elements.namedItem(rule.control) : elem;
+
+		if (!curElem) {
+			continue;
+		}
+
+		rule.neg = op[1];
+		rule.op = op[2];
+		rule.condition = !!rule.rules;
+		curElem = curElem.tagName ? curElem : curElem[0]; // RadioNodeList
+
+		var curValue = elem === curElem ? value : {value: Nette.getEffectiveValue(curElem)},
+			success = Nette.validateRule(curElem, rule.op, rule.arg, curValue);
+
+		if (success === null) {
+			continue;
+		} else if (rule.neg) {
+			success = !success;
+		}
+
+		if (rule.condition && success) {
+			if (!Nette.validateControl(elem, rule.rules, onlyCheck, value)) {
+				return false;
+			}
+		} else if (!rule.condition && !success) {
+			if (Nette.isDisabled(curElem)) {
+				continue;
+			}
+			if (!onlyCheck) {
+				var arr = Nette.isArray(rule.arg) ? rule.arg : [rule.arg],
+					message = rule.msg.replace(/%(value|\d+)/g, function(foo, m) {
+						return Nette.getValue(m === 'value' ? curElem : elem.form.elements.namedItem(arr[m].control));
+					});
+				Nette.addError(curElem, message);
+			}
+			return false;
+		}
+	}
+	return true;
+};
+
+
+/**
+ * Validates whole form.
+ */
+Nette.validateForm = function(sender) {
+	var form = sender.form || sender,
+		scope = false;
+
+	if (form['nette-submittedBy'] && form['nette-submittedBy'].getAttribute('formnovalidate') !== null) {
+		var scopeArr = Nette.parseJSON(form['nette-submittedBy'].getAttribute('data-nette-validation-scope'));
+		if (scopeArr.length) {
+			scope = new RegExp('^(' + scopeArr.join('-|') + '-)');
+		} else {
+			return true;
+		}
+	}
+
+	var radios = {}, i, elem;
+
+	for (i = 0; i < form.elements.length; i++) {
+		elem = form.elements[i];
+
+		if (elem.tagName && !(elem.tagName.toLowerCase() in {input: 1, select: 1, textarea: 1, button: 1})) {
+			continue;
+
+		} else if (elem.type === 'radio') {
+			if (radios[elem.name]) {
+				continue;
+			}
+			radios[elem.name] = true;
+		}
+
+		if ((scope && !elem.name.replace(/]\[|\[|]|$/g, '-').match(scope)) || Nette.isDisabled(elem)) {
+			continue;
+		}
+
+		if (!Nette.validateControl(elem)) {
+			return false;
+		}
+	}
+	return true;
+};
+
+
+/**
+ * Check if input is disabled.
+ */
+Nette.isDisabled = function(elem) {
+	if (elem.type === 'radio') {
+		for (var i = 0, elements = elem.form.elements; i < elements.length; i++) {
+			if (elements[i].name === elem.name && !elements[i].disabled) {
+				return false;
+			}
+		}
+		return true;
+	}
+	return elem.disabled;
+};
+
+
+/**
+ * Display error message.
+ */
+Nette.addError = function(elem, message) {
+	if (message) {
+		alert(message);
+	}
+	if (elem.focus) {
+		elem.focus();
+	}
+};
+
+
+/**
+ * Expand rule argument.
+ */
+Nette.expandRuleArgument = function(form, arg) {
+	if (arg && arg.control) {
+		arg = Nette.getEffectiveValue(form.elements.namedItem(arg.control));
+	}
+	return arg;
+};
+
+
+/**
+ * Validates single rule.
+ */
+Nette.validateRule = function(elem, op, arg, value) {
+	value = value === undefined ? {value: Nette.getEffectiveValue(elem)} : value;
+
+	if (op.charAt(0) === ':') {
+		op = op.substr(1);
+	}
+	op = op.replace('::', '_');
+	op = op.replace(/\\/g, '');
+
+	var arr = Nette.isArray(arg) ? arg.slice(0) : [arg];
+	for (var i = 0, len = arr.length; i < len; i++) {
+		arr[i] = Nette.expandRuleArgument(elem.form, arr[i]);
+	}
+	return Nette.validators[op]
+		? Nette.validators[op](elem, Nette.isArray(arg) ? arr : arr[0], value.value, value)
+		: null;
+};
+
+
+Nette.validators = {
+	filled: function(elem, arg, val) {
+		return val !== '' && val !== false && val !== null
+			&& (!Nette.isArray(val) || !!val.length)
+			&& (!window.FileList || !(val instanceof window.FileList) || val.length);
+	},
+
+	blank: function(elem, arg, val) {
+		return !Nette.validators.filled(elem, arg, val);
+	},
+
+	valid: function(elem, arg, val) {
+		return Nette.validateControl(elem, null, true);
+	},
+
+	equal: function(elem, arg, val) {
+		if (arg === undefined) {
+			return null;
+		}
+
+		function toString(val) {
+			if (typeof val === 'number' || typeof val === 'string') {
+				return '' + val;
+			} else {
+				return val === true ? '1' : '';
+			}
+		}
+
+		val = Nette.isArray(val) ? val : [val];
+		arg = Nette.isArray(arg) ? arg : [arg];
+		loop:
+		for (var i1 = 0, len1 = val.length; i1 < len1; i1++) {
+			for (var i2 = 0, len2 = arg.length; i2 < len2; i2++) {
+				if (toString(val[i1]) === toString(arg[i2])) {
+					continue loop;
+				}
+			}
+			return false;
+		}
+		return true;
+	},
+
+	notEqual: function(elem, arg, val) {
+		return arg === undefined ? null : !Nette.validators.equal(elem, arg, val);
+	},
+
+	minLength: function(elem, arg, val) {
+		return val.length >= arg;
+	},
+
+	maxLength: function(elem, arg, val) {
+		return val.length <= arg;
+	},
+
+	length: function(elem, arg, val) {
+		arg = Nette.isArray(arg) ? arg : [arg, arg];
+		return (arg[0] === null || val.length >= arg[0]) && (arg[1] === null || val.length <= arg[1]);
+	},
+
+	email: function(elem, arg, val) {
+		return (/^("([ !#-[\]-~]|\\[ -~])+"|[-a-z0-9!#$%&'*+\/=?^_`{|}~]+(\.[-a-z0-9!#$%&'*+\/=?^_`{|}~]+)*)@([0-9a-z\u00C0-\u02FF\u0370-\u1EFF]([-0-9a-z\u00C0-\u02FF\u0370-\u1EFF]{0,61}[0-9a-z\u00C0-\u02FF\u0370-\u1EFF])?\.)+[a-z\u00C0-\u02FF\u0370-\u1EFF]([-0-9a-z\u00C0-\u02FF\u0370-\u1EFF]{0,17}[a-z\u00C0-\u02FF\u0370-\u1EFF])?$/i).test(val);
+	},
+
+	url: function(elem, arg, val, value) {
+		if (!(/^[a-z\d+.-]+:/).test(val)) {
+			val = 'http://' + val;
+		}
+		if ((/^https?:\/\/((([-_0-9a-z\u00C0-\u02FF\u0370-\u1EFF]+\.)*[0-9a-z\u00C0-\u02FF\u0370-\u1EFF]([-0-9a-z\u00C0-\u02FF\u0370-\u1EFF]{0,61}[0-9a-z\u00C0-\u02FF\u0370-\u1EFF])?\.)?[a-z\u00C0-\u02FF\u0370-\u1EFF]([-0-9a-z\u00C0-\u02FF\u0370-\u1EFF]{0,17}[a-z\u00C0-\u02FF\u0370-\u1EFF])?|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|\[[0-9a-f:]{3,39}\])(:\d{1,5})?(\/\S*)?$/i).test(val)) {
+			value.value = val;
+			return true;
+		}
+		return false;
+	},
+
+	regexp: function(elem, arg, val) {
+		var parts = typeof arg === 'string' ? arg.match(/^\/(.*)\/([imu]*)$/) : false;
+		try {
+			return parts && (new RegExp(parts[1], parts[2].replace('u', ''))).test(val);
+		} catch (e) {}
+	},
+
+	pattern: function(elem, arg, val) {
+		try {
+			return typeof arg === 'string' ? (new RegExp('^(?:' + arg + ')$')).test(val) : null;
+		} catch (e) {}
+	},
+
+	integer: function(elem, arg, val) {
+		return (/^-?[0-9]+$/).test(val);
+	},
+
+	'float': function(elem, arg, val, value) {
+		val = val.replace(' ', '').replace(',', '.');
+		if ((/^-?[0-9]*[.,]?[0-9]+$/).test(val)) {
+			value.value = val;
+			return true;
+		}
+		return false;
+	},
+
+	min: function(elem, arg, val) {
+		return Nette.validators.range(elem, [arg, null], val);
+	},
+
+	max: function(elem, arg, val) {
+		return Nette.validators.range(elem, [null, arg], val);
+	},
+
+	range: function(elem, arg, val) {
+		return Nette.isArray(arg) ?
+			((arg[0] === null || parseFloat(val) >= arg[0]) && (arg[1] === null || parseFloat(val) <= arg[1])) : null;
+	},
+
+	submitted: function(elem, arg, val) {
+		return elem.form['nette-submittedBy'] === elem;
+	},
+
+	fileSize: function(elem, arg, val) {
+		if (window.FileList) {
+			for (var i = 0; i < val.length; i++) {
+				if (val[i].size > arg) {
+					return false;
+				}
+			}
+		}
+		return true;
+	},
+
+	image: function (elem, arg, val) {
+		if (window.FileList && val instanceof window.FileList) {
+			for (var i = 0; i < val.length; i++) {
+				var type = val[i].type;
+				if (type && type !== 'image/gif' && type !== 'image/png' && type !== 'image/jpeg') {
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+};
+
+
+/**
+ * Process all toggles in form.
+ */
+Nette.toggleForm = function(form, elem) {
+	var i;
+	Nette.toggles = {};
+	for (i = 0; i < form.elements.length; i++) {
+		if (form.elements[i].tagName.toLowerCase() in {input: 1, select: 1, textarea: 1, button: 1}) {
+			Nette.toggleControl(form.elements[i], null, null, !elem);
+		}
+	}
+
+	for (i in Nette.toggles) {
+		Nette.toggle(i, Nette.toggles[i], elem);
+	}
+};
+
+
+/**
+ * Process toggles on form element.
+ */
+Nette.toggleControl = function(elem, rules, success, firsttime, value) {
+	rules = rules || Nette.parseJSON(elem.getAttribute('data-nette-rules'));
+	value = value === undefined ? {value: Nette.getEffectiveValue(elem)} : value;
+
+	var has = false,
+		handled = [],
+		handler = function () {
+			Nette.toggleForm(elem.form, elem);
+		},
+		curSuccess;
+
+	for (var id = 0, len = rules.length; id < len; id++) {
+		var rule = rules[id],
+			op = rule.op.match(/(~)?([^?]+)/),
+			curElem = rule.control ? elem.form.elements.namedItem(rule.control) : elem;
+
+		if (!curElem) {
+			continue;
+		}
+
+		curSuccess = success;
+		if (success !== false) {
+			rule.neg = op[1];
+			rule.op = op[2];
+			var curValue = elem === curElem ? value : {value: Nette.getEffectiveValue(curElem)};
+			curSuccess = Nette.validateRule(curElem, rule.op, rule.arg, curValue);
+			if (curSuccess === null) {
+				continue;
+
+			} else if (rule.neg) {
+				curSuccess = !curSuccess;
+			}
+			if (!rule.rules) {
+				success = curSuccess;
+			}
+		}
+
+		if ((rule.rules && Nette.toggleControl(elem, rule.rules, curSuccess, firsttime, value)) || rule.toggle) {
+			has = true;
+			if (firsttime) {
+				var oldIE = !document.addEventListener, // IE < 9
+					name = curElem.tagName ? curElem.name : curElem[0].name,
+					els = curElem.tagName ? curElem.form.elements : curElem;
+
+				for (var i = 0; i < els.length; i++) {
+					if (els[i].name === name && !Nette.inArray(handled, els[i])) {
+						Nette.addEvent(els[i], oldIE && els[i].type in {checkbox: 1, radio: 1} ? 'click' : 'change', handler);
+						handled.push(els[i]);
+					}
+				}
+			}
+			for (var id2 in rule.toggle || []) {
+				if (Object.prototype.hasOwnProperty.call(rule.toggle, id2)) {
+					Nette.toggles[id2] = Nette.toggles[id2] || (rule.toggle[id2] ? curSuccess : !curSuccess);
+				}
+			}
+		}
+	}
+	return has;
+};
+
+
+Nette.parseJSON = function(s) {
+	s = s || '[]';
+	if (s.substr(0, 3) === '{op') {
+		return eval('[' + s + ']'); // backward compatibility
+	}
+	return window.JSON && window.JSON.parse ? JSON.parse(s) : eval(s);
+};
+
+
+/**
+ * Displays or hides HTML element.
+ */
+Nette.toggle = function(id, visible, srcElement) {
+	var elem = document.getElementById(id);
+	if (elem) {
+		elem.style.display = visible ? '' : 'none';
+	}
+};
+
+
+/**
+ * Setup handlers.
+ */
+Nette.initForm = function(form) {
+	form.noValidate = 'novalidate';
+
+	Nette.addEvent(form, 'submit', function(e) {
+		if (!Nette.validateForm(form)) {
+			if (e && e.stopPropagation) {
+				e.stopPropagation();
+			} else if (window.event) {
+				event.cancelBubble = true;
+			}
+			return false;
+		}
+	});
+
+	Nette.addEvent(form, 'click', function(e) {
+		e = e || event;
+		var target = e.target || e.srcElement;
+		form['nette-submittedBy'] = (target.type in {submit: 1, image: 1}) ? target : null;
+	});
+
+	Nette.toggleForm(form);
+};
+
+
+/**
+ * @private
+ */
+Nette.initOnLoad = function() {
+	Nette.addEvent(window, 'load', function() {
+		for (var i = 0; i < document.forms.length; i++) {
+			var form = document.forms[i];
+			for (var j = 0; j < form.elements.length; j++) {
+				if (form.elements[j].getAttribute('data-nette-rules')) {
+					Nette.initForm(form);
+					break;
+				}
+			}
+		}
+	});
+};
+
+
+/**
+ * Determines whether the argument is an array.
+ */
+Nette.isArray = function(arg) {
+	return Object.prototype.toString.call(arg) === '[object Array]';
+};
+
+
+/**
+ * Search for a specified value within an array.
+ */
+Nette.inArray = function(arr, val) {
+	if ([].indexOf) {
+		return arr.indexOf(val) > -1;
+	} else {
+		for (var i = 0; i < arr.length; i++) {
+			if (arr[i] === val) {
+				return true;
+			}
+		}
+		return false;
+	}
+};
+
+
+/**
+ * Converts string to web safe characters [a-z0-9-] text.
+ */
+Nette.webalize = function(s) {
+	s = s.toLowerCase();
+	var res = '', i, ch;
+	for (i = 0; i < s.length; i++) {
+		ch = Nette.webalizeTable[s.charAt(i)];
+		res += ch ? ch : s.charAt(i);
+	}
+	return res.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+};
+
+Nette.webalizeTable = {\u00e1: 'a', \u00e4: 'a', \u010d: 'c', \u010f: 'd', \u00e9: 'e', \u011b: 'e', \u00ed: 'i', \u013e: 'l', \u0148: 'n', \u00f3: 'o', \u00f4: 'o', \u0159: 'r', \u0161: 's', \u0165: 't', \u00fa: 'u', \u016f: 'u', \u00fd: 'y', \u017e: 'z'};
+
+return Nette;
+}));

@@ -1,0 +1,606 @@
+Renesas H8/300 GAS  C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s 			page 1
+
+
+   1              				.h8300s
+   2              				
+   3              	;KONSTANTY-----------------------------------------
+   4              				.equ	syscall,0x1FF00		; simulated IO area
+   5              				.equ	PUTS,0x0114			; kod PUTS
+   6              				.equ	GETS,0x0113			; kod GETS
+   7              				
+   8              				.data
+   9              				
+  10              	;PARAMETRY PRO IO----------------------------------
+  11 0000 3E00     	prompt:		.asciz	">"
+  12              	
+  13 0002 0000     				.align 	2		
+  14 0004 00000000 	par_prompt:	.long	prompt
+  15              	
+  16 0008 00000000 	par_out:	.long	out_buf		;vystupni buffer
+  17 000c 00000000 	par_in:		.long 	in_buf		;vstupni buffer
+  18              	
+  19              	
+  20              	
+  21              	; buffery pro vstup a vystup
+  22              				.align	2
+  23 0010 00000000 	out_buf:	.space	100
+  23      00000000 
+  23      00000000 
+  23      00000000 
+  23      00000000 
+  24 0074 00000000 	in_buf:		.space	100
+  24      00000000 
+  24      00000000 
+  24      00000000 
+  24      00000000 
+  25              	PIN:		.long				;pointer na vstupni buffer
+  26 00d8 00000000 				.space	4	
+  27              	POUT:		.long				;pointer na vystupni buffer
+  28 00dc 00000000 				.space	4		
+  29              	num_count:	.byte
+  30 00e0 00       				.space	1
+  31              	;--------------------------------------------------
+  32              	
+  33              	;MATICE--------------------------------------------
+  34 00e1 000000   				.align	2
+  35 00e4 00000000 	matice:		.space	245
+  35      00000000 
+  35      00000000 
+  35      00000000 
+  35      00000000 
+  36              	
+  37              	PM:			.long				;pointer na matici
+  38 01d9 00000000 				.space	4
+  39              	P_ROW:		.long				;pointer na radky matice pro transformaci
+  40 01dd 00000000 				.space	4
+  41              	P_COL:		.long				;pointer na sloupce matice pro transformaci
+  42 01e1 00000000 				.space	4
+  43              	size:		.byte				;rad matice
+  44 01e5 00       				.space	1
+  45              	
+Renesas H8/300 GAS  C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s 			page 2
+
+
+  46              	
+  47              	;ZASOBNIK------------------------------------------
+  48 01e6 0000     				.align	2			; zarovnani adresy
+  49 01e8 00000000 				.space	100			; stack
+  49      00000000 
+  49      00000000 
+  49      00000000 
+  49      00000000 
+  50              	stck:							; konec stacku + 1
+  51              				
+  52              				.text
+  53              				.global _start
+  54              	;--------------------------------------------------
+  55              	
+  56              	
+  57              	;MAIN----------------------------------------------
+  58 0000 7A070000 	_start:		mov.l	#stck,ER7	;nastaveni zasobniku 
+  58      0000
+  59 0006 5E000000 				jsr		@init
+  60              				
+  61              				;	nacteni velikosti matice
+  62 000a 5E000000 				jsr		@read_cmd
+  63 000e 6A280000 				mov.b	@in_buf,R0L
+  63      0000
+  64 0014 88D0     				add.b	#-0x30,R0L
+  65 0016 6AA80000 				mov.b	R0L,@size
+  65      0000
+  66              				
+  67              				;	nacteni vlastni matice
+  68              				;mulxu.b	R0L,R0		;pocet hodnot pro naplneni matice
+  69              				
+  70 001c 6DF0     	loopm:		push.w	R0
+  71              	
+  72 001e 5E000000 				jsr	@read_line
+  73              	
+  74 0022 6D70     				pop.w	R0
+  75 0024 1A08     				dec.b	R0L
+  76 0026 4600     				bne		loopm	;pokud zbyvaji radky matice pokracuje nacitani
+  77              				
+  78 0028 7A000000 				mov.l	#matice,ER0
+  78      0000
+  79 002e 01006BA0 				mov.l	ER0,@PM
+  79      00000000 
+  80              				;	matice je nactena
+  81              				
+  82              				;transformovani matice
+  83 0036 5E000000 				jsr		@transform
+  84 003a 5E000000 				jsr		@clr_reg
+  85              				
+  86              				;vystup do konzole
+  87 003e 5E000000 				jsr		@raw_write_out
+  88              				
+  89 0042 5A000000 	lab1:		jmp 	@lab1
+  90              	
+  91              	;/MAIN---------------------------------------------
+  92              	
+  93              	;METODY--------------------------------------------
+Renesas H8/300 GAS  C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s 			page 3
+
+
+  94              	
+  95              	; inicializace-----------------------
+  96              	init:		
+  97 0046 01F06500 			xor.l	ER0,ER0
+  98 004a 0F81     			mov.l	ER0,ER1
+  99 004c 0F82     			mov.l	ER0,ER2
+ 100 004e 0F83     			mov.l	ER0,ER3
+ 101              			;nastaveni ukazatele na vstupni buffer
+ 102 0050 7A010000 			mov.l	#in_buf,ER1
+ 102      0000
+ 103 0056 01006BA1 			mov.l	ER1,@PIN
+ 103      00000000 
+ 104              			;nastaveni ukazatele na vystupni buffer
+ 105 005e 7A010000 			mov.l	#out_buf,ER1
+ 105      0000
+ 106 0064 01006BA1 			mov.l	ER1,@POUT
+ 106      00000000 
+ 107              			;nastaveni ukazatele na matici
+ 108 006c 7A010000 			mov.l	#matice,ER1
+ 108      0000
+ 109 0072 01006BA1 			mov.l	ER1,@PM
+ 109      00000000 
+ 110              			;nulovani citace poctu vstupnich znaku
+ 111 007a 6AA80000 			mov.b	R0L,@num_count
+ 111      0000
+ 112 0080 5470     			rts
+ 113              	
+ 114              	; vynulovani registru----------------
+ 115              	;	vynuluje pouzite registry pro dalsi praci mimo ER0
+ 116              	
+ 117              	clr_reg:
+ 118 0082 01F06511 			xor.l	ER1,ER1
+ 119 0086 0F92     			mov.l	ER1,ER2
+ 120 0088 0F93     			mov.l	ER1,ER3
+ 121 008a 0F94     			mov.l	ER1,ER4
+ 122 008c 0F95     			mov.l	ER1,ER5
+ 123 008e 0F96     			mov.l	ER1,ER6
+ 124 0090 5470     			rts
+ 125              	
+ 126              	; cteni vstupu-----------------------
+ 127              	;	vypise prompt a precte radku konzole
+ 128              	
+ 129              	read_cmd:	
+ 130 0092 79000114 			mov.w	#PUTS,R0		; vypis prompt
+ 131 0096 7A010000 			mov.l	#par_prompt,ER1
+ 131      0000
+ 132 009c 5E000000 			jsr		@syscall
+ 133              			
+ 134 00a0 79000113 			mov.w	#GETS,R0		; cteni prikazu
+ 135 00a4 7A010000 			mov.l	#par_in,ER1
+ 135      0000
+ 136 00aa 5E000000 			jsr		@syscall
+ 137 00ae 5470     			rts
+ 138              	
+ 139              	; nacte radek matice------------------
+ 140              	
+ 141              	read_line:
+Renesas H8/300 GAS  C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s 			page 4
+
+
+ 142 00b0 5E000000 			jsr		@read_cmd	;cte 1 radek
+ 143 00b4 6A280000 			mov.b	@size,R0L
+ 143      0000
+ 144              	convert_line:	
+ 145 00ba 6DF0     			push.w	R0	
+ 146 00bc 5E000000 			jsr		@convert	;konvertuje jedno cislo
+ 147 00c0 5E000000 			jsr		@insert_mat	;vlozi zkonvertovane cislo do matice
+ 148              			
+ 149 00c4 6D70     			pop.w	R0
+ 150 00c6 1A08     			dec.b	R0L
+ 151 00c8 4600     			bne		convert_line	;pokud zbyvaji cisla v radku konvertuje dalsi
+ 152 00ca 5470     			rts
+ 153              	
+ 154              	; prevod na cislo---------------------
+ 155              	;	prevede data ze vstupniho bufferu na cislo a odstrani
+ 156              	;	ukoncovaci znak "0A"
+ 157              	;	maximalni hodnota je 5ti mistne cislo (int16)
+ 158              	;	vysledek po prevodu je v registru ER0
+ 159              	
+ 160              	
+ 161              	convert:
+ 162 00cc 5E000000 			jsr		@last
+ 163 00d0 01F06511 			xor.l	ER1,ER1
+ 164 00d4 7A030000 			mov.l	#0x1,ER3		;nasobici konstanta 1,10,100,1000,...
+ 164      0001
+ 165 00da 01006B20 			mov.l	@PIN,ER0		;ER0 je ukazatel na rad cisla ze vstupu
+ 165      00000000 
+ 166 00e2 7A040000 			mov.l	#0xA,ER4		;velikost dalsiho radu
+ 166      000A
+ 167 00e8 6A2D0000 			mov.b	@num_count,R5L	;pocet cislic vstupu
+ 167      0000
+ 168              	loopc:	
+ 169 00ee 6809     			mov.b	@ER0,R1L
+ 170 00f0 89D0     			add.b	#-0x30,R1L		;odecteni konstanty pro prevod z ASCII
+ 171              			
+ 172 00f2 5231     			mulxu.w	R3,ER1			;nasobeni radem
+ 173 00f4 0912     			add.w	R1,R2			;pricteni prevodu k dosavadnimu vysledku v R2L
+ 174              			
+ 175 00f6 1B70     			dec.l	#1,ER0			;posun na vyssi rad
+ 176 00f8 5243     			mulxu.w	R4,ER3			;zvetseni nasobitele radu
+ 177 00fa 01F06511 			xor.l	ER1,ER1			;nulovani ER1
+ 178 00fe 1A0D     			dec.b	R5L
+ 179 0100 4600     			bne		loopc
+ 180 0102 0FA0     			mov.l	ER2,ER0			;prevedena hodnota je v ER0
+ 181              			
+ 182              			
+ 183 0104 01F06522 			xor.l	ER2,ER2		;vynuluje ER2
+ 184 0108 0FA3     			mov.l	ER2,ER3		;vynuluje ER3
+ 185              			
+ 186 010a 01006B22 			mov.l	@PIN,ER2
+ 186      00000000 
+ 187 0112 0B72     			inc.l	#1,ER2		;posune ukazatel na dalsi znak
+ 188 0114 682B     			mov.b	@ER2,R3L
+ 189              			
+ 190 0116 AB0A     			cmp.b	#0x0A,R3L	;pokud je konec radky resetuje ukazatel na vstupni buffer
+ 191 0118 4700     			beq		endline
+ 192 011a AB20     			cmp.b	#0x20,R3L	;pokud je dalsi znak mezera posune ukazatel za mezeru
+Renesas H8/300 GAS  C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s 			page 5
+
+
+ 193 011c 4700     			beq		space
+ 194              			
+ 195              	endline:				;	resetovani ukazatele na vstupni buffer
+ 196 011e 7A010000 			mov.l	#in_buf,ER1
+ 196      0000
+ 197 0124 01006BA1 			mov.l	ER1,@PIN
+ 197      00000000 
+ 198              			
+ 199 012c 5E000000 			jsr		@clr_reg		;vynulovani registru
+ 200 0130 6AA90000 			mov.b	R1L,@num_count	;vynulovani citace poctu znaku na vstupu
+ 200      0000
+ 201 0136 5470     			rts
+ 202              	
+ 203 0138 0B72     	space:	inc.l	#1,ER2
+ 204 013a 01006BA2 			mov.l	ER2,@PIN	;posunuti ukazatele za mezeru
+ 204      00000000 
+ 205 0142 5E000000 			jsr		@clr_reg
+ 206 0146 6AA90000 			mov.b	R1L,@num_count	;vynulovani poctu znaku na vstupu
+ 206      0000
+ 207 014c 5470     			rts
+ 208              			
+ 209              	; nalezeni konce vstupu------------------
+ 210              	;	nastavi pointer vstupu na posledni cislo
+ 211              	
+ 212              	last:	
+ 213 014e 01006B20 			mov.l	@PIN,ER0
+ 213      00000000 
+ 214 0156 6A2A0000 			mov.b	@num_count,R2L
+ 214      0000
+ 215              	loopl:
+ 216 015c 6809     			mov.b	@ER0,R1L
+ 217              			
+ 218 015e A90A     			cmp.b	#0x0A,R1L	;pokud neni konec bufferu pokracuje
+ 219 0160 4700     			beq		endl
+ 220 0162 A920     			cmp.b	#0x20,R1L	;pokud nenajde mezeru pokracuje
+ 221 0164 4700     			beq		endl
+ 222              			
+ 223 0166 0B70     			inc.l	#1,ER0		;posunuti ukazatele na dalsi prvek
+ 224 0168 0A0A     			inc.b	R2L			;zvyseni poctu znaku na vstupu
+ 225 016a 5A000000 			jmp		@loopl
+ 226              	endl:
+ 227 016e 1B70     			dec.l	#1,ER0
+ 228 0170 01006BA0 			mov.l	ER0,@PIN	;nastavi ukazatel PIN na posledni znak (pred "0A")
+ 228      00000000 
+ 229              			
+ 230 0178 6AAA0000 			mov.b	R2L,@num_count	;ulozi pocet znaku vstupniho cisla do num_count
+ 230      0000
+ 231 017e 01F06522 			xor.l	ER2,ER2			;nulovani R2L kvuli dalsim operacim
+ 232              			
+ 233              			;mov.l	@PIN,ER0
+ 234              			;mov.b	@ER0,R0L
+ 235 0182 5470     			rts
+ 236              	
+ 237              	; vloz do matice--------------------------
+ 238              	;	vlozi cislo int16 z R0 na prislusne poradi v matici
+ 239              	insert_mat:
+ 240 0184 01006B21 				mov.l	@PM,ER1
+Renesas H8/300 GAS  C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s 			page 6
+
+
+ 240      00000000 
+ 241 018c 6990     				mov.w	R0,@ER1
+ 242              				;	posun ukazatele v matici
+ 243 018e 0BF1     				inc.l	#2,ER1
+ 244 0190 01006BA1 				mov.l	ER1,@PM
+ 244      00000000 
+ 245 0198 5470     				rts
+ 246              				
+ 247              	; transformuje matici---------------------
+ 248              	;	vytvori matici transformovanou z nactene matice (od "matice:")
+ 249              	
+ 250              	transform:	
+ 251              				;mov.l	@PM,ER0			;ukazatel na matici
+ 252 019a 6A2E0000 				mov.b	@size,R6L		;rad matice
+ 252      0000
+ 253 01a0 08EE     				add.b	R6L,R6L
+ 254 01a2 0CE2     				mov.b	R6L,R2H			;R2H-rad (2x) 
+ 255              				;mov.b	R2H,R2L
+ 256 01a4 F602     				mov.b	#0x2,R6H		;aktualni posun
+ 257              				;sub.b	R6H,R2L			;R2L- rozdil radu a aktualniho posunu (2x)
+ 258              				
+ 259              				;mov.l	ER0,ER4			;hfbdfsfbs
+ 260              				;mov.l	ER0,ER5			;fkbsdfkjdng
+ 261              				
+ 262              	loopt:		
+ 263 01a6 0C2A     				mov.b	R2H,R2L
+ 264 01a8 186A     				sub.b	R6H,R2L			;R2L- rozdil radu a aktualniho posunu (2x)
+ 265 01aa 01006B20 				mov.l	@PM,ER0			;ukazatel na matici
+ 265      00000000 
+ 266 01b2 0F84     				mov.l	ER0,ER4
+ 267 01b4 0F85     				mov.l	ER0,ER5
+ 268              				
+ 269              				
+ 270              	inloopt:
+ 271 01b6 5E000000 				jsr		@shift_row
+ 272              				;mov.w	@ER4,R0
+ 273              				
+ 274 01ba 5E000000 				jsr		@shift_col
+ 275              				;mov.w	@ER5,R0
+ 276              				
+ 277 01be 5E000000 				jsr		@swap
+ 278              				
+ 279 01c2 1A0A     				dec.b	R2L
+ 280 01c4 1A0A     				dec.b	R2L
+ 281 01c6 4600     				bne		inloopt		;dokud neni hotovy radek/sloupec skace na inloopt
+ 282              				
+ 283 01c8 0A06     				inc.b	R6H			;zvyseni aktualniho posunu
+ 284 01ca 0A06     				inc.b	R6H
+ 285              				
+ 286 01cc 1CE6     				cmp.b	R6L,R6H		;pokud aktualni posun = rad matice -> konec
+ 287 01ce 4700     				beq		endt
+ 288 01d0 5E000000 				jsr		@shift_dia
+ 289 01d4 5A000000 				jmp		loopt
+ 290              			
+ 291              	endt:		;posledni prvek diagonaly -> hotovo
+ 292 01d8 7A000000 				mov.l	#matice,ER0
+ 292      0000
+Renesas H8/300 GAS  C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s 			page 7
+
+
+ 293 01de 01006BA0 				mov.l	ER0,@PM		;nastaveni ukazatele na zacatek matice
+ 293      00000000 
+ 294 01e6 5470     				rts
+ 295              	
+ 296              	; posun po prvcich radku------------------
+ 297              	
+ 298              	shift_row:
+ 299 01e8 01006DF0 			push.l	ER0
+ 300 01ec 01F06500 			xor.l	ER0,ER0
+ 301              			;mov.b	R6H,R0L
+ 302 01f0 7A140000 			add.l	#0x2,ER4
+ 302      0002
+ 303 01f6 01006D70 			pop.l	ER0
+ 304 01fa 5470     			rts
+ 305              			
+ 306              	; posun po prvcich sloupce----------------
+ 307              	
+ 308              	shift_col:
+ 309 01fc 01006DF0 			push.l	ER0
+ 310 0200 01006DF1 			push.l	ER1
+ 311 0204 01F06500 			xor.l	ER0,ER0
+ 312 0208 0F81     			mov.l	ER0,ER1
+ 313              			
+ 314 020a F802     			mov.b	#0x2,R0L
+ 315 020c 6A290000 			mov.b	@size,R1L
+ 315      0000
+ 316 0212 5090     			mulxu.b	R1L,R0
+ 317 0214 0A85     			add.l	ER0,ER5
+ 318              			
+ 319 0216 01006D71 			pop.l	ER1
+ 320 021a 01006D70 			pop.l	ER0
+ 321 021e 5470     			rts
+ 322              	
+ 323              	; posune PM po diagonale------------------
+ 324              	;	matice	podle aktualniho posunu R6H
+ 325              	
+ 326              	shift_dia:
+ 327 0220 01006DF4 			push.l	ER4
+ 328 0224 01006DF5 			push.l	ER5
+ 329              			
+ 330 0228 01006B25 			mov.l	@PM,ER5
+ 330      00000000 
+ 331 0230 5E000000 			jsr		@shift_col
+ 332 0234 0FD4     			mov.l	ER5,ER4
+ 333 0236 5E000000 			jsr		shift_row
+ 334 023a 01006BA4 			mov.l	ER4,@PM
+ 334      00000000 
+ 335              			
+ 336              			
+ 337 0242 01006D75 			pop.l	ER5
+ 338 0246 01006D74 			pop.l	ER4
+ 339 024a 5470     			rts
+ 340              	
+ 341              	; prohodi dva prvky-----------------------
+ 342              	;	podle adresy v ER4 a ER5
+ 343              	
+ 344              	swap:		
+Renesas H8/300 GAS  C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s 			page 8
+
+
+ 345 024c 01006DF0 			push.l	ER0
+ 346 0250 01006DF1 			push.l	ER1
+ 347 0254 6940     			mov.w	@ER4,R0
+ 348 0256 6951     			mov.w	@ER5,R1
+ 349 0258 69D0     			mov.w	R0,@ER5
+ 350 025a 69C1     			mov.w	R1,@ER4
+ 351 025c 01006D71 			pop.l	ER1
+ 352 0260 01006D70 			pop.l	ER0
+ 353              	
+ 354 0264 5470     			rts
+ 355              		
+ 356              	; vypis ulozene matice do konzole---------
+ 357              	
+ 358              	raw_write_out:
+ 359 0266 7A010000 			mov.l	#matice,ER1
+ 359      0000
+ 360 026c 01006BA1 			mov.l	ER1,@PM
+ 360      00000000 
+ 361 0274 6A2B0000 			mov.b	@size,R3L
+ 361      0000
+ 362              	
+ 363              	loop_line:				;volani raw_out_line pro kazdy radek matice
+ 364 027a 5E000000 			jsr 	raw_out_line
+ 365 027e 1A0B     			dec.b	R3L
+ 366 0280 4600     			bne		loop_line
+ 367 0282 5470     			rts
+ 368              	
+ 369              	; vypis radku matice do konzole
+ 370              	
+ 371              	raw_out_line:
+ 372 0284 6A230000 			mov.b	@size,R3H
+ 372      0000
+ 373              			
+ 374 028a 01006B21 			mov.l	@PM,ER1
+ 374      00000000 
+ 375 0292 01006B22 			mov.l	@POUT,ER2
+ 375      00000000 
+ 376              			
+ 377              	
+ 378              	loop_col:
+ 379 029a 6914     			mov.w	@ER1,R4
+ 380              			
+ 381 029c 01F06500 			xor.l	ER0,ER0
+ 382 02a0 0C48     			mov.b	R4H,R0L
+ 383 02a2 1148     			shlr.b	#2,R0L
+ 384 02a4 1148     			shlr.b	#2,R0L
+ 385 02a6 5E000000 			jsr		@controll
+ 386 02aa 68A8     			mov.b	R0L,@ER2		;prvni znak
+ 387 02ac 0B72     			inc.l	#1,ER2		;posun za prvni znak
+ 388              			
+ 389 02ae 01F06500 			xor.l	ER0,ER0
+ 390 02b2 0C48     			mov.b	R4H,R0L
+ 391 02b4 E80F     			and.b	#0xF,R0L
+ 392 02b6 5E000000 			jsr		@controll
+ 393 02ba 68A8     			mov.b	R0L,@ER2		;druhy znak
+ 394 02bc 0B72     			inc.l	#1,ER2		;posun za druhy znak
+ 395              			
+Renesas H8/300 GAS  C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s 			page 9
+
+
+ 396 02be 01F06500 			xor.l	ER0,ER0
+ 397 02c2 0CC8     			mov.b	R4L,R0L
+ 398 02c4 1148     			shlr.b	#2,R0L
+ 399 02c6 1148     			shlr.b	#2,R0L
+ 400 02c8 5E000000 			jsr		@controll
+ 401 02cc 68A8     			mov.b	R0L,@ER2		;treti znak
+ 402 02ce 0B72     			inc.l	#1,ER2		;posun za treti znak
+ 403              			
+ 404 02d0 01F06500 			xor.l	ER0,ER0
+ 405 02d4 0CC8     			mov.b	R4L,R0L
+ 406 02d6 E80F     			and.b	#0xF,R0L
+ 407 02d8 5E000000 			jsr		@controll
+ 408 02dc 68A8     			mov.b	R0L,@ER2		;ctvrty znak
+ 409 02de 0B72     			inc.l	#1,ER2		;posun za ctvrty znak
+ 410              			
+ 411 02e0 79040020 			mov.w	#0x20,R4
+ 412 02e4 68AC     			mov.b	R4L,@ER2		;pridani mezery
+ 413 02e6 0B72     			inc.l	#1,ER2		;posun za mezeru
+ 414              		
+ 415 02e8 0BF1     			inc.l	#2,ER1		;posun na dalsi cislo matice
+ 416 02ea 01006BA1 			mov.l	ER1,@PM
+ 416      00000000 
+ 417              			
+ 418              			
+ 419 02f2 1A03     			dec.b	R3H
+ 420 02f4 4600     			bne	loop_col
+ 421              			;hotovy radek
+ 422              			
+ 423 02f6 F80A     			mov.b	#0xA,R0L		;konec radku
+ 424 02f8 68A8     			mov.b	R0L,@ER2
+ 425              			
+ 426              			;mov.l	#out_buf,ER0	;nastaveni ukazatele na zacatek vystupniho bufferu
+ 427              			;mov.l	ER0,@POUT
+ 428              			
+ 429 02fa 79000114 			mov.w	#PUTS,R0		; vypis radku
+ 430 02fe 7A010000 			mov.l	#par_out,ER1
+ 430      0000
+ 431 0304 5E000000 			jsr		@syscall
+ 432              			
+ 433 0308 5470     			rts
+ 434              	
+ 435              	; kontrola znaku----------------------
+ 436              	
+ 437              	controll:
+ 438 030a FD09     			mov.b	#0x9,R5L
+ 439 030c 188D     			sub.b	R0L,R5L
+ 440 030e 4400     			bcc		f_add	
+ 441 0310 79100007 			add.w	#0x7,R0
+ 442 0314 79100030 	f_add:	add.w	#0x30,R0
+ 443 0318 5470     			rts
+ 444              	
+ 445              	;/METODY-------------------------------------------			
+ 446              			.end
+Renesas H8/300 GAS  C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s 			page 10
+
+
+DEFINED SYMBOLS
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:4      *ABS*:0001ff00 syscall
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:5      *ABS*:00000114 PUTS
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:6      *ABS*:00000113 GETS
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:11     .data:00000000 prompt
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:14     .data:00000004 par_prompt
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:16     .data:00000008 par_out
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:23     .data:00000010 out_buf
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:17     .data:0000000c par_in
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:24     .data:00000074 in_buf
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:25     .data:000000d8 PIN
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:27     .data:000000dc POUT
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:29     .data:000000e0 num_count
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:35     .data:000000e4 matice
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:37     .data:000001d9 PM
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:39     .data:000001dd P_ROW
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:41     .data:000001e1 P_COL
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:43     .data:000001e5 size
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:50     .data:0000024c stck
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:58     .text:00000000 _start
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:58     .text:00000000 .L0
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:96     .text:00000046 init
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:129    .text:00000092 read_cmd
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:70     .text:0000001c loopm
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:141    .text:000000b0 read_line
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:250    .text:0000019a transform
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:117    .text:00000082 clr_reg
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:358    .text:00000266 raw_write_out
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:89     .text:00000042 lab1
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:144    .text:000000ba convert_line
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:161    .text:000000cc convert
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:239    .text:00000184 insert_mat
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:212    .text:0000014e last
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:168    .text:000000ee loopc
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:195    .text:0000011e endline
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:203    .text:00000138 space
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:215    .text:0000015c loopl
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:226    .text:0000016e endl
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:262    .text:000001a6 loopt
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:270    .text:000001b6 inloopt
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:298    .text:000001e8 shift_row
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:308    .text:000001fc shift_col
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:344    .text:0000024c swap
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:291    .text:000001d8 endt
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:326    .text:00000220 shift_dia
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:363    .text:0000027a loop_line
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:371    .text:00000284 raw_out_line
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:378    .text:0000029a loop_col
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:437    .text:0000030a controll
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:442    .text:00000314 f_add
+                            .text:00000000 .L0
+C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s:446    .text:0000031a .L0
+
+NO UNDEFINED SYMBOLS
+
+
+==============================================================
+
+Listfile generated by KPIT GNUH8 [ELF]-v11.02 on Sunday, July 12, 2015, 17:53:02
+
+Build options:
+
+"C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s"
+-I "C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P"
+--gdwarf2
+-o "C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\Debug\main.o"
+-alsh="C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\Debug\main.lis"

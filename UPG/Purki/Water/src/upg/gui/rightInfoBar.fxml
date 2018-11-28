@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="MAIN_WINDOW" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="300.0" style="-fx-background-color: LightGray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="upg.controllers.RightInfoBarController">
+   <children>
+      <Label fx:id="SIMULATION_SPEED" layoutX="14.0" layoutY="14.0" text="Aktualni rychlost simulace:  50 steps/s" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <Button layoutX="10.0" layoutY="50.0" mnemonicParsing="false" onAction="#slowButtonAction" prefHeight="25.0" prefWidth="90.0" text="Zpomalit" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="155.0" AnchorPane.topAnchor="50.0" />
+      <Button layoutX="188.0" layoutY="44.0" mnemonicParsing="false" onAction="#fastButtonAction" text="Zrychlit" AnchorPane.leftAnchor="155.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0" />
+      <Label fx:id="SIMULATION_TIME" layoutX="10.0" layoutY="99.0" text="Aktualni cas simulace:" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="100.0" />
+      <Separator layoutY="167.0" maxHeight="10.0" minHeight="10.0" prefHeight="10.0" prefWidth="200.0" style="-fx-background-color: Black;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0" />
+      <Label layoutX="14.0" layoutY="176.0" text="Stavy rezervoaru:" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="180.0" />
+      <LineChart fx:id="OBJECT_GRAPH" layoutX="9.0" layoutY="442.0" prefHeight="300.0" prefWidth="290.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>

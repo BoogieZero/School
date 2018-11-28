@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ITvar\ kopie()
+comment0.text=\r\n\ Vr\u00E1t\u00ED\ svoji\ kopii,\ tj.\ instanci\ s\ naprosto\ shodn\u00FDmi\ vlastnostmi\r\n\ s\ v\u00FDjimkou\ t\u011Bch,\ kter\u00E9\ podle\ kontraktu\ shodn\u00E9\ b\u00FDt\ nesm\u011Bj\u00ED\ -\ v\ tomto\r\n\ p\u0159\u00EDpad\u011B\ stejn\u00FD\ tvar,\ stejn\u011B\ velk\u00FD,\ stejn\u011B\ um\u00EDst\u011Bn\u00FD\ a\ se\ stejnou\ barvou.\r\n\ <p>\r\n\ Oproti\ verzi\ zd\u011Bd\u011Bn\u00E9\ z\ p\u0159edka\ {@code\ IKopirovatelny}\ omezuje\ typ\r\n\ vr\u00E1cen\u00E9\ hodnoty\ na\ sebe\ sama,\ tj.\ na\ {@code\ ITvar}.\r\n\r\n\ @return\ Po\u017Eadovan\u00E1\ kopie\r\n
+numComments=1

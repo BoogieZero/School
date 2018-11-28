@@ -1,0 +1,22 @@
+		import_file("./tfolder/testn.txt", "");
+		create_directory("dokumenty", "./");
+		import_file("tfolder/test.txt", "dokumenty");
+	remove_file("testn.txt");
+		create_directory("pohadky", "./dokumenty");
+		import_file("./tfolder/testh.txt", "");
+		import_file("./tfolder/testh.txt", "dokumenty/pohadky");
+		import_file("./tfolder/testn.txt", "dokumenty/pohadky");
+		
+		struct node *p = &clusters[0];
+	p[1].start_cluster = 100000;		//->dokumenty
+		
+		char *p_c = &clusters[0];
+	strcpy(p_c, "ABCDE67890123456789");	//->testn.txt
+		
+		struct node *testh_pohadky_p = &clusters[1];
+	memset(&testh_pohadky_p[1], '\0', 13);	//->pohadky
+
+	fat[8] = 255;				//->pohadky/testn (end of file lost) 
+---------------------------------------------------------------------------------------
+list_file("/ABCDE678.012");
+list_file("_fnd7.fnd");

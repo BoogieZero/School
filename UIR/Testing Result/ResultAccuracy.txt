@@ -1,0 +1,12 @@
+Training Samples:	10
+Testing Samples:	490
+
+Distance Classifier:
+W_D	291	59,39%
+S_D	363	74,08%
+H_D	424	86,53%
+
+KNN Classifier:
+W_K	301	61,43%
+S_K	328	66,94%
+H_K	422	86,12%

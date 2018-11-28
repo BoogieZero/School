@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMT-A xmlns="urn:mpeg:mpeg4:xmta:schema:2002" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:mpeg4:xmta:schema:2002 xmt-a.xsd">
+ <Header>
+ <InitialObjectDescriptor objectDescriptorID="od1" binaryID="1" >
+  <Profiles audioProfileLevelIndication="254" visualProfileLevelIndication="254" sceneProfileLevelIndication="254" graphicsProfileLevelIndication="254" ODProfileLevelIndication="254" />
+  <Descr>
+   <esDescr>
+    <ES_Descriptor ES_ID="proud_sceny" binaryID="1" >
+     <decConfigDescr>
+      <DecoderConfigDescriptor streamType="SceneDescription" >
+       <decSpecificInfo>
+        <BIFSConfig >
+          <commandStream pixelMetric="true" >
+           <size pixelWidth="250" pixelHeight="100" />
+          </commandStream>
+        </BIFSConfig>
+       </decSpecificInfo>
+      </DecoderConfigDescriptor>
+     </decConfigDescr>
+    </ES_Descriptor>
+
+    <ES_Descriptor ES_ID="proud_deskriptoru" binaryID="2" >
+     <decConfigDescr>
+      <DecoderConfigDescriptor objectTypeIndication="MPEG4Systems1" streamType="ObjectDescriptor" >
+      </DecoderConfigDescriptor>
+     </decConfigDescr>
+     <slConfigDescr>
+      <SLConfigDescriptor><predefined value="2"/></SLConfigDescriptor>
+     </slConfigDescr>
+    </ES_Descriptor>
+    
+    <ES_Descriptor ES_ID="proud_deskriptoruSec" binaryID="3" >
+     <decConfigDescr>
+      <DecoderConfigDescriptor objectTypeIndication="MPEG4Systems1" streamType="ObjectDescriptor" >
+      </DecoderConfigDescriptor>
+     </decConfigDescr>
+     <slConfigDescr>
+      <SLConfigDescriptor><predefined value="2"/></SLConfigDescriptor>
+     </slConfigDescr>
+    </ES_Descriptor>
+
+   </esDescr>
+  </Descr>
+ </InitialObjectDescriptor>
+ </Header>
+ <Body>
+
+<Replace>
+ <Scene>
+  <OrderedGroup>
+   <children>
+    <Transform2D translation = "-35 0">
+    <children>
+    <Shape>
+     <appearance>
+      <Appearance>
+       <material>
+        <Material2D filled="TRUE"/>
+       </material>
+       <texture>
+        <MovieTexture url="&quot;od://video_OD&quot;"/>
+       </texture>
+      </Appearance>
+     </appearance>
+     <geometry>
+      <Rectangle size="120 90"/>
+     </geometry>
+    </Shape>
+    </children>
+    </Transform2D>
+	
+	<Transform2D translation = "80 0">
+	
+	    <Transform2D translation = "0 0">
+	    <children>
+	    <Shape>
+	     <appearance>
+	      <Appearance>
+	       <material>
+	        <Material2D filled="TRUE"/>
+	       </material>
+	       <texture>
+	        <ImageTexture url="&quot;od://obrazek_OD&quot;"/>
+	       </texture>
+	      </Appearance>
+	     </appearance>
+	     <geometry>
+	      <Rectangle size="90 90"/>
+	     </geometry>
+	    </Shape>
+	    </children>
+	    </Transform2D>
+	    
+	    <Transform2D translation = "0 -10">
+	    <children>
+	    <Shape>
+	     <appearance>
+	      <Appearance>
+	       <material>
+	        <Material2D filled="TRUE"/>
+	       </material>
+	       <texture>
+	        <ImageTexture url="&quot;od://obrazek_ODS&quot;"/>
+	       </texture>
+	      </Appearance>
+	     </appearance>
+	     <geometry>
+	      <Rectangle size="20 20"/>
+	     </geometry>
+	    </Shape>
+	    </children>
+	    
+	    <Transform2D DEF="RotaceSec">
+	   	<Transform2D translation = "3 0">
+		   <children>
+		    <Shape>
+		     <geometry>
+		      <Rectangle size="6 0.7"/>
+		     </geometry>
+		
+		     <appearance>
+		      <Appearance>
+		       <material>
+		        <Material2D emissiveColor="1 0 0" filled="true">
+		        </Material2D>
+		       </material>
+		      </Appearance>
+		     </appearance>
+		
+		    </Shape>
+		   </children>
+	   	</Transform2D>
+	   </Transform2D>
+	    
+	    </Transform2D>
+	    
+	    
+	   
+	   <Transform2D DEF="RotaceSecB">
+	   	<Transform2D translation = "17 0">
+		   <children>
+		    <Shape>
+		     <geometry>
+		      <Rectangle size="34 0.5"/>
+		     </geometry>
+		
+		     <appearance>
+		      <Appearance>
+		       <material>
+		        <Material2D emissiveColor="1 0 0" filled="true">
+		        </Material2D>
+		       </material>
+		      </Appearance>
+		     </appearance>
+		
+		    </Shape>
+		   </children>
+	   	</Transform2D>
+	   </Transform2D>
+	   
+	   <Transform2D DEF="RotaceMin">
+	   	<Transform2D translation = "16 0">
+		   <children>
+		    <Shape>
+		     <geometry>
+		      <Rectangle size="27 1"/>
+		     </geometry>
+		
+		     <appearance>
+		      <Appearance>
+		       <material>
+		        <Material2D emissiveColor="0 0 1"  filled="true">
+		        <lineProps><LineProperties lineColor="0 0 0.5" width="0.5"/></lineProps>
+		        </Material2D>
+		       </material>
+		      </Appearance>
+		     </appearance>
+		
+		    </Shape>
+		   </children>
+	   	</Transform2D>
+	   </Transform2D>
+	   
+	   <Transform2D DEF="RotaceHod">
+	   	<Transform2D translation = "13 0">
+		   <children>
+		    <Shape>
+		     <geometry>
+		      <Rectangle size="18 1.5"/>
+		     </geometry>
+		
+		     <appearance>
+		      <Appearance>
+		       <material>
+		        <Material2D emissiveColor="0 0 0" filled="false">
+		        </Material2D>
+		       </material>
+		      </Appearance>
+		     </appearance>
+		
+		    </Shape>
+		   </children>
+	   	</Transform2D>
+	   </Transform2D>
+	
+		<TimeSensor DEF="CasovacSEC" cycleInterval="60" loop="true"/>
+	   	<ScalarInterpolator DEF="InterpolatorSEC" key="0 1" keyValue="1.57   -4.71"/>
+		
+		<TimeSensor DEF="CasovacMIN" cycleInterval="3600" loop="true"/>
+	   	<ScalarInterpolator DEF="InterpolatorMIN" key="0 1" keyValue="1.57   -4.71"/>
+	   	
+	   	<TimeSensor DEF="CasovacHOD" cycleInterval="216000" loop="true"/>
+	   	<ScalarInterpolator DEF="InterpolatorHOD" key="0 1" keyValue="1.57   -4.71"/>
+		
+	</Transform2D>
+	
+	
+   </children>
+  </OrderedGroup>
+  
+  	<ROUTE fromNode="CasovacSEC" fromField="fraction_changed" toNode="InterpolatorSEC" toField="set_fraction"/>
+  	<ROUTE fromNode="InterpolatorSEC" fromField="value_changed" toNode="RotaceSec" toField="rotationAngle"/>
+  	
+  	<ROUTE fromNode="CasovacSEC" fromField="fraction_changed" toNode="InterpolatorSEC" toField="set_fraction"/>
+  	<ROUTE fromNode="InterpolatorSEC" fromField="value_changed" toNode="RotaceSecB" toField="rotationAngle"/>
+  	
+  	<ROUTE fromNode="CasovacMIN" fromField="fraction_changed" toNode="InterpolatorMIN" toField="set_fraction"/>
+  	<ROUTE fromNode="InterpolatorMIN" fromField="value_changed" toNode="RotaceMin" toField="rotationAngle"/>
+  	
+  	<ROUTE fromNode="CasovacHOD" fromField="fraction_changed" toNode="InterpolatorHOD" toField="set_fraction"/>
+  	<ROUTE fromNode="InterpolatorHOD" fromField="value_changed" toNode="RotaceHod" toField="rotationAngle"/>
+  	
+ </Scene>
+</Replace>
+
+
+ <ObjectDescriptorUpdate >
+  <OD>
+   <ObjectDescriptor objectDescriptorID="video_OD" binaryID="�4" >
+    <Descr>
+     <esDescr>
+      <ES_Descriptor ES_ID="video_es" binaryID="5" >
+       <decConfigDescr>
+        <DecoderConfigDescriptor objectTypeIndication="MPEG4Visual" streamType="Visual"/>
+       </decConfigDescr>
+       <slConfigDescr>
+        <SLConfigDescriptor><predefined value="2"/></SLConfigDescriptor>
+       </slConfigDescr>
+       <StreamSource url="computing_track201.media" >
+        <MP4MuxHints />
+       </StreamSource>
+      </ES_Descriptor>
+     </esDescr>
+    </Descr>
+   </ObjectDescriptor>
+  </OD>
+ </ObjectDescriptorUpdate>
+
+ <ObjectDescriptorUpdate>
+  <OD>
+   <ObjectDescriptor objectDescriptorID="obrazek_OD" binaryID="6">
+    <Descr>
+     <esDescr>
+      <ES_Descriptor ES_ID="obrazek_es" binaryID="7">
+       <decConfigDescr>
+        <DecoderConfigDescriptor objectTypeIndication="JPEG" streamType="Visual"/>
+       </decConfigDescr>
+       <slConfigDescr>
+        <SLConfigDescriptor><predefined value="2"/></SLConfigDescriptor>
+       </slConfigDescr>
+       <StreamSource url="hodinyMIN.jpg"/>
+      </ES_Descriptor>
+     </esDescr>
+    </Descr>
+   </ObjectDescriptor>
+  </OD>
+ </ObjectDescriptorUpdate>
+ 
+  <ObjectDescriptorUpdate>
+  <OD>
+   <ObjectDescriptor objectDescriptorID="obrazek_ODS" binaryID="8">
+    <Descr>
+     <esDescr>
+      <ES_Descriptor ES_ID="obrazek_ess" binaryID="9">
+       <decConfigDescr>
+        <DecoderConfigDescriptor objectTypeIndication="JPEG" streamType="Visual"/>
+       </decConfigDescr>
+       <slConfigDescr>
+        <SLConfigDescriptor><predefined value="2"/></SLConfigDescriptor>
+       </slConfigDescr>
+       <StreamSource url="hodinySEC.jpg"/>
+      </ES_Descriptor>
+     </esDescr>
+    </Descr>
+   </ObjectDescriptor>
+  </OD>
+ </ObjectDescriptorUpdate>
+
+ </Body>
+</XMT-A>

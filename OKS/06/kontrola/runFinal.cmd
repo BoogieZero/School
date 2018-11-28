@@ -1,0 +1,1 @@
+jar cMf oks-06.jar test/oks06 oks06_pokryti.csv

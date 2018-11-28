@@ -1,0 +1,56 @@
+﻿  Source.c
+c:\github\school\zos\zos_fat\zos_fat\source.c(70): warning C4133: 'initializing': incompatible types - from 'cluster *' to 'node *'
+c:\github\school\zos\zos_fat\zos_fat\source.c(146): warning C4133: 'initializing': incompatible types - from 'cluster *' to 'char *'
+c:\github\school\zos\zos_fat\zos_fat\source.c(163): warning C4013: 'set_unused' undefined; assuming extern returning int
+c:\github\school\zos\zos_fat\zos_fat\source.c(221): warning C4133: 'initializing': incompatible types - from 'cluster *' to 'node *'
+c:\github\school\zos\zos_fat\zos_fat\source.c(236): warning C4133: 'initializing': incompatible types - from 'cluster *' to 'node *'
+c:\github\school\zos\zos_fat\zos_fat\source.c(252): warning C4013: 'clear_node' undefined; assuming extern returning int
+c:\github\school\zos\zos_fat\zos_fat\source.c(249): warning C4133: 'initializing': incompatible types - from 'cluster *' to 'node *'
+c:\github\school\zos\zos_fat\zos_fat\source.c(264): warning C4133: 'initializing': incompatible types - from 'cluster *' to 'node *'
+c:\github\school\zos\zos_fat\zos_fat\source.c(323): warning C4133: 'initializing': incompatible types - from 'cluster *' to 'node *'
+c:\github\school\zos\zos_fat\zos_fat\source.c(368): warning C4133: '=': incompatible types - from 'cluster *' to 'char *'
+c:\github\school\zos\zos_fat\zos_fat\source.c(343): warning C4133: 'initializing': incompatible types - from 'cluster *' to 'char *'
+c:\github\school\zos\zos_fat\zos_fat\source.c(569): warning C4013: 'malloc' undefined; assuming extern returning int
+c:\github\school\zos\zos_fat\zos_fat\source.c(569): warning C4047: '=': 'char *' differs in levels of indirection from 'int'
+c:\github\school\zos\zos_fat\zos_fat\source.c(578): warning C4013: 'free' undefined; assuming extern returning int
+c:\github\school\zos\zos_fat\zos_fat\source.c(579): warning C4013: 'exit' undefined; assuming extern returning int
+c:\github\school\zos\zos_fat\zos_fat\source.c(588): warning C4133: 'initializing': incompatible types - from 'cluster *' to 'node *'
+c:\github\school\zos\zos_fat\zos_fat\source.c(623): warning C4133: 'initializing': incompatible types - from 'cluster *' to 'node *'
+c:\github\school\zos\zos_fat\zos_fat\source.c(698): warning C4013: 'name_correction' undefined; assuming extern returning int
+c:\github\school\zos\zos_fat\zos_fat\source.c(679): warning C4133: 'initializing': incompatible types - from 'cluster *' to 'node *'
+c:\github\school\zos\zos_fat\zos_fat\source.c(777): warning C4033: 'list_file_node' must return a value
+c:\github\school\zos\zos_fat\zos_fat\source.c(804): warning C4033: 'list_dir_node' must return a value
+c:\github\school\zos\zos_fat\zos_fat\source.c(807): warning C4133: '=': incompatible types - from 'cluster *' to 'node *'
+c:\github\school\zos\zos_fat\zos_fat\source.c(839): warning C4033: 'list_structure' must return a value
+c:\github\school\zos\zos_fat\zos_fat\source.c(845): warning C4133: 'initializing': incompatible types - from 'cluster *' to 'node *'
+c:\github\school\zos\zos_fat\zos_fat\source.c(909): warning C4013: 'hit_test_arr' undefined; assuming extern returning int
+c:\github\school\zos\zos_fat\zos_fat\source.c(888): warning C4133: 'initializing': incompatible types - from 'cluster *' to 'node *'
+c:\github\school\zos\zos_fat\zos_fat\source.c(925): warning C4047: 'initializing': 'int' differs in levels of indirection from 'cluster *'
+c:\github\school\zos\zos_fat\zos_fat\source.c(926): warning C4047: 'initializing': 'int' differs in levels of indirection from 'node *'
+c:\github\school\zos\zos_fat\zos_fat\source.c(981): warning C4033: 'mark_directory' must return a value
+c:\github\school\zos\zos_fat\zos_fat\source.c(991): warning C4033: 'mark_directory' must return a value
+c:\github\school\zos\zos_fat\zos_fat\source.c(1004): warning C4013: 'mark_file' undefined; assuming extern returning int
+c:\github\school\zos\zos_fat\zos_fat\source.c(995): warning C4133: 'initializing': incompatible types - from 'cluster *' to 'node *'
+c:\github\school\zos\zos_fat\zos_fat\source.c(1037): warning C4033: 'mark_file' must return a value
+c:\github\school\zos\zos_fat\zos_fat\source.c(1041): warning C4013: 'fat_correction_file' undefined; assuming extern returning int
+c:\github\school\zos\zos_fat\zos_fat\source.c(1056): warning C4033: 'mark_file' must return a value
+c:\github\school\zos\zos_fat\zos_fat\source.c(1066): warning C4033: 'mark_file' must return a value
+c:\github\school\zos\zos_fat\zos_fat\source.c(1085): warning C4133: 'initializing': incompatible types - from 'cluster *' to 'node *'
+c:\github\school\zos\zos_fat\zos_fat\source.c(1136): warning C4033: 'add_to_list' must return a value
+c:\github\school\zos\zos_fat\zos_fat\source.c(1146): warning C4013: 'realloc' undefined; assuming extern returning int
+c:\github\school\zos\zos_fat\zos_fat\source.c(1182): warning C4033: 'file_recovery' must return a value
+c:\github\school\zos\zos_fat\zos_fat\source.c(1159): warning C4047: 'initializing': 'int *' differs in levels of indirection from 'int'
+c:\github\school\zos\zos_fat\zos_fat\source.c(1185): warning C4133: 'initializing': incompatible types - from 'cluster *' to 'node *'
+c:\github\school\zos\zos_fat\zos_fat\source.c(1218): warning C4033: 'fat_correction_file' must return a value
+c:\github\school\zos\zos_fat\zos_fat\source.c(1230): warning C4033: 'fat_correction_file' must return a value
+c:\github\school\zos\zos_fat\zos_fat\source.c(1242): warning C4033: 'fat_correction_file' must return a value
+c:\github\school\zos\zos_fat\zos_fat\source.c(1255): warning C4033: 'check_structure' must return a value
+c:\github\school\zos\zos_fat\zos_fat\source.c(1386): warning C4033: 'test' must return a value
+c:\github\school\zos\zos_fat\zos_fat\source.c(179): warning C4716: 'set_unused': must return a value
+c:\github\school\zos\zos_fat\zos_fat\source.c(280): warning C4716: 'clear_node': must return a value
+c:\github\school\zos\zos_fat\zos_fat\source.c(961): warning C4716: 'name_correction': must return a value
+c:\github\school\zos\zos_fat\zos_fat\source.c(1070): warning C4716: 'mark_file': must return a value
+c:\github\school\zos\zos_fat\zos_fat\source.c(1103): warning C4716: 'hit_test_arr': must return a value
+c:\github\school\zos\zos_fat\zos_fat\source.c(1244): warning C4716: 'fat_correction_file': must return a value
+  ZOS_FAT.vcxproj -> C:\GitHub\School\ZOS\ZOS_FAT\Debug\ZOS_FAT.exe
+  ZOS_FAT.vcxproj -> C:\GitHub\School\ZOS\ZOS_FAT\Debug\ZOS_FAT.pdb (Partial PDB)

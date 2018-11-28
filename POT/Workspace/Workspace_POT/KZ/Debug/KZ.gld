@@ -1,0 +1,8 @@
+-T "C:\School\POT\Workspace\Workspace_POT\KZ\Debug\KZ_Debug_auto.gsi"
+-T "C:\School\POT\Workspace\Workspace_POT\KZ\Debug\KZ_input.tmp" 
+-L "c:\school\pot\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\lib\gcc\h8300-elf\4.5-GNUH8_v11.02\h8300s"
+-L "C:\School\POT\Workspace\Workspace_POT\KZ\Debug"
+-Map "C:\School\POT\Workspace\Workspace_POT\KZ\Debug\KZ.map"
+-( -l "gcc" -l "KZ" -)
+-o "C:\School\POT\Workspace\Workspace_POT\KZ\Debug\KZ.x"
+-e _start

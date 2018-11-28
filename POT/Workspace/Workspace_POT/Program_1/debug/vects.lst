@@ -1,0 +1,304 @@
+Renesas H8/300 GAS  C:\Users\Martin\AppData\Local\Temp\ccFwXIat.s 			page 1
+
+
+   1              		.file	"vects.c"
+   2              		.h8300s
+   3              		.section	.debug_abbrev,"",@progbits
+   4              	.Ldebug_abbrev0:
+   5              		.section	.debug_info,"",@progbits
+   6              	.Ldebug_info0:
+   7              		.section	.debug_line,"",@progbits
+   8              	.Ldebug_line0:
+   9              		.section .text
+  10              	.Ltext0:
+  11              		.global _HardwareVectors
+  12              		.section	.vects,"a",@progbits
+  13              		.align 2
+  14              		.type	_HardwareVectors, @object
+  15              		.size	_HardwareVectors, 4
+  16              	_HardwareVectors:
+  17 0000 00000000 		.long	_start
+  18              		.section .text
+  19              	.Letext0:
+  20              		.section	.debug_info
+  21 0000 0000005E 		.4byte	0x5e
+  22 0004 0002     		.2byte	0x2
+  23 0006 00000000 		.4byte	.Ldebug_abbrev0
+  24 000a 04       		.byte	0x4
+  25 000b 01       		.uleb128 0x1
+  26 000c 00000048 		.4byte	.LASF0
+  27 0010 01       		.byte	0x1
+  28 0011 00000000 		.4byte	.LASF1
+  29 0015 00000000 		.4byte	.Ltext0
+  30 0019 00000000 		.4byte	.Letext0
+  31 001d 00000000 		.4byte	.Ldebug_line0
+  32 0021 02       		.uleb128 0x2
+  33 0022 667000   		.string	"fp"
+  34 0025 01       		.byte	0x1
+  35 0026 08       		.byte	0x8
+  36 0027 0000002B 		.4byte	0x2b
+  37 002b 03       		.uleb128 0x3
+  38 002c 04       		.byte	0x4
+  39 002d 00000031 		.4byte	0x31
+  40 0031 04       		.uleb128 0x4
+  41 0032 01       		.byte	0x1
+  42 0033 05       		.uleb128 0x5
+  43 0034 00000021 		.4byte	0x21
+  44 0038 00000043 		.4byte	0x43
+  45 003c 06       		.uleb128 0x6
+  46 003d 00000043 		.4byte	0x43
+  47 0041 00       		.byte	0x0
+  48 0042 00       		.byte	0x0
+  49 0043 07       		.uleb128 0x7
+  50 0044 04       		.byte	0x4
+  51 0045 07       		.byte	0x7
+  52 0046 0000005F 		.4byte	.LASF2
+  53 004a 08       		.uleb128 0x8
+  54 004b 00000038 		.4byte	.LASF3
+  55 004f 01       		.byte	0x1
+  56 0050 0B       		.byte	0xb
+  57 0051 0000005C 		.4byte	0x5c
+Renesas H8/300 GAS  C:\Users\Martin\AppData\Local\Temp\ccFwXIat.s 			page 2
+
+
+  58 0055 01       		.byte	0x1
+  59 0056 05       		.byte	0x5
+  60 0057 03       		.byte	0x3
+  61 0058 00000000 		.4byte	_HardwareVectors
+  62 005c 09       		.uleb128 0x9
+  63 005d 00000033 		.4byte	0x33
+  64 0061 00       		.byte	0x0
+  65              		.section	.debug_abbrev
+  66 0000 01       		.uleb128 0x1
+  67 0001 11       		.uleb128 0x11
+  68 0002 01       		.byte	0x1
+  69 0003 25       		.uleb128 0x25
+  70 0004 0E       		.uleb128 0xe
+  71 0005 13       		.uleb128 0x13
+  72 0006 0B       		.uleb128 0xb
+  73 0007 03       		.uleb128 0x3
+  74 0008 0E       		.uleb128 0xe
+  75 0009 11       		.uleb128 0x11
+  76 000a 01       		.uleb128 0x1
+  77 000b 12       		.uleb128 0x12
+  78 000c 01       		.uleb128 0x1
+  79 000d 10       		.uleb128 0x10
+  80 000e 06       		.uleb128 0x6
+  81 000f 00       		.byte	0x0
+  82 0010 00       		.byte	0x0
+  83 0011 02       		.uleb128 0x2
+  84 0012 16       		.uleb128 0x16
+  85 0013 00       		.byte	0x0
+  86 0014 03       		.uleb128 0x3
+  87 0015 08       		.uleb128 0x8
+  88 0016 3A       		.uleb128 0x3a
+  89 0017 0B       		.uleb128 0xb
+  90 0018 3B       		.uleb128 0x3b
+  91 0019 0B       		.uleb128 0xb
+  92 001a 49       		.uleb128 0x49
+  93 001b 13       		.uleb128 0x13
+  94 001c 00       		.byte	0x0
+  95 001d 00       		.byte	0x0
+  96 001e 03       		.uleb128 0x3
+  97 001f 0F       		.uleb128 0xf
+  98 0020 00       		.byte	0x0
+  99 0021 0B       		.uleb128 0xb
+ 100 0022 0B       		.uleb128 0xb
+ 101 0023 49       		.uleb128 0x49
+ 102 0024 13       		.uleb128 0x13
+ 103 0025 00       		.byte	0x0
+ 104 0026 00       		.byte	0x0
+ 105 0027 04       		.uleb128 0x4
+ 106 0028 15       		.uleb128 0x15
+ 107 0029 00       		.byte	0x0
+ 108 002a 27       		.uleb128 0x27
+ 109 002b 0C       		.uleb128 0xc
+ 110 002c 00       		.byte	0x0
+ 111 002d 00       		.byte	0x0
+ 112 002e 05       		.uleb128 0x5
+ 113 002f 01       		.uleb128 0x1
+ 114 0030 01       		.byte	0x1
+Renesas H8/300 GAS  C:\Users\Martin\AppData\Local\Temp\ccFwXIat.s 			page 3
+
+
+ 115 0031 49       		.uleb128 0x49
+ 116 0032 13       		.uleb128 0x13
+ 117 0033 01       		.uleb128 0x1
+ 118 0034 13       		.uleb128 0x13
+ 119 0035 00       		.byte	0x0
+ 120 0036 00       		.byte	0x0
+ 121 0037 06       		.uleb128 0x6
+ 122 0038 21       		.uleb128 0x21
+ 123 0039 00       		.byte	0x0
+ 124 003a 49       		.uleb128 0x49
+ 125 003b 13       		.uleb128 0x13
+ 126 003c 2F       		.uleb128 0x2f
+ 127 003d 0B       		.uleb128 0xb
+ 128 003e 00       		.byte	0x0
+ 129 003f 00       		.byte	0x0
+ 130 0040 07       		.uleb128 0x7
+ 131 0041 24       		.uleb128 0x24
+ 132 0042 00       		.byte	0x0
+ 133 0043 0B       		.uleb128 0xb
+ 134 0044 0B       		.uleb128 0xb
+ 135 0045 3E       		.uleb128 0x3e
+ 136 0046 0B       		.uleb128 0xb
+ 137 0047 03       		.uleb128 0x3
+ 138 0048 0E       		.uleb128 0xe
+ 139 0049 00       		.byte	0x0
+ 140 004a 00       		.byte	0x0
+ 141 004b 08       		.uleb128 0x8
+ 142 004c 34       		.uleb128 0x34
+ 143 004d 00       		.byte	0x0
+ 144 004e 03       		.uleb128 0x3
+ 145 004f 0E       		.uleb128 0xe
+ 146 0050 3A       		.uleb128 0x3a
+ 147 0051 0B       		.uleb128 0xb
+ 148 0052 3B       		.uleb128 0x3b
+ 149 0053 0B       		.uleb128 0xb
+ 150 0054 49       		.uleb128 0x49
+ 151 0055 13       		.uleb128 0x13
+ 152 0056 3F       		.uleb128 0x3f
+ 153 0057 0C       		.uleb128 0xc
+ 154 0058 02       		.uleb128 0x2
+ 155 0059 0A       		.uleb128 0xa
+ 156 005a 00       		.byte	0x0
+ 157 005b 00       		.byte	0x0
+ 158 005c 09       		.uleb128 0x9
+ 159 005d 26       		.uleb128 0x26
+ 160 005e 00       		.byte	0x0
+ 161 005f 49       		.uleb128 0x49
+ 162 0060 13       		.uleb128 0x13
+ 163 0061 00       		.byte	0x0
+ 164 0062 00       		.byte	0x0
+ 165 0063 00       		.byte	0x0
+ 166              		.section	.debug_pubnames,"",@progbits
+ 167 0000 00000022 		.4byte	0x22
+ 168 0004 0002     		.2byte	0x2
+ 169 0006 00000000 		.4byte	.Ldebug_info0
+ 170 000a 00000062 		.4byte	0x62
+ 171 000e 0000004A 		.4byte	0x4a
+Renesas H8/300 GAS  C:\Users\Martin\AppData\Local\Temp\ccFwXIat.s 			page 4
+
+
+ 172 0012 48617264 		.string	"HardwareVectors"
+ 172      77617265 
+ 172      56656374 
+ 172      6F727300 
+ 173 0022 00000000 		.4byte	0x0
+ 174              		.section	.debug_pubtypes,"",@progbits
+ 175 0000 00000015 		.4byte	0x15
+ 176 0004 0002     		.2byte	0x2
+ 177 0006 00000000 		.4byte	.Ldebug_info0
+ 178 000a 00000062 		.4byte	0x62
+ 179 000e 00000021 		.4byte	0x21
+ 180 0012 667000   		.string	"fp"
+ 181 0015 00000000 		.4byte	0x0
+ 182              		.section	.debug_line
+ 183 0000 0000005B 		.4byte	.LELT0-.LSLT0
+ 184              	.LSLT0:
+ 185 0004 0002     		.2byte	0x2
+ 186 0006 0000004B 		.4byte	.LELTP0-.LASLTP0
+ 187              	.LASLTP0:
+ 188 000a 01       		.byte	0x1
+ 189 000b 01       		.byte	0x1
+ 190 000c F6       		.byte	0xf6
+ 191 000d F5       		.byte	0xf5
+ 192 000e 0A       		.byte	0xa
+ 193 000f 00       		.byte	0x0
+ 194 0010 01       		.byte	0x1
+ 195 0011 01       		.byte	0x1
+ 196 0012 01       		.byte	0x1
+ 197 0013 01       		.byte	0x1
+ 198 0014 00       		.byte	0x0
+ 199 0015 00       		.byte	0x0
+ 200 0016 00       		.byte	0x0
+ 201 0017 01       		.byte	0x1
+ 202 0018 433A5C53 		.ascii	"C:\\School\\POT\\Workspace\\Workspace_POT\\Program_1"
+ 202      63686F6F 
+ 202      6C5C504F 
+ 202      545C576F 
+ 202      726B7370 
+ 203 0047 00       		.byte	0
+ 204 0048 00       		.byte	0x0
+ 205 0049 76656374 		.string	"vects.c"
+ 205      732E6300 
+ 206 0051 01       		.uleb128 0x1
+ 207 0052 00       		.uleb128 0x0
+ 208 0053 00       		.uleb128 0x0
+ 209 0054 00       		.byte	0x0
+ 210              	.LELTP0:
+ 211 0055 00       		.byte	0x0
+ 212 0056 05       		.uleb128 0x5
+ 213 0057 02       		.byte	0x2
+ 214 0058 00000000 		.4byte	.Letext0
+ 215 005c 00       		.byte	0x0
+ 216 005d 01       		.uleb128 0x1
+ 217 005e 01       		.byte	0x1
+ 218              	.LELT0:
+ 219              		.section	.debug_str,"MS",@progbits,1
+ 220              	.LASF1:
+Renesas H8/300 GAS  C:\Users\Martin\AppData\Local\Temp\ccFwXIat.s 			page 5
+
+
+ 221 0000 433A5C53 		.string	"C:\\School\\POT\\Workspace\\Workspace_POT\\Program_1\\vects.c"
+ 221      63686F6F 
+ 221      6C5C504F 
+ 221      545C576F 
+ 221      726B7370 
+ 222              	.LASF3:
+ 223 0038 48617264 		.string	"HardwareVectors"
+ 223      77617265 
+ 223      56656374 
+ 223      6F727300 
+ 224              	.LASF0:
+ 225 0048 474E5520 		.string	"GNU C 4.5-GNUH8_v11.02"
+ 225      4320342E 
+ 225      352D474E 
+ 225      5548385F 
+ 225      7631312E 
+ 226              	.LASF2:
+ 227 005f 6C6F6E67 		.string	"long unsigned int"
+ 227      20756E73 
+ 227      69676E65 
+ 227      6420696E 
+ 227      7400
+ 228              		.ident	"GCC: (GNU) 4.5-GNUH8_v11.02"
+ 229              		.end
+Renesas H8/300 GAS  C:\Users\Martin\AppData\Local\Temp\ccFwXIat.s 			page 6
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 vects.c
+C:\Users\Martin\AppData\Local\Temp\ccFwXIat.s:16     .vects:00000000 _HardwareVectors
+                    .debug_abbrev:00000000 .Ldebug_abbrev0
+                       .debug_str:00000048 .LASF0
+                       .debug_str:00000000 .LASF1
+                            .text:00000000 .Ltext0
+                            .text:00000000 .Letext0
+                      .debug_line:00000000 .Ldebug_line0
+                       .debug_str:0000005f .LASF2
+                       .debug_str:00000038 .LASF3
+                      .debug_info:00000000 .Ldebug_info0
+
+UNDEFINED SYMBOLS
+_start
+
+
+==============================================================
+
+Listfile generated by KPIT GNUH8 [ELF]-v11.02 on Saturday, May 09, 2015, 16:00:43
+
+Build options:
+
+-c -x c
+-ms -ms2600
+-I "c:\school\pot\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\h8300-elf\optlibinc"
+-I "c:\school\pot\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\lib\gcc\h8300-elf\4.5-GNUH8_v11.02\optlibinc"
+-D DEBUG
+-Wa,-a="C:\School\POT\Workspace\Workspace_POT\Program_1\Debug\vects.lst"
+-nostdinc
+"C:\School\POT\Workspace\Workspace_POT\Program_1\vects.c"
+-g
+-g2
+-o "C:\School\POT\Workspace\Workspace_POT\Program_1\Debug\vects.o"

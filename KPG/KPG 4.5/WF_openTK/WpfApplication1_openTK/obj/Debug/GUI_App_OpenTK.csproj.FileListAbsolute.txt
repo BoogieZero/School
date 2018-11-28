@@ -1,0 +1,78 @@
+C:\Users\PetrHP\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\bin\Debug\WpfApplication1_openTK.exe.config
+C:\Users\PetrHP\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\obj\Debug\WpfApplication1_openTK.exe
+C:\Users\PetrHP\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\obj\Debug\WpfApplication1_openTK.pdb
+C:\Users\PetrHP\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\bin\Debug\fs.glsl
+C:\Users\PetrHP\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\bin\Debug\vs.glsl
+C:\Users\PetrHP\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\bin\Debug\WpfApplication1_openTK.exe
+C:\Users\PetrHP\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\bin\Debug\WpfApplication1_openTK.pdb
+C:\Users\PetrHP\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\bin\Debug\OpenTK.dll
+C:\Users\PetrHP\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\bin\Debug\OpenTK.GLControl.dll
+C:\Users\PetrHP\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\bin\Debug\OpenTK.pdb
+C:\Users\PetrHP\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\bin\Debug\OpenTK.xml
+C:\Users\PetrHP\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\bin\Debug\OpenTK.GLControl.xml
+C:\Users\PetrHP\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\obj\Debug\MainWindow.g.cs
+C:\Users\PetrHP\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\obj\Debug\App.g.cs
+C:\Users\PetrHP\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\obj\Debug\WpfApplication1_openTK_MarkupCompile.cache
+C:\Users\PetrHP\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\obj\Debug\WpfApplication1_openTK_MarkupCompile.lref
+C:\Users\PetrHP\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\obj\Debug\MainWindow.baml
+C:\Users\PetrHP\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\obj\Debug\WpfApplication1_openTK.g.resources
+C:\Users\PetrHP\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\obj\Debug\WpfApplication1_openTK.Properties.Resources.resources
+C:\Users\PetrHP\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\obj\Debug\GUI_App_OpenTK.csproj.GenerateResource.Cache
+C:\Users\Petrm\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\bin\Debug\fs.glsl
+C:\Users\Petrm\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\bin\Debug\vs.glsl
+C:\Users\Petrm\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\bin\Debug\WpfApplication1_openTK.exe.config
+C:\Users\Petrm\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\bin\Debug\WpfApplication1_openTK.exe
+C:\Users\Petrm\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\bin\Debug\WpfApplication1_openTK.pdb
+C:\Users\Petrm\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\bin\Debug\OpenTK.dll
+C:\Users\Petrm\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\bin\Debug\OpenTK.GLControl.dll
+C:\Users\Petrm\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\bin\Debug\OpenTK.xml
+C:\Users\Petrm\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\bin\Debug\OpenTK.GLControl.xml
+C:\Users\Petrm\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\obj\Debug\MainWindow.g.cs
+C:\Users\Petrm\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\obj\Debug\App.g.cs
+C:\Users\Petrm\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\obj\Debug\WpfApplication1_openTK_MarkupCompile.cache
+C:\Users\Petrm\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\obj\Debug\WpfApplication1_openTK_MarkupCompile.lref
+C:\Users\Petrm\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\obj\Debug\MainWindow.baml
+C:\Users\Petrm\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\obj\Debug\WpfApplication1_openTK.g.resources
+C:\Users\Petrm\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\obj\Debug\WpfApplication1_openTK.Properties.Resources.resources
+C:\Users\Petrm\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\obj\Debug\GUI_App_OpenTK.csproj.GenerateResource.Cache
+C:\Users\Petrm\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\obj\Debug\WpfApplication1_openTK.exe
+C:\Users\Petrm\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\obj\Debug\WpfApplication1_openTK.pdb
+C:\Users\Petrm\Dropbox\_PhDstudium\interni grant 2016\WF_openTK\WpfApplication1_openTK\bin\Debug\OpenTK.pdb
+F:\KPG 4.5\WF_openTK\WpfApplication1_openTK\bin\Debug\WpfApplication1_openTK.exe.config
+F:\KPG 4.5\WF_openTK\WpfApplication1_openTK\obj\Debug\WpfApplication1_openTK.exe
+F:\KPG 4.5\WF_openTK\WpfApplication1_openTK\obj\Debug\WpfApplication1_openTK.pdb
+F:\KPG 4.5\WF_openTK\WpfApplication1_openTK\bin\Debug\fs.glsl
+F:\KPG 4.5\WF_openTK\WpfApplication1_openTK\bin\Debug\vs.glsl
+F:\KPG 4.5\WF_openTK\WpfApplication1_openTK\bin\Debug\WpfApplication1_openTK.exe
+F:\KPG 4.5\WF_openTK\WpfApplication1_openTK\bin\Debug\WpfApplication1_openTK.pdb
+F:\KPG 4.5\WF_openTK\WpfApplication1_openTK\bin\Debug\OpenTK.pdb
+F:\KPG 4.5\WF_openTK\WpfApplication1_openTK\bin\Debug\OpenTK.xml
+F:\KPG 4.5\WF_openTK\WpfApplication1_openTK\bin\Debug\OpenTK.GLControl.xml
+F:\KPG 4.5\WF_openTK\WpfApplication1_openTK\obj\Debug\GUI_App_OpenTK.csprojResolveAssemblyReference.cache
+F:\KPG 4.5\WF_openTK\WpfApplication1_openTK\obj\Debug\MainWindow.g.cs
+F:\KPG 4.5\WF_openTK\WpfApplication1_openTK\obj\Debug\App.g.cs
+F:\KPG 4.5\WF_openTK\WpfApplication1_openTK\obj\Debug\WpfApplication1_openTK_MarkupCompile.cache
+F:\KPG 4.5\WF_openTK\WpfApplication1_openTK\obj\Debug\WpfApplication1_openTK_MarkupCompile.lref
+F:\KPG 4.5\WF_openTK\WpfApplication1_openTK\obj\Debug\MainWindow.baml
+F:\KPG 4.5\WF_openTK\WpfApplication1_openTK\obj\Debug\WpfApplication1_openTK.g.resources
+F:\KPG 4.5\WF_openTK\WpfApplication1_openTK\obj\Debug\WpfApplication1_openTK.Properties.Resources.resources
+F:\KPG 4.5\WF_openTK\WpfApplication1_openTK\obj\Debug\GUI_App_OpenTK.csproj.GenerateResource.Cache
+C:\School\KPG\KPG 4.5\WF_openTK\WpfApplication1_openTK\bin\Debug\WpfApplication1_openTK.exe.config
+C:\School\KPG\KPG 4.5\WF_openTK\WpfApplication1_openTK\obj\Debug\WpfApplication1_openTK.exe
+C:\School\KPG\KPG 4.5\WF_openTK\WpfApplication1_openTK\obj\Debug\WpfApplication1_openTK.pdb
+C:\School\KPG\KPG 4.5\WF_openTK\WpfApplication1_openTK\bin\Debug\fs.glsl
+C:\School\KPG\KPG 4.5\WF_openTK\WpfApplication1_openTK\bin\Debug\vs.glsl
+C:\School\KPG\KPG 4.5\WF_openTK\WpfApplication1_openTK\bin\Debug\WpfApplication1_openTK.exe
+C:\School\KPG\KPG 4.5\WF_openTK\WpfApplication1_openTK\bin\Debug\WpfApplication1_openTK.pdb
+C:\School\KPG\KPG 4.5\WF_openTK\WpfApplication1_openTK\bin\Debug\OpenTK.pdb
+C:\School\KPG\KPG 4.5\WF_openTK\WpfApplication1_openTK\bin\Debug\OpenTK.xml
+C:\School\KPG\KPG 4.5\WF_openTK\WpfApplication1_openTK\bin\Debug\OpenTK.GLControl.xml
+C:\School\KPG\KPG 4.5\WF_openTK\WpfApplication1_openTK\obj\Debug\GUI_App_OpenTK.csprojResolveAssemblyReference.cache
+C:\School\KPG\KPG 4.5\WF_openTK\WpfApplication1_openTK\obj\Debug\MainWindow.g.cs
+C:\School\KPG\KPG 4.5\WF_openTK\WpfApplication1_openTK\obj\Debug\App.g.cs
+C:\School\KPG\KPG 4.5\WF_openTK\WpfApplication1_openTK\obj\Debug\WpfApplication1_openTK_MarkupCompile.cache
+C:\School\KPG\KPG 4.5\WF_openTK\WpfApplication1_openTK\obj\Debug\WpfApplication1_openTK_MarkupCompile.lref
+C:\School\KPG\KPG 4.5\WF_openTK\WpfApplication1_openTK\obj\Debug\MainWindow.baml
+C:\School\KPG\KPG 4.5\WF_openTK\WpfApplication1_openTK\obj\Debug\WpfApplication1_openTK.g.resources
+C:\School\KPG\KPG 4.5\WF_openTK\WpfApplication1_openTK\obj\Debug\WpfApplication1_openTK.Properties.Resources.resources
+C:\School\KPG\KPG 4.5\WF_openTK\WpfApplication1_openTK\obj\Debug\GUI_App_OpenTK.csproj.GenerateResource.Cache

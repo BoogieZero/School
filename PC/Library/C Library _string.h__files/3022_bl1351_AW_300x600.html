@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- saved from url=(0160)http://pagead2.googlesyndication.com/sadbundle/9923967118395398197/3022_bl1351_AW_300x600.html#t=16161024550049872574&p=http%3A%2F%2Fgoogleads.g.doubleclick.net -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="exitapi-impl.js" type="text/javascript"></script><script src="addata.js" type="text/javascript"></script><meta charset="UTF-8"><meta content="width=300,height=600" name="ad.size"><title>3022_bl1351_AW_300x600</title><script src="easeljs-0.8.1.min.js"></script><script src="tweenjs-0.6.1.min.js"></script><script src="movieclip-0.8.1.min.js"></script><script src="preloadjs-0.6.1.min.js"></script><script src="3022_bl1351_AW_300x600.js"></script><script>
+var clickTag = "%link1%";
+</script><style> body { margin: 0; } </style><script>
+var canvas, stage, exportRoot;
+
+function init() {
+	canvas = document.getElementById("canvas");
+	images = images||{};
+
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(lib.properties.manifest);
+}
+
+function handleFileLoad(evt) {
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete(evt) {
+	exportRoot = new lib._3022_bl1351_AW_300x600();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+	stage.enableMouseOver();
+
+	createjs.Ticker.setFPS(lib.properties.fps);
+	createjs.Ticker.addEventListener("tick", stage);
+}
+</script><script type="text/javascript" src="S9T5AB-Eyhxg7BTjPiV9M3v0FBfuXhCEpUeLac5vjYA.js"></script></head><body onclick="ExitApi.exit();" onload="init();" style="background-color:#D4D4D4; cursor:pointer">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<canvas height="600" id="canvas" style="background-color:#FFFFFF" width="300"></canvas>
+
+</body></html>

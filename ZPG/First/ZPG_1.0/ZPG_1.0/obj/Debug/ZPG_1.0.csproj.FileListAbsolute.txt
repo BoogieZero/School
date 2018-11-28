@@ -1,0 +1,6 @@
+c:\users\boogie zero\documents\visual studio 2015\Projects\ZPG_1.0\ZPG_1.0\bin\Debug\ZPG_1.0.exe.config
+c:\users\boogie zero\documents\visual studio 2015\Projects\ZPG_1.0\ZPG_1.0\bin\Debug\ZPG_1.0.exe
+c:\users\boogie zero\documents\visual studio 2015\Projects\ZPG_1.0\ZPG_1.0\bin\Debug\ZPG_1.0.pdb
+c:\users\boogie zero\documents\visual studio 2015\Projects\ZPG_1.0\ZPG_1.0\obj\Debug\ZPG_1.0.csprojResolveAssemblyReference.cache
+c:\users\boogie zero\documents\visual studio 2015\Projects\ZPG_1.0\ZPG_1.0\obj\Debug\ZPG_1.0.exe
+c:\users\boogie zero\documents\visual studio 2015\Projects\ZPG_1.0\ZPG_1.0\obj\Debug\ZPG_1.0.pdb

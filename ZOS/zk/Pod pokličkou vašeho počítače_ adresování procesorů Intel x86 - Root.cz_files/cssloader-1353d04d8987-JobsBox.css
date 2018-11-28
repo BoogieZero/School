@@ -1,0 +1,143 @@
+
+
+
+#jobs {
+	position: relative;
+	margin-bottom: 10px;
+	border: 1px solid #19325a;
+	background-color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.jobs-ad-header {
+	background-color: #19325a;
+}
+.jobs-ad-header:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+#jobs-ad-logo {
+	display: none;
+	float: left;
+	min-width: 60px;
+	width: 25%;
+	margin-top: 14px;
+	margin-left: 5%;
+}
+
+#seduo-ad-logo {
+	display: none;
+	float: left;
+	min-width: 80px;
+	width: 25%;
+	margin-top: 14px;
+	margin-left: 5%;
+}
+
+.jobs-ad-tabs {
+	float: right;
+	max-width: 250px;
+	width: 65%;
+	margin-top: 22px;
+}
+
+.jobs-ad-tab {
+	float: left;
+	min-width: 80px;
+	max-width: 120px;
+	width: 46%;
+	margin-right: 1%;
+	margin-left: 1%;
+	font-size: 14px;
+	text-align: center;
+}
+
+.jobs-ad-tab a {
+	display: block;
+	height: 31px;
+	padding-bottom: 1px;
+	background-color: #ff9900;
+	background-clip: content-box;
+	color: #fff;
+	line-height: 31px;
+}
+.jobs-ad-active a {
+	background-color: #fff;
+	background-clip: border-box;
+	color: #19325a;
+}
+
+.jobs-ad-tab a .play-icon {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin-top: -1px;
+	margin-right: 3px;
+	background: url(https://i.iinfo.cz/sh/jobs/seduo-play-icon.png) no-repeat 0 0;
+	vertical-align: middle;
+}
+.jobs-ad-active a .play-icon {
+	background-position: 0 -15px;
+}
+
+.jobs-lst {
+	position: relative;
+	margin: 0;
+	padding: 12px 5px 7px 10px;
+	font-size: 12px;
+	list-style-type: none;
+}
+
+.jobs-lst li {
+	margin: 0 0 0 10px;
+	padding: 5px 0 3px 13px;
+	background: url(https://i.iinfo.cz/sh/jobs/jobs-li.png) no-repeat 0 12px;
+	line-height: 1.3em;
+	list-style-type: none;
+}
+
+.jobs-lst li a {
+	position: relative;
+	color: #000;
+	text-decoration: underline;
+}
+
+.jobs-ad-more {
+	position: relative;
+	float: left;
+	margin: 8px 0 19px 33px;
+	color: #000 !important;
+	font-weight: bold;
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+.jobs-ad-cb {
+	clear: both;
+	overflow: hidden;
+	height: 1px;
+}
+
+#jobs .tipLink {
+	height: 28px;
+	background-color: #19325a;
+	color: #ff9900;
+	font-weight: bold;
+	font-size: 12px;
+	text-align: center;
+}
+
+#jobs .tipLink a {
+	color: #fff;
+	line-height: 28px;
+}
+
+#jobs.purple .jobs-ad-header {
+	background-color: #48265b;
+}
+
+#jobs.purple .tipLink {
+	background-color: #48265b;
+}

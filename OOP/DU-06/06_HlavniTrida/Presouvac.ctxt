@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Presouvac()
+comment0.text=\r\n\ Vytvo\u0159\u00ED\ p\u0159esouva\u010De,\ kter\u00FD\ bude\ p\u0159esouvat\ objekty\ rychlosti\ 1.\r\n
+comment1.params=rychlost
+comment1.target=Presouvac(int)
+comment1.text=\r\n\ Vytvo\u0159\u00ED\ p\u0159esouva\u010De,\ kter\u00FD\ bude\ p\u0159esouvat\ objekty\ zadanou\ rychlost\u00ED.\r\n\r\n\ @param\ rychlost\ Rychlost,\ kterou\ bude\ p\u0159esouva\u010D\ pohybovat\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ se\ sv\u011B\u0159en\u00FDmi\ objekty.\r\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\r\n\ Metoda\ p\u0159ev\u00E1d\u00ED\ instanci\ na\ \u0159et\u011Bzec\ -\ pou\u017E\u00EDv\u00E1\ se\ pro\ \u00FA\u010Dely\ lad\u011Bn\u00ED.\r\n\ Vr\u00E1cen\u00FD\ \u0159et\u011Bzec\ obsahuje\ n\u00E1zev\ t\u0159\u00EDdy\ n\u00E1sledovan\u00FD\ identifika\u010Dn\u00EDm\ \u010D\u00EDslem\r\n\ dan\u00E9\ instance,\ kter\u00E9\ ur\u010Duje\ po\u0159ad\u00ED\ dan\u00E9\ instance\ mezi\ instancemi\ t\u00E9to\r\n\ t\u0159\u00EDdy,\ a\ nastavenou\ rychlost\u00ED\ p\u0159esunu.\r\n\r\n\ @return\ \ \u0158et\u011Bzec\ charakterizuj\u00EDc\u00ED\ instanci\r\n
+numComments=3

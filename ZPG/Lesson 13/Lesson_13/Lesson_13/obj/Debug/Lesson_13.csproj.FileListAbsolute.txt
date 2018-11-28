@@ -1,0 +1,14 @@
+C:\GitHub\School\ZPG\Lesson 13\Lesson_13\Lesson_13\bin\Debug\Lesson_13.exe.config
+C:\GitHub\School\ZPG\Lesson 13\Lesson_13\Lesson_13\bin\Debug\Lesson_13.exe
+C:\GitHub\School\ZPG\Lesson 13\Lesson_13\Lesson_13\bin\Debug\Lesson_13.pdb
+C:\GitHub\School\ZPG\Lesson 13\Lesson_13\Lesson_13\bin\Debug\OpenTK.dll
+C:\GitHub\School\ZPG\Lesson 13\Lesson_13\Lesson_13\bin\Debug\OpenTK.xml
+C:\GitHub\School\ZPG\Lesson 13\Lesson_13\Lesson_13\obj\Debug\Lesson_13.csprojResolveAssemblyReference.cache
+C:\GitHub\School\ZPG\Lesson 13\Lesson_13\Lesson_13\obj\Debug\Lesson_13.exe
+C:\GitHub\School\ZPG\Lesson 13\Lesson_13\Lesson_13\obj\Debug\Lesson_13.pdb
+C:\GitHub\School\ZPG\Lesson 13\Lesson_13\Lesson_13\bin\Debug\SharpFont.dll.config
+C:\GitHub\School\ZPG\Lesson 13\Lesson_13\Lesson_13\bin\Debug\freetype6.dll
+C:\GitHub\School\ZPG\Lesson 13\Lesson_13\Lesson_13\bin\Debug\SharpFont.dll
+C:\GitHub\School\ZPG\Lesson 13\Lesson_13\Lesson_13\bin\Debug\QuickFont.ES20.dll
+C:\GitHub\School\ZPG\Lesson 13\Lesson_13\Lesson_13\bin\Debug\QuickFont.ES20.xml
+C:\GitHub\School\ZPG\Lesson 13\Lesson_13\Lesson_13\bin\Debug\SharpFont.xml

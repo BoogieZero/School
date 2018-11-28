@@ -1,0 +1,5 @@
+"C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\main.s"
+-I "C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P"
+--gdwarf2
+-o "C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\Debug\main.o"
+-alsh="C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\Debug\main.lis"

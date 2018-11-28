@@ -1,0 +1,57 @@
+c:\users\petrm\documents\visual studio 2012\Projects\KPG01\KPG01\bin\Debug\KPG01.exe.config
+c:\users\petrm\documents\visual studio 2012\Projects\KPG01\KPG01\bin\Debug\KPG01.exe
+c:\users\petrm\documents\visual studio 2012\Projects\KPG01\KPG01\bin\Debug\KPG01.pdb
+c:\users\petrm\documents\visual studio 2012\Projects\KPG01\KPG01\obj\Debug\KPG01.csprojResolveAssemblyReference.cache
+c:\users\petrm\documents\visual studio 2012\Projects\KPG01\KPG01\obj\Debug\KPG01.Form1.resources
+c:\users\petrm\documents\visual studio 2012\Projects\KPG01\KPG01\obj\Debug\KPG01.Properties.Resources.resources
+c:\users\petrm\documents\visual studio 2012\Projects\KPG01\KPG01\obj\Debug\KPG01.csproj.GenerateResource.Cache
+c:\users\petrm\documents\visual studio 2012\Projects\KPG01\KPG01\obj\Debug\KPG01.exe
+c:\users\petrm\documents\visual studio 2012\Projects\KPG01\KPG01\obj\Debug\KPG01.pdb
+C:\Users\Petrm\Desktop\KPG01\KPG01\bin\Debug\KPG01.exe.config
+C:\Users\Petrm\Desktop\KPG01\KPG01\obj\Debug\KPG01.exe
+C:\Users\Petrm\Desktop\KPG01\KPG01\obj\Debug\KPG01.pdb
+C:\Users\Petrm\Desktop\KPG01\KPG01\bin\Debug\KPG01.exe
+C:\Users\Petrm\Desktop\KPG01\KPG01\bin\Debug\KPG01.pdb
+C:\Users\Petrm\Desktop\KPG01\KPG01\obj\Debug\KPG01.csprojResolveAssemblyReference.cache
+C:\Users\Petrm\Desktop\KPG01\KPG01\obj\Debug\KPG01.Form1.resources
+C:\Users\Petrm\Desktop\KPG01\KPG01\obj\Debug\KPG01.Properties.Resources.resources
+C:\Users\Petrm\Desktop\KPG01\KPG01\obj\Debug\KPG01.csproj.GenerateResource.Cache
+C:\Users\Petrm\Dropbox\_PhD studium\vyuka\KPG\KPG01\KPG01\bin\Debug\KPG01.exe.config
+C:\Users\Petrm\Dropbox\_PhD studium\vyuka\KPG\KPG01\KPG01\obj\Debug\KPG01.exe
+C:\Users\Petrm\Dropbox\_PhD studium\vyuka\KPG\KPG01\KPG01\obj\Debug\KPG01.pdb
+C:\Users\Petrm\Dropbox\_PhD studium\vyuka\KPG\KPG01\KPG01\obj\Debug\KPG01.csprojResolveAssemblyReference.cache
+C:\Users\Petrm\Dropbox\_PhD studium\vyuka\KPG\KPG01\KPG01\obj\Debug\KPG01.Form1.resources
+C:\Users\Petrm\Dropbox\_PhD studium\vyuka\KPG\KPG01\KPG01\obj\Debug\KPG01.Properties.Resources.resources
+C:\Users\Petrm\Dropbox\_PhD studium\vyuka\KPG\KPG01\KPG01\obj\Debug\KPG01.csproj.GenerateResource.Cache
+C:\Users\Petrm\Dropbox\_PhD studium\vyuka\KPG\KPG01\KPG01\bin\Debug\KPG01.exe
+C:\Users\Petrm\Dropbox\_PhD studium\vyuka\KPG\KPG01\KPG01\bin\Debug\KPG01.pdb
+C:\Users\Petrm\Dropbox\_PhDstudium\vyuka\KPG\KPG01\KPG01\bin\Debug\KPG01.exe.config
+C:\Users\Petrm\Dropbox\_PhDstudium\vyuka\KPG\KPG01\KPG01\obj\Debug\KPG01.exe
+C:\Users\Petrm\Dropbox\_PhDstudium\vyuka\KPG\KPG01\KPG01\obj\Debug\KPG01.pdb
+C:\Users\Petrm\Dropbox\_PhDstudium\vyuka\KPG\KPG01\KPG01\bin\Debug\KPG01.exe
+C:\Users\Petrm\Dropbox\_PhDstudium\vyuka\KPG\KPG01\KPG01\bin\Debug\KPG01.pdb
+C:\Users\Petrm\Dropbox\_PhDstudium\vyuka\KPG\KPG01\KPG01\obj\Debug\KPG01.csprojResolveAssemblyReference.cache
+C:\Users\Petrm\Dropbox\_PhDstudium\vyuka\KPG\KPG01\KPG01\obj\Debug\KPG01.Form1.resources
+C:\Users\Petrm\Dropbox\_PhDstudium\vyuka\KPG\KPG01\KPG01\obj\Debug\KPG01.Properties.Resources.resources
+C:\Users\Petrm\Dropbox\_PhDstudium\vyuka\KPG\KPG01\KPG01\obj\Debug\KPG01.csproj.GenerateResource.Cache
+C:\Users\PetrHP\Dropbox\_PhDstudium\vyuka\KPG\KPG01\KPG01\bin\Debug\KPG01.exe.config
+C:\Users\PetrHP\Dropbox\_PhDstudium\vyuka\KPG\KPG01\KPG01\obj\Debug\KPG01.exe
+C:\Users\PetrHP\Dropbox\_PhDstudium\vyuka\KPG\KPG01\KPG01\obj\Debug\KPG01.pdb
+C:\Users\PetrHP\Dropbox\_PhDstudium\vyuka\KPG\KPG01\KPG01\bin\Debug\KPG01.exe
+C:\Users\PetrHP\Dropbox\_PhDstudium\vyuka\KPG\KPG01\KPG01\bin\Debug\KPG01.pdb
+C:\Users\PetrHP\Dropbox\_PhDstudium\vyuka\KPG\KPG01\KPG01\obj\Debug\KPG01.csprojResolveAssemblyReference.cache
+C:\Users\PetrHP\Dropbox\_PhDstudium\vyuka\KPG\KPG01\KPG01\obj\Debug\KPG01.Form1.resources
+C:\Users\PetrHP\Dropbox\_PhDstudium\vyuka\KPG\KPG01\KPG01\obj\Debug\KPG01.Properties.Resources.resources
+C:\Users\PetrHP\Dropbox\_PhDstudium\vyuka\KPG\KPG01\KPG01\obj\Debug\KPG01.csproj.GenerateResource.Cache
+F:\KPG ciste 1\Nová složka\KPG01\KPG01\bin\Debug\KPG01.exe.config
+F:\KPG ciste 1\Nová složka\KPG01\KPG01\obj\Debug\KPG01.exe
+F:\KPG ciste 1\Nová složka\KPG01\KPG01\obj\Debug\KPG01.pdb
+C:\School\KPG\CV\KPG01_vse\KPG01\bin\Debug\KPG01.exe.config
+C:\School\KPG\CV\KPG01_vse\KPG01\obj\Debug\KPG01.exe
+C:\School\KPG\CV\KPG01_vse\KPG01\obj\Debug\KPG01.pdb
+C:\School\KPG\CV\KPG01_vse\KPG01\bin\Debug\KPG01.exe
+C:\School\KPG\CV\KPG01_vse\KPG01\bin\Debug\KPG01.pdb
+C:\School\KPG\CV\KPG01_vse\KPG01\obj\Debug\KPG01.csprojResolveAssemblyReference.cache
+C:\School\KPG\CV\KPG01_vse\KPG01\obj\Debug\KPG01.Form1.resources
+C:\School\KPG\CV\KPG01_vse\KPG01\obj\Debug\KPG01.Properties.Resources.resources
+C:\School\KPG\CV\KPG01_vse\KPG01\obj\Debug\KPG01.csproj.GenerateResource.Cache

@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1250" />
+    <title>Generování</title>
+  </head>
+  <body>
+    <div id="obal_hlavni_panel">
+      <section id="hlavni_panel_siroky">
+        <form id="generator" action="Generovani" method="post" >
+          <h2>Generování</h2>
+          <table>
+             <tr>
+              <td>
+                <label id="label_fakulta" for="fakulta" title="Vyberte fakultu">Fakulta<sup>*</sup>:</label>
+              </td>
+              <td>
+                <select name="fakulta" id="fakulta" title="Vyberte fakultu">
+                  <option id="fakulta_NA" value="neuvedeno" > --- neuvedeno ---</option>
+                  <option id="fakulta_FAV" value="A" >FAV - Fakulta aplikovaných věd</option>
+                  <option id="fakulta_FDU" value="D" >FDU - Fakulta designu a umění Ladislava Sutnara</option>
+                  <option id="fakulta_FEK" value="K" >FEK - Fakulta ekonomická</option>
+                  <option id="fakulta_FEL" value="E" >FEL - Fakulta elektrotechnická</option>
+                  <option id="fakulta_FF" value="F" >FF  - Fakulta filosofická</option>
+                  <option id="fakulta_FPE" value="P" >FPE - Fakulta pedagogická</option>
+                  <option id="fakulta_FPR" value="R" >FPR - Fakulta právnická</option>
+                  <option id="fakulta_FST" value="S" >FST - Fakulta strojní</option>
+                  <option id="fakulta_FZS" value="Z" >FZS - Fakulta zdravotnických studií</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label id="label_rok_nastupu" for="rok_nastupu" title="Zadejte poslední dvojčíslí kalendářního roku">Rok nástupu na ZČU<sup>*</sup>:</label>
+              </td>
+              <td>
+                <input type="text" id="rok_nastupu" title="Zadejte poslední dvojčíslí kalendářního roku"
+                  name="rok_nastupu" value='' placeholder="08"/>
+              </td>
+            </tr>
+
+           <tr>
+              <td>
+                <label id="label_typ_studia" for="typ_studia" title="Vyberte typ studia">Typ studia<sup>*</sup>:</label>
+              </td>
+              <td>   
+                <select name="typ_studia" id="typ_studia" title="Vyberte typ studia">
+                  <option id="typ_studia_B" value="B" >bakalářský</option>
+                  <option id="typ_studia_N" value="N" >navazující</option>
+                  <option id="typ_studia_P" value="P" >doktorský</option>
+                  <option id="typ_studia_M" value="M" >magisterský</option>
+                </select>
+              </td>
+              
+            </tr>
+            <tr>
+              <td>
+                <label id="label_poradove_cislo" for="poradove_cislo" title="Zadejte nezáporné celé číslo, max. 4 číslice">Pořadové číslo<sup>*</sup>:</label>
+              </td>
+              <td>
+                <input type="text" id="poradove_cislo" 
+                  title="Zadejte nezáporné celé číslo, max. 4 číslice"                
+                  name="poradove_cislo" value='' placeholder="0001" />
+              </td>
+            </tr>
+           <tr>
+              <td>
+                <label id="label_forma_studia" title="Vyberte formu studia">Forma studia<sup>*</sup>:</label>
+              </td>
+              <td>   
+                <div class="registrace_vstup" >
+                  <input type="radio" id="forma_prezencni" name="forma_studia" 
+                  value="P" />
+                  <label id="label_forma_prezencni" for="forma_prezencni" title="Vyberte formu studia">prezenční</label>
+                  <input type="radio" id="forma_kombinovana" name="forma_studia" value="K"  />
+                  <label id="label_forma_kombinovana" for="forma_kombinovana" title="Vyberte formu studia">kombinovaná</label>
+                  <input type="radio" id="forma_distancni" name="forma_studia" value="D"  />
+                  <label id="label_forma_distancni" for="forma_distancni" title="Vyberte formu studia">distanční</label>
+                </div>
+              </td>
+
+            </tr>
+            <tr>
+              <td>
+                <label id="label_zahranicni" for="zahranicni" title="Zaškrtněte, jedná-li se o zahraničního studenta">Zahraniční student:</label>
+              </td>
+              <td>
+              <input type="checkbox" id="zahranicni" name="zahranicni" 
+              title="Zaškrtněte, jedná-li se o zahraničního studenta"/>
+            </td>
+            </tr>
+          </table>
+  
+          <div id="paticka_hlavni_panel">
+          <em>Údaje označené * jsou povinné.</em>
+          <p>
+            <input id="generovani" type="submit" name="generovat" value="Generuj osobní číslo" 
+            title="Stiskněte po zadání všech hodnot"/>
+          <p>
+            <input id="mazani" type="submit" value="Vymaž" name="vymaz"
+            title="Vymazání všech hodnot"/>
+          </div>
+        </form>
+      </section>
+    </div>
+              <table>
+             <tr>
+              <td>
+                <label id="label_vysledek" for="vysledek" title="Výsledné osobní číslo">Výsledné osobní číslo:</label>
+              </td>
+              <td>
+               <label id="vysledek" title="Výsledné osobní číslo">A15B0123P</label>
+            </td>
+            </tr>
+          </table>
+
+    
+    <footer id="paticka">
+ <!--      <em>
+       KIV/OKS; <a href="mailto:herout@kiv.zcu.cz">Pavel Herout</a>; &copy; 2015
+      </em>
+-->      
+    </footer>
+  </body>
+</html>
+  

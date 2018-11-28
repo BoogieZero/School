@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMT-A xmlns="urn:mpeg:mpeg4:xmta:schema:2002" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:mpeg4:xmta:schema:2002 xmt-a.xsd">
+ <Header>
+ <InitialObjectDescriptor objectDescriptorID="od1" binaryID="1" >
+  <Profiles audioProfileLevelIndication="254" visualProfileLevelIndication="254" sceneProfileLevelIndication="254" graphicsProfileLevelIndication="254" ODProfileLevelIndication="254" />
+  <Descr>
+   <esDescr>
+    <ES_Descriptor ES_ID="proud_sceny" binaryID="1" >
+     <decConfigDescr>
+      <DecoderConfigDescriptor streamType="SceneDescription" >
+       <decSpecificInfo>
+        <BIFSConfig >
+          <commandStream pixelMetric="true" >
+           <size pixelWidth="200" pixelHeight="100" />
+          </commandStream>
+        </BIFSConfig>
+       </decSpecificInfo>
+      </DecoderConfigDescriptor>
+     </decConfigDescr>
+    </ES_Descriptor>
+
+    <ES_Descriptor ES_ID="proud_deskriptoru" binaryID="2" >
+     <decConfigDescr>
+      <DecoderConfigDescriptor objectTypeIndication="MPEG4Systems1" streamType="ObjectDescriptor" >
+      </DecoderConfigDescriptor>
+     </decConfigDescr>
+     <slConfigDescr>
+      <SLConfigDescriptor><predefined value="2"/></SLConfigDescriptor>
+     </slConfigDescr>
+    </ES_Descriptor>
+
+   </esDescr>
+  </Descr>
+ </InitialObjectDescriptor>
+ </Header>
+ <Body>
+
+<Replace>
+ <Scene>
+  <OrderedGroup>
+   <children>
+    <Transform2D translation = "-35 0">
+    <children>
+    <Shape>
+     <appearance>
+      <Appearance>
+       <material>
+        <Material2D filled="TRUE"/>
+       </material>
+       <texture>
+        <MovieTexture url="&quot;od://video_OD&quot;"/>
+       </texture>
+      </Appearance>
+     </appearance>
+     <geometry>
+      <Rectangle size="120 90"/>
+     </geometry>
+    </Shape>
+    </children>
+    </Transform2D>
+
+    <Transform2D translation = "65 15">
+    <children>
+    <Shape>
+     <appearance>
+      <Appearance>
+       <material>
+        <Material2D filled="TRUE"/>
+       </material>
+       <texture>
+        <ImageTexture url="&quot;od://obrazek_OD&quot;"/>
+       </texture>
+      </Appearance>
+     </appearance>
+     <geometry>
+      <Rectangle size="60 60"/>
+     </geometry>
+    </Shape>
+    </children>
+    </Transform2D>
+
+   </children>
+  </OrderedGroup>
+ </Scene>
+</Replace>
+
+
+ <ObjectDescriptorUpdate >
+  <OD>
+   <ObjectDescriptor objectDescriptorID="video_OD" binaryID="´4" >
+    <Descr>
+     <esDescr>
+      <ES_Descriptor ES_ID="video_es" binaryID="5" >
+       <decConfigDescr>
+        <DecoderConfigDescriptor objectTypeIndication="MPEG4Visual" streamType="Visual"/>
+       </decConfigDescr>
+       <slConfigDescr>
+        <SLConfigDescriptor><predefined value="2"/></SLConfigDescriptor>
+       </slConfigDescr>
+       <StreamSource url="computing_track201.media" >
+        <MP4MuxHints />
+       </StreamSource>
+      </ES_Descriptor>
+     </esDescr>
+    </Descr>
+   </ObjectDescriptor>
+  </OD>
+ </ObjectDescriptorUpdate>
+
+ <ObjectDescriptorUpdate>
+  <OD>
+   <ObjectDescriptor objectDescriptorID="obrazek_OD" binaryID="6">
+    <Descr>
+     <esDescr>
+      <ES_Descriptor ES_ID="obrazek_es" binaryID="7">
+       <decConfigDescr>
+        <DecoderConfigDescriptor objectTypeIndication="JPEG" streamType="Visual"/>
+       </decConfigDescr>
+       <slConfigDescr>
+        <SLConfigDescriptor><predefined value="2"/></SLConfigDescriptor>
+       </slConfigDescr>
+       <StreamSource url="hodinyMIN.jpg"/>
+      </ES_Descriptor>
+     </esDescr>
+    </Descr>
+   </ObjectDescriptor>
+  </OD>
+ </ObjectDescriptorUpdate>
+
+ </Body>
+</XMT-A>

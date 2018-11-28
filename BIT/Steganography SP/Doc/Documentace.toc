@@ -1,0 +1,24 @@
+\select@language {czech}
+\contentsline {section}{\numberline {1}Zad\IeC {\'a}n\IeC {\'\i }}{2}
+\contentsline {section}{\numberline {2}Anal\IeC {\'y}za probl\IeC {\'e}mu a n\IeC {\'a}vrh \IeC {\v r}e\IeC {\v s}en\IeC {\'\i }}{2}
+\contentsline {subsection}{\numberline {2.1}Zpr\IeC {\'a}va a jej\IeC {\'\i } ulo\IeC {\v z}en\IeC {\'\i }}{2}
+\contentsline {subsection}{\numberline {2.2}Portable Network Graphics (PNG)}{3}
+\contentsline {subsection}{\numberline {2.3}Audio Video Interleaved (AVI)}{4}
+\contentsline {section}{\numberline {3}Implementace (popis \IeC {\v r}e\IeC {\v s}en\IeC {\'\i })}{5}
+\contentsline {paragraph}{\texttt {Program}}{5}
+\contentsline {paragraph}{\texttt {MsgLoader}}{5}
+\contentsline {subsection}{\numberline {3.1}PNG}{5}
+\contentsline {paragraph}{\texttt {pngMod()}}{5}
+\contentsline {paragraph}{\texttt {insertMessage()}}{5}
+\contentsline {paragraph}{\texttt {extractMessage()}}{5}
+\contentsline {subsection}{\numberline {3.2}AVI}{6}
+\contentsline {paragraph}{\texttt {aviMod()}}{6}
+\contentsline {paragraph}{\texttt {writeMessage()}}{6}
+\contentsline {paragraph}{\texttt {readMessage()}}{6}
+\contentsline {paragraph}{\texttt {setMsgLength()}}{6}
+\contentsline {section}{\numberline {4}U\IeC {\v z}ivatelsk\IeC {\'a} p\IeC {\v r}\IeC {\'\i }ru\IeC {\v c}ka}{7}
+\contentsline {subsection}{\numberline {4.1}Spu\IeC {\v s}t\IeC {\v e}n\IeC {\'\i } programu}{7}
+\contentsline {subsubsection}{\numberline {4.1.1}Z\IeC {\'a}kladn\IeC {\'\i } nastaven\IeC {\'\i }}{8}
+\contentsline {paragraph}{PNG}{8}
+\contentsline {paragraph}{AVI}{8}
+\contentsline {section}{\numberline {5}Z\IeC {\'a}v\IeC {\v e}r}{9}

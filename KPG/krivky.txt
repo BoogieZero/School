@@ -1,0 +1,103 @@
+private void button15_Click(object sender, EventArgs e)
+        {
+            float rx = 50;
+            float ry = 50;
+            float posunX = bmp.Width / 2;
+            float posunY = bmp.Height / 2;
+
+            for (double i = 0.0; i < 720.0; i += 0.1)
+            {
+                double angle = i * System.Math.PI / 180;
+                int xX = (int)(posunX + rx * (System.Math.Cos(angle) + System.Math.Sin(angle/2)));
+                int yY = (int)(posunY + ry * (System.Math.Sin(angle) + System.Math.Cos(angle/2)));
+                if (xX < bmp.Width && xX > 0 && yY < bmp.Height && yY > 0)
+                {
+                    bmp.SetPixel(xX, yY, Color.Red);
+                }
+            }
+
+            vykresliDoPanelu();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            float rx = 50;
+            float ry = 50;
+            float posunX = bmp.Width / 2;
+            float posunY = bmp.Height / 2;
+
+            for (double i = 0.0; i < 720.0; i += 0.1)
+            {
+                double angle = i * System.Math.PI / 180;
+                int xX = (int)(posunX + rx * (System.Math.Cos(angle) + System.Math.Sin(angle)));
+                int yY = (int)(posunY + ry * (2*System.Math.Sin(angle) + System.Math.Cos(angle)));
+                if (xX < bmp.Width && xX > 0 && yY < bmp.Height && yY > 0)
+                {
+                    bmp.SetPixel(xX, yY, Color.Red);
+                }
+            }
+
+            vykresliDoPanelu();
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+           
+            float posunX = bmp.Width / 2;
+            float posunY = bmp.Height / 2;
+            float a = 50;
+
+            for (double i = 0.0; i < 360.0; i += 0.1)
+            {
+                double angle = i * System.Math.PI / 180;
+                int xX = (int)(posunX + 2*a*(1+Math.Cos(angle))*Math.Cos(angle));
+                int yY = (int)(posunY + 2*a*(1+Math.Cos(angle))*Math.Sin(angle));
+                if (xX < bmp.Width && xX > 0 && yY < bmp.Height && yY > 0)
+                {
+                    bmp.SetPixel(xX, yY, Color.Red);
+                }
+            }
+
+            vykresliDoPanelu();
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+         
+            float posunX = bmp.Width / 2;
+            float posunY = bmp.Height / 2;
+            float a = 100;
+
+            for (double i = 0.0; i < 360.0; i += 0.1)
+            {
+                double angle = i * System.Math.PI / 180;
+                int xX = (int)(posunX + a*Math.Pow(Math.Cos(angle),3));
+                int yY = (int)(posunY + a * Math.Pow(Math.Sin(angle), 3));
+                if (xX < bmp.Width && xX > 0 && yY < bmp.Height && yY > 0)
+                {
+                    bmp.SetPixel(xX, yY, Color.Red);
+                }
+            }
+            
+            vykresliDoPanelu();
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            float posunX = bmp.Width / 2;
+            float posunY = bmp.Height / 2;
+            float a = 5;
+
+            for (double i = 0.0; i < 360.0*10; i += 0.1)
+            {
+                double angle = i * System.Math.PI / 180;
+                int xX = (int)(posunX + a*angle * Math.Cos(angle));
+                int yY = (int)(posunY + a *angle* Math.Sin(angle));
+                if (xX < bmp.Width && xX > 0 && yY < bmp.Height && yY > 0)
+                {
+                    bmp.SetPixel(xX, yY, Color.Red);
+                }
+            }
+
+            vykresliDoPanelu();
+        }

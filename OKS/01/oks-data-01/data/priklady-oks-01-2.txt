@@ -1,0 +1,4 @@
+Bakalář, Josef, fav, 2014, b, p
+Bakalář, Pavel, fav, 2014, b, p
+Bakalář, Jakub, fav, 2014, b, p
+Bakalář, René, fav, 2014, b, p

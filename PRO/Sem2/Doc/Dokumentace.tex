@@ -1,0 +1,586 @@
+\documentclass[12pt]{article}
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[IL2]{fontenc}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{cprotect}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{arrows,positioning,shapes.geometric, fit, trees, calc}
+\usepackage{pgfplots}
+\usepgfplotslibrary{external}
+\usepackage[capposition=bottom]{floatrow}
+\usepackage[bottom]{footmisc}
+\usepackage{subcaption}
+\usepackage{algorithm2e}
+
+\begin{document}
+%\setlength{\parindent}{0pt}
+\begin{titlepage}
+\includegraphics[scale=0.2, trim=5cm 0 0 30cm]{logo.jpg}
+\begin{center}
+\vspace{5cm}
+{\Huge
+\textbf{KIV/PRO}\\
+\vspace{1cm}
+}
+{\Large
+\textbf{KOMPONENTY ORIENTOVANÝCH A NEORIENTOVANÝCH GRAFŮ}
+}
+\end{center}
+\vspace{\fill}
+
+\begin{minipage}[t]{5cm}
+\flushleft
+Martin Hamet\\
+\textit{
+hamet@students.zcu.cz
+}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{7cm}
+\flushright
+\today
+\end{minipage}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+\section{Zadání}
+Nalezněte komponenty zadaného grafu. Vstupem algoritmu bude (ne)orientovaný graf a výstupem by měl být seznam komponent a vrcholů grafu které k nim přísluší.
+
+\section{Analýza}
+\label{Analysis}
+Komponentou grafu rozumíme soubor vrcholů ve kterém existuje cesta mezi každou dvojicí vrcholů z tohoto souboru.
+
+\subsection{Neorientovaný graf}
+\begin{wrapfigure}[9]{r}{5.5cm}
+\vspace{-1cm}
+\begin{tikzpicture}
+[node distance=1cm,>=latex', 
+block/.style = 
+{draw, shape=circle, align=center}]
+\linespread{0.9}
+\node [block](a){A};
+\node [block, right=of a](b){B};
+\node [block, below=of a](c){C};
+\node [block, right=of b](d){D};
+\node [block, below=of d](e){E};
+
+\node[ellipse,draw,dashed, fit=(a)(b)(c)]{};
+\node[ellipse,draw,dashed, fit=(d)(e)]{};
+\path[draw,-]
+(a)edge(b)
+(b)edge(c)
+(c)edge(a)
+(d)edge(e);
+\end{tikzpicture}
+\caption{Neorientovaný graf.}
+\label{non_dir_graph}
+\end{wrapfigure}
+
+V neorientovaném grafu se problém redukuje pouze na hledání všech dostupných vrcholů z náhodně zvoleného počátečního vrcholu. Všechny nalezené vrcholy budou součástí jedné souvislé komponenty viz obr.\ref{non_dir_graph} kde jsou naznačeny dvě souvislé komponenty.
+
+\subsection{Orientovaný graf}
+
+\begin{wrapfigure}[8]{l}{5.5cm}
+\begin{tikzpicture}
+[node distance=1cm,>=latex', 
+block/.style = 
+{draw, shape=circle, align=center}]
+\linespread{0.9}
+\node [block](a){A};
+\node [block, right=of a](b){B};
+\node [block, below=of a](c){C};
+\node [block, right=of b](d){D};
+\node [block, below=of d](e){E};
+
+\node[ellipse,draw,dashed, fit=(a)(b)(c)]{};
+\node[ellipse,draw,dashed, fit=(d)]{};
+\node[ellipse,draw,dashed, fit=(e)]{};
+\path[draw,->]
+(a)edge(b)
+(b)edge(c)
+(c)edge(a)
+(b)edge(d)
+(d)edge(e);
+\end{tikzpicture}
+\caption{Orientovaný graf.}
+\label{dir_graph}
+\end{wrapfigure}
+
+V orientovaném grafu musíme rozlišovat mezi silně a slabě souvislými komponentami. Silně souvislá komponenta odpovídá definici viz \ref{Analysis}. Je tedy nutné aby existovala cesta mezi každými dvěma vrcholy komponenty jako je znázorněno na obr. \ref{dir_graph}, kde jsou naznačeny 3 silně souvislé komponenty. 
+
+Naopak pokud nás zajímá slabě souvislá komponenta stačí pokud existuje cesta alespoň jedním směrem. V případě obr. \ref{dir_graph} by celý graf byl jednou slabě souvislou komponentou. Pro hledání slabě souvislých komponent můžeme využít přístupu jako pro neorientovaný graf tím že budeme ignorovat směry cest mezi jednotlivými uzly.
+
+\section{Existující metody}
+\subsection{Neorientovaný graf}
+\label{non_dir_graph_EM}
+Pro nalezení souvislých komponent neorientovaného grafu lze využít metod, které zajistí uplný průchod grafem jako \textit{Depth Fist Search} (DFS) a \textit{Breadth First Search} (BFS) jak je zmíněno v knize \textit{The Algorithm Design Manual\cite{Skina}}. 
+
+Pro obě metody potřebujeme seznam všech vrcholů grafu včetně jejich hran. Algoritmus proběhne následujícím způsobem:
+
+\begin{enumerate}
+\setlength\itemsep{1px}
+\item Nastavíme čítač komponent \texttt{k=1}.
+\item Vybereme nenavštívený vrchol \texttt{V} ze seznamu vrcholů. Pokud jsou již všechny vrcholy označené jako navštívené ukončíme algoritmus.
+\item Označíme \texttt{V} jako navštívený a jako součást komponenty číslo \texttt{k}.
+\item Nový vrchol \texttt{V} získáme ze zvolené metody průchodu \texttt{DFS/BFS} a pokračujeme bodem \texttt{3}, pokud průchod dle \texttt{BFS/DFS} skončil zvýšíme čítač komponent \texttt{k=k+1} a pokračujeme bodem \texttt{2}.
+\end{enumerate}
+
+\subsubsection{Průchod BFS}
+\label{BFS}
+
+\begin{wrapfigure}[10]{l}{5cm}
+\begin{tikzpicture}
+[node distance=1cm,>=latex', 
+block/.style = 
+{draw, shape=circle, align=center}]
+\linespread{0.9}
+\node [block](a){1};
+\node at ($(a)+(0.5,0.5)$){Start};
+\node [block, below right=of a](b){2};
+\node [block, below left=of a](c){2};
+\node [block, below left=of c](d){3};
+\node [block, below right=of c](e){3};
+
+\path[draw,-]
+(a)edge(c)
+(a)edge(b)
+(c)edge(d)
+(c)edge(e);
+
+\end{tikzpicture}
+\caption{Průchod BFS.}
+\label{bfs_graph}
+\end{wrapfigure}
+
+Pro průchod typu \texttt{BFS} využijeme fronty \texttt{Q} do které budeme vkládat nově nalezené vrcholy. Budeme tedy grafem postupovat "ve vlnách".
+
+\begin{enumerate}
+\setlength\itemsep{1px}
+\item Zvolíme počáteční vrchol, označíme ho jako navštívený a vložíme ho do fronty \texttt{Q}.
+\item Vybereme prvek \texttt{V} z fronty \texttt{Q}.
+\item Všechny nenavštívené sousedy vrcholu \texttt{V} označíme jako navštívené a vložíme je do fronty \texttt{Q}.
+\item Pokud je \texttt{Q} prázdná ukončíme průchod. Jinak pokračujeme bodem \texttt{2}.
+\end{enumerate}
+
+Příklad průchodu je znázorněn na obr. \ref{bfs_graph}, kde čísla jednotlivých vrcholů označují pořadí jejich nalezení.
+
+\pagebreak
+\subsubsection{Průchod DFS}
+\label{DFS}
+
+\begin{wrapfigure}[8]{r}{5cm}
+\vspace{-0.5cm}
+\begin{tikzpicture}
+[node distance=1cm,>=latex', 
+block/.style = 
+{draw, shape=circle, align=center}]
+\linespread{0.9}
+\node [block](a){1};
+\node at ($(a)+(0.5,0.5)$){Start};
+\node [block, below right=of a](b){5};
+\node [block, below left=of a](c){2};
+\node [block, below left=of c](d){3};
+\node [block, below right=of c](e){4};
+
+\path[draw,-]
+(a)edge(c)
+(a)edge(b)
+(c)edge(d)
+(c)edge(e);
+
+\end{tikzpicture}
+\caption{Průchod DFS.}
+\label{dfs_graph}
+\end{wrapfigure}
+
+Pro průchod typu \texttt{DFS} využijeme zásobníku \texttt{Z} do kterého budeme vkládat nově nalezené vrcholy. Budeme tedy grafem postupovat tak, že se nejprve "vnoříme" do co možná největší hloubky a postupně se vracíme k vrcholům které jsme vynechali po cestě.
+
+\begin{enumerate}
+\setlength\itemsep{1px}
+\item Zvolíme počáteční vrchol, označíme ho jako navštívený a vložíme ho do zásobníku \texttt{Z}.
+\item Vybereme prvek \texttt{V} ze zásobníku \texttt{Z}. Pokud je \texttt{Z} prázdný ukončíme průchod.
+\item Všechny nenavštívené sousedy vrcholu \texttt{V} označíme jako navštívené a vložíme je do zásobníku \texttt{Z} a pokračujeme bodem \texttt{2}.
+\end{enumerate}
+
+\subsection{Orientovaný graf}
+V orientovaných grafech nás budou zajímat pouze silně spojené komponenty. Pro slabě spojené komponenty lze využít postupů pro neorientované grafy (viz \ref{non_dir_graph_EM}).
+
+\subsubsection{Kosaraju's algorythm\cite{Kosaraju}}
+\label{Kosaraju}
+\begin{wrapfigure}[7]{r}{5.5cm}
+\vspace{-1cm}
+\begin{tikzpicture}
+[node distance=1cm,>=latex', 
+block/.style = 
+{draw, shape=circle, align=center}]
+\linespread{0.9}
+\node [block](a){A};
+\node at ($(a)+(0.6,-0.5)$){1/5};
+\node [block, right=of a](b){B};
+\node at ($(b)+(0.6,-0.5)$){2/4};
+\node [block, below=of a](c){C};
+\node at ($(c)+(0.6,-0.5)$){3/1};
+\node [block, right=of b](d){D};
+\node at ($(d)+(0.6,-0.5)$){4/3};
+\node [block, below=of d](e){E};
+\node at ($(e)+(0.6,-0.5)$){5/2};
+
+\path[draw,->]
+(a)edge(b)
+(b)edge(a)
+(b)edge(c)
+(c)edge(a)
+(b)edge(d)
+(d)edge(e)
+(e)edge(d);
+\end{tikzpicture}
+\caption{Dopředný průchod grafem.}
+\floatfoot{
+značení ($C_1$/$C_2$):\\
+$C_1$ - pořadí přidání vrcholu do $Z_1$\\
+$C_2$ - pořadí přidání vrcholu do $Z_2$
+}
+\label{forward_kosara}
+\end{wrapfigure}
+
+Tento přístup vyžaduje dva modifikované \texttt{DFS} průchody. Postup lze rozdělit do dvou fází dopředný a zpětný průchod. Využijeme dvou zásobníků $Z_1$
+\footnote{
+Zásobník $Z_1$ lze nahradit rekurzivním průchodem \texttt{DFS}.
+} a $Z_2$. Do zásobníku $Z_1$ budeme ukládat nalezené vrcholy čekající na ukončení a do $Z_2$ ukončené vrcholy. 
+
+
+
+
+
+\pagebreak
+\paragraph{Dopředný průchod}
+
+\begin{enumerate}
+\setlength\itemsep{1px}
+\item Zvolíme nenavštívený vrchol ze seznamu všech vrcholů, označíme ho jako navštívený a vložíme ho do $Z_1$.
+\item Vybereme jednoho nenavštíveného souseda prvku $V_{z1}$, označíme ho jako navštíveného a vložíme ho do $Z_1$, pokud $V_{z1}$\footnote{
+Vrchol $V_{z1}$ je prvek na vrcholu zásobníku $Z_1$.
+}
+nemá žádné další nenavštívené sousedy, odstraníme ho ze zásobníku $Z_1$ a vložíme ho do $Z_2$.
+\item Opakujeme krok \texttt{2} dokud není $Z_1$ prázdný.
+\item Pokračujeme krokem \texttt{1} dokud nejsou všechny vrcholy grafu označené jako navštívené.
+\end{enumerate}
+
+
+\subparagraph{Příklad}
+V grafu (viz obr.\ref{forward_kosara}) jsme začali z vrcholu \texttt{A} a sousedy jsme nacházeli v pořadí v pořadí \texttt{B}, \texttt{C}. Vrchol \texttt{C} již nemá dalšího nenavštíveného souseda odebereme ho tedy ze zásobníku $Z_1$ a přidáme do $Z_2$. Dále pokračujeme sousedy vrcholu \texttt{B}. Vrchol \texttt{E} bude tedy jako druhý přidaný do $Z_2$. 
+
+Obsah $Z_2$ po dopředném průchodu bude v pořadí od vrcholu zásobníku \textit{C, E, D, B, A}.
+
+\paragraph{Zpětný průchod}
+Nejprve je třeba vytvořit transponovaný graf k původnímu. Tedy otočit směr všech hran v grafu.
+
+\begin{enumerate}
+\setlength\itemsep{1px}
+\item Nastavíme počítadlo komponent \texttt{k=1}.
+\item Vybereme prvek $V_{z2}$\footnote{
+Vrchol $V_{z2}$ je prvek na vrcholu zásobníku $Z_2$.
+} 
+, označíme ho jako navštívený\footnote{
+Označení nalezených vrcholů se nepřenáší z dopředného průchodu.
+} 
+a označíme ho jako součást komponenty \texttt{k}.
+\item Z vybraného vrcholu provedeme průchod grafu ( \texttt{DFS} viz \ref{DFS} nebo \texttt{BFS} viz \ref{BFS}), nové vrcholy označujeme jako nalezené a přiřazujeme je komponentě \texttt{k}.
+\item Po skončení průchodu vybereme další $V_{z2}$ ze zásobníku a zvýšíme čítač komponent \texttt{k=k+1}.
+\begin{itemize}
+\setlength\itemsep{1px}
+\renewcommand\labelitemi{--}
+\item Pokud je vybraný vrchol již označený jako nalezený opakujeme výběr.
+\item Pokud je vrchol neoznačený označíme ho jako nalezený a pokračujeme krokem \texttt{3}.
+\item Pokud je $Z_2$ prázdný ukončíme algoritmus.
+\end{itemize}
+\end{enumerate}
+
+
+\begin{wrapfigure}[14]{r}{6cm}
+\vspace{-1cm}
+\begin{tikzpicture}
+[node distance=1cm,>=latex', 
+block/.style = 
+{draw, shape=circle, align=center}]
+\linespread{0.9}
+\node [block](a){A};
+\node at ($(a)+(0.6,-0.5)$){3/1};
+\node [block, right=of a](b){B};
+\node at ($(b)+(0.6,-0.5)$){2/1};
+\node [block, below=of a](c){C};
+\node at ($(c)+(0.6,-0.5)$){1/1};
+\node [block, right=of b](d){D};
+\node at ($(d)+(1.1,-0.5)$){4/3};
+\node [block, below=of d](e){E};
+\node at ($(e)+(1.1,-0.5)$){5/2};
+
+\node[ellipse,draw,dashed, fit=(a)(b)(c)]{};
+\node[ellipse,draw,dashed, fit=(d)(e)]{};
+
+\path[draw,->]
+(a)edge(b)
+(b)edge(a)
+(c)edge(b)
+(a)edge(c)
+(d)edge(b)
+(d)edge(e)
+(e)edge(d);
+\end{tikzpicture}
+\caption{Zpětný průchod grafem.}
+\floatfoot{
+značka ($C_1$/$C_2$):\\
+$C_1$ - pořadí přidání nalezení vrcholu\\
+$C_2$ - číslo přiřazené komponenty
+}
+\label{backward_kosara}
+\end{wrapfigure}
+
+
+\paragraph{Příklad}
+V zásobníku $Z_2$ se po dopředném průchodu nacházejí prvky \textit{C, E, D, B, A}. Vybereme $V_{z2}$ (\textit{C}), označíme ho jako nalezený a jako součást komponenty \texttt{k}. Průchodem transponovaného grafu (viz obr.\ref{backward_kosara}) z vybraného vrcholu \textit{C} dle \texttt{DFS} nalezneme vrcholy \textit{A, B}, které označíme za nalezené a jako součásti komponenty \texttt{k}.
+
+Zvýšíme čítač komponent \texttt{k=2}. Vybereme další prvek ze zásobníku $Z_2$ (\textit{E}). Označíme vrchol jako nalezený a jako součást komponenty \texttt{k}. Provedeme průchod grafu z vrcholu \textit{E} přes všechny nenalezené prvky. Jediný nenalezený prvek je \textit{D}, který obdobně označíme. V $Z_2$ zbývají prvky \textit{D, B, A}, které postupně odstraňujeme, protože již byli označeny jako nalezené v předchozích krocích.
+
+Výsledkem jsou dvě silně souvislé komponenty \texttt{k=1}(\textit{A, B, C)} a \texttt{k=2} (\textit{D, E}).
+
+\subsubsection{Tarjan's algorythm\cite{Tarjan}}
+\label{tarajan}
+Tento přístup oproti \textit{Kosaraju's algorythm} uvedeného v sekci \ref{Kosaraju} urychlí zpracování grafu, protože vyžaduje pouze jeden průchod do hloubky (\texttt{DFS} viz \ref{DFS}). 
+Při průchodu grafem je objeveným vrcholům přiřazena hodnota nalezení \texttt{v.dsc} a jsou označeny jako zpracovávané a jsou přidány do zásobníku. Pokud je v průběhu nalezena cesta k vrcholu, který je zpracováván, jedná se o smyčku a všechny zúčastněné vrcholy jsou jedné komponenty. Při průchodu se snažíme najít co největší smyčku. Ukládáme si tedy hodnotu o nejstaršího dosažitelného vrcholu \texttt{v.low}.
+
+Po prozkoumání všech následníků vrcholu \texttt{v}, kterému zůstali přiřazené stejné hodnoty objevení a nejstaršího následníka (\texttt{v.low} a \texttt{v.dsc}), všichni jeho ještě zpracovávaní následníci jsou součástí jedné komponenty. Tyto vrcholy jsou odebrány ze zásobníku a jsou označeny jako zpracované.
+
+
+\begin{algorithm}[H]
+\vspace{-3cm}
+\LinesNumbered
+\SetKwProg{Fn}{Function}{:}{}
+\SetKwComment{Comm}{/* }{*/}
+\SetKwFunction{FScc}{Scc}
+\SetKwFunction{FPush}{push}
+\SetKwFunction{FPop}{pop}
+\SetKwFunction{FMin}{min}
+
+
+\KwData{Graph($V$, $E$)}
+\tcc{Množina vrcholů V a hran.}
+\KwResult{$V$, $K$}
+\tcc{Množina vrcholů $V$ s číslem komponenty $K$.}
+time=1\;
+\tcc{čítač času nalezení vrcholu}
+k=0\;
+\tcc{čítač komponent}
+\tcc{Čas nalezení vrcholu}
+\ForEach(\tcc*[f]{pro každý vrchol grafu}){v in V}{
+\If(\tcc*[f]{pokud $v$ ještě nebyl nalezený}){v.dsc = 0}{
+\FScc{u}\;
+}%endif
+}%endfor
+
+\vspace{\baselineskip}
+\Fn{\FScc{$v$}}{
+v.dsc = time; \Comm{čas objevení vrcholu}
+v.low = time; \Comm{inicializace nejstaršího následovníka}
+time = time + 1\;
+stack.\FPush{v}\;
+v.prg = true; \Comm{označení vrcholu jako zpracovávaný}
+
+
+\tcc{zpracování následovníků}
+\ForEach(\tcc*[f]{pro každého souseda $v$}){n in v}{
+\uIf(\tcc*[f]{neobjevený $v$}){n.dsc=0}{
+\FScc{n}\;
+v.low = \FMin{v.low, n.low}\;
+\tcc{výběr nejstaršího následovníka}
+}%endif
+\ElseIf(\tcc*[f]{$n$ je již zpracovávaný}){n.prg=true}{
+v.low = \FMin{v.low, n.dsc}\;
+}%endif
+}%endfor
+
+\If(\tcc*[f]{nejstarší předek komponenty}){v.low=v.dsc}{
+k=k+1\;
+\Repeat{x!=v}{
+x=stack.\FPop{}\;
+x.prg=false\;
+přidáme $x$ do komponenty č.$k$\
+}%endWhile
+\tcc{komponenta $k$ je hotová a je možné jí vypsat}
+}%endif
+\tcc{návrat k předkovi}
+\KwRet\;
+}
+
+\caption{Tarjan's algorythm}
+\end{algorithm}
+
+\section{Zvolené řešení}
+Pro řešení problému jsme zvolili \textit{Tarajan's algorithm} (viz \ref{tarajan}) především kvůli rychlejšímu zpracování. První zmíněnou metodu zpomalují dva potřebné průchody grafu.
+
+Originální algoritmus jsme upravili pouze přidáním dalšího vlastního zásobníku pro nahrazení rekurze, která vyžaduje značnou velikost programového zásobníku což značně ovlivňovalo možnou velikost zpracovávaných dat.
+
+\subsection{Implementace}
+V této sekci jsou popsány hlavní moduly programu a jejich vzájemná funkce.
+
+\subsubsection{\texttt{Program}}
+Hlavní třída programu zodpovědná za zpracování předaných argumentů programu a následné spuštění zvolených algoritmů.
+
+\subsubsection{\texttt{GraphGen}}
+Třída určená pro generování grafu podle zadaných parametrů. Graf je reprezentován maticí sousednosti.
+
+\paragraph{\texttt{getMatrix()}}
+Vygeneruje a vrátí požadovanou matici grafu.
+
+\paragraph{\texttt{getReport()}}
+Vygeneruje informace o posledním grafu a vrátí je v textové podobě.
+
+\subsubsection{\texttt{SCCI}}
+Interface pro jednotlivé implementace algoritmů pro získání silně souvislých komponent.
+
+\paragraph{\texttt{WriteComponents()}}
+Metoda provede algoritmus aktuální zvolené implementace a jednotlivé komponenty vypíše do konzole.
+
+\pagebreak
+\subsubsection{Implementace algoritmů}
+Jednotlivé třídy testovaných algoritmů implementující rozhraní \texttt{SCCI}.
+
+\paragraph{\texttt{Tarjan}}
+Originální \textit{Tarjan's algorithm} implementovaný s využitím rekurze.
+
+\paragraph{\texttt{TarjanNonRec}}
+\textit{Tarjan's algorithm} implementovaný s bez využití rekurze.
+
+\paragraph{\texttt{Kosaraju}}
+Originální \textit{Kosaraju's algorythm} implementovaný bez využití rekurze.
+
+\section{Uživatelská příručka}
+Program vyžaduje nainstalovaný \texttt{Microsoft.NET Framework}.
+
+\subsection{Program}
+Program je koncipován jako konzolová aplikace. Argumenty programu jsou popsány níže. Samotný program nevyžaduje žádné další soubory. Všechna potřebná vstupní data jsou generovány programem samotným podle zadaných parametrů.
+
+\subsection{Spuštění programu}
+Program se spouští z příkazové řádky s následujícími parametry \\(bez znaků \texttt{[} a \texttt{]}).
+
+\texttt{Scc.exe [n$_1$] [n$_2$] [-s\_<n$_3$>] [-m] [-c] [-d] [-r] [-k]}
+
+\paragraph{Defaultní nastavení programu}
+\begin{itemize}
+\setlength\itemsep{1px}
+\renewcommand\labelitemi{--}
+\item Program generuje neorientované grafy.
+\item Generátor využívá systémového času v milisekundách pro generování náhodných čísel.
+\item Pro výpočet je použitá nerekurzivní implementace \textit{Tarjan's algorithm}.
+\item Ve výsledném výpisu jsou u jednotlivých komponent pouze čísla, označující kolik uzlů bylo přiřazeno dané komponentě.
+\end{itemize}
+
+Příklad spuštění: \texttt{Scc.exe 15 20 -d -s 123 -k -c -m}
+
+\subsubsection{Atributy}
+
+\paragraph{Povinné atributy}
+\begin{itemize}
+\setlength\itemsep{1px}
+\renewcommand\labelitemi{--}
+\item{\texttt{[n$_1$]}} Počet uzlů grafu.
+\item{\texttt{[n$_2$]}} Maximální počet hran v grafu.
+\end{itemize}
+
+\paragraph{Nepovinné atributy}
+\begin{itemize}
+\setlength\itemsep{1px}
+\renewcommand\labelitemi{--}
+\item{\texttt{[-s <n$_3$>]}} Použití deterministického generátoru pro graf, kde \texttt{n$_3$} je použitý jako počáteční stav ("seed").
+\item{\texttt{[-m]}} Vypíše do konzole matici sousednosti vygenerovaného grafu.
+\item{\texttt{[-c]}} Vypíše konkrétní čísla uzlů přiřazených ke komponentám.
+\item{\texttt{[-d]}} Generátor grafu bude generovat orientovaný graf.
+\item{\texttt{[-r]}} V případě \textit{Tarjan's algorithm} jako výpočetního algoritmu použije jeho rekurzivní implementaci.
+\item{\texttt{[-k]}} Použije \textit{Kosaraju's algorithm} jako způsob nalezení komponent.
+\end{itemize}
+
+\section{Experimenty a výsledky}
+\label{exp_results}
+Pro testování byly vždy generovány neorientované grafy z důvodu vzniku více souvislých komponent, oproti generování mnoha jednoprvkových. Každé měření bylo provedeno $10\times$ a časy běhu jsme získali jako průměr jednotlivých měření.
+
+\begin{table}[H]
+\vspace{0.5cm}
+\centering{
+\begin{tabular}{*5c}
+& & \multicolumn{2}{c}{Čas běhu} & \\
+$\text{Uzlů}$ & $\text{Hran}$ & Tnr & Knr & $\text{Parametry programu}$\\\hline
+$50$ 			& $50$ 			& $4.0ms$ 	&	$4.4ms$ 	&	$\texttt{50 50 -s 244}$\\
+$500$ 			& $500$ 		& $6.2ms$	&	$12.0ms$ 	&	$\texttt{500 500 -s 292}$\\
+$2\times10^3$ 	& $2\times10^3$ & $51.6ms$ 	&	$275.5ms$ 	&	$\texttt{2000 2000 -s 179}$\\
+$5\times10^3$ 	& $5\times10^3$ & $304.8ms$ &	$1.79s$ 	&	$\texttt{5000 5000 -s 186}$\\
+$1\times10^4$ 	& $1\times10^4$ & $1.27s$ 	&	$7.25s$ 	&	$\texttt{5000 5000 -s 322}$\\
+$2\times10^4$ 	& $2\times10^4$ & $4.98s$ 	&	$42.45s$ 	&	$\texttt{5000 5000 -s 614}$\\
+\end{tabular}
+}
+
+\caption{Porovnání algoritmů}
+\label{comp_table}
+\floatfoot{
+Tnr - \textit{Tarjan's algorithm} bez rekurze\\
+Knr - \textit{Kosaraju's algorithm bez rekurze}
+}
+\end{table}
+
+\begin{figure}
+\begin{tikzpicture}
+\pgfplotsset{width=10cm,compat=1.9}
+\begin{axis}[
+    title={Závislost doby výpočtu na počtu uzlů grafu},
+    xlabel={Počet uzlů},
+    ylabel={Doba výpočtu [ms]},
+    xmin=50, xmax=20000,
+    ymin=0, ymax=45000,
+    %xtick={50,5000,20000},
+    %xmode=log,
+    ymode=log,
+    log basis y={10},
+    %ytick={10, 50, 300, 1000, 5000},
+    legend pos=south east,
+    ymajorgrids=true,
+    grid style=dashed,
+]
+ 
+\addplot[
+	smooth,
+    color=blue,
+    mark=*,
+    ]
+    coordinates {
+    (50,4)(500,6.2)(2000,51.6)(5000,304.8)(10000,1270)(20000,4980)
+    };
+    \legend{\textit{Tarjan's alg.}}
+
+\addplot[
+	smooth,
+    color=red,
+    mark=*,
+    ]
+    coordinates {
+    (50,4.4)(500,12)(2000,275.5)(5000,1790)(10000,7250)(20000,42450)
+    };
+ 	\addlegendentry{\textit{Korasaraju's alg.}}
+\end{axis}
+\end{tikzpicture}
+\caption{Graf k tabulce \ref{comp_table}.}
+\label{graph_tab1}
+\end{figure}
+
+\section{Závěr}
+Řešení problému pro neorientované grafy se dá snadno nalézt pomocí úplného průchodu grafu. Pro orientované grafy jsme testovali dvě metody (\textit{Kosaraju's algorithm} a \textit{Tarjan's algorithm}. Obě metody naleznou řešení vždy ovšem rozdíly jsou patrné při větším počtu uzlů a hran jak je znázorněno na grafu obr. \ref{graph_tab1}. Při větším počtu uzlů se značně projeví lineární složitost druhého zmíněného algoritmu.
+
+Při testování vznikl problém s omezenou velikostí programového zásobníku, proto jsme implementovali verzi \textit{Tarajn's algorithm} bez použití rekurze. Tato verze umožnila zpracování grafů až do řádů desítek tisíc uzlů. Další navyšování velikosti grafu by bylo možné po dalších úpravách jeho reprezentace.
+
+\pagebreak
+\bibliography{mybib}
+\bibliographystyle{plain}
+%\bibliography{References}
+\end{document}

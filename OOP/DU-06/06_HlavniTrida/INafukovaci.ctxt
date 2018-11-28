@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=sirka\ vyska
+comment0.target=void\ setRozmer(int,\ int)
+comment0.text=\r\n\ Nastav\u00ED\ nov\u00E9\ rozm\u011Bry\ instance.\ Nastavovan\u00E9\ rozm\u011Bry\ mus\u00ED\ b\u00FDt\ nez\u00E1porn\u00E9,\r\n\ m\u00EDsto\ nulov\u00E9ho\ rozm\u011Bru\ se\ nastav\u00ED\ rozm\u011Br\ rovn\u00FD\ jedn\u00E9.\r\n\r\n\ @param\ sirka\ \ \ \ Nov\u011B\ nastavovan\u00E1\ \u0161\u00ED\u0159ka;\ \u0161\u00ED\u0159ka\ &gt;\=\ 0\r\n\ @param\ vyska\ \ \ \ Nov\u011B\ nastavovan\u00E1\ v\u00FD\u0161ka;\ v\u00FD\u0161ka\ &gt;\=\ 0\r\n
+numComments=1

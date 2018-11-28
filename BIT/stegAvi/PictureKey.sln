@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PictureKey", "PictureKey.csproj", "{20CB6D2A-5322-49D2-8CCF-EDC2CC2DD0D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{20CB6D2A-5322-49D2-8CCF-EDC2CC2DD0D2}.Debug.ActiveCfg = Debug|.NET
+		{20CB6D2A-5322-49D2-8CCF-EDC2CC2DD0D2}.Debug.Build.0 = Debug|.NET
+		{20CB6D2A-5322-49D2-8CCF-EDC2CC2DD0D2}.Release.ActiveCfg = Debug|.NET
+		{20CB6D2A-5322-49D2-8CCF-EDC2CC2DD0D2}.Release.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

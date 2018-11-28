@@ -1,0 +1,12 @@
+0. [INFO - Hlavni.main()] - Zacatek programu
+1. [CONFIG - Hlavni.parametryPrikazoveRadky()] - zpracovavany soubor: priklady-oks-01-1.txt
+2. [CONFIG - Hlavni.parametryPrikazoveRadky()] - zpracovavana fakulta: fav
+397. [INFO - Generator.zpracovani()] - nacteno osobnich cisel: 44
+398. [INFO - Generator.pripravSkupinyARoztridDoNich()] - nalezeny znak fakulty: A
+473. [INFO - Generator.zpracovani()] - chybnych osobnich cisel: 9
+526. [INFO - Generator.zapisVysledky()] - pocet ve skupine 'Bakalářský' : 4
+542. [INFO - Generator.zapisVysledky()] - pocet ve skupine 'Navazující' : 14
+547. [INFO - Generator.zapisVysledky()] - pocet ve skupine 'Doktorský' : 3
+549. [INFO - Generator.zapisVysledky()] - pocet ve skupine 'Magisterský' : 0
+560. [INFO - Generator.zapisVysledky()] - pocet ve skupine 'chybně zadáno' : 9
+561. [INFO - Hlavni.main()] - Konec programu - vysledky jsou v souboru: vysledky.txt

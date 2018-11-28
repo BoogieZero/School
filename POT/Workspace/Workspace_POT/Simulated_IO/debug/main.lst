@@ -1,0 +1,77 @@
+Renesas H8/300 GAS  D:\MCU\H8S\Asembler H8S\Workspace_POT\Simulated_IO\main.s 			page 1
+
+
+   1              			.h8300s
+   2              	
+   3              			.equ	syscall,0x1FF00	; simulated IO area
+   4              			.equ	PUTS,0x0114		; kod PUTS
+   5              			.equ	GETS,0x0113		; kod GETS
+   6              			
+   7              	; ------ datovy segment ----------------------------
+   8              	
+   9              			.data
+  10 0000 53696D75 	txt1:	.asciz	"Simulovany vystup\n\r"
+  10      6C6F7661 
+  10      6E792076 
+  10      79737475 
+  10      700A0D00 
+  11 0014 00000000 	buffer:	.space	100			; vstupni buffer
+  11      00000000 
+  11      00000000 
+  11      00000000 
+  11      00000000 
+  12              	
+  13              	; parametricke bloky musi byt zarovnane na dword
+  14              			.align	2			; zarovnani adresy
+  15 0078 00000000 	par1:	.long	txt1		; parametricky blok 1
+  16 007c 00000000 	par2:	.long	buffer		; parametricky blok 2
+  17              	
+  18              	; stack musi byt zarovnany na word
+  19              			.align	1			; zarovnani adresy
+  20 0080 00000000 			.space	100			; stack
+  20      00000000 
+  20      00000000 
+  20      00000000 
+  20      00000000 
+  21              	stck:						; konec stacku + 1
+  22              	
+  23              	; ------ kodovy segment ----------------------------
+  24              	
+  25              			.text
+  26              			.global	_start
+  27              	
+  28 0000 7A070000 	_start:	mov.l	#stck,ER7
+  28      0000
+  29              			
+  30 0006 79000114 			mov.w	#PUTS,R0	; 24bitovy PUTS
+  31 000a 7A010000 			mov.l	#par1,ER1	; adr. param. bloku do ER1
+  31      0000
+  32 0010 5E000000 			jsr		@syscall
+  33              	
+  34 0014 79000113 			mov.w	#GETS,R0	; 24bitovy GETS
+  35 0018 7A010000 			mov.l	#par2,ER1	; adr. param. bloku do ER1
+  35      0000
+  36 001e 5E000000 			jsr		@syscall
+  37              				
+  38 0022 5A000000 	lab1:	jmp	@lab1			; konec vypoctu
+  39              	
+  40              			.end
+Renesas H8/300 GAS  D:\MCU\H8S\Asembler H8S\Workspace_POT\Simulated_IO\main.s 			page 2
+
+
+DEFINED SYMBOLS
+D:\MCU\H8S\Asembler H8S\Workspace_POT\Simulated_IO\main.s:3      *ABS*:0001ff00 syscall
+D:\MCU\H8S\Asembler H8S\Workspace_POT\Simulated_IO\main.s:4      *ABS*:00000114 PUTS
+D:\MCU\H8S\Asembler H8S\Workspace_POT\Simulated_IO\main.s:5      *ABS*:00000113 GETS
+D:\MCU\H8S\Asembler H8S\Workspace_POT\Simulated_IO\main.s:10     .data:00000000 txt1
+D:\MCU\H8S\Asembler H8S\Workspace_POT\Simulated_IO\main.s:11     .data:00000014 buffer
+D:\MCU\H8S\Asembler H8S\Workspace_POT\Simulated_IO\main.s:15     .data:00000078 par1
+D:\MCU\H8S\Asembler H8S\Workspace_POT\Simulated_IO\main.s:16     .data:0000007c par2
+D:\MCU\H8S\Asembler H8S\Workspace_POT\Simulated_IO\main.s:21     .data:000000e4 stck
+D:\MCU\H8S\Asembler H8S\Workspace_POT\Simulated_IO\main.s:28     .text:00000000 _start
+D:\MCU\H8S\Asembler H8S\Workspace_POT\Simulated_IO\main.s:28     .text:00000000 .L0
+D:\MCU\H8S\Asembler H8S\Workspace_POT\Simulated_IO\main.s:38     .text:00000022 lab1
+                            .text:00000000 .L0
+D:\MCU\H8S\Asembler H8S\Workspace_POT\Simulated_IO\main.s:40     .text:00000026 .L0
+
+NO UNDEFINED SYMBOLS

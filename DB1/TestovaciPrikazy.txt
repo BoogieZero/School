@@ -1,0 +1,46 @@
+﻿/* Přidání nového zákazníka. */
+INSERT INTO `mydb`.`zakaznik` (`id_zakaznik`, `jmeno`, `prijmeni`, `kontakt`, `adresa_mesto`, `adresa_ulice_cp`, `adresa_psc`) VALUES (NULL, 'Josef', 'Nový', 'e-mail: novy@seznam.cz', 'Dobříš', 'Hostomická 195', '26301');
+SELECT * FROM `zakaznik`;
+
+/* Vytvoření nového produktu pro zákazníka. */
+INSERT INTO `mydb`.`produkt` (`id_seriove_cislo`, `jmeno_produkt`, `zakaznik_id_zakaznik`, `marze_zakazka`, `sleva`, `splatnost`, `parametry`) VALUES (NULL, 'Nový rozvaděč', '4', '1.40', '0.10', '2016-01-01', 'Přívod: 125A 3f
+5x 25/3
+5x 25/1');
+SELECT * FROM `produkt`;
+
+/* Vytvoření nového skladu. */
+INSERT INTO `mydb`.`sklad` (`id_sklad`, `nazev_skladu`, `spravce_jmeno`, `spravce_kontakt`) VALUES (NULL, 'Novy', 'Novák', 'e-mail: novak@seznam.cz');
+SELECT * FROM `sklad`;
+
+/* Přidání nové skladové položky do nového skladu. */
+INSERT INTO `mydb`.`skladova_polozka` (`id_polozka`, `nazev`, `typ`, `sklad_id_sklad`, `mnozstvi_type`, `mnozstvi_na_sklade`, `cena`, `marze_polozka`, `vyrobce`) VALUES (NULL, 'Nový Jistič', 'N-25/3', '3', '5', NULL, '500', NULL, 'Novaco');
+SELECT * FROM `skladova_polozka`;
+
+/* Vytvoření nové příjemky. */
+INSERT INTO `mydb`.`prijemka` (`id_prijemka`, `datum_prijeti`, `dodavatel_nazev`, `dodavatel_kontakt`, `datum_objednani`) VALUES (NULL, '2015-12-15', 'Nový dodavatel', 'e-mail: novy@seznam.cz', '2015-12-01');
+SELECT * FROM `prijemka`;
+
+/* Přidání pohybu zboží k nové příjemce a úprava počtu kusů daného zboží na skladě. */
+INSERT INTO `mydb`.`pohyb_zbozi` (`id_pohyb`, `prijemka_id_prijemka`, `vydejka_id_vydejka`, `mnozstvi_pouzite`, `cena_na_dokladu`, `skladova_polozka_id_polozka`, `skladova_polozka_sklad_id_sklad`) VALUES (NULL, '4', NULL, 'ks', '500', '14', '3');
+UPDATE `mydb`.`skladova_polozka` SET `mnozstvi_na_sklade` = '5' WHERE `skladova_polozka`.`id_polozka` = 14 AND `skladova_polozka`.`sklad_id_sklad` = 3;
+SELECT * FROM `pohyb_zbozi`;
+
+/* Vytvoření nové výdejky. */
+INSERT INTO `mydb`.`vydejka` (`id_vydejka`, `datum_vydani`, `prevzal`, `produkt_id_seriove_cislo`, `produkt_zakaznik_id_zakaznik`) VALUES (NULL, '2015-12-17', 'Michal Poslušný', '6', '4');
+SELECT * FROM `vydejka`;
+
+/* Přidání pohybu zboží k nové výdejce a úprava počtu kusů daného zboží na skladě */
+INSERT INTO `mydb`.`pohyb_zbozi` (`id_pohyb`, `prijemka_id_prijemka`, `vydejka_id_vydejka`, `mnozstvi_pouzite`, `cena_na_dokladu`, `skladova_polozka_id_polozka`, `skladova_polozka_sklad_id_sklad`) VALUES (NULL, NULL, '6', '5', '500', '14', '3');
+UPDATE `mydb`.`skladova_polozka` SET `mnozstvi_na_sklade` = '0' WHERE `skladova_polozka`.`id_polozka` = 14 AND `skladova_polozka`.`sklad_id_sklad` = 3;
+INSERT INTO `mydb`.`pohyb_zbozi` (`id_pohyb`, `prijemka_id_prijemka`, `vydejka_id_vydejka`, `mnozstvi_pouzite`, `cena_na_dokladu`, `skladova_polozka_id_polozka`, `skladova_polozka_sklad_id_sklad`) VALUES (NULL, NULL, '6', '5', '302.5', '8', '1');
+UPDATE `mydb`.`skladova_polozka` SET `mnozstvi_na_sklade` = '2' WHERE `skladova_polozka`.`id_polozka` = 8 AND `skladova_polozka`.`sklad_id_sklad` = 1;
+SELECT * FROM `pohyb_zbozi`;
+
+/* Vypsání produktů a materiálu který na ně byl použitý. */
+SELECT * FROM `material_pouzity_dle_produktu`;
+
+/* Vypsání vydaného materiálu*/
+SELECT * FROM `material_vydany`;
+
+/* Vypsání přijatého materiálu */
+SELECT * FROM `material_prijaty`;

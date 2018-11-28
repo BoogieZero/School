@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Zvyraznovac()
+comment0.text=\r\n\ P\u0159iprav\u00ED\ novou\ instanci\ t\u0159\u00EDdy\ Zvyraznovac\ a\ nastav\u00ED\ po\u010D\u00E1te\u010Dn\u00ED\ hodnoty\ zv\u011Bt\u0161en\u00ED\ zv\u00FDraz\u0148ovan\u00E9ho\ objektu.\r\n
+comment1.params=pridano
+comment1.target=Zvyraznovac(int)
+comment1.text=\r\n\ P\u0159ipra\u00ED\ novou\ intanci\ t\u0159\u00EDdy\ Zvyraznovac\ se\ zadan\u00FDm\ zv\u011Bt\u0161en\u00EDm\ zv\u00FDraz\u0148ovan\u00E9ho\ objektu.\r\n\ \ @param\ pridano\ \ po\u010Det\ pixel\u016F\ o\ kter\u00E9\ je\ v\u011Bt\u0161\u00ED\ zv\u00FDrazn\u011Bn\u00ED\ objektu\ na\ v\u0161echny\ strany\r\n
+numComments=2

@@ -1,0 +1,39 @@
+\begin{thebibliography}{1}
+
+\bibitem{Digital_image_processing}
+Woods~RE Gonzalez~RC.
+\newblock {\em Digital Image Processing.}
+\newblock Pearson Education New Jersey, 2008.
+
+\bibitem{Sigmoid_activation}
+Olgac~AV Karlik~B.
+\newblock Performance analysis of various activation functions in generalized
+  mlp architectures of neural networks.
+\newblock {\em International Journal of Artificial Intelligence and Expert
+  Systems}, 2011.
+
+\bibitem{Otsu_tresholding}
+Otsu N.
+\newblock A threshold selection method from gray-level histograms.
+\newblock {\em IEEE transactions on systems, man, and cybernetics}, 1979.
+
+\bibitem{Nguyen_initialization}
+Widrow~B Nguyen~D.
+\newblock Improving the learning speed of 2-layer neural neural network by
+  choosing initial values of the adaptive weights.
+\newblock In {\em IEEE International Joint Conference on Neural Networks},
+  1992.
+
+\bibitem{thumb_rule}
+Karsoliya S.
+\newblock Approximating number of hidden layer neurons in multiple hidden layer
+  bpnn architecture.
+\newblock {\em International Journal of Engineering Trends and Technology},
+  2012.
+
+\bibitem{Wilson_learning_rate}
+Martinez~TR Wilson~DR.
+\newblock The need for small learning rates on large problems.
+\newblock In {\em Proceedings. IJCNN'01. International Joint Conference}, 2001.
+
+\end{thebibliography}

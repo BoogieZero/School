@@ -1,0 +1,4 @@
+"C:\School\POT\Workspace\Workspace_POT\KZ\main.s"
+-I "C:\School\POT\Workspace\Workspace_POT\KZ"
+--gdwarf2
+-o "C:\School\POT\Workspace\Workspace_POT\KZ\Debug\main.o"

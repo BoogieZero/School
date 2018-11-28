@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+    <string name="title_activity_task">TaskActivity</string>
+    <string name="title_task_edit">Edit</string>
+    <string name="title_task_add">New Task</string>
+    <string name="dueDate_task">Due Date:</string>
+    <string name="dueTime_task">Due Time:</string>
+    <string name="lbName_task">Name:</string>
+    <string name="txDate_task">Date</string>
+    <string name="txName_task">Name</string>
+    <string name="txName_required_task">Name is required!</string>
+    <string name="btConfirm_task">Add</string>
+    <string name="txTime_task">Time</string>
+    <string name="btDone_task">Complete Task</string>
+    <string name="btDone_doubleClick_task">Double click to complete.</string>
+    <string name="tbDescription_task">Description...</string>
+    <string name="btToggle_on_main">Notifications ON</string>
+    <string name="btToggle_off_main">Notifications OFF</string>
+    <string name="notification_text" formatted="false">%d tasks for today and %d total</string>
+    <string name="notification_title">Pending tasks...</string>
+</resources>

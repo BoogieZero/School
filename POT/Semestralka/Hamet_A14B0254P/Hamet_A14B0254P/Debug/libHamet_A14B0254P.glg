@@ -1,0 +1,4 @@
+--compiler-options=-ms,-ms2600,-Os,-fdata-sections,-ffunction-sections,-falign-jumps,-fno-function-cse,-funit-at-a-time
+--output="C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\Debug\libHamet_A14B0254P.a"
+--select-lib=optlib
+--header-files=stdio,stdlib,string

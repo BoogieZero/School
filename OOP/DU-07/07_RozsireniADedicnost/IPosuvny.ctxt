@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Pozice\ getPozice()
+comment0.text=\r\n\ Vr\u00E1t\u00ED\ instanci\ t\u0159\u00EDdy\ {@code\ Pozice}\ s\ aktu\u00E1ln\u00ED\ pozic\u00ED\ instance.\r\n\r\n\ @return\ \ Instance\ t\u0159\u00EDdy\ {@code\ Pozice}\ s\ aktu\u00E1ln\u00ED\ pozic\u00ED\ instance\r\n
+comment1.params=pozice
+comment1.target=void\ setPozice(Pozice)
+comment1.text=\r\n\ Nastav\u00ED\ novou\ pozici\ instance.\r\n\r\n\ @param\ pozice\ \ \ Nastavovan\u00E1\ pozice\ instance\r\n
+comment2.params=x\ y
+comment2.target=void\ setPozice(int,\ int)
+comment2.text=\r\n\ Nastav\u00ED\ novou\ pozici\ instance.\r\n\r\n\ @param\ x\ \ Nov\u011B\ nastavovan\u00E1\ vodorovn\u00E1\ (x-ov\u00E1)\ sou\u0159adnice\ instance,\r\n\ \ \ \ \ \ \ \ \ \ \ x\=0\ m\u00E1\ lev\u00FD\ okraj\ pl\u00E1tna,\ sou\u0159adnice\ roste\ doprava\r\n\ @param\ y\ \ Nov\u011B\ nastavovan\u00E1\ svisl\u00E1\ (y-ov\u00E1)\ sou\u0159adnice\ instance,\r\n\ \ \ \ \ \ \ \ \ \ \ y\=0\ m\u00E1\ horn\u00ED\ okraj\ pl\u00E1tna,\ sou\u0159adnice\ roste\ dol\u016F\r\n
+numComments=3

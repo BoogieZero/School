@@ -1,0 +1,5984 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="" name="" >
+<node_order><![CDATA[]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="89" name="TS.01 Funkčnost formuláře - hlavní tok" >
+<node_order><![CDATA[0]]></node_order>
+<details><![CDATA[<p>
+	Testy funkčnosti - hlavn&iacute; tok</p>
+]]></details> 
+
+<testcase internalid="90" name="TC.01.01 Happy day scenario">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[18]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<a href="javascript:openLinkedReqVersionWindow(1598,1599)">Happy day scenario</a></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani<br />
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte vstupn&iacute; hodnoty:</p>
+<table align="left" border="1" cellpadding="1" cellspacing="1" style="width: 300px;">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FAV</td>
+		</tr>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				15</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				bakal&aacute;řsk&yacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				123</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				prezenčn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: A15B0123P</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost formuláře - hlavní tok]]></req_spec_title>
+			<doc_id><![CDATA[RQM.01.01]]></doc_id>
+			<title><![CDATA[Happy day scenario]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="94" name="TC.01.02 Vymazání formuláře">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[19]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Vymaz&aacute;n&iacute; formul&aacute;ře</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Pr&aacute;vě proběhl TC.03.02.01 Happy day scenario</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Vymaž</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	V&yacute;běrov&yacute; seznam <strong>Fakulta </strong>je nastaven na hodnotu&nbsp; <strong>--- neuvedeno ---</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole <strong>Rok n&aacute;stupu na ZČU</strong> m&aacute; hodnotu 08</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	V&yacute;běrov&yacute; seznam <strong>Typ studia </strong>je nastaven na hodnotu&nbsp; <strong>bakal&aacute;řsk&yacute;</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole <strong>Pořadov&eacute; č&iacute;slo</strong> m&aacute; hodnotu 0001</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Blok radio-buttonů <strong>Forma studia</strong> nem&aacute; vybranou ž&aacute;dnou položku</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Check-box <strong>Zahraničn&iacute; student</strong> nen&iacute; za&scaron;krtnut</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Je vymaz&aacute;no vygenerovan&eacute; osobn&iacute; č&iacute;slo včetně labelu <strong><label for="vysledek" id="label_vysledek" title="Výsledné osobní číslo">V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo:</label></strong></p>
+<p>
+	&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost formuláře - hlavní tok]]></req_spec_title>
+			<doc_id><![CDATA[RQM.01.02]]></doc_id>
+			<title><![CDATA[Vymazání formuláře]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+</testsuite><testsuite id="103" name="TS.02 Záložky" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<p>
+	Test existence z&aacute;ložek <strong>&Uacute;vod</strong>, <strong>Generov&aacute;n&iacute;</strong>, <strong>N&aacute;pověda</strong></p>
+]]></details> 
+
+<testcase internalid="104" name="TC.02.01 Úvod">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[1]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Existence z&aacute;ložky<b> &Uacute;vod</b></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo</p>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Kliknut&iacute; na z&aacute;ložku <strong>&Uacute;vod</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Zobraz&iacute; se str&aacute;nka <strong>&Uacute;vod</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Záložky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.02.01]]></doc_id>
+			<title><![CDATA[Úvod]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="107" name="TC.02.02 Generování">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[2]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Existence z&aacute;ložky <strong>Generov&aacute;n&iacute;</strong></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Kliknut&iacute; na z&aacute;ložku <strong>Generov&aacute;n&iacute;</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Zobraz&iacute; se str&aacute;nka <strong>Generov&aacute;n&iacute;</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Záložky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.02.02]]></doc_id>
+			<title><![CDATA[Generování]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="110" name="TC.02.03 Nápověda">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Existence z&aacute;ložky <strong>N&aacute;pověda</strong></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Kliknut&iacute; na z&aacute;ložku <strong>N&aacute;pověda</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Zobraz&iacute; se str&aacute;nka <strong>N&aacute;pověda</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Záložky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.02.03]]></doc_id>
+			<title><![CDATA[Nápověda]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+</testsuite><testsuite id="113" name="TS.03 Úvod" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[<p>
+	Testy na str&aacute;nce <strong>&Uacute;vod</strong></p>
+]]></details> 
+
+<testcase internalid="114" name="TC.03.01 Odkaz na KIV/OKS">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[4]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Spr&aacute;vnost odkazu na str&aacute;nku předmětu KIV/OKS</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Uvod</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Kliknut&iacute; na odkaz <strong>Ověřov&aacute;n&iacute; kvality software (KIV/OKS)</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Zobraz&iacute; se str&aacute;nka předmětu na Port&aacute;le v Courseware</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Stránka Úvod]]></req_spec_title>
+			<doc_id><![CDATA[RQM.03.01]]></doc_id>
+			<title><![CDATA[Odkaz na KIV/OKS]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="117" name="TC.03.02 Odkaz na KIV">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[5]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Spr&aacute;vnost odkazu na str&aacute;nku KIV - www.kiv.zcu.cz</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Uvod</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Kliknut&iacute; na odkaz <strong>Katedře informatiky a v&yacute;početn&iacute; techniky</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Zobraz&iacute; se str&aacute;nka www.kiv.zcu.cz</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Stránka Úvod]]></req_spec_title>
+			<doc_id><![CDATA[RQM.03.02]]></doc_id>
+			<title><![CDATA[Odkaz na KIV]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="120" name="TC.03.03 Odkaz na ZČU">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[6]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Spr&aacute;vnost odkazu na str&aacute;nku ZČU - www.zcu.cz</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Uvod</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Kliknut&iacute; na odkaz<strong> Z&aacute;padočesk&eacute; univerzitě v Plzni</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Zobraz&iacute; se str&aacute;nka www.zcu.cz</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Stránka Úvod]]></req_spec_title>
+			<doc_id><![CDATA[RQM.03.03]]></doc_id>
+			<title><![CDATA[Odkaz na ZČU]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+</testsuite><testsuite id="123" name="TS.04 Generování" >
+<node_order><![CDATA[3]]></node_order>
+<details><![CDATA[<p>
+	Testy na str&aacute;nce <strong>Generov&aacute;n&iacute;</strong></p>
+]]></details> 
+<testsuite id="124" name="TS.04.01 Položky formuláře" >
+<node_order><![CDATA[0]]></node_order>
+<details><![CDATA[<p>
+	Testy existence položek formul&aacute;ře</p>
+]]></details> 
+
+<testcase internalid="125" name="TC.04.01.01 Fakulta">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[10]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Existence v&yacute;běrov&eacute;ho seznamu, labelu, tool-tipů a v&scaron;ech položek seznamu</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Existuje label <strong>Fakulta</strong>, označen&yacute; * jako povinn&aacute; položka</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Existuje v&yacute;běrov&yacute; seznam s předvybranou položkou <strong>--- neuvedeno ---</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Položky v&yacute;běrov&eacute;ho seznamu jsou v pořad&iacute;:</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	<strong>--- neuvedeno ---</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	<strong>FAV - Fakulta aplikovan&yacute;ch věd</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	<strong>FDU - Fakulta designu a uměn&iacute; Ladislava Sutnara</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	<strong>FEK - Fakulta ekonomick&aacute;</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>
+	<strong>FEL - Fakulta elektrotechnick&aacute;</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>
+	<strong>FF&nbsp; - Fakulta filosofick&aacute;</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[10]]></step_number>
+	<actions><![CDATA[<p>
+	<strong>FPE - Fakulta pedagogick&aacute;</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[11]]></step_number>
+	<actions><![CDATA[<p>
+	<strong>FPR - Fakulta pr&aacute;vnick&aacute;</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[12]]></step_number>
+	<actions><![CDATA[<p>
+	<strong>FST - Fakulta strojn&iacute;</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[13]]></step_number>
+	<actions><![CDATA[<p>
+	<strong>FZS - Fakulta zdravotnick&yacute;ch studi&iacute;</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[14]]></step_number>
+	<actions><![CDATA[<p>
+	Label m&aacute; tool-tip</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<strong>Vyberte fakultu</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[15]]></step_number>
+	<actions><![CDATA[<p>
+	V&yacute;běrov&yacute; seznam m&aacute; tool-tip</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<strong>Vyberte fakultu</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[16]]></step_number>
+	<actions><![CDATA[<p>
+	Existuje v&yacute;běrov&yacute; seznam s předvybranou položkou <strong>--- neuvedeno ---</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[17]]></step_number>
+	<actions><![CDATA[<p>
+	Existuje v&yacute;běrov&yacute; seznam s předvybranou položkou <strong>--- neuvedeno ---</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Položky formuláře]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.01.01]]></doc_id>
+			<title><![CDATA[Fakulta]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="261" name="TC.04.01.02 Rok nástupu na ZČU">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[107]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Existence vstupn&iacute;ho pole, tooltipu u vstupn&iacute;ho pole i labelu a předepsan&eacute; uk&aacute;zkov&eacute; hodnoty.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka: http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>3.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Existuje label &quot;Rok n&aacute;stupu na ZČU&quot; označen&yacute; &quot;*&quot; jako povinn&aacute; položka.</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Existuje vstupn&iacute; pole s předepsanou hodnotou &quot;08&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Label m&aacute; tooltip.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Zadejte posledn&iacute; dvojč&iacute;sl&iacute; kalend&aacute;řn&iacute;ho roku.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Vstupn&iacute; pole m&aacute; tooltip.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Zadejte posledn&iacute; dvojč&iacute;sl&iacute; kalend&aacute;řn&iacute;ho roku.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Položky formuláře]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.01.02]]></doc_id>
+			<title><![CDATA[Rok nástupu na ZČU]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="273" name="TC.04.01.03 Typ studia">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[109]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Existence v&yacute;běrov&eacute;ho seznamu, labelu, tool-tipů a v&scaron;ech položek seznamu</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>4.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Existuje label Typ studia&nbsp;označen&yacute; * jako povinn&aacute; položka</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Existuje v&yacute;běrov&yacute; seznam s předvybranou položkou <strong>bakal&aacute;řsk&yacute;</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Položky v&yacute;běrov&eacute;ho seznamu jsou v pořad&iacute;:</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	<strong>bakal&aacute;řsk&yacute;</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	<strong>navazuj&iacute;c&iacute;</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	<strong>doktorsk&yacute;</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	<strong>magistersk&yacute;</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>
+	Label m&aacute; tool-tip</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<strong>Vyberte typ studia</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>
+	V&yacute;běrov&yacute; seznam m&aacute; tool-tip</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<strong>Vyberte typ studia</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Položky formuláře]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.01.03]]></doc_id>
+			<title><![CDATA[Typ studia]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="292" name="TC.04.01.04 Pořadové číslo">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[110]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Existence vstupn&iacute;ho pole, tooltipu u vstupn&iacute;ho pole i labelu a předepsan&eacute; uk&aacute;zkov&eacute; hodnoty.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka: http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>3.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Existuje label <b>Pořadov&eacute; č&iacute;slo</b>&nbsp;označen&yacute; <strong>*</strong>&nbsp;jako povinn&aacute; položka.</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Existuje vstupn&iacute; pole s předepsanou hodnotou <strong>0001</strong>.</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Label m&aacute; tooltip.</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	Zadejte nez&aacute;porn&eacute; cel&eacute; č&iacute;slo, max. 4 č&iacute;slice.</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Vstupn&iacute; pole m&aacute; tooltip.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Zadejte nez&aacute;porn&eacute; cel&eacute; č&iacute;slo, max. 4 č&iacute;slice.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Položky formuláře]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.01.04]]></doc_id>
+			<title><![CDATA[Pořadové číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="298" name="TC.04.01.05 Forma studia">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[111]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Existence v&scaron;ech radio-buttonů, labelu a tool-tipů.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>3.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Existuje label <strong>Forma studia</strong>&nbsp;označen&yacute; * jako povinn&aacute; položka.</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Existuj&iacute; radio-buttony kde nen&iacute; ani jeden označen&yacute; jako vybran&yacute;.</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Radio-buttony jsou v pořad&iacute; z leva:</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	<strong>prezenčn&iacute;</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	<strong>kombinovan&aacute;</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	<strong>distančn&iacute;</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[11]]></step_number>
+	<actions><![CDATA[<p>
+	Label m&aacute; tool-tip</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<strong>Vyberte formu studia</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[12]]></step_number>
+	<actions><![CDATA[<p>
+	Radio-buttony maj&iacute; tooltip.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<strong>Vyberte formu studia</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Položky formuláře]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.01.05]]></doc_id>
+			<title><![CDATA[Forma studia]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="313" name="TC.04.01.06 Zahraniční student">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[112]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Existence tlač&iacute;tka.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Existuje label <b>Zahraničn&iacute; student&nbsp;</b>bez označen&iacute;&nbsp;* jako nepovinn&aacute; položka.</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Existuje neza&scaron;krtnut&yacute; check-box.</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[11]]></step_number>
+	<actions><![CDATA[<p>
+	Label m&aacute; tool-tip</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Za&scaron;krtněte, jedn&aacute;-li se o zahraničn&iacute;ho studenta</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[12]]></step_number>
+	<actions><![CDATA[<p>
+	Check box m&aacute; tooltip.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Za&scaron;krtněte, jedn&aacute;-li se o zahraničn&iacute;ho studenta</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Položky formuláře]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.01.06]]></doc_id>
+			<title><![CDATA[Zahraniční student]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="323" name="TC.04.01.07 Generuj osobní číslo">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[113]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Existence tlač&iacute;tka a tool-tipu.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Existuje tlač&iacute;tko&nbsp;<b>Generuj osobn&iacute; č&iacute;slo.</b></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[11]]></step_number>
+	<actions><![CDATA[<p>
+	Tlač&iacute;tko m&aacute; tool-tip.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Stiskněte po zad&aacute;n&iacute; v&scaron;ech hodnot</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Položky formuláře]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.01.07]]></doc_id>
+			<title><![CDATA[Generuj osobní číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="142" name="TC.04.01.08 Vymaž">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[41]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Existence tlač&iacute;tka a tool-tipu<br />
+	&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani<br />
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Existuje tlač&iacute;tko <strong>Vymaž</strong><br />
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Tlač&iacute;tko m&aacute; tool-tip</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<strong>Vymaz&aacute;n&iacute; v&scaron;ech hodnot</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Položky formuláře]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.01.08]]></doc_id>
+			<title><![CDATA[Vymaž]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+</testsuite><testsuite id="146" name="TS.04.02 Funkčnost - možnosti parametrů" >
+<node_order><![CDATA[6]]></node_order>
+<details><![CDATA[<p>
+	Možnosti jednotliv&yacute;ch vstupn&iacute;ch parametrů</p>
+]]></details> 
+<testsuite id="147" name="TS.04.02.01 Možnosti fakult" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<p>
+	Možn&eacute; volby fakult</p>
+]]></details> 
+
+<testcase internalid="148" name="TC.04.02.01.01 FAV">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[42]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	FAV - Fakulta aplikovan&yacute;ch věd</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				15</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				bakal&aacute;řsk&yacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				123</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				prezenčn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte v&yacute;běrov&yacute; seznam <strong>Fakulta </strong>na hodnotu <strong>FAV - Fakulta aplikovan&yacute;ch věd</strong></p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: A15B0123P</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.01]]></doc_id>
+			<title><![CDATA[Fakulta]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="329" name="TC.04.02.01.02 FDU">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[114]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<div>
+	FDU - Fakulta designu a uměn&iacute; Ladislava Sutnara</div>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				15</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				bakal&aacute;řsk&yacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				123</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				prezenčn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte v&yacute;běrov&yacute; seznam <strong>Fakulta </strong>na hodnotu <strong>FDU - Fakulta designu a uměn&iacute; Ladislava Sutnara</strong></p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: D15B0123P</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.01]]></doc_id>
+			<title><![CDATA[Fakulta]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="333" name="TC.04.02.01.03 FEK">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[115]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	FEK - Fakulta ekonomick&aacute;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				15</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				bakal&aacute;řsk&yacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				123</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				prezenčn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte v&yacute;běrov&yacute; seznam <strong>Fakulta </strong>na hodnotu <strong>FEK - Fakulta ekonomick&aacute;</strong></p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: K15B0123P</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.01]]></doc_id>
+			<title><![CDATA[Fakulta]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="337" name="TC.04.02.01.04 FEL">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[116]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	FEL - Fakulta elektrotechnick&aacute;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				15</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				bakal&aacute;řsk&yacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				123</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				prezenčn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte v&yacute;běrov&yacute; seznam <strong>Fakulta </strong>na hodnotu <strong>FEL - Fakulta elektrotechnick&aacute;</strong></p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: E15B0123P</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.01]]></doc_id>
+			<title><![CDATA[Fakulta]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="341" name="TC.04.02.01.05 FF">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[117]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	FF - Fakulta filosofick&aacute;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				15</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				bakal&aacute;řsk&yacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				123</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				prezenčn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte v&yacute;běrov&yacute; seznam <strong>Fakulta </strong>na hodnotu <strong>FF - Fakulta filosofick&aacute;</strong></p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: F15B0123P</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.01]]></doc_id>
+			<title><![CDATA[Fakulta]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="345" name="TC.04.02.01.06 FPE">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[118]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	FPE - Fakulta pedagogick&aacute;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				15</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				bakal&aacute;řsk&yacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				123</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				prezenčn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte v&yacute;běrov&yacute; seznam <strong>Fakulta </strong>na hodnotu <strong>FPE - Fakulta pedagogick&aacute;</strong></p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: P15B0123P</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.01]]></doc_id>
+			<title><![CDATA[Fakulta]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="349" name="TC.04.02.01.07 FPR">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[119]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	FPR - Fakulta pr&aacute;vnick&aacute;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				15</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				bakal&aacute;řsk&yacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				123</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				prezenčn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte v&yacute;běrov&yacute; seznam <strong>Fakulta </strong>na hodnotu <strong>FPR - Fakulta pr&aacute;vnick&aacute;</strong></p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: R15B0123P</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.01]]></doc_id>
+			<title><![CDATA[Fakulta]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="353" name="TC.04.02.01.08 FST">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[120]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	FST - Fakulta strojn&iacute;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				15</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				bakal&aacute;řsk&yacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				123</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				prezenčn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte v&yacute;běrov&yacute; seznam <strong>Fakulta </strong>na hodnotu <strong>FST - Fakulta strojn&iacute;</strong></p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: S15B0123P</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.01]]></doc_id>
+			<title><![CDATA[Fakulta]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="152" name="TC.04.02.01.09 FZS">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[50]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	FZS - Fakulta zdravotnick&yacute;ch studi&iacute;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				15</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				bakal&aacute;řsk&yacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				123</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				prezenčn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte v&yacute;běrov&yacute; seznam <strong>Fakulta </strong>na hodnotu <strong>FZS - Fakulta zdravotnick&yacute;ch studi&iacute;</strong></p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: Z15B0123P</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.01]]></doc_id>
+			<title><![CDATA[Fakulta]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+</testsuite><testsuite id="156" name="TS.04.02.02 Možnosti roku nástupu na ZČU" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[<p>
+	Možnosti roku n&aacute;stupu na ZČU</p>
+]]></details> 
+
+<testcase internalid="157" name="TC.04.02.02.01 Rok 00">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[51]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Rok 2000</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FAV</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				navazuj&iacute;c&iacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				9876</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				kombinovan&aacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte vstupn&iacute; textov&eacute; pole <strong>Rok n&aacute;stupu na ZČU</strong><strong> </strong>na hodnotu 00</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: A00N9876K</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.02]]></doc_id>
+			<title><![CDATA[Rok nástupu na ZČU]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="358" name="TC.04.02.02.02 Rok 01">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[121]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Rok 2001</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FAV</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				navazuj&iacute;c&iacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				9876</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				kombinovan&aacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte vstupn&iacute; textov&eacute; pole <strong>Rok n&aacute;stupu na ZČU</strong><strong> </strong>na hodnotu 01</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: A01N9876K</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.02]]></doc_id>
+			<title><![CDATA[Rok nástupu na ZČU]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="362" name="TC.04.02.02.03 Rok 99">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[122]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Rok 1999</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FAV</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				navazuj&iacute;c&iacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				9876</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				kombinovan&aacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte vstupn&iacute; textov&eacute; pole <strong>Rok n&aacute;stupu na ZČU</strong><strong> </strong>na hodnotu 99</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: A99N9876K</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.02]]></doc_id>
+			<title><![CDATA[Rok nástupu na ZČU]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="366" name="TC.04.02.02.04 Rok 20">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[123]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Rok 2020</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FAV</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				navazuj&iacute;c&iacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				9876</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				kombinovan&aacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte vstupn&iacute; textov&eacute; pole <strong>Rok n&aacute;stupu na ZČU</strong><strong> </strong>na hodnotu 20</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: A20N9876K</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.02]]></doc_id>
+			<title><![CDATA[Rok nástupu na ZČU]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="370" name="TC.04.02.02.05 Rok _18_">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[124]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Rok 2018 s mezerou před i za rokem</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FAV</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				navazuj&iacute;c&iacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				9876</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				kombinovan&aacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte vstupn&iacute; textov&eacute; pole <strong>Rok n&aacute;stupu na ZČU</strong><strong> </strong>na hodnotu &lt;mezera&gt;18&lt;mezera&gt;</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: A18N9876K</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.02]]></doc_id>
+			<title><![CDATA[Rok nástupu na ZČU]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="374" name="TC.04.02.02.06 Rok _18">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[125]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Rok 2018 s mezerou před</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FAV</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				navazuj&iacute;c&iacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				9876</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				kombinovan&aacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte vstupn&iacute; textov&eacute; pole <strong>Rok n&aacute;stupu na ZČU</strong><strong> </strong>na hodnotu &lt;mezera&gt;18</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: A18N9876K</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.02]]></doc_id>
+			<title><![CDATA[Rok nástupu na ZČU]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="161" name="TC.04.02.02.07 Rok  _18">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[64]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Rok 2018 s mezerou za</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FAV</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				navazuj&iacute;c&iacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				9876</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				kombinovan&aacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte vstupn&iacute; textov&eacute; pole <strong>Rok n&aacute;stupu na ZČU</strong><strong> </strong>na hodnotu 18&lt;mezera&gt;</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: A18N9876K</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.02]]></doc_id>
+			<title><![CDATA[Rok nástupu na ZČU]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+</testsuite><testsuite id="165" name="TS.04.02.03 Možnosti typů studia" >
+<node_order><![CDATA[3]]></node_order>
+<details><![CDATA[<p>
+	Možnosti typů studia</p>
+]]></details> 
+
+<testcase internalid="166" name="TC.04.02.03.01 Bakalářský">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[55]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Bakal&aacute;řsk&yacute;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FEL</td>
+		</tr>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				14</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				0099</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				distančn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte v&yacute;běrov&yacute; seznam <strong>Typ studia </strong>na hodnotu <strong>bakal&aacute;řsk&yacute;</strong></p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: E14B0099D</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.03]]></doc_id>
+			<title><![CDATA[Typ studia]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="378" name="TC.04.02.03.02 Navazující">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[126]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Navazuj&iacute;c&iacute;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FEL</td>
+		</tr>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				14</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				0099</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				distančn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte v&yacute;běrov&yacute; seznam <strong>Typ studia </strong>na hodnotu <strong>navazuj&iacute;c&iacute;</strong></p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: E14N0099D</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.03]]></doc_id>
+			<title><![CDATA[Typ studia]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="382" name="TC.04.02.03.03 Doktorský">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[127]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Doktorsk&yacute;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FEL</td>
+		</tr>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				14</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				0099</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				distančn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte v&yacute;běrov&yacute; seznam <strong>Typ studia </strong>na hodnotu <strong>doktorsk&yacute;</strong></p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: E14P0099D</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.03]]></doc_id>
+			<title><![CDATA[Typ studia]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="170" name="TC.04.02.03.04 Magisterský">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[58]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Magistersk&yacute;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FEL</td>
+		</tr>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				14</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				0099</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				distančn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte v&yacute;běrov&yacute; seznam <strong>Typ studia </strong>na hodnotu <strong>magistersk&yacute;</strong></p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: E14M0099D</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.03]]></doc_id>
+			<title><![CDATA[Typ studia]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+</testsuite><testsuite id="174" name="TS.04.02.04 Možnosti pořadového čísla" >
+<node_order><![CDATA[4]]></node_order>
+<details><![CDATA[<p>
+	Možnosti pořadov&eacute;ho č&iacute;sla</p>
+]]></details> 
+
+<testcase internalid="175" name="TC.04.02.04.01 Pořadí 1">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[59]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Pořad&iacute; 1</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FPE</td>
+		</tr>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				08</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				magistersk&yacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				prezenčn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte vstupn&iacute; textov&eacute; pole <strong>Pořadov&eacute; č&iacute;slo</strong><strong> </strong>na hodnotu 1</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: P08M0001P</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.04]]></doc_id>
+			<title><![CDATA[Pořadové číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="386" name="TC.04.02.04.02 Pořadí 01">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[128]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Pořad&iacute; 01</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FPE</td>
+		</tr>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				08</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				magistersk&yacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				prezenčn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte vstupn&iacute; textov&eacute; pole <strong>Pořadov&eacute; č&iacute;slo</strong><strong> </strong>na hodnotu 01</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: P08M0001P</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.04]]></doc_id>
+			<title><![CDATA[Pořadové číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="390" name="TC.04.02.04.03 Pořadí 001">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[129]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Pořad&iacute; 001</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FPE</td>
+		</tr>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				08</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				magistersk&yacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				prezenčn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte vstupn&iacute; textov&eacute; pole <strong>Pořadov&eacute; č&iacute;slo</strong><strong> </strong>na hodnotu 001</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: P08M0001P</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.04]]></doc_id>
+			<title><![CDATA[Pořadové číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="394" name="TC.04.02.04.04 Pořadí 0001">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[130]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Pořad&iacute; 0001</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FPE</td>
+		</tr>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				08</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				magistersk&yacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				prezenčn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte vstupn&iacute; textov&eacute; pole <strong>Pořadov&eacute; č&iacute;slo</strong><strong> </strong>na hodnotu 0001</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: P08M0001P</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.04]]></doc_id>
+			<title><![CDATA[Pořadové číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="398" name="TC.04.02.04.05 Pořadí 99">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[131]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Pořad&iacute; 99</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FPE</td>
+		</tr>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				08</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				magistersk&yacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				prezenčn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte vstupn&iacute; textov&eacute; pole <strong>Pořadov&eacute; č&iacute;slo</strong><strong> </strong>na hodnotu 99</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: P08M0099P</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.04]]></doc_id>
+			<title><![CDATA[Pořadové číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="402" name="TC.04.02.04.06 Pořadí 999">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[132]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Pořad&iacute; 999</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FPE</td>
+		</tr>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				08</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				magistersk&yacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				prezenčn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte vstupn&iacute; textov&eacute; pole <strong>Pořadov&eacute; č&iacute;slo</strong><strong> </strong>na hodnotu 999</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: P08M0999P</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.04]]></doc_id>
+			<title><![CDATA[Pořadové číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="406" name="TC.04.02.04.07 Pořadí 9999">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[133]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Pořad&iacute; 9999</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FPE</td>
+		</tr>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				08</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				magistersk&yacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				prezenčn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte vstupn&iacute; textov&eacute; pole <strong>Pořadov&eacute; č&iacute;slo</strong><strong> </strong>na hodnotu 9999</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: P08M9999P</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.04]]></doc_id>
+			<title><![CDATA[Pořadové číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="414" name="TC.04.02.04.08 Pořadí _123_">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[135]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Pořad&iacute; 123 s mezerou před i za pořad&iacute;m</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FPE</td>
+		</tr>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				08</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				magistersk&yacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				prezenčn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte vstupn&iacute; textov&eacute; pole <strong>Pořadov&eacute; č&iacute;slo</strong><strong> </strong>na</p>
+<p>
+	&lt;mezera&gt;hodnotu 123&lt;mezera&gt;</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: P08M0123P</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.04]]></doc_id>
+			<title><![CDATA[Pořadové číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="410" name="TC.04.02.04.09 Pořadí _123">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[134]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Pořad&iacute; 123 s mezerou před</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FPE</td>
+		</tr>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				08</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				magistersk&yacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				prezenčn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte vstupn&iacute; textov&eacute; pole <strong>Pořadov&eacute; č&iacute;slo</strong><strong> </strong>na hodnotu &lt;mezera&gt;123</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: P08M0123P</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.04]]></doc_id>
+			<title><![CDATA[Pořadové číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="179" name="TC.04.02.04.10 Pořadí 123_">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[73]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Pořad&iacute; 123 s mezerou za</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FPE</td>
+		</tr>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				08</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				magistersk&yacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				prezenčn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte vstupn&iacute; textov&eacute; pole <strong>Pořadov&eacute; č&iacute;slo</strong><strong> </strong>na hodnotu 123&lt;mezera&gt;</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: P08M0123P</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.04]]></doc_id>
+			<title><![CDATA[Pořadové číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+</testsuite><testsuite id="183" name="TS.04.02.05 Možnosti formy studia" >
+<node_order><![CDATA[5]]></node_order>
+<details><![CDATA[<p>
+	Možnosti formy studia</p>
+]]></details> 
+
+<testcase internalid="184" name="TC.04.02.05.01 Prezenční">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[74]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Prezenčn&iacute;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FZS</td>
+		</tr>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				20</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				bakal&aacute;řsk&yacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				0101</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte radio-button <strong>Forma studia </strong>na hodnotu <strong>prezenčn&iacute;</strong></p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: Z20B0101P</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.05]]></doc_id>
+			<title><![CDATA[Forma studia]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="418" name="TC.04.02.05.02 Kombinovaná">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[136]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Kombinovan&aacute;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FZS</td>
+		</tr>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				20</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				bakal&aacute;řsk&yacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				0101</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte radio-button <strong>Forma studia </strong>na hodnotu <b>kombinovan&aacute;</b></p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: Z20B0101K</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.05]]></doc_id>
+			<title><![CDATA[Forma studia]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="188" name="TC.04.02.05.03 Distanční">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[76]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Distančn&iacute;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FZS</td>
+		</tr>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				20</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				bakal&aacute;řsk&yacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				0101</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Nastavte radio-button <strong>Forma studia </strong>na hodnotu <strong>distančn&iacute;</strong></p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: Z20B0101D</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.05]]></doc_id>
+			<title><![CDATA[Forma studia]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+</testsuite><testsuite id="192" name="TS.04.02.06 Možnosti zahraničního studenta" >
+<node_order><![CDATA[6]]></node_order>
+<details><![CDATA[<p>
+	Možnosti zahraničn&iacute;ho studenta</p>
+]]></details> 
+
+<testcase internalid="193" name="TC.04.02.06.01 Zahraniční student NE">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[77]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Zahraničn&iacute; student NE</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FST</td>
+		</tr>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				15</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				bakal&aacute;řsk&yacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				0001</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				prezenčn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Check-box <strong>Zahraničn&iacute; student</strong> nen&iacute; vybr&aacute;n</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: S15B0001P</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.06]]></doc_id>
+			<title><![CDATA[Zahraniční student]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="197" name="TC.04.02.06.02 Zahraniční student ANO">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[78]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Zahraničn&iacute; student ANO</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou nastaveny tyto vstupn&iacute; hodnoty:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>
+				Fakulta</td>
+			<td>
+				FST</td>
+		</tr>
+		<tr>
+			<td>
+				Rok n&aacute;stupu na ZČU</td>
+			<td>
+				15</td>
+		</tr>
+		<tr>
+			<td>
+				Typ studia</td>
+			<td>
+				bakal&aacute;řsk&yacute;</td>
+		</tr>
+		<tr>
+			<td>
+				Pořadov&eacute; č&iacute;slo</td>
+			<td>
+				0001</td>
+		</tr>
+		<tr>
+			<td>
+				Forma studia</td>
+			<td>
+				prezenčn&iacute;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Check-box <strong>Zahraničn&iacute; student</strong> je vybr&aacute;n (za&scaron;krtnut)</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dole na str&aacute;nce se objev&iacute;:</p>
+<p>
+	<strong>V&yacute;sledn&eacute; osobn&iacute; č&iacute;slo: S15B0001PI</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - možnosti parametrů]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.02.06]]></doc_id>
+			<title><![CDATA[Zahraniční student]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+</testsuite></testsuite><testsuite id="201" name="TS.04.03 Funkčnost - alternativní toky" >
+<node_order><![CDATA[7]]></node_order>
+<details><![CDATA[<p>
+	Testy funkčnosti - alternativn&iacute; toky</p>
+]]></details> 
+<testsuite id="202" name="TS.04.03.01 Alternativy Fakulta" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<p>
+	Reakce na chybov&eacute; vstupy u Fakulta</p>
+]]></details> 
+
+<testcase internalid="203" name="TC.04.03.01.01 Fakulta nevybrána">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[20]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - nen&iacute; vybr&aacute;na ž&aacute;dn&aacute; z nab&iacute;zen&yacute;ch fakult</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Ve v&yacute;běrov&eacute;m seznamu <strong>Fakulta </strong>je vybr&aacute;na položka <strong>--- neuvedeno ---</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	V&yacute;běrov&yacute; seznam bude červeně or&aacute;mov&aacute;n</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <strong>Fakulta nezvolena</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.01]]></doc_id>
+			<title><![CDATA[Fakulta]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.05]]></doc_id>
+			<title><![CDATA[Generuj osobní číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+</testsuite><testsuite id="209" name="TS.04.03.02 Alternativy Rok nástupu" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[<p>
+	Reakce na chybov&eacute; vstupy u Rok n&aacute;stupu na ZČU</p>
+]]></details> 
+
+<testcase internalid="210" name="TC.04.03.02.01 Rok nezadán">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[79]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - rok nen&iacute; zad&aacute;n</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Ve vstupn&iacute;m textov&eacute;m poli <strong>Rok n&aacute;stupu na ZČU</strong> nebyla dosud zad&aacute;na ž&aacute;dn&aacute; hodnota. Je tam vidět původn&iacute; n&aacute;pověda form&aacute;tu s hodnotou 08.</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole bude červeně or&aacute;mov&aacute;no</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <strong>Pr&aacute;zdn&yacute; vstup</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.02]]></doc_id>
+			<title><![CDATA[Rok nástupu na ZČU]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.05]]></doc_id>
+			<title><![CDATA[Generuj osobní číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="422" name="TC.04.03.02.02 Rok jen mezery">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[137]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - rok nen&iacute; zad&aacute;n</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Do vstupn&iacute;ho textov&eacute;ho pole&nbsp;<strong>Rok n&aacute;stupu na ZČU</strong> zadejte libovoln&yacute; počet mezer.</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole bude červeně or&aacute;mov&aacute;no</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <strong>Pr&aacute;zdn&yacute; vstup</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.02]]></doc_id>
+			<title><![CDATA[Rok nástupu na ZČU]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="428" name="TC.04.03.02.03 Rok jedna číslice">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[138]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - rok je zad&aacute;n chybně</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Dovstupn&iacute;ho textov&eacute;ho pole&nbsp;<strong>Rok n&aacute;stupu na ZČU</strong>&nbsp;zadejte libovolnou jednocifernou hodnotu.</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole bude červeně or&aacute;mov&aacute;no</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <b>Je požadov&aacute;no dvojč&iacute;sl&iacute;</b></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.02]]></doc_id>
+			<title><![CDATA[Rok nástupu na ZČU]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="434" name="TC.04.03.02.04 Rok více než dvě číslice">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[139]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - rok je zad&aacute;n chybně</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Do vstupn&iacute;ho textov&eacute;ho pole&nbsp;<strong>Rok n&aacute;stupu na ZČU</strong>&nbsp;zadejte libovoln&eacute; čtyřcifern&eacute; označen&iacute; roku.</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole bude červeně or&aacute;mov&aacute;no</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <b>Je požadov&aacute;no dvojč&iacute;sl&iacute;</b></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.02]]></doc_id>
+			<title><![CDATA[Rok nástupu na ZČU]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="440" name="TC.04.03.02.05 Rok nečíselná hodnota">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[140]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - rok je zad&aacute;n chybně</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Dovstupn&iacute;ho textov&eacute;ho pole&nbsp;<strong>Rok n&aacute;stupu na ZČU</strong>&nbsp;zadejte hodnotu&nbsp;<strong>x12</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole bude červeně or&aacute;mov&aacute;no</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <b>Nen&iacute; dekadick&eacute; č&iacute;slo</b></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.02]]></doc_id>
+			<title><![CDATA[Rok nástupu na ZČU]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="446" name="TC.04.03.02.06 Rok znaménko +">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[141]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - rok je zad&aacute;n chybně</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Dovstupn&iacute;ho textov&eacute;ho pole&nbsp;<strong>Rok n&aacute;stupu na ZČU</strong>&nbsp;zadejte hodnotu&nbsp;<strong>+15</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole bude červeně or&aacute;mov&aacute;no</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <b>Znam&eacute;nko nen&iacute; povoleno</b></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.02]]></doc_id>
+			<title><![CDATA[Rok nástupu na ZČU]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="452" name="TC.04.03.02.07 Rok znaménko -">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[142]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - rok je zad&aacute;n chybně</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Dovstupn&iacute;ho textov&eacute;ho pole&nbsp;<strong>Rok n&aacute;stupu na ZČU</strong>&nbsp;zadejte hodnotu -<strong>15</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole bude červeně or&aacute;mov&aacute;no</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <b>Znam&eacute;nko nen&iacute; povoleno</b></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.02]]></doc_id>
+			<title><![CDATA[Rok nástupu na ZČU]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="458" name="TC.04.03.02.08 Rok desetinná tečka">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[143]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - rok je zad&aacute;n chybně</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Dovstupn&iacute;ho textov&eacute;ho pole&nbsp;<strong>Rok n&aacute;stupu na ZČU</strong>&nbsp;zadejte hodnotu <strong>0.</strong><strong>15</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole bude červeně or&aacute;mov&aacute;no</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <b>Re&aacute;ln&eacute; č&iacute;slo nen&iacute; povoleno</b></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.02]]></doc_id>
+			<title><![CDATA[Rok nástupu na ZČU]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="464" name="TC.04.03.02.09 Rok desetinná čárka">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[144]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - rok je zad&aacute;n chybně</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Dovstupn&iacute;ho textov&eacute;ho pole&nbsp;<strong>Rok n&aacute;stupu na ZČU</strong>&nbsp;zadejte hodnotu <strong>0,</strong><strong>15</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole bude červeně or&aacute;mov&aacute;no</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <b>Re&aacute;ln&eacute; č&iacute;slo nen&iacute; povoleno</b></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.02]]></doc_id>
+			<title><![CDATA[Rok nástupu na ZČU]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="470" name="TC.04.03.02.10 Rok vědecká notace e">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[145]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - rok vědeck&aacute; notace E</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Ve vstupn&iacute;m textov&eacute;m poli <strong>Rok n&aacute;stupu na ZČU</strong> je zad&aacute;na hodnota 1e2</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole bude červeně or&aacute;mov&aacute;no a je v něm hodnota 1e2</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <strong>Nepovolen&yacute; z&aacute;pis č&iacute;sla</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.02]]></doc_id>
+			<title><![CDATA[Rok nástupu na ZČU]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="216" name="TC.04.03.02.11 Rok vědecká notace E">
+	<node_order><![CDATA[10]]></node_order>
+	<externalid><![CDATA[89]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - rok vědeck&aacute; notace E</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Ve vstupn&iacute;m textov&eacute;m poli <strong>Rok n&aacute;stupu na ZČU</strong> je zad&aacute;na hodnota 1e2</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole bude červeně or&aacute;mov&aacute;no a je v něm hodnota 1e2</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <strong>Nepovolen&yacute; z&aacute;pis č&iacute;sla</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.02]]></doc_id>
+			<title><![CDATA[Rok nástupu na ZČU]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.05]]></doc_id>
+			<title><![CDATA[Generuj osobní číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+</testsuite><testsuite id="222" name="TS.04.03.03 Alternativy Pořadové číslo" >
+<node_order><![CDATA[3]]></node_order>
+<details><![CDATA[<p>
+	Reakce na chybov&eacute; vstupy u Pořadov&eacute; č&iacute;slo</p>
+]]></details> 
+
+<testcase internalid="223" name="TC.04.03.03.01 Pořadové číslo nezadáno">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[90]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - Pořadov&eacute; č&iacute;slo nezad&aacute;no</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Ve vstupn&iacute;m textov&eacute;m poli <strong>Pořadov&eacute; č&iacute;slo</strong> je zad&aacute;n libovoln&yacute; počet mezer.</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole bude červeně or&aacute;mov&aacute;no</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <strong>Pr&aacute;zdn&yacute; vstup</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.03]]></doc_id>
+			<title><![CDATA[Pořadové číslo]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.05]]></doc_id>
+			<title><![CDATA[Generuj osobní číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="476" name="TC.04.03.03.02 Pořadové číslo jen mezery">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[146]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - Pořadov&eacute; č&iacute;slo nezad&aacute;no</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Ve vstupn&iacute;m textov&eacute;m poli <strong>Pořadov&eacute; č&iacute;slo</strong> nebyla dosud zad&aacute;na ž&aacute;dn&aacute; hodnota. Je tam vidět původn&iacute; n&aacute;pověda form&aacute;tu s hodnotou 0001.</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole bude červeně or&aacute;mov&aacute;no</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <strong>Pr&aacute;zdn&yacute; vstup</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.03]]></doc_id>
+			<title><![CDATA[Pořadové číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="482" name="TC.04.03.03.03 Pořadové číslo 0">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[147]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - nulov&eacute; pořadov&eacute; č&iacute;slo</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Ve vstupn&iacute;m textov&eacute;m poli <strong>Pořadov&eacute; č&iacute;slo&nbsp;</strong>je zadan&aacute; hodnota&nbsp;<strong>0</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole bude červeně or&aacute;mov&aacute;no</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <strong>Nula nen&iacute; povolena</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.03]]></doc_id>
+			<title><![CDATA[Pořadové číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="488" name="TC.04.03.03.04 Pořadové číslo 00">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[148]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - nulov&eacute; pořadov&eacute; č&iacute;slo</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Ve vstupn&iacute;m textov&eacute;m poli <strong>Pořadov&eacute; č&iacute;slo&nbsp;</strong>je zadan&aacute; hodnota&nbsp;<strong>00</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole bude červeně or&aacute;mov&aacute;no</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <strong>Nula nen&iacute; povolena</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.03]]></doc_id>
+			<title><![CDATA[Pořadové číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="494" name="TC.04.03.03.05 Pořadové číslo 000">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[149]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - nulov&eacute; pořadov&eacute; č&iacute;slo</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Ve vstupn&iacute;m textov&eacute;m poli <strong>Pořadov&eacute; č&iacute;slo&nbsp;</strong>je zadan&aacute; hodnota&nbsp;<strong>000</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole bude červeně or&aacute;mov&aacute;no</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <strong>Nula nen&iacute; povolena</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.03]]></doc_id>
+			<title><![CDATA[Pořadové číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="500" name="TC.04.03.03.06 Pořadové číslo 0000">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[150]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - nulov&eacute; pořadov&eacute; č&iacute;slo</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Ve vstupn&iacute;m textov&eacute;m poli <strong>Pořadov&eacute; č&iacute;slo&nbsp;</strong>je zadan&aacute; hodnota&nbsp;<strong>0000</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole bude červeně or&aacute;mov&aacute;no</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <strong>Nula nen&iacute; povolena</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.03]]></doc_id>
+			<title><![CDATA[Pořadové číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="506" name="TC.04.03.03.07 Pořadové číslo 1234">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[151]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - v&iacute;ce než čtyřcifern&eacute; č&iacute;slo</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Ve vstupn&iacute;m textov&eacute;m poli <strong>Pořadov&eacute; č&iacute;slo&nbsp;</strong>je zadan&aacute; hodnota <b>1234</b></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole bude červeně or&aacute;mov&aacute;no</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <strong>V&iacute;ce než čtyři č&iacute;slice</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.03]]></doc_id>
+			<title><![CDATA[Pořadové číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="512" name="TC.04.03.03.08 Pořadové číslo nečíselná hodnota">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[152]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - neč&iacute;seln&aacute; hodnota</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Ve vstupn&iacute;m textov&eacute;m poli <strong>Pořadov&eacute; č&iacute;slo&nbsp;</strong>je zadan&aacute; hodnota x<b>12A</b></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole bude červeně or&aacute;mov&aacute;no</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <strong>Nen&iacute; dekadick&eacute; č&iacute;slo</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.03]]></doc_id>
+			<title><![CDATA[Pořadové číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="518" name="TC.04.03.03.09 Pořadové číslo znaménko +">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[153]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - znam&eacute;nko</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Ve vstupn&iacute;m textov&eacute;m poli <strong>Pořadov&eacute; č&iacute;slo&nbsp;</strong>je zadan&aacute; hodnota -<strong>123</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole bude červeně or&aacute;mov&aacute;no</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <strong>Znam&eacute;nko nen&iacute; povoleno</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.03]]></doc_id>
+			<title><![CDATA[Pořadové číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="524" name="TC.04.03.03.10 Pořadové číslo znaménko -">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[154]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - znam&eacute;nko</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Ve vstupn&iacute;m textov&eacute;m poli <strong>Pořadov&eacute; č&iacute;slo&nbsp;</strong>je zadan&aacute; hodnota <strong>+123</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole bude červeně or&aacute;mov&aacute;no</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <strong>Znam&eacute;nko nen&iacute; povoleno</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.03]]></doc_id>
+			<title><![CDATA[Pořadové číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="530" name="TC.04.03.03.11 Pořadové číslo desetinná tečka">
+	<node_order><![CDATA[10]]></node_order>
+	<externalid><![CDATA[155]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - re&aacute;ln&eacute; č&iacute;slo</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Ve vstupn&iacute;m textov&eacute;m poli <strong>Pořadov&eacute; č&iacute;slo&nbsp;</strong>je zadan&aacute; hodnota <strong>1.23</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole bude červeně or&aacute;mov&aacute;no</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <strong>Re&aacute;ln&eacute; č&iacute;slo nen&iacute; povoleno</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.03]]></doc_id>
+			<title><![CDATA[Pořadové číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="536" name="TC.04.03.03.12 Pořadové číslo desetinná čárka">
+	<node_order><![CDATA[11]]></node_order>
+	<externalid><![CDATA[156]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - re&aacute;ln&eacute; č&iacute;slo</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Ve vstupn&iacute;m textov&eacute;m poli <strong>Pořadov&eacute; č&iacute;slo&nbsp;</strong>je zadan&aacute; hodnota <strong>1,23</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole bude červeně or&aacute;mov&aacute;no</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <strong>Re&aacute;ln&eacute; č&iacute;slo nen&iacute; povoleno</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.03]]></doc_id>
+			<title><![CDATA[Pořadové číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="542" name="TC.04.03.03.13 Pořadové číslo vědecká notace e">
+	<node_order><![CDATA[12]]></node_order>
+	<externalid><![CDATA[157]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - Pořadov&eacute; č&iacute;slo je ve vědeck&eacute; notaci e</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Ve vstupn&iacute;m textov&eacute;m poli <strong>Pořadov&eacute; č&iacute;slo</strong> je zad&aacute;na hodnota 12e1</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole bude červeně or&aacute;mov&aacute;no a je v něm hodnota 12e1</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <strong>Nepovolen&yacute; z&aacute;pis č&iacute;sla</strong><br />
+	&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.03]]></doc_id>
+			<title><![CDATA[Pořadové číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="229" name="TC.04.03.03.14 Pořadové číslo vědecká notace E">
+	<node_order><![CDATA[13]]></node_order>
+	<externalid><![CDATA[103]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - Pořadov&eacute; č&iacute;slo je ve vědeck&eacute; notaci E</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Ve vstupn&iacute;m textov&eacute;m poli <strong>Pořadov&eacute; č&iacute;slo</strong> je zad&aacute;na hodnota 12E1</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole bude červeně or&aacute;mov&aacute;no a je v něm hodnota 12E1</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <strong>Nepovolen&yacute; z&aacute;pis č&iacute;sla</strong><br />
+	&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.03]]></doc_id>
+			<title><![CDATA[Pořadové číslo]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.05]]></doc_id>
+			<title><![CDATA[Generuj osobní číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+</testsuite><testsuite id="235" name="TS.04.03.04 Alternativy Forma studia" >
+<node_order><![CDATA[4]]></node_order>
+<details><![CDATA[<p>
+	Reakce na chybov&eacute; vstupy u Forma studia</p>
+]]></details> 
+
+<testcase internalid="236" name="TC.04.03.04.01 Forma studia nevybrána">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[104]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test oček&aacute;van&eacute; reakce - nen&iacute; vybr&aacute;na ž&aacute;dn&aacute; z nab&iacute;zen&yacute;ch forem studia</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Hodnoty nastaven&eacute; u ostatn&iacute;ch vstupn&iacute;ch položek nejsou pro toto TC relevantn&iacute;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	V radio-bloku <strong>Forma studia</strong> nen&iacute; vybr&aacute;na ž&aacute;dn&aacute; položka</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Generuj osobn&iacute; č&iacute;slo</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <strong>Forma nezvolena</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pod formul&aacute;řem se vyp&iacute;&scaron;e červeně:<br />
+	<strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.04]]></doc_id>
+			<title><![CDATA[Forma studia]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - alternativní toky]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.03.05]]></doc_id>
+			<title><![CDATA[Generuj osobní číslo]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+</testsuite></testsuite><testsuite id="241" name="TS.04.04 Funkčnost - vymazání" >
+<node_order><![CDATA[8]]></node_order>
+<details><![CDATA[<p>
+	Vymaz&aacute;n&iacute; formul&aacute;ře</p>
+]]></details> 
+
+<testcase internalid="242" name="TC.04.04.01 Vymazání kompletního formuláře">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[105]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	V&scaron;echny položky byly spr&aacute;vně zad&aacute;ny a je vygenerov&aacute;no v&yacute;sledn&eacute; osobn&iacute; č&iacute;slo.<br />
+	Po stisku <strong>Vymaž</strong> se mus&iacute; v&scaron;echny položky nastavit na poč&aacute;tečn&iacute; hodnoty.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Jsou zvoleny/nastaveny položky:</p>
+<ul>
+	<li>
+		FAV</li>
+	<li>
+		16</li>
+	<li>
+		bakal&aacute;řsk&yacute;</li>
+	<li>
+		0123</li>
+	<li>
+		prezenčn&iacute;</li>
+</ul>
+<p>
+	Je zvolen <strong>Zahraničn&iacute; student</strong>.</p>
+<p>
+	Po stisku <strong>Generuj osobn&iacute; č&iacute;slo</strong> je toto vygenerov&aacute;no a zobrazeno dole.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Vymaž</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	V&yacute;běrov&yacute; seznam <strong>Fakulta</strong> bude nastaven na <strong>--- neuvedeno ---</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole <strong>Rok n&aacute;stupu na ZČU</strong> bude vymaz&aacute;no a bude v něm n&aacute;pověda 08</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	V&yacute;běrov&yacute; seznam <strong>Typ studia</strong> bude nastaven na <strong>bakal&aacute;řsk&yacute;</strong></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole <strong>Pořadov&eacute; č&iacute;slo</strong> bude vymaz&aacute;no a bude v něm n&aacute;pověda 0001</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	V bloku radio-buttonů <strong>Forma studia</strong> nebude vybr&aacute;na ž&aacute;dn&aacute; hodnota</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Check-box <strong>Zahraničn&iacute; student</strong> nebude vybr&aacute;n</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vygenerovan&eacute; osobn&iacute; č&iacute;slo je kompletně vymaz&aacute;no.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost formuláře - hlavní tok]]></req_spec_title>
+			<doc_id><![CDATA[RQM.01.02]]></doc_id>
+			<title><![CDATA[Vymazání formuláře]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - Vymaž]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.04.01]]></doc_id>
+			<title><![CDATA[Vymazání formuláře]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="251" name="TC.04.04.02 Vymazání formuláře s chybou">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[106]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Vyplněn&yacute; formul&aacute;ř obsahuje chybov&eacute; hl&aacute;&scaron;en&iacute;.</p>
+<p>
+	Toto hl&aacute;&scaron;en&iacute; mus&iacute; b&yacute;t po stisku <strong>Vymaž </strong>vymaz&aacute;no.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+<p>
+	Ve vstupn&iacute;m poli <strong>Rok n&aacute;stupu na ZČU</strong> je hodnota <strong>sto</strong></p>
+<p>
+	Na nastaven&iacute; ostatn&iacute;ch položek nez&aacute;lež&iacute;.</p>
+<p>
+	Po stisku <strong>Generuj osobn&iacute; č&iacute;slo</strong> je:</p>
+<ul>
+	<li>
+		vstupn&iacute; pole s hodnotou <strong>sto </strong>červeně or&aacute;mov&aacute;no</li>
+	<li>
+		vpravo se v červen&eacute;m r&aacute;mečku objev&iacute; <strong>Nen&iacute; dekadick&eacute; č&iacute;slo</strong></li>
+	<li>
+		zcela dole bude červen&eacute; chybov&eacute; hl&aacute;&scaron;en&iacute; <strong><strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong></strong></li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Stisk tlač&iacute;tka <strong>Vymaž</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole <strong>Rok n&aacute;stupu na ZČU </strong>je vymaz&aacute;no a obsahuje n&aacute;povědu 08</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vstupn&iacute; pole <strong>Rok n&aacute;stupu na ZČU</strong> nen&iacute; červeně or&aacute;mov&aacute;no</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Chybov&eacute; hl&aacute;&scaron;en&iacute;&nbsp;<strong>Nen&iacute; dekadick&eacute; č&iacute;slo</strong> je vymaz&aacute;no.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Chybov&eacute; hl&aacute;&scaron;en&iacute; <strong>Chybn&eacute; vstupy - opravte pros&iacute;m zv&yacute;razněn&eacute; položky</strong> zcela dole je vymaz&aacute;no</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost formuláře - hlavní tok]]></req_spec_title>
+			<doc_id><![CDATA[RQM.01.02]]></doc_id>
+			<title><![CDATA[Vymazání formuláře]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Funkčnost - Vymaž]]></req_spec_title>
+			<doc_id><![CDATA[RQM.04.04.01]]></doc_id>
+			<title><![CDATA[Vymazání formuláře]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+</testsuite></testsuite><testsuite id="257" name="TS.05 Nápověda" >
+<node_order><![CDATA[4]]></node_order>
+<details><![CDATA[<p>
+	Testy na str&aacute;nce <strong>N&aacute;pověda</strong></p>
+]]></details> 
+
+<testcase internalid="258" name="TC.05.01 Odkaz na Generování">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[25]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Spr&aacute;vnost odkazu na str&aacute;nku <strong>Generov&aacute;n&iacute;</strong></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Je zobrazena str&aacute;nka http://oks.kiv.zcu.cz/OsobniCislo/Napoveda</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Kliknut&iacute; na odkaz <strong>na str&aacute;nce generov&aacute;n&iacute;</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Zobraz&iacute; se str&aacute;nka <strong>Generov&aacute;n&iacute;</strong> - oks.kiv.zcu.cz/OsobniCislo/Generovani</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Stránka Nápověda]]></req_spec_title>
+			<doc_id><![CDATA[RQM.05.01]]></doc_id>
+			<title><![CDATA[Odkaz na Generování]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+</testsuite></testsuite>

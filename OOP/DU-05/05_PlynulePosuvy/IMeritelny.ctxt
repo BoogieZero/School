@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=int\ getVyska()
+comment0.text=\r\n\ Z\u00EDsk\u00E1n\u00ED\ v\u00FD\u0161ky\ m\u011B\u0159itelneho\ objektu.\r\n
+comment1.params=
+comment1.target=int\ getSirka()
+comment1.text=\r\n\ Z\u00EDsk\u00E1n\u00ED\ \u0161\u00ED\u0159ky\ m\u011B\u0159iteln\u00E9ho\ objektu.\r\n
+comment2.params=
+comment2.target=Rozmer\ getRozmer()
+comment2.text=\r\n\ Z\u00EDsk\u00E1n\u00ED\ rozm\u011Bru\ m\u011B\u0159itelnho\ objektu.\r\n
+numComments=3

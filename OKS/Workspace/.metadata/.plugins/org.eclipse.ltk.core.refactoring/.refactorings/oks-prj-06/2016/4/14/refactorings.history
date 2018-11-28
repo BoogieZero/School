@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;OsobniCisloTestPozitivniPolotovar.java&apos; to &apos;oks-prj-06/test&apos;&#x0D;&#x0A;- Original project: &apos;oks-prj-06&apos;&#x0D;&#x0A;- Destination element: &apos;oks-prj-06/test&apos;&#x0D;&#x0A;- Original element: &apos;oks06.OsobniCisloTestPozitivniPolotovar.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/test" element1="/src&lt;oks06{OsobniCisloTestPozitivniPolotovar.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1459793978028" units="1" version="1.0"/>
+</session>

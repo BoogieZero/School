@@ -1,0 +1,47 @@
+\select@language {czech}
+\contentsline {chapter}{\numberline {1}Zad\IeC {\'a}n\IeC {\'\i }}{2}
+\contentsline {chapter}{\numberline {2}Anal\IeC {\'y}za \IeC {\'u}lohy}{4}
+\contentsline {section}{\numberline {2.1}Graf koliz\IeC {\'\i }}{5}
+\contentsline {section}{\numberline {2.2}P\IeC {\v r}i\IeC {\v r}azov\IeC {\'a}n\IeC {\'\i } frekvenc\IeC {\'\i }}{6}
+\contentsline {section}{\numberline {2.3}Datov\IeC {\'e} struktury}{8}
+\contentsline {subsection}{\numberline {2.3.1}Dostupn\IeC {\'e} frekvence}{8}
+\contentsline {subsection}{\numberline {2.3.2}Vys\IeC {\'\i }la\IeC {\v c}e}{8}
+\contentsline {subsection}{\numberline {2.3.3}Z\IeC {\'a}sobn\IeC {\'\i }k}{9}
+\contentsline {chapter}{\numberline {3}Popis implementace}{11}
+\contentsline {subsection}{\numberline {3.0.1}Popis datov\IeC {\'y}ch struktur}{11}
+\contentsline {subsubsection}{Dostupn\IeC {\'e} frekvence}{11}
+\contentsline {subsubsection}{Vys\IeC {\'\i }la\IeC {\v c}e}{11}
+\contentsline {subsection}{\numberline {3.0.2}Moduly}{12}
+\contentsline {subsubsection}{\relax \fontsize {17.28}{22}\selectfont {\texttt {freq.c}}}{12}
+\contentsline {paragraph}{\input Dokumentace-1.cpt\relax }{12}
+\contentsline {paragraph}{\input Dokumentace-2.cpt\relax }{12}
+\contentsline {paragraph}{\input Dokumentace-3.cpt\relax }{12}
+\contentsline {paragraph}{\input Dokumentace-4.cpt\relax }{12}
+\contentsline {paragraph}{\input Dokumentace-5.cpt\relax }{13}
+\contentsline {paragraph}{\input Dokumentace-6.cpt\relax }{13}
+\contentsline {paragraph}{\input Dokumentace-7.cpt\relax }{13}
+\contentsline {paragraph}{\input Dokumentace-8.cpt\relax }{13}
+\contentsline {paragraph}{\input Dokumentace-9.cpt\relax }{13}
+\contentsline {subsubsection}{\relax \fontsize {17.28}{22}\selectfont {\texttt {frequencies.c}}}{14}
+\contentsline {paragraph}{\input Dokumentace-10.cpt\relax }{14}
+\contentsline {subsubsection}{\relax \fontsize {17.28}{22}\selectfont {\texttt {transmitters.c}}}{14}
+\contentsline {paragraph}{\input Dokumentace-11.cpt\relax }{14}
+\contentsline {paragraph}{\input Dokumentace-12.cpt\relax }{14}
+\contentsline {subsubsection}{\input Dokumentace-13.cpt\relax }{15}
+\contentsline {paragraph}{\input Dokumentace-14.cpt\relax }{15}
+\contentsline {subsubsection}{\relax \fontsize {17.28}{22}\selectfont {\texttt {function.c}}}{15}
+\contentsline {paragraph}{\input Dokumentace-15.cpt\relax }{15}
+\contentsline {paragraph}{\input Dokumentace-16.cpt\relax }{15}
+\contentsline {paragraph}{\input Dokumentace-17.cpt\relax }{15}
+\contentsline {paragraph}{\input Dokumentace-18.cpt\relax }{16}
+\contentsline {paragraph}{\input Dokumentace-19.cpt\relax }{16}
+\contentsline {paragraph}{\input Dokumentace-20.cpt\relax }{16}
+\contentsline {chapter}{\numberline {4}U\IeC {\v z}ivatelsk\IeC {\'a} p\IeC {\v r}\IeC {\'\i }ru\IeC {\v c}ka}{17}
+\contentsline {section}{\numberline {4.1}Program}{17}
+\contentsline {subsection}{\numberline {4.1.1}P\IeC {\v r}elo\IeC {\v z}en\IeC {\'\i } programu}{17}
+\contentsline {subsubsection}{UNIX/Linux}{17}
+\contentsline {subsubsection}{Win32/64}{17}
+\contentsline {subsection}{\numberline {4.1.2}Dal\IeC {\v s}\IeC {\'\i } funkce makefile}{18}
+\contentsline {subsection}{\numberline {4.1.3}Spu\IeC {\v s}t\IeC {\v e}n\IeC {\'\i } programu}{18}
+\contentsline {section}{\numberline {4.2}Form\IeC {\'a}t vstupn\IeC {\'\i }ho souboru}{18}
+\contentsline {chapter}{\numberline {5}Z\IeC {\'a}v\IeC {\v e}r}{20}

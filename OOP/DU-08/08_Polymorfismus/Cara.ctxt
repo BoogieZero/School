@@ -1,0 +1,41 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Cara()
+comment0.text=\r\n\ P\u0159iprav\u00ED\ novou\ instanci\ s\ implicitn\u00EDm\ um\u00EDst\u011Bn\u00EDm,\ rozm\u011Bry\ a\ barvou.\r\n\ Instance\ bude\ um\u00EDst\u011Bna\ v\ lev\u00E9m\ horn\u00EDm\ rohu\ pl\u00E1tna\r\n\ a\ bude\ m\u00EDt\ implicitn\u00ED\ barvu,\r\n\ Kon\u010Dit\ bude\ ve\ st\u0159edu\ pl\u00E1tna.\r\n
+comment1.params=x\ y\ kx\ ky
+comment1.target=Cara(int,\ int,\ int,\ int)
+comment1.text=\r\n\ P\u0159iprav\u00ED\ novou\ instanci\ se\ zadanou\ pozic\u00ED\ a\ rozm\u011Bry\r\n\ a\ implicitn\u00ED\ barvou.\r\n\r\n\ @param\ x\ \ \ Vodorovn\u00E1\ (x-ov\u00E1)\ sou\u0159adnice\ instance\ (jej\u00EDho\ po\u010D\u00E1tku),\r\n\ \ \ \ \ \ \ \ \ \ \ \ x\=0\ m\u00E1\ lev\u00FD\ okraj\ pl\u00E1tna,\ sou\u0159adnice\ roste\ doprava\r\n\ @param\ y\ \ \ Svisl\u00E1\ (y-ov\u00E1)\ sou\u0159adnice\ instance\ (jej\u00EDho\ po\u010D\u00E1tku),\r\n\ \ \ \ \ \ \ \ \ \ \ \ y\=0\ m\u00E1\ horn\u00ED\ okraj\ pl\u00E1tna,\ sou\u0159adnice\ roste\ dol\u016F\r\n\ @param\ kx\ \ x-ov\u00E1\ sou\u0159adnice\ koncov\u00E9ho\ bodu\ instance\r\n\ @param\ ky\ \ y-ov\u00E1\ sou\u0159adnice\ koncov\u00E9ho\ bodu\ instance\r\n
+comment10.params=nazev
+comment10.target=void\ setNazev(java.lang.String)
+comment10.text=\r\n\ Nastav\u00ED\ nov\u00FD\ n\u00E1zev\ instance.\r\n\r\n\ @param\ nazev\ \ \u0158et\u011Bzec\ s\ nov\u00FDm\ n\u00E1zvem\ instance\r\n
+comment11.params=
+comment11.target=java.lang.String\ toString()
+comment11.text=\r\n\ Vr\u00E1t\u00ED\ podpis\ instance,\ tj.\ jej\u00ED\ \u0159et\u011Bzcovou\ reprezentaci.\r\n\ Pou\u017E\u00EDv\u00E1\ se\ p\u0159edev\u0161\u00EDm\ p\u0159i\ lad\u011Bn\u00ED.\r\n\r\n\ @return\ \u0158et\u011Bzcov\u00E1\ reprezentace\ (podpis)\ dan\u00E9\ instance\r\n
+comment12.params=x1\ y1\ kx\ ky
+comment12.target=void\ spoj(int,\ int,\ int,\ int)
+comment12.text=\r\n\ P\u0159esune\ se\ tak,\ aby\ spojila\ zadan\u00E9\ body.\r\n\r\n\ @param\ x1\ \ \ \ \ \ x-ov\u00E1\ sou\u0159adnice\ po\u010D\u00E1tku,\ x&gt;\=0,\ x\=0\ m\u00E1\ lev\u00FD\ okraj\ pl\u00E1tna\r\n\ @param\ y1\ \ \ \ \ \ y-ov\u00E1\ sou\u0159adnice\ po\u010D\u00E1tku,\ y&gt;\=0,\ y\=0\ m\u00E1\ horn\u00ED\ okraj\ pl\u00E1tna\r\n\ @param\ kx\ \ \ \ \ \ x-ov\u00E1\ sou\u0159adnice\ koncov\u00E9ho\ bodu\ instance\r\n\ @param\ ky\ \ \ \ \ \ y-ov\u00E1\ sou\u0159adnice\ koncov\u00E9ho\ bodu\ instance\r\n
+comment2.params=
+comment2.target=Cara\ kopie()
+comment2.text=\r\n\ Vr\u00E1t\u00ED\ kopii\ dan\u00E9ho\ tvaru,\r\n\ tj.\ stejn\u00FD\ tvar,\ stejn\u011B\ velk\u00FD,\ stejn\u011B\ um\u00EDst\u011Bn\u00FD\ a\ se\ stejnou\ barvou.\r\n\r\n\ @return\ Po\u017Eadovan\u00E1\ kopie\r\n
+comment3.params=
+comment3.target=int\ getX()
+comment3.text=\r\n\ Vr\u00E1t\u00ED\ x-ovou\ (vodorovnou)\ sou\u0159adnici\ pozice\ instance\ (jej\u00EDho\ po\u010D\u00E1tku).\r\n\r\n\ @return\ \ Aktu\u00E1ln\u00ED\ vodorovn\u00E1\ (x-ov\u00E1)\ sou\u0159adnice\ instance,\r\n\ \ \ \ \ \ \ \ \ \ x\=0\ m\u00E1\ lev\u00FD\ okraj\ pl\u00E1tna,\ sou\u0159adnice\ roste\ doprava\r\n
+comment4.params=
+comment4.target=int\ getY()
+comment4.text=\r\n\ Vr\u00E1t\u00ED\ y-ovou\ (svislou)\ sou\u0159adnici\ pozice\ instance\ (jej\u00EDho\ po\u010D\u00E1tku).\r\n\r\n\ @return\ \ Aktu\u00E1ln\u00ED\ svisl\u00E1\ (y-ov\u00E1)\ sou\u0159adnice\ instance,\r\n\ \ \ \ \ \ \ \ \ \ y\=0\ m\u00E1\ horn\u00ED\ okraj\ pl\u00E1tna,\ sou\u0159adnice\ roste\ dol\u016F\r\n
+comment5.params=x\ y
+comment5.target=void\ setPozice(int,\ int)
+comment5.text=\r\n\ Nastav\u00ED\ novou\ pozici\ instance.\r\n\r\n\ @param\ x\ \ Nov\u011B\ nastavovan\u00E1\ vodorovn\u00E1\ (x-ov\u00E1)\ sou\u0159adnice\ instance,\r\n\ \ \ \ \ \ \ \ \ \ \ x\=0\ m\u00E1\ lev\u00FD\ okraj\ pl\u00E1tna,\ sou\u0159adnice\ roste\ doprava\r\n\ @param\ y\ \ Nov\u011B\ nastavovan\u00E1\ svisl\u00E1\ (y-ov\u00E1)\ sou\u0159adnice\ instance,\r\n\ \ \ \ \ \ \ \ \ \ \ y\=0\ m\u00E1\ horn\u00ED\ okraj\ pl\u00E1tna,\ sou\u0159adnice\ roste\ dol\u016F\r\n
+comment6.params=
+comment6.target=int\ getKX()
+comment6.text=\r\n\ Vr\u00E1t\u00ED\ x-ovou\ sou\u0159adnici\ koncov\u00E9ho\ bodu\ instance.\r\n\r\n\ @return\ \ Aktu\u00E1ln\u00ED\ vodorovn\u00E1\ (x-ov\u00E1)\ sou\u0159adnice\ koncov\u00E9ho\ bodu\ instance,\r\n\ \ \ \ \ \ \ \ \ \ x\=0\ m\u00E1\ lev\u00FD\ okraj\ pl\u00E1tna,\ sou\u0159adnice\ roste\ doprava\r\n
+comment7.params=
+comment7.target=int\ getKY()
+comment7.text=\r\n\ Vr\u00E1t\u00ED\ y-ovou\ sou\u0159adnici\ koncov\u00E9ho\ bodu\ instance.\r\n\r\n\ @return\ \ Aktu\u00E1ln\u00ED\ svisl\u00E1\ (y-ov\u00E1)\ sou\u0159adnice\ koncov\u00E9ho\ bodu\ instance,\r\n\ \ \ \ \ \ \ \ \ \ y\=0\ m\u00E1\ horn\u00ED\ okraj\ pl\u00E1tna,\ sou\u0159adnice\ roste\ dol\u016F\r\n
+comment8.params=kx\ ky
+comment8.target=void\ setKPozice(int,\ int)
+comment8.text=\r\n\ Nastav\u00ED\ pozici\ koncov\u00E9ho\ bodu\ instance.\r\n\r\n\ @param\ kx\ \ Vodorovn\u00E1\ sou\u0159adnice\ koncov\u00E9ho\ bodu.\r\n\ @param\ ky\ \ Svisl\u00E1\ sou\u0159adnice\ koncov\u00E9ho\ bodu.\r\n
+comment9.params=
+comment9.target=java.lang.String\ getNazev()
+comment9.text=\r\n\ Vr\u00E1t\u00ED\ n\u00E1zev\ instance,\ implicitn\u011B\ n\u00E1zev\ jej\u00ED\ t\u0159\u00EDdy\ n\u00E1sledovan\u00FD\r\n\ po\u0159ad\u00EDm\ vytvo\u0159en\u00ED\ instance\ v\ r\u00E1mci\ instanc\u00ED\ t\u00E9to\ t\u0159\u00EDdy.\r\n\r\n\ @return\ \ \u0158et\u011Bzec\ s\ n\u00E1zvem\ instance\r\n
+numComments=13

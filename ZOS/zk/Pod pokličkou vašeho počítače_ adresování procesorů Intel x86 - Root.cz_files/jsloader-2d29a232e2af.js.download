@@ -1,0 +1,142 @@
+// turning automatic image loading off. doing it manually via specific CSS rules (see below as lazyLoadXT())
+$.lazyLoadXT.autoInit = false;
+$.lazyLoadXT.loadEvent = ''; /* value 'false' above was not working. solution according to https://github.com/ressio/lazy-load-xt/issues/31 */
+
+
+var iinfo = iinfo || {};
+iinfo.breakpoints = iinfo.breakpoints || {};
+iinfo.breakpoints.iinfobar = window.matchMedia( '(max-width: 767px)' ); // the same as "(@breakpoint-iinfobar - 1)" in CSS (not being used now in the script, but the more complex solution exists because of IInfo bar different breakpoint)
+iinfo.intervals = iinfo.intervals || {};
+iinfo.intervals.stickyNavigationDelay = 250, // The delay for the setInterval
+iinfo.iinfobar = iinfo.iinfobar || {};
+
+/* ----- sticky autohiding navigation (shown only if scrolling up and hiding if scrolling down in "mobile") ----- */
+iinfo.rootLikeStickyHeader = function() {
+	var last = 0; // The last read top value
+	var threshold = 30; /* [future] and this hard-coded value is like what? */
+
+	if (iinfo.breakpoints.iinfobar.matches) {
+		clearInterval(iinfo.intervals.stickyNavigationDesktop);
+		iinfo.intervals.stickyNavigationMobile = setInterval(function() { // set a variable to my setIntervals in case I want to stop them later on
+			/* the bar might have variable content (unlike solution on Root with one row which height is known in em's) */
+			/* [workaround] to add the "important" to override "!important" from CSS on "body.adp-background" */
+			/* [future] the "!important" was removed in [devel] - this [workaround] does not make sense there. remove it */
+			iinfo.bodyElement.style.cssText = iinfo.bodyElement.style.cssText + ' padding-top: ' + parseInt(iinfo.iinfobar.height + iinfo.headerNavigationBarElement.offsetHeight) + 'px !important;';
+			/* // see above */
+
+			var pageVertOffset = document.all? iebody.scrollTop : pageYOffset; // Happens if the difference in scroll is below the negative threshold
+			if (pageVertOffset < iinfo.iinfobar.height * 1.25) { /* [future] what does the multiplier mean? anyway it might happen that iinfo bar is hidden upon resize, making this condition not work (the bar gets hidden, it's height is zero). see below at [iinfo bar] */
+				iinfo.headerNavigationBarElement.className = iinfo.headerNavigationBarElement.className.replace('navigation--header--absolute', '').replace('navigation--header--transition', '') + ' navigation--header--absolute';
+				iinfo.headerNavigationBarElement.style.top = iinfo.iinfobar.height + 'px'; // Put the nav at the top of the window
+			} else if (pageVertOffset - last < (0 - threshold)) {
+				iinfo.headerNavigationBarElement.className = iinfo.headerNavigationBarElement.className.replace('navigation--header--absolute', '').replace('navigation--header--transition', '') + ' navigation--header--transition';
+				iinfo.headerNavigationBarElement.style.top = ''; // Put the nav at the top of the window
+			} else if (pageVertOffset - last > threshold) { // Happens if the difference in scroll is above the threshold
+				iinfo.headerNavigationBarElement.className = iinfo.headerNavigationBarElement.className.replace('navigation--header--absolute', '').replace('navigation--header--transition', '');
+				iinfo.headerNavigationBarElement.style.top = (0 - iinfo.headerNavigationBarElement.offsetHeight) + 'px'; // Hides the navigation
+			}
+			last = pageVertOffset; // Updates the previous scroll value
+		}, iinfo.intervals.stickyNavigationDelay);
+	} else {
+		clearInterval(iinfo.intervals.stickyNavigationMobile);
+		iinfo.intervals.stickyNavigationDesktop = setInterval(function() {
+			if (iinfo.bodyElement.style.paddingTop != '') {
+				iinfo.bodyElement.style.paddingTop = '';
+			} else {
+				clearInterval(iinfo.intervals.stickyNavigationDesktop); /* it is needed to be done just once */
+			}
+		}, iinfo.intervals.stickyNavigationDelay);
+	}
+}
+
+
+/* ----- images are initially hidden and they are not loaded until user scrolls to them ----- */ /* outside document.ready because of [LU-271] */
+$.extend($.lazyLoadXT, {
+	onload: function() {
+		this.className = this.className.replace('lazy-hidden', '') + ' lazy-loaded'; /* this is the library default behaviour (see more at https://github.com/ressio/lazy-load-xt/#readme) */
+
+		if (typeof sticker !== 'undefined' && sticker.sidebar.isVisible) { /* sticker might be loaded later (but if it does, the dimensions should be right) */
+			sticker.recalculateHeight(); /* some images might not be loaded while their dimensions (or their wrapping elements) are not set. known example: ".page-block--trainings" on [Root.cz] homepage */
+		}
+	}
+});
+$('.image-lazyloadxt').lazyLoadXT();
+
+
+$(document).ready(function() {
+	iinfo.bodyElement = document.getElementsByTagName('body')[0];
+	iinfo.iinfobar.element = document.getElementById('sefa');
+	iinfo.iinfobar.height = iinfo.iinfobar.element.offsetHeight;
+	iinfo.headerNavigationBarElement = document.getElementById('navigation_header');
+
+
+	$('body').on('click', function() {
+		$('.expanded').removeClass('expanded');
+	});
+
+	$('.js-dropdown-toggle').on('click touchend', function(event) { /* keep in mind that the event "touchend" is used at the end of "scroll" */
+		event.preventDefault();
+		event.stopPropagation();
+
+		var target = '';
+		if (typeof $(this).attr('data-target') != 'undefined') {
+			target = '.' + $(this).attr('data-target');
+		} else {
+			target = $(this).attr('href'); // it expect an anchor, thus starting with '#' that is used as part of the selector below
+		}
+
+		$('.expanded')
+			.not($(this).parents('#lupa .expanded')) // [workaround] menu inside another menu (see Lupa.cz in mobile)
+			.not(target)
+			.toggleClass('expanded');
+		if (!$(this).hasClass('alternative-submenu-expanded')) { // ([feature] for Lupa.cz) submenu is already opened (with its parent menu visible ("expanded")) and content only needed to be changed (submenu content with menu content).
+			$(target).toggleClass('expanded');
+		} else {
+			$(this).removeClass('alternative-submenu-expanded');
+		}
+	});
+
+	iinfo.rootLikeStickyHeader();
+});
+
+
+$(window).bind('resize', function () {
+	iinfo.iinfobar.height = iinfo.iinfobar.element.offsetHeight;
+
+	clearInterval(iinfo.intervals.stickyNavigationDesktop);
+	clearInterval(iinfo.intervals.stickyNavigationMobile);
+	if (iinfo.breakpoints.iinfobar.matches) {
+		if (iinfo.headerNavigationBarElement.className.indexOf('navigation--header--absolute') > 0 && iinfo.headerNavigationBarElement.style.top != '') {
+			iinfo.headerNavigationBarElement.style.top = ''; /* [workaround] for [iinfo bar] */ /* [future] is it still needed? breakpoints were "unified" to iinfobar one in [LU-277] */
+		}
+		iinfo.rootLikeStickyHeader();
+	} else {
+		iinfo.bodyElement.style.paddingTop = '';
+		iinfo.headerNavigationBarElement.className = iinfo.headerNavigationBarElement.className.replace('navigation--header--absolute', '').replace('navigation--header--transition', ''); /* in case page is loaded below the breakpoints and is resized above them */
+	}
+});
+var iinfo = iinfo || {};
+
+iinfo.headerNavigationBar = new NavigationResponsive({
+	classes: {
+		addItemToMenu: 'js-add-to-menu',
+		removeItemToMenu: 'js-remove-to-menu',
+		lastNormalItem: 'lastNormalItem',
+		buttonSeeMore: 'navigation__link--hamburger',
+		menuInHamburger: 'header-navigation-bar--added-to-menu list-reset'
+	},
+	cssRules: {
+		wrapper: '.navigation__content-main-wrapper',
+		wrapperContent: '.navigation__content-main',
+		items: '.navigation__list--main .navigation__item',
+		buttonSeeMore: '.navigation__link--hamburger',
+		menuInHamburger: '.navigation__list--others',
+		addItemToMenu: '.js-add-to-menu',
+		removeItemToMenu: '.js-remove-to-menu'
+	},
+	turnOffBreakpointMin: 767,
+});
+iinfo.headerNavigationBar.init();
+/* when differences are set in project specific JS, scripts from php-libs can be run (they are loaded in "commonFooterSharedJs.latte") */
+
+iinfo.headerNavigationBar.init();

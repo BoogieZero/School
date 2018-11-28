@@ -1,0 +1,9 @@
+C:\GitHub\School\BIT\cv_2_steganografie\cv_2_steganografie\cv_2_steganografie\bin\Debug\cv_2_steganografie.exe.config
+C:\GitHub\School\BIT\cv_2_steganografie\cv_2_steganografie\cv_2_steganografie\obj\Debug\cv_2_steganografie.csprojResolveAssemblyReference.cache
+C:\GitHub\School\BIT\cv_2_steganografie\cv_2_steganografie\cv_2_steganografie\obj\Debug\cv_2_steganografie.Form1.resources
+C:\GitHub\School\BIT\cv_2_steganografie\cv_2_steganografie\cv_2_steganografie\obj\Debug\cv_2_steganografie.Properties.Resources.resources
+C:\GitHub\School\BIT\cv_2_steganografie\cv_2_steganografie\cv_2_steganografie\obj\Debug\cv_2_steganografie.csproj.GenerateResource.Cache
+C:\GitHub\School\BIT\cv_2_steganografie\cv_2_steganografie\cv_2_steganografie\bin\Debug\cv_2_steganografie.exe
+C:\GitHub\School\BIT\cv_2_steganografie\cv_2_steganografie\cv_2_steganografie\bin\Debug\cv_2_steganografie.pdb
+C:\GitHub\School\BIT\cv_2_steganografie\cv_2_steganografie\cv_2_steganografie\obj\Debug\cv_2_steganografie.exe
+C:\GitHub\School\BIT\cv_2_steganografie\cv_2_steganografie\cv_2_steganografie\obj\Debug\cv_2_steganografie.pdb

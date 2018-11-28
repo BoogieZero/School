@@ -1,0 +1,51 @@
+Renesas H8/300 GAS  D:\MCU\H8S\Asembler H8S\Workspace_POT\Program_1\main.s 			page 1
+
+
+   1              			.h8300s
+   2              			
+   3              			.data
+   4 0000 1234     	var1:	.word	0x1234
+   5 0002 ABCD     	var2:	.word	0xABCD
+   6 0004 0000     	var3:	.space	2
+   7              	
+   8 0006 0000     			.align	2			; zarovnani adresy
+   9 0008 00000000 			.space	100			; stack
+   9      00000000 
+   9      00000000 
+   9      00000000 
+   9      00000000 
+  10              	stck:						; konec stacku + 1
+  11              	
+  12              			.text
+  13              			.global	_start
+  14              	
+  15 0000 7A070000 	_start:	mov.l	#stck,ER7
+  15      0000
+  16 0006 6DF0     			push.w	R0
+  17 0008 6DF1     			push.w	R1
+  18 000a 6B200000 			mov.w	@var1,R0
+  18      0000
+  19 0010 6B210000 			mov.w	@var2,R1
+  19      0000
+  20 0016 0910     			add.w	R1,R0
+  21 0018 6BA00000 			mov.w	R0,@var3
+  21      0000
+  22              								
+  23 001e 5A000000 	lab1:	jmp	@lab1
+  24              	
+  25              			.end
+Renesas H8/300 GAS  D:\MCU\H8S\Asembler H8S\Workspace_POT\Program_1\main.s 			page 2
+
+
+DEFINED SYMBOLS
+D:\MCU\H8S\Asembler H8S\Workspace_POT\Program_1\main.s:4      .data:00000000 var1
+D:\MCU\H8S\Asembler H8S\Workspace_POT\Program_1\main.s:5      .data:00000002 var2
+D:\MCU\H8S\Asembler H8S\Workspace_POT\Program_1\main.s:6      .data:00000004 var3
+D:\MCU\H8S\Asembler H8S\Workspace_POT\Program_1\main.s:10     .data:0000006c stck
+D:\MCU\H8S\Asembler H8S\Workspace_POT\Program_1\main.s:15     .text:00000000 _start
+D:\MCU\H8S\Asembler H8S\Workspace_POT\Program_1\main.s:15     .text:00000000 .L0
+D:\MCU\H8S\Asembler H8S\Workspace_POT\Program_1\main.s:23     .text:0000001e lab1
+                            .text:00000000 .L0
+D:\MCU\H8S\Asembler H8S\Workspace_POT\Program_1\main.s:25     .text:00000022 .L0
+
+NO UNDEFINED SYMBOLS

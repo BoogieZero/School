@@ -1,0 +1,29 @@
+#BlueJ class context
+comment0.params=
+comment0.target=int\ getX()
+comment0.text=\r\n\ Vr\u00E1t\u00ED\ (vodorovnou)\ sou\u0159adnici\ X\ lev\u00E9ho\ horn\u00EDho\ rohu\ opsanho\ obdeln\u00EDku\ osoby.\r\n\ \ V\ lev\u00E9m\ horn\u00EDm\ rohu\ pl\u00E1tna\ je\ X\=0,\r\n\ \ sou\u0159adnice\ X\ roste\ sm\u011Brem\ doprava.\r\n\ \r\n\ @return\ aktu\u00E1ln\u00ED\ hodnota\ sou\u0159adnice\ X\ osoby\r\n
+comment1.params=
+comment1.target=int\ getY()
+comment1.text=\r\n\ Vr\u00E1t\u00ED\ (svislou)\ sou\u0159adnici\ Y\ lev\u00E9ho\ horn\u00EDho\ rohu\ opsanho\ obdeln\u00EDku\ osoby.\r\n\ \ V\ lev\u00E9m\ horn\u00EDm\ rohu\ pl\u00E1tna\ je\ Y\=0,\r\n\ \ sou\u0159adnice\ Y\ roste\ sm\u011Brem\ dol\u016F.\r\n\ \ \r\n\ @return\ aktu\u00E1ln\u00ED\ hodnota\ sou\u0159adnice\ Y\ osoby\r\n
+comment2.params=
+comment2.target=java.lang.String\ getNazev()
+comment2.text=\r\n\ Vr\u00E1t\u00ED\ n\u00E1zev\ osoby\ jako\ \u0159et\u011Bzec\ String\ ve\ tvaru\:\ "N\u00C1ZEV_T\u0158\u00CDDY_X"\ kde\:\r\n\ \ N\u00C1ZEV_T\u0158\u00CDDY\ je\ n\u00E1zev\ instance\ {@code\ this.getClass().getSimpleName()}\r\n\ \ X\ \ \ \ \ \ \ \ \ \ \ je\ \u010D\u00EDslo\ osoby.\r\n\ \r\n\ @return\ vr\u00E1t\u00ED\ \u00FApln\u00FD\ n\u00E1zev\ osoby\r\n
+comment3.params=
+comment3.target=int\ getSirka()
+comment3.text=\r\n\ Vr\u00E1t\u00ED\ \u0161\u00ED\u0159ku\ opsan\u00E9ho\ obdeln\u00EDku\ osoby.\r\n\ \r\n\ @return\ \u0161\u00ED\u0159ka\ osoby\r\n
+comment4.params=
+comment4.target=int\ getVyska()
+comment4.text=\r\n\ Vr\u00E1t\u00ED\ v\u00FD\u0161ku\ opsan\u00E9ho\ obdeln\u00EDku\ osoby.\r\n\ \r\n\ @return\ v\u00FD\u0161ka\ osoby\r\n
+comment5.params=x\ y
+comment5.target=void\ setPozice(int,\ int)
+comment5.text=\r\n\ Nastav\u00ED\ novou\ pozici\ osoby\ (opsan\u00E9ho\ obdeln\u00EDku\ osoby).\r\n\ \r\n\ @param\ x\ \ \ \ \ nov\u00E1\ sou\u0159adnice\ X\ opsan\u00E9ho\ obdeln\u00EDku\ osoby\r\n\ @param\ y\ \ \ \ \ nov\u00E1\ sou\u0159adnice\ Y\ opsanho\ obdeln\u00EDku\ osoby\r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\r\n\ Vr\u00E1t\u00ED\ \u0159et\u011Bzec\ String\ ve\ tvaru\:\ \r\n\ \ "N\u00C1ZEV_OSOBY_\u010C\u00CDSLO_OSOBY\:\ x\=X,\ y\=Y,\ v\u00FD\u0161ka\=V\u00DD\u0160KA,\ \u0161\u00ED\u0159ka\=\u0160\u00CD\u0158KA,\ barva\ t\u011Bla\=BARVA"\ kde\:\r\n\ \ \ \ \ \ N\u00C1ZEV_OSOBY\ \ \ \ \ Je\ n\u00E1zev\ osoby.\r\n\ \ \ \ \ \ \u010C\u00CDSLO_OSOBY\ \ \ \ \ Je\ po\u0159adov\u00E9\ \u010D\u00EDslo\ osoby.\r\n\ \ \ \ \ \ X\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Je\ vodorovn\u00E1\ (x-ov\u00E1)\ sou\u0159adnice\ osoby.\r\n\ \ \ \ \ \ Y\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Je\ svisl\u00E1\ (y-ov\u00E1)\ sou\u0159adnice\ osoby.\r\n\ \ \ \ \ \ V\u00DD\u0160KA\ \ \ \ \ \ \ \ \ \ \ Je\ v\u00FD\u0161ka\ osoby.\r\n\ \ \ \ \ \ \u0160\u00CD\u0158KA\ \ \ \ \ \ \ \ \ \ \ Je\ \u0161\u00ED\u0159ka\ osoby.\r\n\ \ \ \ \ \ BARVA\ \ \ \ \ \ \ \ \ \ \ Je\ barva\ t\u011Bla\ osoby.\r\n\ \ \ \ \ \ \r\n\ @return\ popis\ osoby\r\n
+comment7.params=
+comment7.target=void\ zobraz()
+comment7.text=\r\n\ Prihlas\u00ED\ instanci\ u\ aktivn\u00EDho\ pl\u00E1tna\ do\ jeko\ spr\u00E1vy.\r\n
+comment8.params=
+comment8.target=Osoba()
+comment8.text=\r\n\ P\u0159iprav\u00ED\ novou\ instanci.\ V\u0161echny\ parametry\ osoby\ nastav\u00ED\ na\ po\u010D\u00E1te\u010Dn\u00ED\ hodnoty.\r\n\ \r\n\ \ D\u00E1le\ nastav\u00ED\ zbyl\u00E9\ parametry\ osoby\:\r\n\ \ vyska\ \ \ v\u00FD\u0161ka\ opsan\u00E9ho\ obdeln\u00EDku\ osoby\r\n\ \ sirka\ \ \ \u0161\u00ED\u0159ka\ opsan\u00E9ho\ obdeln\u00EDku\ osoby\r\n\ \ PORADI\ \ po\u0159ad\u00ED\ vytvo\u0159en\u00E9\ osoby\r\n\ \ NAZEV\ \ \ n\u00E1zev\ osoby\ podle\ jej\u00EDho\ po\u0159ad\u00ED\r\n
+numComments=9

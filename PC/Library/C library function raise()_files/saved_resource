@@ -1,0 +1,9 @@
+Adform=window.Adform||{};
+Adform.host="https://server.adformdsp.net";
+Adform.shost="https://s1.adformdsp.net";
+Adform.scriptBase=Adform.shost+"/banners/scripts/";
+Adform.cache="560";
+Adform.ADFBannerData={URL:"https://server.adformdsp.net/adfserve/?bn=11109443;rtbwp=VpUr7gAGZ5AKGQ2RAAu-E-yqP2LBfiVx4gRhhw;rtbdata=2QJAxd6f3S7_7uK_V8uEOIB1hjpz3PeNyCTtMo3r4N7ebaGopEzwNw6lzVbaIVSCcxzPfJYx-7iNkYvuzthATer9v09yISPJjem2BNkKhNG4tbYbZC-6e7LUhU4qU7VjX1ToENRk0M_2IWVetrt8hnNivEuc35ajL54Kno8n8ieFkt0xYaFRI4P1j1yw6EZpM3hy7CnuKckL32Yz9AP1mM9qZTEmQyxSrp7irXF8kx1x2V-0Mliamtfov_VwGnscHe8nZgX4t05k9JUJFwE_MQ2;nofp=1;click=http://adclick.g.doubleclick.net/aclk?sa=L&ai=CuXEV7iuVVpDPGZGbZJP8rugDy9XRuwWrwZrsfMCNtwEQASAAYMyBgIDcLoIBF2NhLXB1Yi03MTMzMzk1Nzc4MjAxMDI5yAEJqQJ9lL0oBIeDPqgDAaoEhwFP0IiXMHag0IrSCmH31PgaONjsE1z2iV40JU2hTLkDP4etAl4iB2EfGyR77IC87IxbmiSJVQVOXiM-rKh6RUqoN-Ia6R2imKS-SQAYenripfqX1mx0VK0aKrh5N8xN7TVtHm_nFayfLwA1L-ARbTqmFA4uzMcAl6Jb8UbfZZ8sHG31C31pY2qABuiupZng4bmByQGgBiHYBwA&num=1&sig=AOD64_1ckVKY88jd5kz4ssNS69sjvl9GqQ&client=ca-pub-7133395778201029&adurl=",CREFURL:"",BN:"11109443"};
+if(!Adform.ADFBannerParams)Adform.ADFBannerParams=[];
+Adform.ADFBannerParams.push(Adform.ADFBannerData);
+typeof Adform.ADFUtilInstance=="undefined"?document.write('<scr'+'ipt type="text/javascript" src="'+Adform.scriptBase+'bootstrap/Adform.Bootstrap.js?v='+Adform.cache+'"></scr'+'ipt>'):new Adform.ADFBanner();

@@ -1,0 +1,43 @@
+0. [INFO - Hlavni.main()] - Zacatek programu
+1. [CONFIG - Hlavni.parametryPrikazoveRadky()] - zpracovavany soubor: priklady-oks-01-1.txt
+2. [CONFIG - Hlavni.parametryPrikazoveRadky()] - zpracovavana fakulta: fav
+397. [INFO - Generator.zpracovani()] - nacteno osobnich cisel: 44
+398. [INFO - Generator.pripravSkupinyARoztridDoNich()] - nalezeny znak fakulty: A
+473. [INFO - Generator.zpracovani()] - chybnych osobnich cisel: 9
+474. [FINE - Generator.generujVyslednaOsobniCisla()] - razeni podle abecedy
+475. [FINE - Generator.generujVyslednaOsobniCisla()] - generovani poradovych cisel pro skupinu: BAKALARSKY
+476. [FINE - OsobniCislo.generujOsobniCislo()] - A14B0001P
+478. [FINE - OsobniCislo.generujOsobniCislo()] - A14B0002PI
+480. [FINE - OsobniCislo.generujOsobniCislo()] - A14B0003P
+482. [FINE - OsobniCislo.generujOsobniCislo()] - A14B0004PI
+484. [FINE - Generator.generujVyslednaOsobniCisla()] - generovani poradovych cisel pro skupinu: NAVAZUJICI
+485. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0001K
+487. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0002K
+489. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0003P
+491. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0004K
+493. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0005P
+495. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0006P
+497. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0007P
+499. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0008P
+501. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0009P
+503. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0010P
+505. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0011K
+507. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0012P
+509. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0013P
+511. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0014P
+513. [FINE - Generator.generujVyslednaOsobniCisla()] - generovani poradovych cisel pro skupinu: DOKTORSKY
+514. [FINE - OsobniCislo.generujOsobniCislo()] - A14P0001P
+516. [FINE - OsobniCislo.generujOsobniCislo()] - A14P0002P
+518. [FINE - OsobniCislo.generujOsobniCislo()] - A14P0003P
+520. [FINE - Generator.generujVyslednaOsobniCisla()] - generovani poradovych cisel pro skupinu: MAGISTERSKY
+521. [FINE - Generator.zapisSkupinu()] - zapisuji skupinu: Bakalářský
+526. [INFO - Generator.zapisVysledky()] - pocet ve skupine 'Bakalářský' : 4
+527. [FINE - Generator.zapisSkupinu()] - zapisuji skupinu: Navazující
+542. [INFO - Generator.zapisVysledky()] - pocet ve skupine 'Navazující' : 14
+543. [FINE - Generator.zapisSkupinu()] - zapisuji skupinu: Doktorský
+547. [INFO - Generator.zapisVysledky()] - pocet ve skupine 'Doktorský' : 3
+548. [FINE - Generator.zapisSkupinu()] - zapisuji skupinu: Magisterský
+549. [INFO - Generator.zapisVysledky()] - pocet ve skupine 'Magisterský' : 0
+550. [FINE - Generator.zapisSkupinu()] - zapisuji skupinu: chybně zadáno
+560. [INFO - Generator.zapisVysledky()] - pocet ve skupine 'chybně zadáno' : 9
+561. [INFO - Hlavni.main()] - Konec programu - vysledky jsou v souboru: vysledky.txt

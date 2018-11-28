@@ -1,0 +1,16 @@
+c:\users\boogie zero\documents\visual studio 2015\Projects\Lesson_12\Lesson_12\bin\Debug\Lesson_12.exe.config
+c:\users\boogie zero\documents\visual studio 2015\Projects\Lesson_12\Lesson_12\bin\Debug\Lesson_12.exe
+c:\users\boogie zero\documents\visual studio 2015\Projects\Lesson_12\Lesson_12\bin\Debug\Lesson_12.pdb
+c:\users\boogie zero\documents\visual studio 2015\Projects\Lesson_12\Lesson_12\bin\Debug\OpenTK.dll
+c:\users\boogie zero\documents\visual studio 2015\Projects\Lesson_12\Lesson_12\bin\Debug\OpenTK.xml
+c:\users\boogie zero\documents\visual studio 2015\Projects\Lesson_12\Lesson_12\obj\Debug\Lesson_12.csprojResolveAssemblyReference.cache
+c:\users\boogie zero\documents\visual studio 2015\Projects\Lesson_12\Lesson_12\obj\Debug\Lesson_12.exe
+c:\users\boogie zero\documents\visual studio 2015\Projects\Lesson_12\Lesson_12\obj\Debug\Lesson_12.pdb
+C:\GitHub\School\ZPG\Lesson 12\Lesson_12\Lesson_12\bin\Debug\Lesson_12.exe.config
+C:\GitHub\School\ZPG\Lesson 12\Lesson_12\Lesson_12\obj\Debug\Lesson_12.exe
+C:\GitHub\School\ZPG\Lesson 12\Lesson_12\Lesson_12\obj\Debug\Lesson_12.pdb
+C:\GitHub\School\ZPG\Lesson 12\Lesson_12\Lesson_12\bin\Debug\Lesson_12.exe
+C:\GitHub\School\ZPG\Lesson 12\Lesson_12\Lesson_12\bin\Debug\Lesson_12.pdb
+C:\GitHub\School\ZPG\Lesson 12\Lesson_12\Lesson_12\bin\Debug\OpenTK.dll
+C:\GitHub\School\ZPG\Lesson 12\Lesson_12\Lesson_12\bin\Debug\OpenTK.xml
+C:\GitHub\School\ZPG\Lesson 12\Lesson_12\Lesson_12\obj\Debug\Lesson_12.csprojResolveAssemblyReference.cache

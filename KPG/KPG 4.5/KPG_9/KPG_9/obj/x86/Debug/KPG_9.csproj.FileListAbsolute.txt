@@ -1,0 +1,16 @@
+C:\Users\Petrm\Dropbox\_PhDstudium\vyuka\KPG\KPG sahib\KPG sahib\KPG_9\KPG_9\KPG_9\bin\Debug\KPG_9.exe
+C:\Users\Petrm\Dropbox\_PhDstudium\vyuka\KPG\KPG sahib\KPG sahib\KPG_9\KPG_9\KPG_9\bin\Debug\KPG_9.pdb
+C:\Users\Petrm\Dropbox\_PhDstudium\vyuka\KPG\KPG sahib\KPG sahib\KPG_9\KPG_9\KPG_9\obj\x86\Debug\KPG_9.csprojResolveAssemblyReference.cache
+C:\Users\Petrm\Dropbox\_PhDstudium\vyuka\KPG\KPG sahib\KPG sahib\KPG_9\KPG_9\KPG_9\obj\x86\Debug\KPG_9.Form1.resources
+C:\Users\Petrm\Dropbox\_PhDstudium\vyuka\KPG\KPG sahib\KPG sahib\KPG_9\KPG_9\KPG_9\obj\x86\Debug\KPG_9.Properties.Resources.resources
+C:\Users\Petrm\Dropbox\_PhDstudium\vyuka\KPG\KPG sahib\KPG sahib\KPG_9\KPG_9\KPG_9\obj\x86\Debug\KPG_9.csproj.GenerateResource.Cache
+C:\Users\Petrm\Dropbox\_PhDstudium\vyuka\KPG\KPG sahib\KPG sahib\KPG_9\KPG_9\KPG_9\obj\x86\Debug\KPG_9.exe
+C:\Users\Petrm\Dropbox\_PhDstudium\vyuka\KPG\KPG sahib\KPG sahib\KPG_9\KPG_9\KPG_9\obj\x86\Debug\KPG_9.pdb
+F:\KPG 4.5\KPG_9\KPG_9\obj\x86\Debug\KPG_9.exe
+F:\KPG 4.5\KPG_9\KPG_9\obj\x86\Debug\KPG_9.pdb
+F:\KPG 4.5\KPG_9\KPG_9\bin\Debug\KPG_9.exe
+F:\KPG 4.5\KPG_9\KPG_9\bin\Debug\KPG_9.pdb
+F:\KPG 4.5\KPG_9\KPG_9\obj\x86\Debug\KPG_9.csprojResolveAssemblyReference.cache
+F:\KPG 4.5\KPG_9\KPG_9\obj\x86\Debug\KPG_9.Form1.resources
+F:\KPG 4.5\KPG_9\KPG_9\obj\x86\Debug\KPG_9.Properties.Resources.resources
+F:\KPG 4.5\KPG_9\KPG_9\obj\x86\Debug\KPG_9.csproj.GenerateResource.Cache

@@ -1,0 +1,208 @@
+\documentclass[12pt]{article}
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[IL2]{fontenc}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{cprotect}
+\usepackage{amsmath}
+
+
+\begin{document}
+%\setlength{\parindent}{0pt}
+\begin{titlepage}
+\includegraphics[scale=0.2, trim=5cm 0 0 30cm]{logo.jpg}
+\begin{center}
+\vspace{5cm}
+{\Huge
+\textbf{BIT}\\
+\vspace{1cm}
+}
+{\Large
+\textbf{STEGANOGRAFIE FORMÁTŮ AVI A PNG}
+}
+\end{center}
+\vspace{\fill}
+
+\begin{minipage}[t]{5cm}
+\flushleft
+Martin Hamet\\
+Doba přípravy\texttt{ $\simeq$ 80h}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{7cm}
+\flushright
+\today
+\end{minipage}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+\section{Zadání}
+\label{zadani}
+Ve zvoleném programovacím jazyce navrhněte a implementujte program, který pomocí steganografie dokáže ukrýt a následně extrahovat zprávu ze souborů formátu \texttt{.avi} a \texttt{.png}.
+
+\section{Analýza problému a návrh řešení}
+Steganografie se zabývá ukrýváním komunikace, v našem případě zprávy, do média tak, aby nebylo poznat že nosné medium bylo pozměněno. V případě obrázku nebo videa by nemělo dojít k výrazné ztrátě kvality. Z praktického hlediska se nejčastěji využívá steganografie při prokazování autorských práv, tedy tvorba vodoznaků a podobně.
+
+Naším úkolem je najít způsob ukrytí zprávy do výše zmíněných formátů. Bude tedy nejprve nutné zjistit jakou strukturu mají uložené formáty, následně do jaké části umístit vlastní data zprávy tak, aby nedošlo k velkým změnám ve výsledku. Dále nás bude zajímat kapacita daných formátů vzhledem ke skryté zprávě a rychlost zápisu i čtení.
+
+\subsection{Zpráva a její uložení}
+Obecně se nezdá vhodné snažit se ukrýt zprávu mimo vlastní data daného formátu, pokud nechceme ukrývat zprávy pouze minimální délky. Vlastní data daných formátů tvoří největší část celého souboru je tedy logické se snažit ukrýt zprávu v nich. Z čehož vyplývá problém s výše zmíněnou kvalitou. Pokud by naše zpráva výrazně ovlivnila vlastní data souboru bylo by zřejmé že je něco v nepořádku.
+
+Za předpokladu že budeme ukládat zprávu do vlastních dat daného formátu můžeme snadno využít běžných postupů pro práci s daným formátem ve smyslu získání bitmapy z obrázku, streamu z videa atp. Budeme tedy zkoumat především strukturu dat a nikoliv nastavení hlavičky.
+
+\pagebreak
+\subsection{Portable Network Graphics (PNG)}
+K datům formátu \texttt{PNG} se dostaneme snadno s využitím \texttt{Bitmapy}, která poskytne přístup k jednotlivým pixelům obrázku. Aby nedocházelo k výrazným změnám bude vhodné modifikovat pouze nejméně významné bity (LSB) jednotlivých pixelů, respektive jejich barevných složek. Zprávu tedy nejprve převedeme do bitové podoby a jednotlivými bity zprávy budeme postupně nahrazovat LSB.
+
+Z hlediska kapacity by bylo možné nepřepisovat pouze jeden bit, ale použít jich víc. Například tři nejméně významné bity z každé složky čímž by se výrazně zvýšila kapacita pro naši zprávu na úkor kvality obrázku. 
+
+Aby jsme nemuseli rozlišovat mezi různými formáty uložení pixelů\\ (\texttt{GrayScale}, \texttt{TrueColor}, \texttt{TrueColor and Alpha}, etc) budeme načítat bitmapu v jednotném formátu. Dojde tedy ke změně formátu pixelů pokud bude zdrojový obrázek např. \texttt{GrayScale}.
+
+Jednotlivé zasažené pixely nemusejí nutně následovat za sebou. Pomocí klíče nebo podle velikosti zprávy v poměru k velikosti obrázku by jsme mohli změněné pixely "roztáhnout". Například pokud by zpráva byla poloviční velikosti než kapacita obrázku, modifikovali by jsme pouze každý druhý pixel. Snížil by se tím celkový efekt případného zhoršení kvality obrazu.
+
+Pro jednoduchost a z důvodu snadné kontroly efektu na výsledek budeme ukládat informaci postupně od prvního pixelu a pouze změnou jednoho bitu z každé barevné složky.
+
+Konec zprávy se dá označit více způsoby pro tento formát nejsnadnější bude použití ukončovacího znaku na konci zprávy.
+
+\pagebreak
+\subsection{Audio Video Interleaved (AVI)}
+Tento formát je ve skutečnosti multimediální kontejner který může obsahovat několik datových streamů obvykle pouze audio a video, které lze přehrávat současně. Z pohledu ukrývání zprávy je zde více možností, ale omezíme se pouze na video. Samotné video je tvořené sekvencí obrázků. Při získání jejich streamu bude možné použít stejné techniky jako u formátu \texttt{PNG}. Video stream je ovšem komprimovaný podle zvoleného kodeku.
+
+Vzhledem k tomu že je jedná o stream obrázků velikost značně roste používají se proto kodeky pro jeho ztrátovou komprimaci. Obyčejný zápis do LSB jednotlivých snímků by se tedy poškodil. Existují metody pro omezení poškození zprávy ztrátovou kompresí např. (Swaping Algorythm) nejedná se už ovšem o triviální problém. Proto budeme pracovat pouze s videem bez komprese. Respektive pro vytvoření výsledného videa nepoužijeme kodek se ztrátovou kompresí.
+
+Protože video stream nepodléhá kompresi očekáváme že velikost videa značně vzroste. Taková metoda pro ukrytí zprávy by byla vhodná pouze pro videa v \texttt{raw} formátu, nicméně pro demonstraci steganografie nám bude stačit.
+
+Konec zprávy v tomto případě bude vhodné určit z velikosti zprávy kterou uložíme na začátek, protože díky známé velikosti bude možné snadno připravit datové struktury a urychlit tím běh programu. Očekávaná doba zpracování by měla být delší vzhledem k objemu dat ve video streamu.
+
+\vspace{2mm}
+\textbf{Postup ukrytí zprávy:}
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\setlength\itemsep{1px}
+\item Otevření kontejneru \texttt{AVI} a získání video streamu.
+\item Dekomprese podle použitého kodeku.
+\item Získání bitmapy jednotlivých snímků.
+\item Ukrytí zprávy v bitmapách.
+\item Zápis upravených bitmap do výsledného video streamu.
+\item Uložení vytvořeného streamu bez komprese.
+\item Uložení nově vytvořeného avi.
+\end{itemize}
+
+\pagebreak
+\section{Implementace (popis řešení)}
+V této sekci budou popsány hlavní moduly programu a jejich vzájemná funkce.
+
+\paragraph{\texttt{Program}}
+Zajišťuje pouze základní předání funkce programu podle zvoleného formátu v parametrech programu a zobrazení základní nápovědy.
+
+\paragraph{\texttt{MsgLoader}}
+Zajišťuje načtení zprávy pro ukrytí ze souboru.
+
+\subsection{PNG}
+Samostatná třída \texttt{PngHandler} poskytuje veškeré nástroje pro práci se soubory \texttt{.png}. Využívá především funkcionality \texttt{System.Drawing} pro práci s obrázky respektive použití \texttt{Bitmap}.
+
+\paragraph{\texttt{pngMod()}}
+Jediná veřejně přístupná metoda, která zajistí volání jednotlivých funkcí podle zvolených parametrů. Tedy ukrytí/extrakci zprávy \\ (\texttt{pngInsert()}, \texttt{pngExtract()}). Případně zobrazí nápovědu pro korektní zadání parametrů.
+
+\paragraph{\texttt{insertMessage()}}
+Projde předanou bitmapu po pixelech a pomocí maskování přepisuje LSB jednotlivých složek podle zprávy která má být v obrázku ukryta. Na konec zprávy je přidán speciální znak značící konec zprávy. Pro modifikaci pixelů využíváme metod \texttt{setPixel()}, \texttt{getPixel()}.
+
+\paragraph{\texttt{extractMessage()}}
+Podobně jako u \texttt{insertMessage()} průchodem bitmapou a extrakcí jednotlivých LSB postupně tvoří zprávu spojováním znaků do řetězce, dokud nenarazí na koncovou značku.
+
+\pagebreak
+\subsection{AVI}
+Samostatná třída \texttt{AviHandler} poskytuje veškeré nástroje pro práci se soubory \texttt{.avi}. Podobně jako \texttt{pngHandler} využívá \texttt{Bitmap} a dále knihovny\\ \texttt{AForge.Video.FFMPEG} a jejích závislostí. Zejména kvůli přístupu k sadě kodeků a tím i snadnému získání dekomprimovaného video streamu, nebo jeho vytvoření.
+
+\paragraph{\texttt{aviMod()}}
+Jediná veřejně přístupná metoda, která zajistí volání jednotlivých funkcí podle zvolených parametrů. Tedy ukrytí/extrakci zprávy \\ (\texttt{aviInsert()}, \texttt{aviExtract()}). Případně zobrazí nápovědu pro korektní zadání parametrů.
+
+\paragraph{\texttt{writeMessage()}}
+S využitím \texttt{VideoFileReader} z knihovny \texttt{AForge} prochází jednotlivé snímky video streamu a podobně jako v případě \texttt{PngHadler} v nich modifikuje LSB jednotlivých pixelů. V prvním pixelu prvního snímku je nejprve uložena velikost celkové zprávy počtem znaků. První pixel je tedy zcela přepsán touto informací (nikoliv jen jeho LSB). 
+
+Pro úpravu bitmapy zde využíváme přímého přístupu ke kopii dat bitmapy (pole pixelů) což by mělo znatelně urychlit modifikaci jednotlivých pixelů.
+
+\paragraph{\texttt{readMessage()}}
+Stejným průchodem jako u \texttt{writeMessage()} získáváme postupně zprávu z jednotlivých pixelů. Ovšem tentokrát jsou jednotlivé bity konvertovány rovnou do pole znaků (z důvodu vyhnutí se spojování řetězců) což značně urychlí získání zprávy oproti implementaci pro \texttt{PNG}.
+
+\paragraph{\texttt{setMsgLength()}}
+Použije se pro první snímek video streamu, kde na první pixel uloží hodnotu, určující počet znaků skryté zprávy, přes všechny barevné složky pixelu.
+
+\pagebreak
+\section{Uživatelská příručka}
+Pro správný běh programu je nutné, aby se spustitelný soubor nacházel ve stejném adresáři jako configurační soubor \texttt{Steganography.exe.config} a složka \texttt{lib}. Dále program vyžaduje nainstalovaný \texttt{Microsoft.NET Framework}.
+
+\subsection{Spuštění programu}
+Program se spouští z příkazové řádky s následujícími parametry \\(bez znaků \texttt{[} a \texttt{]}.
+
+\begin{itemize}
+\setlength\itemsep{1px}
+\item{\texttt{[-png][-avi]}} Typ souboru pro zpracování.
+\item{\texttt{[-i][-e]}}
+\begin{itemize}
+	\setlength\itemsep{1px}
+	\item[-i] Vložení zprávy do zdrojového souboru.
+	\item[-e] Získání zprávy ze zdrojového souboru.
+\end{itemize}
+\item{\texttt{[vstup]}} Název zdrojového souboru.
+\item{\texttt{[výstup]}} Název výstupního souboru.
+\item{\texttt{[zpráva]}} Název souboru se zprávou pro ukrytí.
+\end{itemize}
+
+
+\vspace{3mm}
+\textbf{Příklady spuštění:}
+\begin{itemize}
+\setlength\itemsep{1px}
+
+\item \texttt{Steganography.exe}\\ 
+Zobrazí základní nápovědu.
+\item \texttt{Steganography.exe -png}\\ 
+Provede zápis a extrakci zprávy podle základního nastavení viz \ref{default_settings}
+\item \texttt{Steganography.exe -avi}\\ 
+Provede zápis a extrakci zprávy podle základního nastavení viz \ref{default_settings}
+\item \texttt{Steganography.exe -png -i zdroj.png vystup.png zprava.txt}\\ 
+Provede zápis zprávy ze souboru \texttt{zprava.txt} do obrázku \texttt{zdroj.png} a vytvoří výsledný soubor \texttt{vystup.png}
+\item \texttt{Steganography.exe -avi -e zdroj.avi}\\ 
+Získá skrytou zprávu ze souboru \texttt{zdroj.avi} a vypíše ji do konzole.
+\end{itemize}
+
+\subsubsection{Základní nastavení}
+\label{default_settings}
+Program provede ukrytí zprávy a její následnou extrakci.
+
+\paragraph{PNG}\mbox{}\\
+\makebox[4cm]{Zdrojový soubor:} \texttt{source.png}\\
+\makebox[4cm]{Výstupní soubor:} \texttt{output.png}\\
+\makebox[4cm]{Soubor se zprávou:} \texttt{msg.txt}
+
+\paragraph{AVI}\mbox{}\\
+\makebox[4cm]{Zdrojový soubor:} \texttt{drop.avi}\\
+\makebox[4cm]{Výstupní soubor:} \texttt{out.avi}\\
+\makebox[4cm]{Soubor se zprávou:} \texttt{msg.txt}
+
+\pagebreak
+\section{Závěr}
+Program je připraven pro další rozšiřování o formáty. Zvolené algoritmy byly vybrány tak, aby byly snadno implementovatelné a dali se dále rozšiřovat. Původní snahy o implementaci pomocí základní knihovny \texttt{avifil32.dll} se nepodařili kvůli problémům s kodeky a dekopresí videa. Původní verze aplikace byla velmi pomalá při čtení zprávy z videa. Pomocí profilovacího nástroje jsem vysledoval problém k  tvoření zprávy jako postupně se zvětšujícího řetězce. Tento problém byl odstraněn náhradou za bytové pole. Aplikace se tím zrychlila z řádů desítek minut pro zprávy o velikosti statisíců slov do řádů desítek sekund.
+
+Vlastní ukrývání zprávy by šlo vylepšit například zmíněným roztroušením modifikovaných pixelů podle poměru kapacity a velikosti zprávy a kapacita by šla snadno navýšit použitím více méně významných bitů z každého pixelu.
+
+K ukrývání zprávy do souborů formátu \texttt{AVI} by bylo potřeba použít složitější algoritmus, který by zachoval zprávu i po kompresi videa. Nekomprimované video nabývá svou velikostí skutečně rychle, proto jsem zvolil ukázkové video v malém rozlišení pouze o velikosti 700 KB.
+
+Použitím pouze jednoho nejméně významného bitu se kvalita videa ani obrázku nijak nezhoršila. 
+
+Je vidět že \texttt{PNG} zaostává což je způsobeno menší optimalizací kódu. Použití řetězce a metod \texttt{setPixel()}, \texttt{getPixel()}, které ze zkušenosti s grafikou vím že jsou pomalejší než přímý přístup k datům bitmapy. Časy běhu programu byly měřeny pouze pro zápis zprávy časy čtení poměrově odpovídají mimo čtení \texttt{PNG}, kde čtení nadměrných zpráv je, z důvodu použití řetězců, neúnosně dlouhé a poukazuje na nutnost optimalizace takových operací, kterým jsem se od začátku vyhýbal u formátu \texttt{AVI}.
+
+\vspace{0.5cm}
+\centering{
+\begin{tabular}{|c|c|c|}
+$\texttt{Počet slov zprávy}$ & $\texttt{PNG čas [ms]}$ & $\texttt{AVI čas [ms]}$\\\hline
+$1k$ 	& $218$ 	& $409$\\\hline
+$50k$ 	& $2648$	& $518$\\\hline
+$200k$ 	& $-$		& $1006$\\\hline
+
+\end{tabular}
+}
+\end{document}

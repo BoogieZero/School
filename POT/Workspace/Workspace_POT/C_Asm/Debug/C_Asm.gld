@@ -1,0 +1,8 @@
+-T "D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm_Debug_auto.gsi"
+-T "D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm_input.tmp" 
+-L "c:\program files\renesas\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\lib\gcc\h8300-elf\4.5-GNUH8_v11.02\h8300s"
+-L "c:\program files\renesas\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\h8300-elf\lib\h8300s"
+-Map "D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm.map"
+-( -l "gcc" -l "optc" -l "optm" -)
+-o "D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm.x"
+-e _start

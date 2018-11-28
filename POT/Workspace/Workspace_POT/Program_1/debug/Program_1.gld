@@ -1,0 +1,8 @@
+-T "C:\School\POT\Workspace\Workspace_POT\Program_1\Debug\Program_1_Debug_auto.gsi"
+-T "C:\School\POT\Workspace\Workspace_POT\Program_1\Debug\Program_1_input.tmp" 
+-L "c:\school\pot\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\lib\gcc\h8300-elf\4.5-GNUH8_v11.02\h8300s"
+-L "c:\school\pot\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\h8300-elf\lib\h8300s"
+-Map "C:\School\POT\Workspace\Workspace_POT\Program_1\Debug\Program_1.map"
+-( -l "gcc" -l "optc" -l "optm" -)
+-o "C:\School\POT\Workspace\Workspace_POT\Program_1\Debug\Program_1.x"
+-e _start

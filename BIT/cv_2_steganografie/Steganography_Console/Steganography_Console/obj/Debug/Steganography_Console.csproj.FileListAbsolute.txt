@@ -1,0 +1,6 @@
+C:\GitHub\School\BIT\cv_2_steganografie\Steganography_Console\Steganography_Console\bin\Debug\Steganography_Console.exe.config
+C:\GitHub\School\BIT\cv_2_steganografie\Steganography_Console\Steganography_Console\obj\Debug\Steganography_Console.csprojResolveAssemblyReference.cache
+C:\GitHub\School\BIT\cv_2_steganografie\Steganography_Console\Steganography_Console\bin\Debug\Steganography_Console.exe
+C:\GitHub\School\BIT\cv_2_steganografie\Steganography_Console\Steganography_Console\bin\Debug\Steganography_Console.pdb
+C:\GitHub\School\BIT\cv_2_steganografie\Steganography_Console\Steganography_Console\obj\Debug\Steganography_Console.exe
+C:\GitHub\School\BIT\cv_2_steganografie\Steganography_Console\Steganography_Console\obj\Debug\Steganography_Console.pdb

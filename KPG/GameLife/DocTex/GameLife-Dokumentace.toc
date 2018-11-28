@@ -1,0 +1,7 @@
+\select@language {czech}
+\contentsline {section}{\numberline {1}Zad\IeC {\'a}n\IeC {\'\i }}{2}
+\contentsline {section}{\numberline {2}Anal\IeC {\'y}za \IeC {\'u}lohy}{2}
+\contentsline {subsection}{\numberline {2.1}Algoritmus Game of life}{2}
+\contentsline {paragraph}{Pravidla z\IeC {\'a}kladn\IeC {\'\i }ho algoritmu}{3}
+\contentsline {section}{\numberline {3}U\IeC {\v z}ivatelsk\IeC {\'a} p\IeC {\v r}\IeC {\'\i }ru\IeC {\v c}ka}{3}
+\contentsline {section}{\numberline {4}Z\IeC {\'a}v\IeC {\v e}r}{4}

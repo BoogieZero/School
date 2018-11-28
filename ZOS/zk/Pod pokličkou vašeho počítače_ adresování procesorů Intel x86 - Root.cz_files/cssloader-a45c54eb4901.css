@@ -1,0 +1,3224 @@
+
+
+
+/* @group Hiding */
+.sklik-box,
+.alphabet,
+#register-form,
+#lost-form,
+#login-form,
+#login,
+.ad,
+#sefa,
+#gp-counter,
+.login,
+.search,
+#mainmenu,
+.mainmenu,
+#catalogs,
+#claim,
+#facebookFollow,
+#sidebar,
+.prev-next,
+.box.tagcloud,
+#siux,
+.submenu,
+span.link-more.prev-next,
+span.link-more,
+.links,
+h2 #podnikatel,
+.a-buttons,
+div.table-form,
+div.pagination,
+.ipn-rein,
+.logo-iinfo,
+.ipn-123,
+.but-area,
+.listing,
+ul.tabs,
+#p-index h1,
+form#cse-search-box,
+#menu,
+#database,
+.enquiry,
+.monitoringComponentArticle,
+div.list, div.column-switcher div.close a,span.changeParam a, div.user-input.button input, span.invalidDataReport, a.remove, #connection a.editLink, span.link-more, a.urlLink, #similarItems,
+.servers-promo,
+.pertlinks,
+#promo-box,
+.socialShare,
+#classification,
+.strip-2 h4,
+.iinfoBar
+{
+	display: none;
+}
+
+
+
+
+/* @end */
+
+/* @group CSS RESET */
+
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+#header h2.logo {
+	margin: 0.5em 0 0 0;
+	font-size: 14pt;
+	color: #000;
+	}
+
+
+
+#header h2.logo img {
+	display: none;
+	}
+
+
+
+
+body {
+	line-height: 1;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+
+
+:focus {
+	outline: 0;
+}
+
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*@end */
+
+/* @group COMPONENTS */
+
+/* @group BOX */
+
+.box {
+	line-height: 1.3;
+}
+
+.box h2 {
+	font-size: 1.2em;
+}
+
+
+.box p {
+	line-height: 1.4;
+}
+
+
+/* @end */
+
+/* @group Footer */
+
+#footer {
+	
+	
+	font-size: 8pt;
+	margin-top: 1em;
+	
+	border-top: 1pt solid black;
+	padding: 0.5em 0 0 0;
+	line-height: 1.5;
+	clear: both;
+	}
+#footer a.logo-iinfo {
+	display: none;}
+
+
+#footer a {
+	text-decoration: none;
+	color: #000;
+}
+
+#footer .corner {
+	display: none;
+}
+
+#webstats {
+	display: none;}
+
+#footer ul {
+	display: none;
+}
+
+/* @end */
+
+/* @group Path */
+
+div.path {
+	font-size: 8pt;
+	margin: 1em 0;
+	}
+
+/* @end */
+
+
+
+/* @end */
+
+/* @group BASICS */
+
+hr {
+	display: none;
+}
+
+body {
+		background-color: #fff;
+		font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+		font-size: 12pt;
+		line-height: 1.4;
+}
+#main {
+	width: 20cm;
+}
+h1 {
+	text-align: left;
+	font-size: 13pt;
+	font-weight: bold;	
+	margin: 0 0 0.5em 0;}
+
+a {
+	color: #000 !important;
+	text-decoration: none;
+}
+
+div.box.border.style1.TitleList {
+	display: none;
+}
+
+h2.heading {
+	font-size: 12pt;
+	margin: 1em 0 0.5em 0;
+}
+
+h2.heading a {
+	color: #000;
+	text-decoration: none;
+}
+
+
+h2.heading span.right {
+	display: none;
+}
+
+
+
+/* @group Uni List */
+.uni-list {
+	margin: 0 0 1em 0;
+}
+/* @end */
+
+/* @group Status Messages */
+
+.warning {
+	font-weight: bold;
+	color: red;
+	font-size: 1.1em;
+}
+
+.error {
+	color: red;
+	font-weight: bold;
+	line-height: 1.3;
+}
+
+.error strong {
+	background: red;
+	color: #fff;
+	padding: 0 4px;
+}
+
+.info {
+	line-height: 1.3;
+	margin: 0 0 2em 0;
+}
+
+
+
+
+
+.msg {
+	margin: 0.5em 0 0.5em 0;
+	line-height: 1.4;
+	padding: 8px;
+}
+
+.m-info {
+	border: 1px solid #BBBBBB;
+}
+
+.m-notice {
+	font-weight: bold;
+	color: blue;
+	border: 1px solid blue;
+}
+
+.m-minor {
+	font-size: 86%;
+	line-height: 1.2;
+	background: #e7e7e7;
+}
+
+.m-inline {
+	margin: 0 0 1em 0;
+	padding: 0;
+}
+
+
+
+/* @end*/
+
+#header {
+		padding: 0.5em 0;
+		margin: 0 0 1em 0;
+		border-bottom: 2px solid black;
+}
+
+
+/* @end */
+
+/* @group PAGES */
+
+/* @group Serials */
+
+.SerialList {
+	-moz-column-count: 2;
+	-moz-column-gap: 2em;
+}
+
+.SerialDefault {
+		
+line-height: 1.3;
+	margin: 0 0 1em 0;
+	font-weight: bold;
+}
+
+/* @end */
+
+/* @group TutorialModule */
+
+.specials-list ul h3 {
+	font-size: 120%;
+	margin: 0 0 0.2em 0;
+}
+
+.specials-list li {
+	margin: 0 0 1em 0;
+	line-height: 1.3;
+}
+
+.specials-list ul {
+	margin: 0 0 0 7px;
+}
+
+.specials-list {
+	margin: 0 0 1em 0;
+}
+
+#TutorialModuleChapters {
+	font-weight: bold;
+	margin: 2em 0 0 0;
+	border-top: 1px solid #bbbbbb;
+	padding: 1em 0 0px 0;
+}
+
+#TutorialModuleChapters li {
+	list-style-type: decimal;
+	margin: 0 0 1em 2em;
+}
+
+#TextTree ul {
+	margin-bottom: 1em;
+	font-size: 1em;
+}
+
+#TextTree a:hover {
+	text-decoration: none;
+}
+
+#TextTree ul ul {
+	margin: 0 0 0.4em 1.3em;
+}
+
+#TextTree ul li{
+	margin: 0 0 0.5em 0em;
+}
+
+/* @end */
+
+/* @group DISKUZE*/
+
+
+/* @group Nazory */
+
+.box.article-discussion {
+	display: none;}
+
+.article-discussion .article-discussion .corner {
+	display: none;
+}
+
+.article-discussion .article-discussion, .article-discussion.under-opinion {
+	margin-top: 10px;
+}
+
+.article-discussion h2.border span.bottom-left, .article-discussion h2.border span.bottom-right {
+	bottom: -5px;
+}
+
+.article-discussion h3 {
+	margin-bottom: 7px;
+}
+
+.article-discussion p {
+	margin: 3px 0 0 8px;
+}
+
+/* @group Tabulka nazoru */
+
+table.opinions-overview {
+	width: 100%;
+	font-size: 90%;
+	margin: 0 8px 0 12px;
+}
+
+table.opinions-overview td, table.opinions-overview th {
+	border-top: 1px solid  #d8d8d8;
+}
+
+table.opinions-overview table td {
+	border-top: none;
+}
+
+table.opinions-overview tr.first td, table.opinions-overview tr.first th {
+	border-top: none;
+}
+
+table.opinions-overview td.opin-author, table.opinions-overview td.date, table.opinions-overview th {
+	padding: 0px 0 5px 0;
+}
+
+table.opinions-overview td.opin-author, table.opinions-overview td.date {
+	white-space: nowrap;
+}
+
+table.opinions-overview td.date br {
+	display: none;
+}
+
+table.opinions-overview td.date span.small {
+	padding: 1px 4px;
+	background: #CC6600;
+	color: #fff;
+	margin: 0 0 0 5px;
+}
+
+table.opinions-overview td input {
+	margin: auto 0;
+}
+
+table.opinions-overview th div {
+	float: left;
+	height: 20px;
+	position: relative;
+	width: 7px;
+}
+
+table.opinions-overview th div img {
+	left: 0;
+	position: absolute;
+	top: -5px;
+}
+
+table.opinions-overview table td, table.opinions-overview table th {
+	vertical-align: middle;
+}
+
+.opinions-buttons {
+	margin: 5px 0px 10px 0;
+	text-align: right;
+}
+
+.opinions-buttons a {
+	background-position: left 70%;
+	background-repeat: no-repeat;
+	font-size: 110%;
+	font-weight: bold;
+	padding: 5px 0 5px 30px;
+	line-height: 2em;
+	margin: 0 0 0 10px;
+}
+
+.opinions-buttons input.left {
+	margin: 6px 0 0 0px;
+	float: left;
+}
+
+div#new-discussion {
+	margin: 1em 0 1em 0;
+}
+
+a.new-discussion {
+	background-position: left 70%;
+	background-repeat: no-repeat;
+	font-size: 120%;
+	font-weight: bold;
+	padding: 6px 0 6px 30px;
+	line-height: 2em;
+}
+
+.opinions-buttons a.opinions-add, a.new-discussion {
+	background-image: url(https://i.iinfo.cz/r/ico-link-add.png);
+}
+
+.opinions-buttons a.opinions-show-all {
+	background-image: url(https://i.iinfo.cz/r/ico-link-all-opinions.png);
+}
+
+table.opinions-overview table td a {
+	padding-left: 3px;
+}
+
+/* @end */
+
+/* @end */
+
+/* @group Topic list */
+
+#main table.discussion-list {
+	width: 100%;
+	margin: 1em 0 1.5em 0;
+	background: #fff;
+}
+
+table.discussion-list {
+	
+}
+
+#p-archive table.discussion-list {
+	margin: 0;
+	width: 100%;
+}
+
+table.discussion-list thead th {
+	text-align: left;
+	background: #CCCCCC;
+	border-bottom: 1px solid #888888;
+	padding: 5px 0px 5px 8px;
+}
+
+table.discussion-list tbody th, table.discussion-list tbody td {
+	border-top: 1px solid #CCCCCC;
+	font-weight: normal;
+	padding: 5px 0;
+	text-align: left;
+}
+
+table.discussion-list tbody th {
+	font-weight: bold;
+	padding-left: 8px;
+}
+
+#p-archive table.discussion-list tbody th {
+	font-weight: bold;
+}
+
+table.discussion-list tr.first th, table.discussion-list tr.first td {
+	border-top: none;
+}
+
+table.discussion-list .replies {
+	white-space: nowrap;
+}
+
+table.discussion-list td.date {
+	text-align: left;
+	white-space: nowrap;
+	padding-left: 8px;
+}
+
+table.discussion-list td.replies *, .discussion-detail .replies {
+	
+}
+
+table.discussion-list td.replies .all, .discussion-detail .replies span {
+	border-right: 1px solid #d6d6d6;
+	margin-right: 5px;
+	padding: 0 5px 0 8px;
+}
+
+table.discussion-list td.replies .all.no-new, .discussion-detail .replies.no-new span {
+	border-right: none;
+}
+
+/* @end */
+
+
+
+/* @group Opinons list */
+
+.opinion-view {
+	border-top: 2px solid #c8c4bd;
+	margin-bottom: -2px;
+	padding: 12px 0;
+	position: relative;
+	line-height: 1;
+}
+
+.opinion-view.new {
+	border-top: 2px solid #CC6600;
+}
+
+.table-form .opinion-view {
+	margin: 20px 0;
+}
+
+.opinion-view .avatar {
+	color: #9e9d9d;
+	left: 0;
+	margin-right: 10px;
+	position: absolute;
+	top: 11px;
+}
+
+.opinion-view .avatar a {
+	color: #9e9d9d;
+}
+
+.opinion-view .avatar img {
+	border: 1px solid #c7c7c7;
+	display: block;
+	margin-bottom: 3px;
+}
+
+.opinion-view .opinion-text.with-avatar {
+	margin-left: 60px;
+}
+
+.opinion-view .opinion-text .opinion-info .left em {
+	margin-left: 5px;
+}
+
+.opinion-view .opinion-text .opinion-info .new {
+	background-color: #CC6600;
+	color: #fff;
+	font-size: 85%;
+	margin-left: 10px;
+	padding: 3px 5px 2px 6px;
+	text-transform: uppercase;
+	position: absolute;
+	top: 2.90em;
+	right: 0;
+}
+
+.opinion-view .opinion-text h3.title {
+	color: #000;
+	margin: 4px 0 7px;
+	font-size: 110%;
+	padding: 0;
+	background: transparent;
+	width: auto;
+	line-height: 1.2;
+}
+
+.opinion-view .opinion-text h3.title a {
+	color: #000;
+}
+
+.opinion-view .opinion-text a.whole-tree {
+	display: none;
+}
+
+.monitoringComponent {
+	display: none;
+}
+
+.opinion-view .opinion-text .text {
+	margin: 10px 0 8px;
+	line-height: 1.4;
+}
+
+.opinion-view .opinion-text .text p {
+	margin-left: 0;
+}
+
+.opinion-view .opinion-text a.opinion-odpovedet {
+	display: none;
+}
+
+.opinion-view a.img-over-text span {
+	display: none;
+}
+
+.opinion-view a.img-over-text:hover span {
+	display: block;
+}
+
+.opinion-view .opinion-rating {
+	margin: 3px 15px 0 0;
+}
+
+.opinion-view .opinion-rating strong.grey {
+	display: block;
+	float: left;
+	font-size: 85%;
+	margin: 4px 2px 0 0;
+	text-transform: uppercase;
+}
+
+.opinion-view .opinion-rating a {
+	display: block;
+	float: left;
+	height: 18px;
+	margin-left: 4px;
+	position: relative;
+	text-decoration: none;
+}
+
+.opinion-view .opinion-rating a.img-over-text span {
+	height: 18px;
+	width: 18px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.opinion-view .opinion-rating a img {
+	height: 18px;
+}
+
+.opinion-view .opinion-rating a.up span {
+	background-image: url(https://i.iinfo.cz/r/opinion-rating-plus-inactive.png);
+}
+
+.opinion-view .opinion-rating a.down span {
+	background-image: url(https://i.iinfo.cz/r/opinion-rating-minus-inactive.png);
+}
+
+.opinion-view .opinion-rating a.up:hover span {
+	background-image: url(https://i.iinfo.cz/r/opinion-rating-plus-active.png);
+}
+
+.opinion-view .opinion-rating a.down:hover span {
+	background-image: url(https://i.iinfo.cz/r/opinion-rating-minus-active.png);
+}
+
+.opinion-view .opinion-rating.left {
+	display: none;
+}
+
+.opinion-view .monitoring-controls {
+	display: block;
+	float: left;
+	margin-right: 5px;
+}
+
+.opinion-view .monitoring-controls a.img-over-text {
+	position: relative;
+	display: block;
+	text-decoration: none;
+}
+
+.opinion-view .monitoring-controls a.img-over-text span {
+	height: 24px;
+	width: 24px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+}
+
+.opinion-view .monitoring-controls a.img-over-text:hover span {
+	background-image: url(https://i.iinfo.cz/r/opinion-monitoring-active.png);
+}
+
+.opinion-view .monitoring-controls strong {
+	display: block;
+	margin-top: 3px;
+	font-weight: normal;
+}
+
+.opinion-view .edit-interface a {
+	margin-right: 10px;
+}
+
+.grey {
+	color: #9f9f9f;
+}
+
+#opl .date {
+	position: absolute;
+	right: 0px;
+	top: 12px;
+	color: #6c6c6c;
+	font-weight: bold;
+}
+
+.opinion-text .right {
+	float: right;
+}
+
+.opinion-view.bad *{
+	font-size: 6pt;
+}
+
+.opinion-view.bad:hover {
+	opacity: 0.86;
+}
+
+.opinion-view.bad:hover .opinion-rating {
+	opacity: 1.0 !important;
+}
+
+#opinionsSubTitle {
+	display: none;}
+
+#opl {
+	font-size: 80%;
+}
+
+/* ----------------------------- DISKUSE ---------------------------- */
+
+.discussion-rubrics {
+	margin-bottom: 10px;
+}
+
+.discussion-rubrics h2 {
+	clear: none;
+	float: left;
+	margin: 0 17px 0 0;
+	min-width: 20%;
+	text-align: center;
+}
+
+* html .discussion-rubrics h2 {
+	margin: 0 22px 0 0;
+	width: 20%;
+}
+
+.discussion-rubrics h2.last {
+	margin-right: 0;
+}
+
+.discussion-label-filter h2, .discussion-label-filter p {
+	margin: 0 0 10px;
+}
+
+.discussion-label-filter h2 {
+	
+}
+
+.discussion-label-filter p a, .discussion-label-filter form label {
+	font-weight: bold;
+}
+
+.discussion-label-filter form label {
+	float: left;
+	margin-right: 5px;
+}
+
+.discussion-label-filter form fieldset {
+	padding: 0;
+}
+
+.discussion-label-filter form label input.ac_input {
+	width: 135px;
+}
+
+.discussion-label-filter form label .help {
+	font-weight: normal;
+	left: -3px;
+	position: relative;
+	top: -6px;
+}
+
+.discussion-detail .small {
+	margin-top: 3px;
+}
+
+.discussion-detail .left {
+	width: 300px;
+}
+
+.discussion-detail .right {
+	margin-top: 2px;
+	width: 250px;
+}
+
+.discussion-detail .right .date {
+	float: right;
+}
+
+#opinion-topic {
+	padding: 0 8px;
+}
+
+#opinion-topic .tags-rubrics {
+	float: none;
+	margin: 0;
+	width: auto;
+	border: 0;
+}
+
+#opinion-topic .date {
+	position: absolute;
+	right: 8px;
+	top: 12px;
+	color: #6c6c6c;
+	font-weight: bold;
+}
+
+/* @end */
+
+/* @group Scroller */
+
+.scroller {
+	display: none;
+}
+
+.scroller table.opinions-overview {
+	width: 96%;
+}
+
+/* @end */
+
+/* @group Opinion formatting */
+
+.opinion-text abbr {
+	text-transform: uppercase;
+	border-bottom: 1px dotted #555;
+}
+
+.opinion-text acronym {
+	border-bottom: 1px dotted #555;
+}
+
+.opinion-text table {
+	border: 1px solid #aaaaaa;
+	margin: 1em 0 1em 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 12px;
+}
+
+.opinion-text table caption {
+	padding: 5px 6px 2px 6px;
+	font-weight: bold;
+}
+
+.opinion-text table td, .opinion-text table th {
+	padding: 5px 6px 5px 6px;
+	border: 1px solid #aaaaaa;
+}
+
+.opinion-text table thead td, .opinion-text table thead th {
+	background: white;
+	font-weight: bold;
+}
+
+.opinion-text table tbody td, .opinion-text table tbody th {
+	background: #ddd;
+}
+
+.opinion-text table tfoot td, .opinion-text table tfoot th {
+	background: white;
+	font-weight: bold;
+}
+
+.opinion-text table th {
+	font-weight: bold;
+}
+
+.opinion-text cite:before {
+	content: "„";
+	font-size: 100%;
+	line-height: 1;
+}
+
+.opinion-text cite:after {
+	content: "“";
+	font-size: 100%;
+	line-height: 1;
+}
+
+.opinion-text q:before {
+	content: "„";
+	font-size: 100%;
+	line-height: 1;
+}
+
+.opinion-text q:after {
+	content: "“";
+	font-size: 100%;
+	line-height: 1;
+}
+
+.opinion-text code {
+	font-size: 120%;
+}
+
+.opinion-text del {
+	color: #666666;
+}
+
+.opinion-text div {
+
+}
+
+.opinion-text kbd {
+	font-size: 120%;
+}
+
+.opinion-text ins:before {
+	content: "> ";
+}
+
+.opinion-text ins:after {
+	content: " <";
+}
+
+.opinion-text ol {
+	list-style-type: decimal;
+	margin: 1em 0 1em 0;
+}
+
+.opinion-text ol li {
+	list-style-type: decimal;
+	margin: 0 0 0 2em;
+	padding: 0.2em 0 0.2em 0;
+}
+
+.opinion-text ul {
+	list-style-type: decimal;
+	margin: 1em 0 1em 0;
+}
+
+.opinion-text ul li {
+	list-style-type: disc;
+	margin: 0 0 0 1.5em;
+	padding: 0.2em 0 0.2em 0;
+}
+
+.opinion-text p {
+	margin: 0 0 1em 0;
+}
+
+.opinion-text pre {
+	margin: 0.5em 0 1em 0;
+}
+
+.opinion-text samp {
+	font-size: 120%;
+}
+
+.opinion-text sub {
+	font-size: .8em;
+	position: relative;
+	top: 0.2em;
+}
+
+.opinion-text sup {
+	font-size: .8em;
+	position: relative;
+	top: -0.2em;
+}
+
+.opinion-text dl {
+	margin: 1em 0 1em 0;
+}
+
+.opinion-text dt {
+	font-weight: bold;
+}
+
+.opinion-text dd {
+	margin: 0 0 1em 1em;
+}
+
+.opinion-text small {
+	font-size: .8em;
+}
+
+.opinion-text address {
+	margin: 1em 0;
+}
+
+/* @end */
+/* @end */
+
+/* @group ARCHIVES */
+
+div.archive-article .text {
+	line-height: 1.3;
+}
+
+/* @group Opinion count / new */
+div.opin {
+	display: none;
+}
+
+div.opin a {
+	color: #666;
+}
+/* @end */
+
+/* @group archive-article */
+
+div.archive-article {
+	margin: 1em 0 2em 0px;
+	clear: both;
+	page-break-inside: avoid !important;
+	
+}
+
+div.archive-article h3 {
+	font-size: 13pt;
+	margin: 0 0 0.5em ;
+	page-break-after: avoid;
+}
+
+.archive-article div.perex {
+	font-weight: normal;
+	margin: 0.5em 0 0.6em 0;
+}
+
+/* @end */
+
+/* @end */
+
+/* @group ARTICLE */
+/* @group Perex */
+.perex {
+	line-height: 1.3;
+	font-weight: bold;
+	font-size: 10pt;
+	}
+
+.perex img {
+	border: 1px solid black;
+	float: left;
+	margin: 0px 10px 5px 0;
+}
+/* @end*/
+
+/* @group Article info */
+.article-info {
+	margin: 0 0 0.5em 0;
+	font-size: 8pt;
+}
+
+/* @end */
+
+
+/* @group Serial */
+
+.serial {
+	display: none;
+}
+
+/* @end */
+
+/* @group Author */
+.author {
+	margin: 0;
+}
+
+div.author {
+	line-height: 1.4;
+	font-size: 8pt;
+	margin: 2em 0 0 0;
+}
+
+/* @end */
+
+/* @group Nalepky */
+
+.tags-rubrics {
+	clear: both;
+	margin: 1em 0 1em 0;
+	font-size: 9pt;
+		}
+
+.tags-rubrics h3 {
+	display: inline;
+}
+
+.tags-rubrics h3 a {
+	color: #000;
+}
+
+.tags-rubrics ul {
+	display: inline;
+	font-size: 9pt;
+}
+
+.tags-rubrics ul li {
+	display: inline;
+}
+
+/* @end */
+
+/* @group URS - original style */
+
+.urs {
+	font-family: sans-serif;
+	line-height: 1.5;
+	margin: 0 8px 0 0;
+}
+
+blockquote:before, q:before {
+	content: "„";
+}
+
+blockquote:after, q:after {
+	content: "“";
+}
+
+.urs>:first-child {
+	margin-top: 0 !important
+}
+
+.urs-cb {
+	clear: both;
+	visibility: hidden;
+	height: 1px;
+	line-height: 1px;
+	display: block
+}
+
+.urs h2,
+.urs h3,
+.urs h4,
+.urs h5 {
+	clear: both;
+}
+
+.urs h2 {
+	text-transform: none;
+	font-size: 1.3em;
+	padding: 0;
+	border: none;
+	letter-spacing: 0;
+	margin: 1em 0 .3em
+}
+
+.urs h3 {
+	font-size: 1.15em
+}
+
+.urs h4 {
+	font-size: 1em
+}
+
+.urs h5 {
+	font-size: .92em
+}
+
+.urs h2,
+.urs h3,
+.urs h4,
+.urs h5 {
+	margin: 1.1em 0 .3em
+}
+
+.urs h2 + p,
+.urs h3 + p,
+.urs h4 + p,
+.urs h5 + p {
+	margin-top: .3em
+}
+
+.main .urs h2 a {
+	text-decoration: underline
+}
+
+.urs a[href^="http://"],
+.urs a[href^="https://"],
+.urs a[href^="ftp://"] {
+	background: transparent no-repeat scroll right center;
+	padding-right: 13px
+}
+
+.urs a[href^="http://ii.iinfo.cz"],
+.urs a[href^="http://r.iinfo.cz"] {
+	padding-right: 0
+}
+
+.urs strong {
+	display: inline;
+	font-weight: bold
+}
+
+.urs .urs-minor {
+	display: inline;
+	font-size: .8em
+}
+
+.urs sup,
+.urs sub {
+	display: inline;
+	font-size: .65em
+}
+
+.urs sup {
+	vertical-align: super
+}
+
+.urs sub {
+	vertical-align: sub
+}
+
+.urs p {
+	display: block;
+	margin: .5em 0 1em;
+	font-size: 10pt;
+	line-height: 1.3;
+}
+
+.urs p:first-child {
+	margin-top: 0;
+	clear: both;
+}
+
+.urs hr {
+	display: block;
+	height: 1px;
+	line-height: 1px;
+	font-size: 1px;
+	border: 1px solid #000;
+	border-width: 1px 0 0 0;
+	margin: .7em 0;
+	clear: both
+}
+
+.main .urs ul,
+.main .urs ol {
+	margin: .7em 0 .7em 25em;
+	padding: 0;
+	background: red;
+}
+
+.main .urs ol {
+	margin-left: 3em
+}
+
+.main .urs ul li,
+.main .urs ol li {
+	display: list-item;
+	list-style-position: outside
+}
+
+.urs ul ul,
+.urs ul ol,
+.urs ol ul,
+.urs ol ol {
+	margin-top: .2em;
+	margin-bottom: .2em
+}
+
+.urs ol.urs-decimal li {
+	list-style-type: decimal
+}
+
+.urs ol.urs-lower-roman li {
+	list-style-type: lower-roman
+}
+
+.urs ol.urs-upper-roman li {
+	list-style-type: upper-roman
+}
+
+.urs ol.urs-lower-latin li {
+	list-style-type: lower-latin
+}
+
+.urs ol.urs-upper-latin li {
+	list-style-type: upper-latin
+}
+
+.urs ul {
+	display: block;
+	margin: 0 0 0 2em;
+	font-size: 10pt;
+}
+
+.urs ol ul li,
+.urs ul li {
+	list-style-type: disc !important
+}
+
+.urs ol ul li li,
+.urs ul li li {
+	list-style-type: square !important
+}
+
+.urs ol.urs-decimal {
+	margin: 0 0 0 35px;
+}
+
+.urs ol ul li li li,
+.urs ul li li li {
+	list-style-type: circle !important
+}
+
+.urs .urs-tip-major,
+.urs .urs-tip-minor {
+	display: block;
+	margin: 1em;
+	padding: .5em;
+	font-family: sans-serif
+}
+
+.urs .urs-tip-major {
+	border: 1px solid #000
+}
+
+.urs .urs-tip-minor {
+	border: 2px dotted #000
+}
+
+.urs .urs-note {
+	display: block;
+	font-size: .9em;
+	margin: .5em 0 1em
+}
+
+.urs cite {
+	display: inline
+}
+
+.urs q {
+	display: inline;
+	font-style: italic
+}
+
+.urs blockquote {
+	display: block;
+	font-style: italic;
+	margin: 1em
+}
+
+.urs blockquote cite {
+	display: block;
+	font-style: normal;
+	text-align: right;
+	margin-top: .2em
+}
+
+.urs a:link,
+.urs a:visited {
+	display: inline
+}
+
+.urs pre {
+	display: block;
+	white-space: pre;
+	font-family: monospace
+}
+
+.urs .urs-pre {
+	width: 99%
+}
+
+.urs .urs-pre {
+	overflow: auto;
+	background: #ffffff;
+	border: 1px solid #DDDDDD;
+	display: block;
+	padding: 1em 0.7em;
+	margin: 0 0 1em 0;
+	font-size: 1em;
+}
+
+.urs .urs-pre pre {
+		white-space: pre;
+}
+
+.urs acronym,
+.urs abbr {
+	display: inline;
+	cursor: help
+}
+
+.urs .urs-false {
+	display: inline;
+	text-decoration: line-through
+}
+
+.urs .urs-oprava,
+.urs .urs-update {
+	display: block;
+	padding: .5em;
+	border: 1px solid #000;
+	border-left-width: .5em;
+	margin: .5em 0 1em
+}
+
+.urs .urs-tip-major h2,
+.urs .urs-tip-major h3,
+.urs .urs-tip-major h4,
+.urs .urs-tip-major h5,
+.urs .urs-tip-minor h2,
+.urs .urs-tip-minor h3,
+.urs .urs-tip-minor h4,
+.urs .urs-tip-minor h5,
+.urs .urs-oprava h2,
+.urs .urs-oprava h3,
+.urs .urs-oprava h4,
+.urs .urs-oprava h5,
+.urs .urs-update h2,
+.urs .urs-update h3,
+.urs .urs-update h4,
+.urs .urs-update h5 {
+	margin-top: 0 !important
+}
+
+.urs dl {
+	display: block
+}
+
+.urs dt {
+	display: block;
+	font-weight: bold;
+	font-family: sans-serif
+}
+
+.urs dd {
+	display: block;
+	margin: .1em 0 .5em 1em
+}
+
+.urs a.urs-subject {
+	display: inline
+}
+
+.urs a.urs-clanek {
+	display: inline
+}
+
+.urs a.urs-produkt {
+	display: inline
+}
+
+.urs a.urs-text {
+	display: inline
+}
+
+.urs a.urs-tbl {
+	display: inline
+}
+
+.urs a.urs-att {
+	display: inline
+}
+
+.urs .urs-img-none {
+	display: inline
+}
+
+.urs .urs-img-left {
+	float: left;
+	margin: .3em .6em .3em 0
+}
+
+.urs .urs-img-right {
+	float: right;
+	margin: .3em 0 .3em .6em
+}
+
+.urs .urs-img-center {
+	text-align: center;
+	vertical-align: bottom
+}
+
+.urs .urs-img-center-holder {
+	display: block;
+	margin: 1em 0;
+	text-align: center
+}
+
+.urs .urs-otazka {
+	display: block;
+	margin: .7em 0 .3em;
+	font-weight: bold
+}
+
+.urs .urs-odpoved {
+	display: block;
+	margin: .3em 1em 1em
+}
+
+.urs .urs-osoba {
+	display: inline;
+	text-transform: uppercase;
+	font-size: .9em
+}
+
+.urs .urs-vzorec {
+	display: block;
+	margin: 1em;
+	padding: .5em;
+	text-align: center;
+	font-family: sans-serif
+}
+
+.urs .urs-big {
+	display: inline;
+	font-size: 1.1em
+}
+
+.urs .urs-small {
+	display: inline;
+	font-size: .9em
+}
+
+.urs .urs-b {
+	display: inline;
+	font-weight: bold
+}
+
+.urs .urs-i {
+	display: inline;
+	font-style: italic
+}
+
+.urs .urs-u {
+	display: inline;
+	text-decoration: underline
+}
+
+.urs .urs-p-center {
+	display: block;
+	text-align: center
+}
+
+.urs .urs-p-right {
+	display: block;
+	text-align: right
+}
+
+.urs .urs-box {
+	display: block;
+	margin: 1em;
+	padding: .5em;
+	font-family: sans-serif
+}
+
+.urs .urs-tab {
+	overflow: auto;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: .9em;
+	margin-top: 1em;
+	width: 99%;
+	padding: 1px
+}
+
+.urs .urs-tab table {
+	empty-cells: show;
+	border-collapse: collapse;
+	border-spacing: 0;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid #000;
+	width: auto
+}
+
+.urs .urs-tab caption {
+	text-align: center;
+	padding: 2px 0;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: .75em;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: 1em
+}
+
+u {
+	
+}
+
+.urs .urs-tab caption .urs-tab-desc {
+	display: block;
+	text-align: left;
+	font-weight: normal;
+	font-size: .9em;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: .9em
+}
+
+u {
+	
+}
+
+.urs .urs-tab th,
+.urs .urs-tab td {
+	vertical-align: top;
+	text-align: left;
+	padding: .15em .3em;
+	border: 1px solid #000
+}
+
+.urs .urs-tab thead th,
+.urs .urs-tab thead td {
+	background: #CCC
+}
+
+.urs .urs-tab thead th {
+	font-weight: bold
+}
+
+.urs .urs-tab thead td {
+	font-weight: normal
+}
+
+.urs .urs-tab tbody th {
+	background: #EEE;
+	font-weight: normal
+}
+
+.urs .urs-tab tbody td {
+	background: #FFF
+}
+
+.urs .urs-tab + .urs-note {
+	margin: .2em 0 1em;
+	font-family: sans-serif;
+	font-size: .8em
+}
+
+.urs .enquiry,
+.urs #charts-ef,
+.urs #calculator-box {
+	font-family: sans-serif;
+	font-size: .9em;
+	margin: 0 0 1em
+}
+
+.urs-sx-key,
+.urs-sx-cond,
+.urs-sx-exce,
+.urs-sx-deli {
+	font-weight: bold
+}
+
+.urs code {
+	}
+
+/* @group URS Colors */
+
+.urs hr {
+	border-color: #999
+}
+
+.urs h2 {
+	color: #000;
+	background: transparent;
+	font-size: 13pt;
+}
+
+.urs h3 {
+	color: #111;
+	font-size: 12pt;
+}
+
+.urs h4 {
+	color: #222
+}
+
+.urs h5 {
+	color: #444
+}
+
+.urs .urs-tip-major {
+	color: #000;
+	background: #FFF;
+	
+}
+
+.urs .urs-tip-minor {
+	color: #000;
+	background: transparent;
+	border-color: #CCC
+}
+
+.urs .urs-note {
+	color: #777
+}
+
+.urs cite {
+	color: #999
+}
+
+.urs blockquote cite {
+	color: #000
+}
+
+.urs .urs-oprava {
+	background: #FFF;
+	border-color: #F00
+}
+
+.urs .urs-update {
+	background: #FFF;
+	border-color: #393
+}
+
+.urs .urs-oprava h2,
+.urs .urs-oprava h3,
+.urs .urs-oprava h4,
+.urs .urs-oprava h5 {
+	color: #F00 !important
+}
+
+.urs .urs-update h2,
+.urs .urs-update h3,
+.urs .urs-update h4,
+.urs .urs-update h5 {
+	color: #393 !important
+}
+
+.urs .urs-vzorec {
+	background: #DDD
+}
+
+.urs .urs-box {
+	color: #000;
+	background: #DDD
+}
+
+.urs .urs-tab table {
+	border-color: #666
+}
+
+.urs .urs-tab thead th,
+.urs .urs-tab thead td {
+	color: #FFF;
+	background: #888;
+	border-color: #DDD
+}
+
+.urs .urs-tab tbody th {
+	color: #000;
+	background: #EEE;
+	border-color: #CCC
+}
+
+.urs .urs-tab tbody td {
+	color: #000;
+	background: #FFF;
+	border-color: #DDD
+}
+
+.urs .urs-sx-deli {
+	color: #000
+}
+
+.urs .urs-sx-type {
+	color: #A33
+}
+
+.urs .urs-sx-dir-pre {
+	color: #348
+}
+
+.urs .urs-sx-exce,
+.urs .urs-sx-cond,
+.urs .urs-sx-key {
+	color: #000
+}
+
+.urs .urs-sx-var-val {
+	color: #060
+}
+
+.urs .urs-sx-var-nam {
+	color: #348
+}
+
+.urs .urs-sx-func {
+	color: #A33
+}
+
+.urs .urs-sx-come {
+	color: #777
+}
+
+/* @end */
+/* @end */
+
+/* @group Classification */
+
+#classification {
+	display: none;
+}
+
+/* @group Top20 */
+
+.classification-ar {
+	padding: 0 0 0 7em;
+	position: relative;
+	line-height: 1.3;
+	page-break-inside: avoid;
+}
+
+.classification-ar .cla {
+	font-size: 220%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.classification-ar .cla span {
+	font-size: 40%;
+}
+
+/* @end */
+
+/* @end *
+
+/
+
+/* @end */
+
+/* @group Nalepky, Labels in Article*/
+
+.discussion-label-filter {
+	padding: 0 !important;
+	border: none !important;
+	}
+
+.discussion-label-filter form {
+	margin: 8px 8px 8px 0px;
+}
+
+.discussion-label-filter p, span.corner {
+	display: none;
+}
+
+/* @end */
+
+
+
+/* @group Anketa, Poll */
+
+.enquiry {
+	padding: 0px;
+	margin: 0 0 2em 0;
+}
+
+.enquiry h2 {
+	font-size: 1.4em;
+	background: #DDDDDD;
+	border-bottom: 2px solid #666666;
+	padding: 0.3em 0 0.3em 8px;
+	color: #575652;
+}
+
+.enquiry p {
+	font-size: 120%;
+	font-weight: bold;
+	color: #575652;
+	padding: 12px 0 0px 0;
+}
+
+.enquiry table {
+	width: 100%;
+	text-align: left;
+}
+
+.enquiry table td, .enquiry table th {
+	border-bottom: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;
+	padding: 4px 0 5px 0;
+}
+
+.enquiry table td.radio {
+	width: 20px;
+	padding-left: 5px;
+}
+
+.enquiry table td.radio input {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 1px;
+}
+
+.enquiry table th label {
+	display: block;
+	cursor: hand;
+}
+
+.enquiry table th.answer {
+	padding-left: 8px;
+	width: 400px;
+}
+
+.enquiry table td.bar {
+	padding-left: 8px;
+}
+
+.enquiry table td.percents {
+	text-align: right;
+}
+
+.enquiry .but-area {
+	padding: 8px 0;
+}
+
+.enquiry .but-area span.answered {
+	float: right;
+	font-weight: bold;
+}
+
+.enquiry .but-area input {
+	
+}
+
+/* @end */
+
+/* @group Syntax Highlighter */
+
+.syntaxhighlighter
+{
+	border: none !important;
+}
+
+/* Highlighed line number */
+.syntaxhighlighter .line.highlighted .number
+{
+	background-color: #000 !important;
+	color: black !important;
+}
+
+/* Highlighed line */
+.syntaxhighlighter .line.highlighted.alt1 .content,
+.syntaxhighlighter .line.highlighted.alt2 .content
+{
+	background-color: #000 !important;
+}
+
+/* Gutter line numbers */
+.syntaxhighlighter .line .number
+{
+	color: black !important;
+	border-right: 1px solid black !important;
+	margin: 0 10pt 0 0;
+}
+
+/* Add border to the lines */
+.syntaxhighlighter .line .content
+{
+	
+	color: black !important;
+}
+
+.syntaxhighlighter.printing .line .content 
+{
+	border-left: 1px solid black !important;
+}
+
+/* First line */
+.syntaxhighlighter .line.alt1 .content
+{
+	background-color: #ffffff !important;
+}
+
+/* Second line */
+.syntaxhighlighter .line.alt2 .content
+{
+	background-color: #fff !important;
+}
+
+.syntaxhighlighter .line .content .block
+{
+
+}
+
+.syntaxhighlighter .ruler
+{
+	color: black !important;
+	background-color: #fff !important;
+	border-left: 1pt solid black !important;
+}
+
+.syntaxhighlighter.nogutter .ruler
+{
+	border-left: 1pt solid black !important;
+}
+
+.syntaxhighlighter .toolbar
+{
+	display: none;
+}
+
+/************************************
+ * Actual syntax highlighter colors.
+ ************************************/
+.syntaxhighlighter .plain,
+.syntaxhighlighter .plain a
+{ 
+	color: black !important;
+}
+
+.syntaxhighlighter .comments,
+.syntaxhighlighter .comments a
+{ 
+	color: black !important;
+}
+
+.syntaxhighlighter .string,
+.syntaxhighlighter .string a
+{
+	color: black !important; 
+}
+
+.syntaxhighlighter .keyword
+{ 
+	color: black !important; 
+	font-weight: bold !important; 
+}
+
+.syntaxhighlighter .preprocessor 
+{ 
+	color: black !important; 
+}
+
+.syntaxhighlighter .variable 
+{ 
+	color: black !important; 
+}
+
+.syntaxhighlighter .value
+{ 
+	color: black !important; 
+}
+
+.syntaxhighlighter .functions
+{ 
+	color: black !important; 
+}
+
+.syntaxhighlighter .constants
+{ 
+	color: black !important; 
+}
+
+.syntaxhighlighter .script
+{ 
+	background-color: #fff !important;
+}
+
+.syntaxhighlighter .color1,
+.syntaxhighlighter .color1 a
+{ 
+	color: black !important; 
+}
+
+.syntaxhighlighter .color2,
+.syntaxhighlighter .color2 a
+{ 
+	color: black !important; 
+}
+
+.syntaxhighlighter .color3,
+.syntaxhighlighter .color3 a
+{ 
+	color: black !important; 
+}
+
+
+/* @end */
+
+
+/* @end */
+
+/* @group Press releases Tiskove Zpravy */
+
+h3.article-title {
+	font-size: 120%;
+	margin: 0.8em 0 0.4em 0;
+}
+
+/* @end */
+
+/* @group Terms, Slovnicek */
+
+.terms {
+	clear: both;
+}
+
+.terms dt {
+	font-size: 120%;
+	font-weight: bold;
+	border-bottom: 1px solid #ff9900;
+	padding: 0 0 3px 0;
+}
+
+.terms dd {
+	margin: 0.4em 0 1em 0;
+	line-height: 1.3;
+}
+
+.terms dt a {
+	text-decoration: none;
+}
+
+form#slovnicek-form {
+	text-align: center;
+	margin: 0 0 1.6em 0;
+}
+
+/* @end */
+
+/* @group Rubrics */
+
+.rubrics {
+	-moz-column-count: 2;
+	-moz-column-gap: 1em;
+}
+
+.rubrics dt {
+	font-weight: bold;
+	margin: 0 0 0.2em 0;
+	font-size: 110%;
+}
+
+.rubrics dd {
+	margin: 0 0 0.8em 0;
+	line-height: 1.3;
+}
+
+/* @end */
+
+/* @group Nalepky - List */
+
+div.labels-list-cols {
+	-moz-column-count: auto;
+	-moz-column-gap: 2em;
+	-moz-column-width: 10em;
+}
+
+ul.labels-list {
+	-moz-column-count: 4;
+	-moz-column-gap: 2em;
+}
+
+ul.labels-list li {
+	list-style-type: disc;
+	padding: 0 0 2px 0;
+	margin: 0 0 0 1.2em;
+	line-height: 1.4;
+}
+
+div.labels-list-cols ul.labels-list {
+	-moz-column-count: 6;
+	-moz-column-gap: 2em;
+	-moz-column-width: 10em;
+}
+
+/* @end */
+
+/* @group Produkty */
+
+
+table.tab-zebricek {
+	border: 1pt solid black;
+	border-spacing: 0;
+	border-collapse: collapse;
+	font-size: 8pt;
+}
+
+table.tab-zebricek td, table.tab-zebricek th {
+	border: 1pt solid black;
+	padding: 2mm;
+}
+
+table.tab-zebricek td, table.tab-zebricek th select {
+	width: 140px;
+}
+
+tr.blank th {
+	display: none;
+}
+
+#main form div.user-form.clear div.controls.clear div.user-input.numeric {
+	border: 1pt solid black;
+	margin: 0 0 1em 0;
+	padding: 2pt;
+}
+
+#main form div.user-form.clear div.controls.clear div.user-input.numeric input {
+	border: 1pt solid black;
+	margin: 0 0 1em 0;
+	padding: 2pt;
+}
+
+#main form div.select-all {
+	display: none;
+}
+
+#problemAreaPropagationBoxTabs {
+	display: none;
+}
+
+.tab-produkty {
+	border: 1pt solid black;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 8pt;
+}
+
+.tab-produkty td, .tab-produkty th {
+	border: 1pt solid black;
+	padding: 1mm;
+}
+
+th.select input {
+	display: none;
+}
+
+.prod-add-control {
+	display: none;
+}
+
+#completeList {
+	display: none;
+}
+
+/* @end */
+
+/* @group Index */
+
+#articles .articles p img {
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+#articles div.article-info a{
+	margin: 0 1em 0 0;
+}
+
+#articles div.index-list.articles.RecentArticles div.clear.first div.article-info {
+	padding: 1em 0 0 0;
+}
+
+
+
+/* @end */
+
+/* @end */
+
+/* @group PRINT */
+
+.urs a {
+	border-bottom: 1pt dotted #929292;
+}
+.urs abbr[title]:after {content:" (zkratka: "attr(title)")";font-size:.9em;text-decoration:none}
+img {page-break-inside:avoid !important;}
+.urs a:after {
+content:" [viz: "attr(href)"]";
+font-size: 7pt;
+}
+.urs a[href^='/']:link:after,
+.urs a[href^='/']:visited:after {
+content:" [viz: http://www.root.cz"attr(href)"]"}
+.urs a[href^='mailto:']:after {
+content:" [" attr(href) " ]"}
+* {
+	overflow: visible !important;
+}
+
+/* @end */
+
+/* @group URS */
+
+/* @group Links */
+
+.urs a:link,
+.urs a:visited {
+	display: inline
+}
+
+.urs a.rs-file {
+	display: inline
+}
+
+.urs .rs-question {
+	display: block;
+	margin: .7em 0 .3em;
+	font-weight: bold
+}
+
+.urs .rs-answer {
+	display: block;
+	margin: .3em 1em 1em
+}
+
+.urs .rs-person {
+	display: inline;
+	text-transform: uppercase;
+	font-size: .9em
+}
+
+.urs .rs-box {
+	display: block;
+	margin: 1em 0;
+	padding: 8px 12px;
+	font-family: sans-serif;
+	background: #fcedc2 url(https://i.iinfo.cz/r/tipbck.png) repeat-x;
+	border: 1px solid #fcedc2;
+}
+
+.urs .rs-box p {
+	margin: 0;
+}
+
+
+/* @end */
+
+/* @group Align */
+
+.urs .rs-img-left {
+	float: left;
+	margin: .3em .6em .3em 0
+}
+
+.urs .rs-img-right {
+	float: right;
+	margin: .3em 0 .3em .6em
+}
+
+.urs .rs-img-center {
+	display: block;
+	margin: 1em 0;
+	text-align: center
+}
+
+.urs .rs-center {
+	display: block;
+	text-align: center
+}
+
+.urs .rs-right {
+	display: block;
+	text-align: right
+}
+
+/* @end */
+
+/* @group Common */
+
+.urs>:first-child {
+	margin-top: 0 !important
+}
+
+.rs-cb {
+	clear: both;
+	visibility: hidden;
+	height: 1px;
+	line-height: 1px;
+	display: block
+}
+
+/* @end */
+
+/* @group Lists */
+
+.urs ul,
+.urs ol {
+	padding: 0;
+	display: block;
+	margin: 0 0 0 2em;
+	line-height: 1.3;
+}
+
+.urs ul ul,
+.urs ul ol,
+.urs ol ul,
+.urs ol ol {
+	margin-top: .2em;
+	margin-bottom: .2em;
+}
+
+.urs ol li,
+.urs ul li {
+	margin-bottom: 0.8em;
+}
+
+.urs ol ul li,
+.urs ul li {
+	list-style-type: disc !important
+}
+
+.urs ol ul li li,
+.urs ul li li {
+	list-style-type: square !important
+}
+
+.urs ol ul li li li,
+.urs ul li li li {
+	list-style-type: circle !important
+}
+
+.urs ol li {
+	margin-left: 0.45em;
+	list-style-type: decimal;
+}
+
+.urs ul li,
+.urs ol li {
+	display: list-item;
+	list-style-position: outside
+}
+
+.urs dl {
+	display: block
+}
+
+.urs dt {
+	display: block;
+	font-weight: bold;
+	font-family: sans-serif
+}
+
+.urs dd {
+	display: block;
+	margin: .6em 0 1em 1em;
+	line-height: 1.3;
+}
+
+/* @end */
+
+/* @group Headers */
+
+.urs h2,
+.urs h3,
+.urs h4,
+.urs h5 {
+	margin: 1.1em 0 .3em
+}
+
+.urs h2 + p,
+.urs h3 + p,
+.urs h4 + p,
+.urs h5 + p {
+	margin-top: 0em
+}
+
+.urs h2 {
+	font-size: 18px;
+}
+
+.urs h3 {
+	font-size: 17px;
+}
+
+.urs h4 {
+	font-size: 16px;
+}
+
+.urs h5 {
+	font-size: 15px;
+}
+
+.urs h6 {
+	font-size: 14px;
+}
+
+/* @end */
+
+/* @group Table */
+
+.urs table caption {
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+	margin: 0.5em 0 0 0;
+	color: #334649;
+}
+
+.urs table caption .rs-tab-desc {
+	display: block;
+	text-align: left;
+	font-weight: normal;
+	font-size: .9em;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: .9em
+}
+
+.urs table th,
+.urs table td {
+	vertical-align: top;
+	text-align: left;
+	padding: .5em .5em;
+	border: 1px solid #000
+}
+
+#main div.urs div.me-urs-tab table {
+	font-size: 10pt;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.urs table thead th,
+.urs table thead td {
+
+}
+
+/* @group My Group */
+
+.calcResult {
+	padding: 5pt;
+}
+
+div#calcResultTools {
+	display: none;
+}
+
+div#calcList.container.style1.calcRelated {
+	display: none;
+}
+
+td.helpMessage {
+	font-size: 8pt;
+}
+
+#calcView form.calcMaxiForm table {
+	border: 1pt solid black;
+	text-align: left;
+	border-spacing: 0;
+	border-collapse: collapse;
+	font-size: 10pt;
+}
+
+#calcView form.calcMaxiForm table td, #calcView form.calcMaxiForm table th {
+	border: 1pt solid black;
+	padding: 3pt;
+}
+
+#calcResult table thead th {
+	text-align: left;
+	background: black;
+	color: white;
+}
+
+#calcResult table tbody th {
+	text-align: left;
+}
+
+div.listing {
+	display: none;
+}
+
+div.pagination {
+	display: none;
+}
+
+ul.tabs {
+	display: none;
+}
+
+div#navMenu {
+	display: none;
+}
+
+#banksMenu {
+	display: none;
+}
+
+ul.tabs-small {
+	display: none;
+}
+
+#bestQuotations {
+	display: none;
+}
+
+#quickConverter {
+	display: none;
+}
+
+#prevDate span {
+	display: none;
+}
+
+#calcResult table {
+	border: 1pt solid black;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 10pt;
+}
+
+#calcResult table td, #calcResult table th {
+	border: 1pt solid black;
+	border-collapse: collapse;
+	border-spacing: 0;
+	padding: 2mm;
+}
+
+/* @end */
+
+.urs table thead th {
+
+}
+
+.urs table thead td {
+	font-weight: normal
+}
+
+.urs table tbody th {
+	background: #f8f8f8;
+	font-weight: normal
+}
+
+.urs table tbody td {
+	background: #FFF
+}
+
+.urs table tbody th {
+	border: 1px solid #d7d7d7;
+	background: ##FEFDF2a;
+}
+
+.urs table tbody td {
+	border-bottom: 1px solid #d7d7d7;
+	border-top: 1px solid #d7d7d7;
+	border-left: 1px solid #ededed;
+	border-right: 1px solid #ededed;
+}
+
+.urs table + .rs-note {
+	text-align: center;
+}
+
+.urs img + .rs-note {
+	text-align: center;
+}
+
+/* @end */
+
+/* @group Text format */
+
+.urs strong {
+	display: inline;
+	font-weight: bold
+}
+
+.urs p {
+	display: block;
+	margin: .5em 0 1em;
+	line-height: 1.4;
+}
+
+.urs p:first-child {
+	margin-top: 0
+}
+
+blockquote p:before {
+	content: "„";
+	font-size: 150%;
+	padding: 0 3px 0 0;
+	line-height: 1;
+}
+
+blockquote p:after {
+	content: "“";
+	font-size: 150%;
+	padding: 0 0 0 1px;
+	line-height: 0.3;
+	position: relative;
+	top: 2px;
+}
+
+q:before {
+	content: "„";
+	padding: 0 3px 0 0;
+	line-height: 1;
+}
+
+q:after {
+	content: "“";
+	padding: 0 0 0 1px;
+	line-height: 1;
+}
+
+blockquote p {
+	line-height: 1.2;
+}
+
+.urs sup,
+.urs sub {
+	display: inline;
+	font-size: .65em
+}
+
+.urs sup {
+	vertical-align: super
+}
+
+.urs sub {
+	vertical-align: sub
+}
+
+.urs acronym,
+.urs abbr {
+	display: inline;
+	cursor: help;
+	border-bottom: 1px dotted gray;
+}
+
+.urs cite {
+	display: inline
+}
+
+.urs q {
+	display: inline;
+	font-style: italic
+}
+
+.urs blockquote {
+	display: block;
+	font-style: italic;
+	margin: 1em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #234237;
+	font-size: 15px;
+}
+
+.urs blockquote cite {
+	display: block;
+	font-style: normal;
+	text-align: right;
+	margin-top: .2em
+}
+
+.urs ins {
+	display: block;
+	padding: .5em;
+	border: 1px solid #000;
+	border-left-width: .5em;
+	margin: .5em 0 1em
+}
+
+.urs del {
+	display: inline;
+	text-decoration: line-through
+}
+
+.urs pre {
+	display: block;
+	width: 99%;
+	white-space: pre;
+	font-family: "Courier New", Courier, mono;
+	border: 1px solid #dddddd;
+	padding: 8px;
+	background: #fff;
+	margin: 1em auto 1em auto;
+	overflow: auto;
+	line-height: 1.4;
+	clear: both;
+}
+
+.urs code {
+	display: inline !important;
+	font-size: 115%;
+}
+
+/* @end */
+
+/* @group Tips */
+
+.urs .rs-tip-minor {
+	color: #000;
+	background: transparent;
+	border-color: #CCC
+}
+
+.urs .rs-tip-major {
+	color: #000;
+	border: 1px solid #000;
+}
+
+.urs .rs-tip-major p {
+	margin-bottom: 0.2em;
+}
+
+.urs .rs-tip-minor {
+	border: 2px dotted #000
+}
+
+.urs .rs-tip-major h2,
+.urs .rs-tip-major h3,
+.urs .rs-tip-major h4,
+.urs .rs-tip-major h5,
+.urs .rs-tip-minor h2,
+.urs .rs-tip-minor h3,
+.urs .rs-tip-minor h4,
+.urs .rs-tip-minor h5,
+.urs ins h2,
+.urs ins h3,
+.urs ins h4,
+.urs ins h5 {
+	margin-top: 0 !important
+}
+
+.urs .rs-tip-major,
+.urs .rs-tip-minor {
+	display: block;
+	padding: .5em;
+	font-family: sans-serif;
+	line-height: 1.4;
+	margin: 1em 0;
+}
+
+.urs .rs-minor {
+	display: inline;
+	font-size: .9em;
+	color: #575757;
+	line-height: 1.5;
+}
+
+.urs .rs-note {
+	display: block;
+	font-size: 13px;
+	margin: .5em 0 1em;
+	color: #a3a3a3;
+}
+
+/* @end */
+
+/* @group Code highlighter */
+
+.urs .urs-sx-deli {
+	color: #000
+}
+
+.urs .urs-sx-type {
+	color: #A33
+}
+
+.urs .urs-sx-dir-pre {
+	color: #348
+}
+
+.urs .urs-sx-exce,
+.urs .urs-sx-cond,
+.urs .urs-sx-key {
+	color: #000
+}
+
+.urs .urs-sx-var-val {
+	color: #060
+}
+
+.urs .urs-sx-var-nam {
+	color: #348
+}
+
+.urs .urs-sx-func {
+	color: #A33
+}
+
+.urs .urs-sx-come {
+	color: #777
+}
+
+/* PHP */
+
+.php-keyword1 {
+	color: #000;
+	font-weight: bold;
+}
+
+.php-keyword2 {
+	color: #A33;
+}
+
+.php-var {
+	color: #348;
+}
+
+.php-num {
+	color: red;
+}
+
+.php-quote {
+	color: #060;
+}
+
+.php-vquote {
+	color: #fa0;
+}
+
+.php-comment {
+	color: #777;
+}
+
+/* JavaScript */
+
+.js-out {
+	color: #898993;
+}
+
+.js-keywords1 {
+	color: #000;
+	font-weight: bold;
+}
+
+.js-num {
+	color: red;
+}
+
+.js-quote {
+	color: #060;
+}
+
+.js-comment {
+	color: #777;
+}
+
+/* HTML */
+
+.html-tag {
+	color: #598527;
+	font-weight: bold;
+}
+
+.html-tagin {
+	color: #89A315
+}
+
+.html-quote {
+	color: #598527;
+	font-weight: bold;
+}
+
+.html-comment {
+	color: #999;
+	background-color: #F1FAE4;
+}
+
+.html-entity {
+	color: #89A315
+}
+
+/* @end */
+
+.urs #charts-ef,
+.urs #calculator-box {
+	font-family: sans-serif;
+	font-size: .9em;
+	margin: 0 0 1em
+}
+
+.urs object {
+	margin: 0 0 1em 0;
+}
+
+.urs-sx-key,
+.urs-sx-cond,
+.urs-sx-exce,
+.urs-sx-deli {
+	font-weight: bold
+}
+
+.urs hr {
+	display: block;
+	height: 1px;
+	line-height: 1px;
+	font-size: 1px;
+	border: 1px solid #d7d7d7;
+	border-width: 1px 0 0 0;
+	margin: .7em 0;
+	clear: both
+}
+
+.urs a {
+	border-bottom: 1pt dotted #929292;
+}
+
+.urs abbr[title]:after {
+	content: " (zkratka: "attr(title)")";
+	font-size: .9em;
+	text-decoration: none
+}
+
+img {
+	page-break-inside: avoid !important;
+}
+
+.urs a:after {
+	content: " [viz: "attr(href)"]";
+	font-size: 7pt;
+}
+
+.urs a[href^='/']:link:after,
+.urs a[href^='/']:visited:after {
+	content: " [viz: http://www.mesec.cz"attr(href)"]"
+}
+
+.urs a[href^='mailto:']:after {
+	content: " [" attr(href) " ]"
+}
+
+* {
+	overflow: visible !important;
+}
+
+/* @end */
+.section--detail-bottom,
+.detail__info,
+.project__links,
+.prevnext,
+.promo,
+.adibb,
+#sefa,
+#nav,
+#svg_sprite,
+#sidebar {
+	display: none !important;
+}
+
+.main .urs ul,
+.main .urs ol {
+	background: 0;
+}
+
+*,
+*:before,
+*:after {
+	background: transparent !important;
+	color: #000 !important;
+	box-shadow: none !important;
+	text-shadow: none !important;
+}
+
+a,
+a:visited {
+	text-decoration: underline;
+}
+
+a[href]:after {
+	content: " (" attr(href) ")";
+}
+
+abbr[title]:after {
+	content: " (" attr(title) ")";
+}
+
+
+
+a[href^="#"]:after,
+a[href^="javascript:"]:after {
+	content: "";
+}
+
+pre,
+blockquote {
+	border: 1px solid #999;
+	page-break-inside: avoid;
+}
+
+thead {
+	display: table-header-group;
+}
+
+tr,
+img {
+	page-break-inside: avoid;
+}
+
+img {
+	max-width: 100% !important;
+}
+
+p,
+h2,
+h3 {
+	orphans: 3;
+	widows: 3;
+}
+
+h2,
+h3 {
+	page-break-after: avoid;
+}
+
+
+
+
+.navbar {
+	display: none;
+}
+.btn,
+.dropup > .btn {
+	> .caret {
+		border-top-color: #000 !important;
+	}
+}
+.label {
+	border: 1px solid #000;
+}
+
+.table {
+	border-collapse: collapse !important;
+
+	td,
+	th {
+		background-color: #fff !important;
+	}
+}
+.table-bordered {
+	th,
+	td {
+		border: 1px solid #ddd !important;
+	}
+}
+
+

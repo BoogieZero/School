@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="STATUS_BAR" maxHeight="50.0" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="700.0" prefHeight="50.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="upg.controllers.StatusBarController">
+  <children>
+    <Label fx:id="DATE_AND_TIME" text="Datum a čas" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="15.0" />
+    <Label fx:id="AUTHOR" text="Autor" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="15.0" />
+    <Label fx:id="OBJECT_X" text="Souřadnice X" AnchorPane.rightAnchor="340.0" AnchorPane.topAnchor="15.0" />
+    <Label fx:id="OBJECT_Y" text="Souřadnice Y" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="15.0" />
+    <Label fx:id="OBJECT_ID" text="ID Objektu" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="15.0" />
+  </children>
+</AnchorPane>

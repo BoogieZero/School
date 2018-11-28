@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ setUp()
+comment0.text=\r\n\ Inicializace\ p\u0159edch\u00E1zej\u00EDc\u00ED\ spu\u0161t\u011Bn\u00ED\ ka\u017Ed\u00E9ho\ testu\ a\ p\u0159ipravuj\u00EDc\u00ED\ tzv.\r\n\ p\u0159\u00EDpravek\ (fixture),\ co\u017E\ je\ sada\ objekt\u016F,\ s\ nimi\u017E\ budou\ testy\ pracovat.\r\n
+comment1.params=
+comment1.target=void\ tearDown()
+comment1.text=\r\n\ \u00DAklid\ po\ testu\ -\ tato\ metoda\ se\ spust\u00ED\ po\ vykon\u00E1n\u00ED\ ka\u017Ed\u00E9ho\ testu.\r\n
+comment2.params=celyNazev
+comment2.target=java.lang.String\ getNazevTvaru(java.lang.String)
+comment3.params=
+comment3.target=void\ testVytvareniOsoby()
+numComments=4

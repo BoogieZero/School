@@ -1,0 +1,8 @@
+C:\Users\Petrm\Desktop\KPG01\KPG01\bin\Release\KPG01.exe.config
+C:\Users\Petrm\Desktop\KPG01\KPG01\bin\Release\KPG01.exe
+C:\Users\Petrm\Desktop\KPG01\KPG01\bin\Release\KPG01.pdb
+C:\Users\Petrm\Desktop\KPG01\KPG01\obj\Release\KPG01.Form1.resources
+C:\Users\Petrm\Desktop\KPG01\KPG01\obj\Release\KPG01.Properties.Resources.resources
+C:\Users\Petrm\Desktop\KPG01\KPG01\obj\Release\KPG01.csproj.GenerateResource.Cache
+C:\Users\Petrm\Desktop\KPG01\KPG01\obj\Release\KPG01.exe
+C:\Users\Petrm\Desktop\KPG01\KPG01\obj\Release\KPG01.pdb

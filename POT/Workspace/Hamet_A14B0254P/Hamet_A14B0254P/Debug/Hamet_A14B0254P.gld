@@ -1,0 +1,8 @@
+-T "C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\Debug\Hamet_A14B0254P_Debug_auto.gsi"
+-T "C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\Debug\Hamet_A14B0254P_input.tmp" 
+-L "c:\school\pot\hew\tools\kpit cummins\gnuh8-elf\v11.02\h8300-elf\lib\gcc\h8300-elf\4.5-GNUH8_v11.02\h8300s"
+-L "C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\Debug"
+-Map "C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\Debug\Hamet_A14B0254P.map"
+-( -l "Hamet_A14B0254P" -l "gcc" -)
+-o "C:\School\POT\Workspace\Hamet_A14B0254P\Hamet_A14B0254P\Debug\Hamet_A14B0254P.x"
+-e _start

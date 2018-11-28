@@ -1,0 +1,12 @@
+c:\users\boogie zero\documents\visual studio 2015\Projects\NumberClasification\NumberClasification\bin\Debug\NumberClasification.exe.config
+c:\users\boogie zero\documents\visual studio 2015\Projects\NumberClasification\NumberClasification\bin\Debug\NumberClasification.exe
+c:\users\boogie zero\documents\visual studio 2015\Projects\NumberClasification\NumberClasification\bin\Debug\NumberClasification.pdb
+c:\users\boogie zero\documents\visual studio 2015\Projects\NumberClasification\NumberClasification\obj\Debug\NumberClasification.Properties.Resources.resources
+c:\users\boogie zero\documents\visual studio 2015\Projects\NumberClasification\NumberClasification\obj\Debug\NumberClassification.csproj.GenerateResource.Cache
+c:\users\boogie zero\documents\visual studio 2015\Projects\NumberClasification\NumberClasification\obj\Debug\NumberClasification.exe
+c:\users\boogie zero\documents\visual studio 2015\Projects\NumberClasification\NumberClasification\obj\Debug\NumberClasification.pdb
+c:\users\boogie zero\documents\visual studio 2015\Projects\NumberClasification\NumberClasification\obj\Debug\NumberClasification.Form1.resources
+C:\Users\Boogie Zero\Documents\Visual Studio 2015\Projects\NumberClasification\NumberClasification\obj\Debug\NumberClassification.csprojResolveAssemblyReference.cache
+C:\School\UIR\Result\Project\NumberClasification\NumberClasification\bin\Debug\NumberClasification.exe.config
+C:\School\UIR\Result\Project\NumberClasification\NumberClasification\obj\Debug\NumberClasification.exe
+C:\School\UIR\Result\Project\NumberClasification\NumberClasification\obj\Debug\NumberClasification.pdb

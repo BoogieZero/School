@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<MenuBar xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="upg.controllers.MenuController">
+  <menus>
+    <Menu mnemonicParsing="false" text="Soubor">
+      <items>
+            <MenuItem mnemonicParsing="false" onAction="#restartSim" text="Reset simulace(not implemented)" />
+        <MenuItem mnemonicParsing="false" onAction="#exitApp" text="Konec" />
+      </items>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Help">
+      <items>
+        <MenuItem mnemonicParsing="false" text="Nápověda" />
+      </items>
+    </Menu>
+    <Menu mnemonicParsing="false" text="O aplikaci">
+      <items>
+        <MenuItem mnemonicParsing="false" text="Autor" />
+      </items>
+    </Menu>
+  </menus>
+</MenuBar>

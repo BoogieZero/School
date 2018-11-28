@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+
+\bibitem{Kosaraju}
+Jeffrey D.~Ullman Alfred V.~Aho, John E.~Hopcroft.
+\newblock {\em Data Structures and Algorithms}.
+\newblock Addison-Wesley, 1983.
+
+\bibitem{Skina}
+Steven~S. Skiena.
+\newblock {\em The Algorithm Design Manual}.
+\newblock Springer Publishing Company, 2008.
+
+\bibitem{Tarjan}
+R.~E Tarjan.
+\newblock Depth-first search and linear graph algorithms.
+\newblock {\em SIAM Journal on Computing}, 1972.
+
+\end{thebibliography}

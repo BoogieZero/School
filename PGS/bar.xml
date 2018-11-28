@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bar>
+  <slozky>
+    <slozka id="1">
+      <nazev>Tequilla</nazev>
+      <jednotka>cl</jednotka>
+      <cena>4</cena>
+    </slozka>
+    <slozka id="2">
+      <nazev>Pomerančová šťáva</nazev>
+      <jednotka>cl</jednotka>
+      <cena>0.15</cena>
+    </slozka>
+    <slozka id="3">
+      <nazev>Kostka ledu</nazev>
+      <jednotka>ks</jednotka>
+      <cena>0.1</cena>
+    </slozka>
+    <slozka id="4">
+      <nazev>Grenadinový sirup</nazev>
+      <jednotka>cl</jednotka>
+      <cena>3</cena>
+    </slozka>
+    <slozka id="5">
+      <nazev>Plátek pomeranče</nazev>
+      <jednotka>ks</jednotka>
+      <cena>0.5</cena>
+    </slozka>
+    <slozka id="6">
+      <nazev>Sekt</nazev>
+      <jednotka>cl</jednotka>
+      <cena>1</cena>
+    </slozka>
+    <slozka id="7">
+      <nazev>Koňak</nazev>
+      <jednotka>cl</jednotka>
+      <cena>10</cena>
+    </slozka>
+    <slozka id="8">
+      <nazev>Angostura Bitter</nazev>
+      <jednotka>střik</jednotka>
+      <cena>5</cena>
+    </slozka>        
+    <slozka id="9">
+      <nazev>Kostka cukru</nazev>
+      <jednotka>ks</jednotka>
+      <cena>0.2</cena>
+    </slozka>        
+    <slozka id="10">
+      <nazev>Gin</nazev>
+      <jednotka>cl</jednotka>
+      <cena>4</cena>
+    </slozka>        
+    <slozka id="11">
+      <nazev>Citron</nazev>
+      <jednotka>ks</jednotka>
+      <cena>1</cena>
+    </slozka>        
+    <slozka id="12">
+      <nazev>Cukrový sirup</nazev>
+      <jednotka>lžička</jednotka>
+      <cena>2</cena>
+    </slozka>        
+    <slozka id="13">
+      <nazev>Minerální voda</nazev>
+      <jednotka>cl</jednotka>
+      <cena>0.07</cena>
+    </slozka>        
+    <slozka id="14">
+      <nazev>Ananasová šťáva</nazev>
+      <jednotka>cl</jednotka>
+      <cena>0.4</cena>
+    </slozka>                
+    <slozka id="15">
+      <nazev>Bílý rum</nazev>
+      <jednotka>cl</jednotka>
+      <cena>6</cena>
+    </slozka>                
+    <slozka id="16">
+      <nazev>Kokosový likér</nazev>
+      <jednotka>cl</jednotka>
+      <cena>5</cena>
+    </slozka>                
+    <slozka id="17">
+      <nazev>Plátek ananasu</nazev>
+      <jednotka>ks</jednotka>
+      <cena>1</cena>
+    </slozka>                
+    <slozka id="18">
+      <nazev>Koktejlová třešeň</nazev>
+      <jednotka>ks</jednotka>
+      <cena>1.5</cena>
+    </slozka>                
+    <slozka id="19">
+      <nazev>Likér Creme de Menthe</nazev>
+      <jednotka>lžička</jednotka>
+      <cena>10</cena>
+    </slozka>                
+    <slozka id="20">
+      <nazev>Bílek</nazev>
+      <jednotka>ks</jednotka>
+      <cena>5</cena>
+    </slozka>
+    <slozka id="21">
+      <nazev>Práškový cukr</nazev>
+      <jednotka>lžička</jednotka>
+      <cena>0.8</cena>
+    </slozka>
+  </slozky>
+  <koktejly>
+    <koktejl id="1">
+      <nazev>Tequilla Sunrise</nazev>
+      <cena>60</cena>
+      <slozky>
+        <slozka id="1">4</slozka>
+        <slozka id="2">25</slozka>
+        <slozka id="3">4</slozka>
+        <slozka id="4">2</slozka>
+        <slozka id="5">1</slozka>
+      </slozky>
+    </koktejl>
+    <koktejl id="2">
+      <nazev>Koktej ze šampaňského</nazev>
+      <cena>65</cena>
+      <slozky>
+        <slozka id="6">14</slozka>
+        <slozka id="7">3</slozka>
+        <slozka id="8">1</slozka>
+        <slozka id="9">1</slozka>
+        <slozka id="5">1</slozka>
+      </slozky>
+    </koktejl>
+    <koktejl id="3">
+      <nazev>Tom Collins</nazev>
+      <cena>55</cena>
+      <slozky>
+        <slozka id="10">8</slozka>
+        <slozka id="11">1</slozka>
+        <slozka id="3">4</slozka>
+        <slozka id="12">1</slozka>
+        <slozka id="13">30</slozka>
+      </slozky>
+    </koktejl>
+    <koktejl id="4">
+      <nazev>Pina Colada</nazev>
+      <cena>75</cena>
+      <slozky>
+        <slozka id="14">4</slozka>
+        <slozka id="15">4</slozka>
+        <slozka id="16">4</slozka>
+        <slozka id="3">4</slozka>
+        <slozka id="17">1</slozka>
+        <slozka id="18">1</slozka>
+      </slozky>
+    </koktejl>  
+    <koktejl id="5">
+      <nazev>Green Fizz</nazev>
+      <cena>60</cena>
+      <slozky>
+        <slozka id="10">4</slozka>
+        <slozka id="19">1</slozka>
+        <slozka id="20">1</slozka>
+        <slozka id="21">1</slozka>
+        <slozka id="3">6</slozka>
+        <slozka id="11">0.5</slozka>
+        <slozka id="13">30</slozka>
+      </slozky>
+    </koktejl>
+  </koktejly>
+</bar>

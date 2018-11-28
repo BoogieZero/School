@@ -1,0 +1,5 @@
+INPUT("D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\vects.o")
+INPUT("D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\start.o")
+INPUT("D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\inthandler.o")
+INPUT("D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\hwinit.o")
+INPUT("D:\MCU\H8S\Asembler H8S\Workspace_POT\C_Asm\Debug\C_Asm.o")

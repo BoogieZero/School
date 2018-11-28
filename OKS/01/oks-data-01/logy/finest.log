@@ -1,0 +1,562 @@
+0. [INFO - Hlavni.main()] - Zacatek programu
+1. [CONFIG - Hlavni.parametryPrikazoveRadky()] - zpracovavany soubor: priklady-oks-01-1.txt
+2. [CONFIG - Hlavni.parametryPrikazoveRadky()] - zpracovavana fakulta: fav
+3. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: # formát příjmení, jméno, zkratka fakulty, rok nástupu, zkratka typu studia, zkratka formy studia, nepovinne
+4. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: # bakaláři
+5. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Novák, Josef, fav, 2014, b, p
+6. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: NOVÁK
+7. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Josef
+8. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+9. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+10. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: B
+11. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+12. [FINER - OsobniCislo.<init>()] - A14BxxxxP
+13. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Novák, Josef, fav, 2014, b, p
+14. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Aldus, Pavel, fav, 2014, B, p
+15. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: ALDUS
+16. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Pavel
+17. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+18. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+19. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: B
+20. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+21. [FINER - OsobniCislo.<init>()] - A14BxxxxP
+22. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Aldus, Pavel, fav, 2014, B, p
+23. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Želé, Jakub, fav, 2014, b, P, i
+24. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: ŽELÉ
+25. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Jakub
+26. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+27. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+28. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: B
+29. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+30. [FINEST - OsobniCislo.zpracujNepovinne()] - nepovinne: I
+31. [FINER - OsobniCislo.<init>()] - A14BxxxxPI
+32. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Želé, Jakub, fav, 2014, b, P, i
+33. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Divoký, René, fav, 2014, B, P, I, něco navíc
+34. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: DIVOKÝ
+35. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: René
+36. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+37. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+38. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: B
+39. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+40. [FINEST - OsobniCislo.zpracujNepovinne()] - nepovinne: I
+41. [FINER - OsobniCislo.<init>()] - A14BxxxxPI
+42. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Divoký, René, fav, 2014, B, P, I, něco navíc
+43. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: 
+44. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: # navazující
+45. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Platnost, Karel, fav, 2014, n, p
+46. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: PLATNOST
+47. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Karel
+48. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+49. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+50. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: N
+51. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+52. [FINER - OsobniCislo.<init>()] - A14NxxxxP
+53. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Platnost, Karel, fav, 2014, n, p
+54. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Plát, Josef, Fav, 2014, n, p
+55. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: PLÁT
+56. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Josef
+57. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+58. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+59. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: N
+60. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+61. [FINER - OsobniCislo.<init>()] - A14NxxxxP
+62. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Plát, Josef, Fav, 2014, n, p
+63. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Plátno, Miloš, FAv, 2014, n, p
+64. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: PLÁTNO
+65. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Miloš
+66. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+67. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+68. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: N
+69. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+70. [FINER - OsobniCislo.<init>()] - A14NxxxxP
+71. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Plátno, Miloš, FAv, 2014, n, p
+72. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Plankton, Richard, FAV, 2014, n, p
+73. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: PLANKTON
+74. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Richard
+75. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+76. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+77. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: N
+78. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+79. [FINER - OsobniCislo.<init>()] - A14NxxxxP
+80. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Plankton, Richard, FAV, 2014, n, p
+81. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Plachta, Jiří, fav, 2014, N, p
+82. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: PLACHTA
+83. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Jiří
+84. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+85. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+86. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: N
+87. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+88. [FINER - OsobniCislo.<init>()] - A14NxxxxP
+89. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Plachta, Jiří, fav, 2014, N, p
+90. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Plášť, Rudolf, fav, 2014, n, P
+91. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: PLÁŠŤ
+92. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Rudolf
+93. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+94. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+95. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: N
+96. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+97. [FINER - OsobniCislo.<init>()] - A14NxxxxP
+98. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Plášť, Rudolf, fav, 2014, n, P
+99. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Plahočení, Petr, fav, 2014, n, k
+100. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: PLAHOČENÍ
+101. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Petr
+102. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+103. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+104. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: N
+105. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: K
+106. [FINER - OsobniCislo.<init>()] - A14NxxxxK
+107. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Plahočení, Petr, fav, 2014, n, k
+108. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Plánička, Jan, fav, 2014, n, K
+109. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: PLÁNIČKA
+110. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Jan
+111. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+112. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+113. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: N
+114. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: K
+115. [FINER - OsobniCislo.<init>()] - A14NxxxxK
+116. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Plánička, Jan, fav, 2014, n, K
+117. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Platno, Václav, fav, 2014, N, k
+118. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: PLATNO
+119. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Václav
+120. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+121. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+122. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: N
+123. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: K
+124. [FINER - OsobniCislo.<init>()] - A14NxxxxK
+125. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Platno, Václav, fav, 2014, N, k
+126. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Placebo, Jindřich, fav, 2014, N, K
+127. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: PLACEBO
+128. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Jindřich
+129. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+130. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+131. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: N
+132. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: K
+133. [FINER - OsobniCislo.<init>()] - A14NxxxxK
+134. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Placebo, Jindřich, fav, 2014, N, K
+135. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Plaňka, David, fav, 2014, n, p
+136. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: PLAŇKA
+137. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: David
+138. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+139. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+140. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: N
+141. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+142. [FINER - OsobniCislo.<init>()] - A14NxxxxP
+143. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Plaňka, David, fav, 2014, n, p
+144. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Plat, Michal, fav, 2014, n, p
+145. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: PLAT
+146. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Michal
+147. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+148. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+149. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: N
+150. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+151. [FINER - OsobniCislo.<init>()] - A14NxxxxP
+152. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Plat, Michal, fav, 2014, n, p
+153. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Plánička, Jaroslav, fav, 2014, n, p
+154. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: PLÁNIČKA
+155. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Jaroslav
+156. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+157. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+158. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: N
+159. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+160. [FINER - OsobniCislo.<init>()] - A14NxxxxP
+161. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Plánička, Jaroslav, fav, 2014, n, p
+162. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Platnost, Alfréd, fav, 2014, n, p
+163. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: PLATNOST
+164. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Alfréd
+165. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+166. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+167. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: N
+168. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+169. [FINER - OsobniCislo.<init>()] - A14NxxxxP
+170. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Platnost, Alfréd, fav, 2014, n, p
+171. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: 
+172. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: # doktorandi
+173. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Dlouhý, Roman, fav, 2014, p, p
+174. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: DLOUHÝ
+175. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Roman
+176. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+177. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+178. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: P
+179. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+180. [FINER - OsobniCislo.<init>()] - A14PxxxxP
+181. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Dlouhý, Roman, fav, 2014, p, p
+182. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Široký, Stanislav, fav, 2014, P, p
+183. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: ŠIROKÝ
+184. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Stanislav
+185. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+186. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+187. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: P
+188. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+189. [FINER - OsobniCislo.<init>()] - A14PxxxxP
+190. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Široký, Stanislav, fav, 2014, P, p
+191. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Bystrozraký, Martin, fav, 2014, P, P
+192. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: BYSTROZRAKÝ
+193. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Martin
+194. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+195. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+196. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: P
+197. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+198. [FINER - OsobniCislo.<init>()] - A14PxxxxP
+199. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Bystrozraký, Martin, fav, 2014, P, P
+200. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: 
+201. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: # magistři z FPR
+202. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Právník, René, FPR, 2014, m, p
+203. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: PRÁVNÍK
+204. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: René
+205. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: R
+206. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+207. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: M
+208. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+209. [FINER - OsobniCislo.<init>()] - R14MxxxxP
+210. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Právník, René, FPR, 2014, m, p
+211. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Právník, Daniel, FPR, 2014, M, p
+212. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: PRÁVNÍK
+213. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Daniel
+214. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: R
+215. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+216. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: M
+217. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+218. [FINER - OsobniCislo.<init>()] - R14MxxxxP
+219. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Právník, Daniel, FPR, 2014, M, p
+220. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Právník, Alois, FPR, 2014, M, P, I
+221. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: PRÁVNÍK
+222. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Alois
+223. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: R
+224. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+225. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: M
+226. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+227. [FINEST - OsobniCislo.zpracujNepovinne()] - nepovinne: I
+228. [FINER - OsobniCislo.<init>()] - R14MxxxxPI
+229. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Právník, Alois, FPR, 2014, M, P, I
+230. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: 
+231. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: # bakaláři z jiných fakult správně zadaní
+232. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Strojař, Pavel, fst, 2014, b, p
+233. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: STROJAŘ
+234. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Pavel
+235. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: S
+236. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+237. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: B
+238. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+239. [FINER - OsobniCislo.<init>()] - S14BxxxxP
+240. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Strojař, Pavel, fst, 2014, b, p
+241. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Pedagog, Pavel, FPE, 2014, b, p
+242. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: PEDAGOG
+243. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Pavel
+244. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: P
+245. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+246. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: B
+247. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+248. [FINER - OsobniCislo.<init>()] - P14BxxxxP
+249. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Pedagog, Pavel, FPE, 2014, b, p
+250. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Elektrikář, Pavel, fel, 2014, b, p
+251. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: ELEKTRIKÁŘ
+252. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Pavel
+253. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: E
+254. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+255. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: B
+256. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+257. [FINER - OsobniCislo.<init>()] - E14BxxxxP
+258. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Elektrikář, Pavel, fel, 2014, b, p
+259. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Ekonom, Pavel, fEk, 2014, b, p
+260. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: EKONOM
+261. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Pavel
+262. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: K
+263. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+264. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: B
+265. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+266. [FINER - OsobniCislo.<init>()] - K14BxxxxP
+267. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Ekonom, Pavel, fEk, 2014, b, p
+268. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Umělec, Pavel, fDU, 2014, b, p
+269. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: UMĚLEC
+270. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Pavel
+271. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: D
+272. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+273. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: B
+274. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+275. [FINER - OsobniCislo.<init>()] - D14BxxxxP
+276. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Umělec, Pavel, fDU, 2014, b, p
+277. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Zdravotník, Pavel, fzS, 2014, b, p
+278. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: ZDRAVOTNÍK
+279. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Pavel
+280. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: Z
+281. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+282. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: B
+283. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+284. [FINER - OsobniCislo.<init>()] - Z14BxxxxP
+285. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Zdravotník, Pavel, fzS, 2014, b, p
+286. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Filosof, Pavel, fF, 2014, b, p
+287. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: FILOSOF
+288. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Pavel
+289. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: F
+290. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+291. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: B
+292. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+293. [FINER - OsobniCislo.<init>()] - F14BxxxxP
+294. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Filosof, Pavel, fF, 2014, b, p
+295. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: 
+296. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: # chybně zadané
+297. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Chybný, Radomil, fuj, 2014, b, p
+298. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: CHYBNÝ
+299. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Radomil
+300. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+301. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: B
+302. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+303. [FINER - OsobniCislo.<init>()] - ?14BxxxxP
+304. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Chybný, Radomil, fuj, 2014, b, p
+305. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Chybný, Dalimil, fav, 2014, x, p
+306. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: CHYBNÝ
+307. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Dalimil
+308. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+309. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+310. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+311. [FINER - OsobniCislo.<init>()] - A14?xxxxP
+312. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Chybný, Dalimil, fav, 2014, x, p
+313. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Chybný, Čestmír, fav, 2014, b, x
+314. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: CHYBNÝ
+315. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Čestmír
+316. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+317. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+318. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: B
+319. [FINER - OsobniCislo.<init>()] - A14Bxxxx?
+320. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Chybný, Čestmír, fav, 2014, b, x
+321. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Chybný, Vladan, fuj, 2014, x, x
+322. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: CHYBNÝ
+323. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Vladan
+324. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+325. [FINER - OsobniCislo.<init>()] - ?14?xxxx?
+326. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Chybný, Vladan, fuj, 2014, x, x
+327. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Chybný, Břetislav, fav, 2014, b
+328. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: CHYBNÝ
+329. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Břetislav
+330. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+331. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+332. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: B
+333. [FINER - OsobniCislo.<init>()] - A14Bxxxx?
+334. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Chybný, Břetislav, fav, 2014, b
+335. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Chybný, Pravoslav, fav, 2014
+336. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: CHYBNÝ
+337. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Pravoslav
+338. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+339. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu: 14
+340. [FINER - OsobniCislo.<init>()] - A14?xxxx?
+341. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Chybný, Pravoslav, fav, 2014
+342. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Chybný, Radovan, fav
+343. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: CHYBNÝ
+344. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Radovan
+345. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+346. [FINEST - OsobniCislo.zpracujRokNastupu()] - neni uveden rok nastupu
+347. [FINER - OsobniCislo.<init>()] - A??xxxx?
+348. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Chybný, Radovan, fav
+349. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Chybný, Ctirad
+350. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: CHYBNÝ
+351. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Ctirad
+352. [FINEST - OsobniCislo.zpracujRokNastupu()] - neni uveden rok nastupu
+353. [FINER - OsobniCislo.<init>()] - ???xxxx?
+354. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Chybný, Ctirad
+355. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Chybný
+356. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: CHYBNÝ
+357. [FINEST - OsobniCislo.zpracujRokNastupu()] - neni uveden rok nastupu
+358. [FINER - OsobniCislo.<init>()] - ???xxxx?
+359. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Chybný
+360. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Chybný, Drahoslav, fav, 14, b, p
+361. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: CHYBNÝ
+362. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Drahoslav
+363. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+364. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu neni ctyrciferny: 14
+365. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: B
+366. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+367. [FINER - OsobniCislo.<init>()] - A?BxxxxP
+368. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Chybný, Drahoslav, fav, 14, b, p
+369. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Chybný, Vladislav, fav, 0x2014, b, p
+370. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: CHYBNÝ
+371. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Vladislav
+372. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+373. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu neni ctyrciferny: 0X2014
+374. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: B
+375. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+376. [FINER - OsobniCislo.<init>()] - A?BxxxxP
+377. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Chybný, Vladislav, fav, 0x2014, b, p
+378. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Chybný, Sebastian, fav, 02014, b, p
+379. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: CHYBNÝ
+380. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Sebastian
+381. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+382. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu neni ctyrciferny: 02014
+383. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: B
+384. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+385. [FINER - OsobniCislo.<init>()] - A?BxxxxP
+386. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Chybný, Sebastian, fav, 02014, b, p
+387. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: Chybný, Slavomír, fav, 4, b, p
+388. [FINEST - OsobniCislo.zpracujPrijmeni()] - prijmeni: CHYBNÝ
+389. [FINEST - OsobniCislo.zpracujJmeno()] - jmeno: Slavomír
+390. [FINEST - OsobniCislo.zpracujFakulta()] - fakulta: A
+391. [FINEST - OsobniCislo.zpracujRokNastupu()] - rok nastupu neni ctyrciferny: 4
+392. [FINEST - OsobniCislo.zpracujTypStudia()] - typ studia: B
+393. [FINEST - OsobniCislo.zpracujFormaStudia()] - forma studia: P
+394. [FINER - OsobniCislo.<init>()] - A?BxxxxP
+395. [FINER - Generator.nactiVsechnaOsobniCisla()] - platna radka souboru: Chybný, Slavomír, fav, 4, b, p
+396. [FINEST - Generator.nactiVsechnaOsobniCisla()] - radka souboru: 
+397. [INFO - Generator.zpracovani()] - nacteno osobnich cisel: 44
+398. [INFO - Generator.pripravSkupinyARoztridDoNich()] - nalezeny znak fakulty: A
+399. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A14BxxxxP <= NOVÁK Josef
+400. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: BAKALARSKY
+401. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A14BxxxxP <= ALDUS Pavel
+402. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: BAKALARSKY
+403. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A14BxxxxPI <= ŽELÉ Jakub
+404. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: BAKALARSKY
+405. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A14BxxxxPI <= DIVOKÝ René
+406. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: BAKALARSKY
+407. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A14NxxxxP <= PLATNOST Karel
+408. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: NAVAZUJICI
+409. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A14NxxxxP <= PLÁT Josef
+410. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: NAVAZUJICI
+411. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A14NxxxxP <= PLÁTNO Miloš
+412. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: NAVAZUJICI
+413. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A14NxxxxP <= PLANKTON Richard
+414. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: NAVAZUJICI
+415. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A14NxxxxP <= PLACHTA Jiří
+416. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: NAVAZUJICI
+417. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A14NxxxxP <= PLÁŠŤ Rudolf
+418. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: NAVAZUJICI
+419. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A14NxxxxK <= PLAHOČENÍ Petr
+420. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: NAVAZUJICI
+421. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A14NxxxxK <= PLÁNIČKA Jan
+422. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: NAVAZUJICI
+423. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A14NxxxxK <= PLATNO Václav
+424. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: NAVAZUJICI
+425. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A14NxxxxK <= PLACEBO Jindřich
+426. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: NAVAZUJICI
+427. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A14NxxxxP <= PLAŇKA David
+428. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: NAVAZUJICI
+429. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A14NxxxxP <= PLAT Michal
+430. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: NAVAZUJICI
+431. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A14NxxxxP <= PLÁNIČKA Jaroslav
+432. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: NAVAZUJICI
+433. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A14NxxxxP <= PLATNOST Alfréd
+434. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: NAVAZUJICI
+435. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A14PxxxxP <= DLOUHÝ Roman
+436. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: DOKTORSKY
+437. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A14PxxxxP <= ŠIROKÝ Stanislav
+438. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: DOKTORSKY
+439. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A14PxxxxP <= BYSTROZRAKÝ Martin
+440. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: DOKTORSKY
+441. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: R14MxxxxP <= PRÁVNÍK René
+442. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: R14MxxxxP <= PRÁVNÍK Daniel
+443. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: R14MxxxxPI <= PRÁVNÍK Alois
+444. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: S14BxxxxP <= STROJAŘ Pavel
+445. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: P14BxxxxP <= PEDAGOG Pavel
+446. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: E14BxxxxP <= ELEKTRIKÁŘ Pavel
+447. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: K14BxxxxP <= EKONOM Pavel
+448. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: D14BxxxxP <= UMĚLEC Pavel
+449. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: Z14BxxxxP <= ZDRAVOTNÍK Pavel
+450. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: F14BxxxxP <= FILOSOF Pavel
+451. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: ?14BxxxxP <= CHYBNÝ Radomil (chybně zadáno)
+452. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A14?xxxxP <= CHYBNÝ Dalimil (chybně zadáno)
+453. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: NEPLATNY
+454. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A14Bxxxx? <= CHYBNÝ Čestmír (chybně zadáno)
+455. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: NEPLATNY
+456. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: ?14?xxxx? <= CHYBNÝ Vladan (chybně zadáno)
+457. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A14Bxxxx? <= CHYBNÝ Břetislav (chybně zadáno)
+458. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: NEPLATNY
+459. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A14?xxxx? <= CHYBNÝ Pravoslav (chybně zadáno)
+460. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: NEPLATNY
+461. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A??xxxx? <= CHYBNÝ Radovan (chybně zadáno)
+462. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: NEPLATNY
+463. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: ???xxxx? <= CHYBNÝ Ctirad (chybně zadáno)
+464. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: ???xxxx? <= CHYBNÝ ? (chybně zadáno)
+465. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A?BxxxxP <= CHYBNÝ Drahoslav (chybně zadáno)
+466. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: NEPLATNY
+467. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A?BxxxxP <= CHYBNÝ Vladislav (chybně zadáno)
+468. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: NEPLATNY
+469. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A?BxxxxP <= CHYBNÝ Sebastian (chybně zadáno)
+470. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: NEPLATNY
+471. [FINER - Generator.pripravSkupinyARoztridDoNich()] - zpracovavany student: A?BxxxxP <= CHYBNÝ Slavomír (chybně zadáno)
+472. [FINEST - Generator.pripravSkupinyARoztridDoNich()] - prirazen do skupiny: NEPLATNY
+473. [INFO - Generator.zpracovani()] - chybnych osobnich cisel: 9
+474. [FINE - Generator.generujVyslednaOsobniCisla()] - razeni podle abecedy
+475. [FINE - Generator.generujVyslednaOsobniCisla()] - generovani poradovych cisel pro skupinu: BAKALARSKY
+476. [FINE - OsobniCislo.generujOsobniCislo()] - A14B0001P
+477. [FINEST - Generator.generujVyslednaOsobniCisla()] - prirazeno poradove cislo: 0001
+478. [FINE - OsobniCislo.generujOsobniCislo()] - A14B0002PI
+479. [FINEST - Generator.generujVyslednaOsobniCisla()] - prirazeno poradove cislo: 0002
+480. [FINE - OsobniCislo.generujOsobniCislo()] - A14B0003P
+481. [FINEST - Generator.generujVyslednaOsobniCisla()] - prirazeno poradove cislo: 0003
+482. [FINE - OsobniCislo.generujOsobniCislo()] - A14B0004PI
+483. [FINEST - Generator.generujVyslednaOsobniCisla()] - prirazeno poradove cislo: 0004
+484. [FINE - Generator.generujVyslednaOsobniCisla()] - generovani poradovych cisel pro skupinu: NAVAZUJICI
+485. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0001K
+486. [FINEST - Generator.generujVyslednaOsobniCisla()] - prirazeno poradove cislo: 0001
+487. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0002K
+488. [FINEST - Generator.generujVyslednaOsobniCisla()] - prirazeno poradove cislo: 0002
+489. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0003P
+490. [FINEST - Generator.generujVyslednaOsobniCisla()] - prirazeno poradove cislo: 0003
+491. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0004K
+492. [FINEST - Generator.generujVyslednaOsobniCisla()] - prirazeno poradove cislo: 0004
+493. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0005P
+494. [FINEST - Generator.generujVyslednaOsobniCisla()] - prirazeno poradove cislo: 0005
+495. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0006P
+496. [FINEST - Generator.generujVyslednaOsobniCisla()] - prirazeno poradove cislo: 0006
+497. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0007P
+498. [FINEST - Generator.generujVyslednaOsobniCisla()] - prirazeno poradove cislo: 0007
+499. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0008P
+500. [FINEST - Generator.generujVyslednaOsobniCisla()] - prirazeno poradove cislo: 0008
+501. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0009P
+502. [FINEST - Generator.generujVyslednaOsobniCisla()] - prirazeno poradove cislo: 0009
+503. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0010P
+504. [FINEST - Generator.generujVyslednaOsobniCisla()] - prirazeno poradove cislo: 0010
+505. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0011K
+506. [FINEST - Generator.generujVyslednaOsobniCisla()] - prirazeno poradove cislo: 0011
+507. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0012P
+508. [FINEST - Generator.generujVyslednaOsobniCisla()] - prirazeno poradove cislo: 0012
+509. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0013P
+510. [FINEST - Generator.generujVyslednaOsobniCisla()] - prirazeno poradove cislo: 0013
+511. [FINE - OsobniCislo.generujOsobniCislo()] - A14N0014P
+512. [FINEST - Generator.generujVyslednaOsobniCisla()] - prirazeno poradove cislo: 0014
+513. [FINE - Generator.generujVyslednaOsobniCisla()] - generovani poradovych cisel pro skupinu: DOKTORSKY
+514. [FINE - OsobniCislo.generujOsobniCislo()] - A14P0001P
+515. [FINEST - Generator.generujVyslednaOsobniCisla()] - prirazeno poradove cislo: 0001
+516. [FINE - OsobniCislo.generujOsobniCislo()] - A14P0002P
+517. [FINEST - Generator.generujVyslednaOsobniCisla()] - prirazeno poradove cislo: 0002
+518. [FINE - OsobniCislo.generujOsobniCislo()] - A14P0003P
+519. [FINEST - Generator.generujVyslednaOsobniCisla()] - prirazeno poradove cislo: 0003
+520. [FINE - Generator.generujVyslednaOsobniCisla()] - generovani poradovych cisel pro skupinu: MAGISTERSKY
+521. [FINE - Generator.zapisSkupinu()] - zapisuji skupinu: Bakalářský
+522. [FINEST - Generator.zapisSkupinu()] - A14B0001P <= ALDUS Pavel
+523. [FINEST - Generator.zapisSkupinu()] - A14B0002PI <= DIVOKÝ René
+524. [FINEST - Generator.zapisSkupinu()] - A14B0003P <= NOVÁK Josef
+525. [FINEST - Generator.zapisSkupinu()] - A14B0004PI <= ŽELÉ Jakub
+526. [INFO - Generator.zapisVysledky()] - pocet ve skupine 'Bakalářský' : 4
+527. [FINE - Generator.zapisSkupinu()] - zapisuji skupinu: Navazující
+528. [FINEST - Generator.zapisSkupinu()] - A14N0001K <= PLACEBO Jindřich
+529. [FINEST - Generator.zapisSkupinu()] - A14N0002K <= PLAHOČENÍ Petr
+530. [FINEST - Generator.zapisSkupinu()] - A14N0003P <= PLACHTA Jiří
+531. [FINEST - Generator.zapisSkupinu()] - A14N0004K <= PLÁNIČKA Jan
+532. [FINEST - Generator.zapisSkupinu()] - A14N0005P <= PLÁNIČKA Jaroslav
+533. [FINEST - Generator.zapisSkupinu()] - A14N0006P <= PLAŇKA David
+534. [FINEST - Generator.zapisSkupinu()] - A14N0007P <= PLANKTON Richard
+535. [FINEST - Generator.zapisSkupinu()] - A14N0008P <= PLÁŠŤ Rudolf
+536. [FINEST - Generator.zapisSkupinu()] - A14N0009P <= PLAT Michal
+537. [FINEST - Generator.zapisSkupinu()] - A14N0010P <= PLÁT Josef
+538. [FINEST - Generator.zapisSkupinu()] - A14N0011K <= PLATNO Václav
+539. [FINEST - Generator.zapisSkupinu()] - A14N0012P <= PLÁTNO Miloš
+540. [FINEST - Generator.zapisSkupinu()] - A14N0013P <= PLATNOST Alfréd
+541. [FINEST - Generator.zapisSkupinu()] - A14N0014P <= PLATNOST Karel
+542. [INFO - Generator.zapisVysledky()] - pocet ve skupine 'Navazující' : 14
+543. [FINE - Generator.zapisSkupinu()] - zapisuji skupinu: Doktorský
+544. [FINEST - Generator.zapisSkupinu()] - A14P0001P <= BYSTROZRAKÝ Martin
+545. [FINEST - Generator.zapisSkupinu()] - A14P0002P <= DLOUHÝ Roman
+546. [FINEST - Generator.zapisSkupinu()] - A14P0003P <= ŠIROKÝ Stanislav
+547. [INFO - Generator.zapisVysledky()] - pocet ve skupine 'Doktorský' : 3
+548. [FINE - Generator.zapisSkupinu()] - zapisuji skupinu: Magisterský
+549. [INFO - Generator.zapisVysledky()] - pocet ve skupine 'Magisterský' : 0
+550. [FINE - Generator.zapisSkupinu()] - zapisuji skupinu: chybně zadáno
+551. [FINEST - Generator.zapisSkupinu()] - A14?xxxxP <= CHYBNÝ Dalimil (chybně zadáno)
+552. [FINEST - Generator.zapisSkupinu()] - A14Bxxxx? <= CHYBNÝ Čestmír (chybně zadáno)
+553. [FINEST - Generator.zapisSkupinu()] - A14Bxxxx? <= CHYBNÝ Břetislav (chybně zadáno)
+554. [FINEST - Generator.zapisSkupinu()] - A14?xxxx? <= CHYBNÝ Pravoslav (chybně zadáno)
+555. [FINEST - Generator.zapisSkupinu()] - A??xxxx? <= CHYBNÝ Radovan (chybně zadáno)
+556. [FINEST - Generator.zapisSkupinu()] - A?BxxxxP <= CHYBNÝ Drahoslav (chybně zadáno)
+557. [FINEST - Generator.zapisSkupinu()] - A?BxxxxP <= CHYBNÝ Vladislav (chybně zadáno)
+558. [FINEST - Generator.zapisSkupinu()] - A?BxxxxP <= CHYBNÝ Sebastian (chybně zadáno)
+559. [FINEST - Generator.zapisSkupinu()] - A?BxxxxP <= CHYBNÝ Slavomír (chybně zadáno)
+560. [INFO - Generator.zapisVysledky()] - pocet ve skupine 'chybně zadáno' : 9
+561. [INFO - Hlavni.main()] - Konec programu - vysledky jsou v souboru: vysledky.txt

@@ -1,0 +1,12 @@
+C:\GitHub\School\BIT\BIT_Steganography_png\BIT_Steganography_png\bin\Debug\BIT_Steganography_png.exe.config
+C:\GitHub\School\BIT\BIT_Steganography_png\BIT_Steganography_png\bin\Debug\BIT_Steganography_png.exe
+C:\GitHub\School\BIT\BIT_Steganography_png\BIT_Steganography_png\bin\Debug\BIT_Steganography_png.pdb
+C:\GitHub\School\BIT\BIT_Steganography_png\BIT_Steganography_png\obj\Debug\BIT_Steganography_png.exe
+C:\GitHub\School\BIT\BIT_Steganography_png\BIT_Steganography_png\obj\Debug\BIT_Steganography_png.pdb
+C:\GitHub\School\BIT\BIT_Steganography_png\BIT_Steganography_png\bin\Debug\AForge.dll
+C:\GitHub\School\BIT\BIT_Steganography_png\BIT_Steganography_png\bin\Debug\AForge.Video.dll
+C:\GitHub\School\BIT\BIT_Steganography_png\BIT_Steganography_png\bin\Debug\AForge.Video.FFMPEG.dll
+C:\GitHub\School\BIT\BIT_Steganography_png\BIT_Steganography_png\bin\Debug\AForge.xml
+C:\GitHub\School\BIT\BIT_Steganography_png\BIT_Steganography_png\bin\Debug\AForge.Video.xml
+C:\GitHub\School\BIT\BIT_Steganography_png\BIT_Steganography_png\bin\Debug\AForge.Video.FFMPEG.xml
+C:\GitHub\School\BIT\BIT_Steganography_png\BIT_Steganography_png\obj\Debug\BIT_Steganography_png.csprojResolveAssemblyReference.cache

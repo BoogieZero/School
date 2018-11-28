@@ -1,0 +1,28 @@
+\select@language {czech}
+\contentsline {section}{\numberline {1}Zad\IeC {\'a}n\IeC {\'\i }}{2}
+\contentsline {section}{\numberline {2}Anal\IeC {\'y}za probl\IeC {\'e}mu a n\IeC {\'a}vrh \IeC {\v r}e\IeC {\v s}en\IeC {\'\i }}{2}
+\contentsline {subsection}{\numberline {2.1}\IeC {\'U}lohy}{2}
+\contentsline {subsection}{\numberline {2.2}Data}{3}
+\contentsline {subsection}{\numberline {2.3}Notifikace}{3}
+\contentsline {section}{\numberline {3}Implementace (popis \IeC {\v r}e\IeC {\v s}en\IeC {\'\i })}{4}
+\contentsline {subsection}{\numberline {3.1}\texttt {MainActivity}}{4}
+\contentsline {paragraph}{\texttt {onCreate()}}{4}
+\contentsline {paragraph}{\texttt {btAdd\_onClick()}}{4}
+\contentsline {paragraph}{\texttt {scheduleNotifications()}}{4}
+\contentsline {subsection}{\numberline {3.2}\texttt {TaskAktivity}}{4}
+\contentsline {paragraph}{\texttt {onCreate()}}{4}
+\contentsline {paragraph}{\texttt {addTask()}}{4}
+\contentsline {subsection}{\numberline {3.3}\texttt {TaskList}}{4}
+\contentsline {paragraph}{\texttt {getInstance()}}{5}
+\contentsline {paragraph}{\texttt {put()}, \texttt {remove()}}{5}
+\contentsline {paragraph}{\texttt {update()}}{5}
+\contentsline {paragraph}{getSortedList()}{5}
+\contentsline {subsection}{\numberline {3.4}\texttt {Task}}{5}
+\contentsline {subsection}{\numberline {3.5}\texttt {DBHelper}}{5}
+\contentsline {subsection}{\numberline {3.6}\texttt {NotificationService}}{5}
+\contentsline {subsection}{\numberline {3.7}\texttt {NotificationServiceReceiver}}{5}
+\contentsline {section}{\numberline {4}U\IeC {\v z}ivatelsk\IeC {\'a} p\IeC {\v r}\IeC {\'\i }ru\IeC {\v c}ka}{6}
+\contentsline {subsection}{\numberline {4.1}Hlavn\IeC {\'\i } okno}{6}
+\contentsline {subsection}{\numberline {4.2}Okno editace/p\IeC {\v r}id\IeC {\'a}n\IeC {\'\i } \IeC {\'u}lohy}{6}
+\contentsline {section}{\numberline {5}Testov\IeC {\'a}n\IeC {\'\i }}{6}
+\contentsline {section}{\numberline {6}Z\IeC {\'a}v\IeC {\v e}r}{7}

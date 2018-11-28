@@ -1,0 +1,24 @@
+Stručný popis otázek co si pamatuji ze zkoušky (2015)
+
+Kdy vola android onResume() - zakrouzkuj
+Napis co je IMSI a I* NECO (odpověď popis simky, popis telefonu)
+Jak se oznacuje telefoni cislo v siti (odpoved IM*NECO - je to v prednasce)
+Napiš na jaký frekvencích funguje wifi 800.11n
+Na jaký frekvenci pracuje UTSM (krouzkuj)
+Co je activity stack a jak se lisi stisknuti back od home
+Napis rozdim menu a kontex menu pro win
+* neco o nejaky modulaci zacinalo to 8NECO - na kolik je bitu a v jake je siti
+Co je android fragment
+Co je chooser a launcher
+otazky jak funguje xml v androidu
+Rozdil mezi aktivitou a task
+ARN..
+Co je min verze api
+Nejaky bazeratnský otázky na Ios (jestli ma aktivity, nebo co..)
+a nejaka otazka jak se jmenuje to, co zajistije treba kdyz prijde neco po siti nebo nejak tak znela otazka
+k cemu je adb shell pro apk
+muzu editovat obrazky v apk?
+jakou databazi pouziva android
+na cem pracuje sprava prav (nejak na linuxu)..nebo tak
+
+(Zkratky berte z nadhledem, obcas jsem tam vymenil pismenko, snad vam to pomuze)

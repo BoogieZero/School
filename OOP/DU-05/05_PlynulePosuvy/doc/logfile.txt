@@ -1,0 +1,45 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files\Java\jdk1.8.0_20\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.8
+-classpath
+C:\Program Files (x86)\BlueJ\lib\bluejcore.jar;C:\Program Files (x86)\BlueJ\lib\junit-4.8.2.jar;C:\School\OOP\DU-05\05_PlynulePosuvy
+-d
+C:\School\OOP\DU-05\05_PlynulePosuvy\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+C:\Program Files (x86)\BlueJ\lib\bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+C:\School\OOP\DU-05\05_PlynulePosuvy\Osoba.java
+<---- end of javadoc command ---->
+Loading source file C:\School\OOP\DU-05\05_PlynulePosuvy\Osoba.java...
+Constructing Javadoc information...
+Standard Doclet version 1.8.0_20
+Building tree for all the packages and classes...
+Generating C:\School\OOP\DU-05\05_PlynulePosuvy\doc\Osoba.html...
+C:\School\OOP\DU-05\05_PlynulePosuvy\Osoba.java:315: warning - @param argument "veliksotHlavy" is not a parameter name.
+C:\School\OOP\DU-05\05_PlynulePosuvy\Osoba.java:376: warning - @param argument "veliksotHlavy" is not a parameter name.
+C:\School\OOP\DU-05\05_PlynulePosuvy\Osoba.java:413: warning - @param argument "pohlaví" is not a parameter name.
+Generating C:\School\OOP\DU-05\05_PlynulePosuvy\doc\package-frame.html...
+Generating C:\School\OOP\DU-05\05_PlynulePosuvy\doc\package-summary.html...
+Generating C:\School\OOP\DU-05\05_PlynulePosuvy\doc\constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating C:\School\OOP\DU-05\05_PlynulePosuvy\doc\allclasses-frame.html...
+Generating C:\School\OOP\DU-05\05_PlynulePosuvy\doc\allclasses-noframe.html...
+Generating C:\School\OOP\DU-05\05_PlynulePosuvy\doc\index.html...
+Generating C:\School\OOP\DU-05\05_PlynulePosuvy\doc\stylesheet.css...
+3 warnings

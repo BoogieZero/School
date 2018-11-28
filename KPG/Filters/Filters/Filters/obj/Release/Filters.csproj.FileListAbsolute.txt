@@ -1,0 +1,17 @@
+C:\Users\Boogie Zero\Documents\Visual Studio 2015\Projects\Filters\Filters\obj\Release\Filters.Form1.resources
+C:\Users\Boogie Zero\Documents\Visual Studio 2015\Projects\Filters\Filters\obj\Release\Filters.Properties.Resources.resources
+C:\Users\Boogie Zero\Documents\Visual Studio 2015\Projects\Filters\Filters\obj\Release\Filters.csproj.GenerateResource.Cache
+C:\Users\Boogie Zero\Documents\Visual Studio 2015\Projects\Filters\Filters\bin\Release\Filters.exe.config
+C:\Users\Boogie Zero\Documents\Visual Studio 2015\Projects\Filters\Filters\bin\Release\Filters.exe
+C:\Users\Boogie Zero\Documents\Visual Studio 2015\Projects\Filters\Filters\bin\Release\Filters.pdb
+C:\Users\Boogie Zero\Documents\Visual Studio 2015\Projects\Filters\Filters\obj\Release\Filters.exe
+C:\Users\Boogie Zero\Documents\Visual Studio 2015\Projects\Filters\Filters\obj\Release\Filters.pdb
+C:\School\KPG\Filters\Filters\Filters\bin\Release\Filters.exe.config
+C:\School\KPG\Filters\Filters\Filters\obj\Release\Filters.exe
+C:\School\KPG\Filters\Filters\Filters\obj\Release\Filters.pdb
+C:\School\KPG\Filters\Filters\Filters\bin\Release\Filters.exe
+C:\School\KPG\Filters\Filters\Filters\bin\Release\Filters.pdb
+C:\School\KPG\Filters\Filters\Filters\obj\Release\Filters.csprojResolveAssemblyReference.cache
+C:\School\KPG\Filters\Filters\Filters\obj\Release\Filters.Form1.resources
+C:\School\KPG\Filters\Filters\Filters\obj\Release\Filters.Properties.Resources.resources
+C:\School\KPG\Filters\Filters\Filters\obj\Release\Filters.csproj.GenerateResource.Cache

@@ -1,0 +1,92 @@
+Renesas H8/300 GAS  C:\School\POT\Workspace\Workspace_POT\Simulated_IO\main.s 			page 1
+
+
+   1              			.h8300s
+   2              	
+   3              			.equ	syscall,0x1FF00	; simulated IO area
+   4              			.equ	PUTS,0x0114		; kod PUTS
+   5              			.equ	GETS,0x0113		; kod GETS
+   6              			
+   7              	; ------ datovy segment ----------------------------
+   8              	
+   9              			.data
+  10 0000 53696D75 	txt1:	.asciz	"Simulovany vystup\n\r"
+  10      6C6F7661 
+  10      6E792076 
+  10      79737475 
+  10      700A0D00 
+  11 0014 53657275 	txt2:	.asciz	"Seru na tebe\n\r"
+  11      206E6120 
+  11      74656265 
+  11      0A0D00
+  12 0023 00000000 	buffer:	.space	100			; vstupni buffer
+  12      00000000 
+  12      00000000 
+  12      00000000 
+  12      00000000 
+  13              	
+  14              	; parametricke bloky musi byt zarovnane na dword
+  15 0087 00       			.align	2			; zarovnani adresy
+  16 0088 00000000 	par1:	.long	txt1		; parametricky blok 1
+  17 008c 00000000 	par2:	.long	buffer		; parametricky blok 2
+  18 0090 00000000 	par3:	.long	txt2
+  19              	
+  20              	; stack musi byt zarovnany na word
+  21              			.align	1			; zarovnani adresy
+  22 0094 00000000 			.space	100			; stack
+  22      00000000 
+  22      00000000 
+  22      00000000 
+  22      00000000 
+  23              	stck:						; konec stacku + 1
+  24              	
+  25              	; ------ kodovy segment ----------------------------
+  26              	
+  27              			.text
+  28              			.global	_start
+  29              	
+  30 0000 7A070000 	_start:	mov.l	#stck,ER7
+  30      0000
+  31              	
+  32 0006 79000114 			mov.w	#PUTS,R0	; 24bitovy PUTS
+  33 000a 7A010000 			mov.l	#par1,ER1	; adr. param. bloku do ER1
+  33      0000
+  34 0010 5E000000 			jsr		@syscall
+  35              			
+  36 0014 79000114 			mov.w	#PUTS,R0	; 24bitovy PUTS					;
+  37 0018 7A010000 			mov.l	#par3,ER1	; adr. param. bloku do ER1		;
+  37      0000
+  38 001e 5E000000 			jsr		@syscall									;
+  39              			
+Renesas H8/300 GAS  C:\School\POT\Workspace\Workspace_POT\Simulated_IO\main.s 			page 2
+
+
+  40 0022 79000113 			mov.w	#GETS,R0	; 24bitovy GETS
+  41 0026 7A010000 			mov.l	#par2,ER1	; adr. param. bloku do ER1
+  41      0000
+  42 002c 5E000000 			jsr		@syscall
+  43              				
+  44 0030 5A000000 	lab1:	jmp	@lab1			; konec vypoctu
+  45              	
+  46              			.end
+Renesas H8/300 GAS  C:\School\POT\Workspace\Workspace_POT\Simulated_IO\main.s 			page 3
+
+
+DEFINED SYMBOLS
+C:\School\POT\Workspace\Workspace_POT\Simulated_IO\main.s:3      *ABS*:0001ff00 syscall
+C:\School\POT\Workspace\Workspace_POT\Simulated_IO\main.s:4      *ABS*:00000114 PUTS
+C:\School\POT\Workspace\Workspace_POT\Simulated_IO\main.s:5      *ABS*:00000113 GETS
+C:\School\POT\Workspace\Workspace_POT\Simulated_IO\main.s:10     .data:00000000 txt1
+C:\School\POT\Workspace\Workspace_POT\Simulated_IO\main.s:11     .data:00000014 txt2
+C:\School\POT\Workspace\Workspace_POT\Simulated_IO\main.s:12     .data:00000023 buffer
+C:\School\POT\Workspace\Workspace_POT\Simulated_IO\main.s:16     .data:00000088 par1
+C:\School\POT\Workspace\Workspace_POT\Simulated_IO\main.s:17     .data:0000008c par2
+C:\School\POT\Workspace\Workspace_POT\Simulated_IO\main.s:18     .data:00000090 par3
+C:\School\POT\Workspace\Workspace_POT\Simulated_IO\main.s:23     .data:000000f8 stck
+C:\School\POT\Workspace\Workspace_POT\Simulated_IO\main.s:30     .text:00000000 _start
+C:\School\POT\Workspace\Workspace_POT\Simulated_IO\main.s:30     .text:00000000 .L0
+C:\School\POT\Workspace\Workspace_POT\Simulated_IO\main.s:44     .text:00000030 lab1
+                            .text:00000000 .L0
+C:\School\POT\Workspace\Workspace_POT\Simulated_IO\main.s:46     .text:00000034 .L0
+
+NO UNDEFINED SYMBOLS

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane fx:id="tabPanelTP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller">
+  <tabs>
+      <Tab fx:id="mainPageTB" text="Main Page">
+         <content>
+            <BorderPane fx:id="firstPageBP" prefHeight="200.0" prefWidth="200.0">
+               <top>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Space Program" textAlignment="CENTER" underline="true" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="79.0" />
+                     </font>
+                  </Text>
+               </top>
+               <bottom>
+                  <VBox>
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <FlowPane disable="true" hgap="10.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Console" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </FlowPane>
+                              <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextArea fx:id="firstCardInfo" editable="false" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <HBox BorderPane.alignment="CENTER">
+                           <children>
+                              <Button minWidth="150.0" mnemonicParsing="false" onAction="#actionFireGenerateNewMapBT" text="Generate new map" />
+                              <Region HBox.hgrow="ALWAYS" />
+                              <Button layoutX="10.0" layoutY="10.0" minWidth="150.0" mnemonicParsing="false" onAction="#actionFireStartProgramBT" text="Start program" />
+                              <Region HBox.hgrow="ALWAYS" />
+                              <Button layoutX="10.0" layoutY="10.0" minWidth="150.0" mnemonicParsing="false" onAction="#actionExitProgram" text="Exit program" />
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </bottom>
+            </BorderPane>
+         </content>
+      </Tab>
+    <Tab fx:id="visualizationPageTB" closable="false" disable="true" text="Grafic Visualization">
+         <content>
+            <BorderPane fx:id="mapa" prefHeight="200.0" prefWidth="200.0">
+               <left>
+                  <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Zoom" />
+                        <Slider fx:id="zoomSlider" disable="true" opacity="0.8" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" VBox.vgrow="ALWAYS">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Slider>
+                     </children>
+                  </VBox>
+               </left>
+               <bottom>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                           <children>
+                              <Button fx:id="nextHourBT" layoutX="75.0" layoutY="10.0" mnemonicParsing="false" onAction="#actionFireNextHourBT" prefWidth="150.0" text="Next Hour">
+                                 <font>
+                                    <Font name="Arial Black" size="15.0" />
+                                 </font></Button>
+                              <Button fx:id="nextDayBT" layoutX="715.0" layoutY="15.0" mnemonicParsing="false" onAction="#actionFireNextDayBT" prefWidth="150.0" text="Next Day">
+                                 <font>
+                                    <Font name="Arial Black" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="nextMonthBT" layoutX="775.0" layoutY="15.0" mnemonicParsing="false" onAction="#actionFireNextMonthBT" prefWidth="150.0" text="Next Month">
+                                 <font>
+                                    <Font name="Arial Black" size="15.0" />
+                                 </font>
+                              </Button>
+                              <CheckBox fx:id="fullReportCB" mnemonicParsing="false" text="Full report" />
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                        <TextArea fx:id="consoleTA" editable="false" prefHeight="200.0" text="&#10;" />
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="timeOfSimulationVcardT" strokeType="OUTSIDE" strokeWidth="0.0" />
+                              <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                              <Text fx:id="populationAndOrdersVcardT" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <font>
+                                    <Font name="Arial" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </bottom>
+            </BorderPane>
+         </content>
+      </Tab>
+    <Tab fx:id="planetPageTB" disable="true" onSelectionChanged="#actionCardWasSelected" text="Planet">
+         <content>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <bottom>
+                  <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER_LEFT">
+                           <children>
+                              <Text fx:id="timeOfSimulationPcardT" strokeType="OUTSIDE" strokeWidth="0.0" />
+                              <Region prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                              <Text fx:id="populationAndOrdersPcardT" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <font>
+                                    <Font name="Arial" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </bottom>
+               <center>
+                  <VBox BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField alignment="CENTER" disable="true" editable="false" text="Planet" />
+                        <TextArea fx:id="infoPlanetTA" editable="false" text="  " />
+                        <HBox>
+                           <children>
+                              <TextField fx:id="setOrdersTF" promptText="Add order to planet" HBox.hgrow="ALWAYS" />
+                              <Button mnemonicParsing="false" onAction="#actionFireSetOrderBT" prefWidth="120.0" text="Set order" />
+                           </children>
+                        </HBox>
+                        <TextField alignment="CENTER" disable="true" editable="false" text="Ships" />
+                        <TableView fx:id="tableShips" disable="true" VBox.vgrow="ALWAYS">
+                          <columns>
+                            <TableColumn fx:id="shipName" editable="false" prefWidth="75.0" sortable="false" text="Name" />
+                            <TableColumn fx:id="shipLoad" editable="false" prefWidth="75.0" sortable="false" text="Amount" />
+                              <TableColumn fx:id="shipStartTime" editable="false" prefWidth="75.0" sortable="false" text="Strart time" />
+                              <TableColumn fx:id="shipArrivalTime" editable="false" prefWidth="75.0" sortable="false" text="Time of arrival" />
+                              <TableColumn fx:id="shipReturnTime" editable="false" prefWidth="75.0" sortable="false" text="Return time" />
+                              <TableColumn fx:id="shipProgress" editable="false" prefWidth="75.0" sortable="false" text="Progress" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </VBox>
+               </center>
+               <right>
+                  <VBox minWidth="500.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField alignment="CENTER" disable="true" editable="false" text="Roads" />
+                        <TableView fx:id="tableRoute" disable="true" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                          <columns>
+                            <TableColumn fx:id="routeNameTC" editable="false" prefWidth="75.0" sortable="false" text="Name" />
+                            <TableColumn fx:id="routeTimeTC" editable="false" prefWidth="75.0" sortable="false" text="Time" />
+                              <TableColumn fx:id="routeActionTC" editable="false" prefWidth="75.0" sortable="false" text="Action" />
+                              <TableColumn fx:id="routeAmountTC" editable="false" prefWidth="75.0" sortable="false" text="Amount" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                        <HBox alignment="CENTER_RIGHT" spacing="20.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#actionFireGoToSelectedPlanetBT" prefWidth="120.0" text="Go to Selected" />
+                              <RadioButton fx:id="routeToTargetCB" disable="true" mnemonicParsing="false" onAction="#actionArmRouteToTarget" text="Route to target" />
+                              <RadioButton fx:id="routeToHomeCB" disable="true" layoutX="152.0" layoutY="17.0" mnemonicParsing="false" onAction="#actionArmRouteToHome" text="Route to home" />
+                              <RadioButton fx:id="routeActionCB" disable="true" layoutX="152.0" layoutY="17.0" mnemonicParsing="false" onAction="#actionArmRouteAction" selected="true" text="Loading/Unloading" />
+                           </children>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </VBox>
+               </right></BorderPane>
+         </content>
+      </Tab>
+      <Tab fx:id="factoryPageTB" disable="true" onSelectionChanged="#actionCardWasSelectedFactory" text="Factory">
+         <content>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <bottom>
+                  <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER_LEFT">
+                           <children>
+                              <Text fx:id="timeOfSimulationFcardT" strokeType="OUTSIDE" strokeWidth="0.0" />
+                              <Region prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                              <Text fx:id="populationAndOrdersFcardT" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <font>
+                                    <Font name="Arial" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </bottom>
+               <center>
+                  <VBox BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField alignment="CENTER" disable="true" editable="false" text="Factory" />
+                        <TextArea fx:id="infoFactoryTA" editable="false" text="  " />
+                        <TextField alignment="CENTER" disable="true" editable="false" text="Ships" />
+                        <TableView fx:id="factoryTableShips" disable="true" VBox.vgrow="ALWAYS">
+                           <columns>
+                              <TableColumn fx:id="factoryShipName" editable="false" prefWidth="75.0" sortable="false" text="Name" />
+                              <TableColumn fx:id="factoryShipLoad" editable="false" prefWidth="75.0" sortable="false" text="Actual Load" />
+                              <TableColumn fx:id="factoryShipStartTime" editable="false" prefWidth="75.0" sortable="false" text="Strart time" />
+                              <TableColumn fx:id="factoryShipReturnTime" editable="false" prefWidth="75.0" sortable="false" text="Return time" />
+                              <TableColumn fx:id="factoryShipProgress" editable="false" prefWidth="75.0" sortable="false" text="Progress" />
+                           </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </VBox>
+               </center>
+               <right>
+                  <VBox minWidth="500.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField alignment="CENTER" disable="true" editable="false" text="All Roads" />
+                        <TableView fx:id="factoryTableAllRoutes" disable="true" prefHeight="220.0">
+                          <columns>
+                            <TableColumn fx:id="factoryRoutesPrimaryTargetTC" editable="false" prefWidth="75.0" sortable="false" text="Primary target" />
+                            <TableColumn fx:id="factoryRoutesStartTimeTC" editable="false" prefWidth="75.0" sortable="false" text="Start Time" />
+                              <TableColumn fx:id="factoryRoutesReturnTimeTC" editable="false" prefWidth="75.0" sortable="false" text="Return Time" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                        <TextField alignment="CENTER" disable="true" editable="false" text="Roads" />
+                        <TableView fx:id="factoryTableRoute" disable="true" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                           <columns>
+                              <TableColumn fx:id="factoryRouteNameTC" editable="false" prefWidth="75.0" sortable="false" text="Name" />
+                              <TableColumn fx:id="factoryRouteTimeTC" editable="false" prefWidth="75.0" sortable="false" text="Time" />
+                              <TableColumn fx:id="factoryRouteActionTC" editable="false" prefWidth="75.0" sortable="false" text="Action" />
+                              <TableColumn fx:id="factoryRouteAmountTC" editable="false" prefWidth="75.0" sortable="false" text="Amount" />
+                           </columns>
+                        </TableView>
+                        <HBox alignment="CENTER_RIGHT" spacing="20.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#actionFireGoToSelectedFactoryBT" prefWidth="120.0" text="Go to Selected" />
+                              <RadioButton fx:id="factoryRouteToTargetCB" disable="true" mnemonicParsing="false" onAction="#actionArmRouteToTargetFactory" text="Route to target" />
+                              <RadioButton fx:id="factoryRouteToHomeCB" disable="true" layoutX="152.0" layoutY="17.0" mnemonicParsing="false" onAction="#actionArmRouteToHomeFactory" text="Route to home" />
+                              <RadioButton fx:id="factoryRouteActionCB" disable="true" layoutX="152.0" layoutY="17.0" mnemonicParsing="false" onAction="#actionArmRouteActionFactory" selected="true" text="Loading/Unloading" />
+                           </children>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </VBox>
+               </right>
+            </BorderPane>
+         </content>
+      </Tab>
+      <Tab fx:id="statisticPageTB" disable="true" onSelectionChanged="#statisticCardWasSelected" text="Statistics">
+         <content>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <TextArea fx:id="staticticsTA" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </center>
+               <bottom>
+                  <HBox>
+                     <children>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button mnemonicParsing="false" onAction="#actionExitProgram" prefWidth="150.0" text="Exit program" />
+                        <Region layoutX="10.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+               </bottom>
+            </BorderPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

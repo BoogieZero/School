@@ -1,0 +1,159 @@
+\documentclass[12pt]{article}
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[IL2]{fontenc}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{cprotect}
+%\usepackage{float}
+\usepackage{amsmath}
+
+\begin{document}
+%\setlength{\parindent}{0pt}
+\begin{titlepage}
+\includegraphics[scale=0.2, trim=5cm 0 0 30cm]{logo.jpg}
+\begin{center}
+\vspace{5cm}
+{\Huge
+\textbf{KPG}\\
+\vspace{1cm}
+}
+{\Large
+\textbf{FILTRY}
+}
+\end{center}
+\vspace{\fill}
+
+\begin{minipage}[t]{5cm}
+\flushleft
+Martin Hamet
+\end{minipage}
+\hfill
+\begin{minipage}[t]{7cm}
+\flushright
+\today
+%\date{\AdvanceDate[-1]\today}
+\end{minipage}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Zadání}
+Nalezené anebo vámi vymyšlené návody na filtry naprogramujte (Program musí být schopen načíst ze souboru obraz v rastrovém formátu a zase jej uložit, zobrazit původní a změněný obraz s možností návratu o 1 akci. Odevzdáváte jako obvykle zdrojový text, EXE a dokumentaci.), za každou zajímavou techniku získáte max. 5 bodů podle obtížnosti,  max.17 bodů.
+
+\paragraph{\texttt{Splněno:}}
+
+\begin{itemize}
+\item Načítání a ukládání obrázku v rastrovém formátu.
+\item Možnost návratu o jednu akci.
+\item Možnost návratu na původní obrázek.
+\item Implementace filtrů:
+\begin{itemize}
+\item square blur maticí 3x3
+\item square blur maticí 5x5
+\item gaussian blur maticí 3x3
+\item gaussian blur matici 5x5
+\item motion blur maticí 5x5
+\item edge (detekce hran) maticí 3x3
+\item edge (detekce hran) maticí 5x5
+\item embos maticí 3x3
+\item "MyExposure" (experimentální filtr) maticí 3x3
+\end{itemize}
+
+\end{itemize}
+
+
+
+
+\section{Analýza úlohy}
+Pro danou úlohu budeme uvažovat jednoprůchodové filtry. Tedy po získání bitmapy zadaného obrázku, procházíme bitmapou a upravujeme hodnoty(RGB) aktuálního pixelu. Aby nedošlo k ovlivnění filtru směrem průchodu je třeba číst z kopie bitmapy daného obrázku, nebo zapisovat do nové bitmapy. Lze implementovat jednoduché filtry např. pro prohazování nebo potlačování barevných kanálů. Tyto jednoduché filtry mi ale nepřijdou zajímavé a proto se dále budu věnovat pouze konvolučním filtrům.
+
+\subsection{Konvoluční filtr}
+Základní myšlenka konvolučního filtru je určení hodnoty pro každý pixel (při průchodu bitmapou). Tuto hodnotu získáme kombinací okolních pixelů. Tuto kombinaci určí konvoluční jádro.
+
+\begin{wrapfigure}[10]{l}{4.5cm}
+\[
+K=
+  \begin{bmatrix}
+    \frac{1}{9} & \frac{1}{9} & \frac{1}{9}\\[6pt]
+    \frac{1}{9} & \frac{1}{9} & \frac{1}{9}\\[6pt]
+    \frac{1}{9} & \frac{1}{9} & \frac{1}{9}
+  \end{bmatrix}
+\]
+\caption{Konvoluční jádro}
+\label{konvolucni_jadro}
+\end{wrapfigure}
+
+Konvoluční jádro je zpravidla reprezentováno maticí lichého řádu. Konvoluční matice udává váhu jednotlivých okolních pixelů. Tedy jak významně se projeví daný pixel.
+
+Nastavíme konvoluční jádro v bitmapě obrázku tak aby hledaný pixel byl uprostřed jádra a všechny hodnoty pixelů vynásobíme hodnotou na jejich odpovídající pozici v konvolučním jádru a sečteme. Výsledné hodnoty jsou hodnoty našeho hledaného pixelu.
+
+Například podle jádra \texttt{K} (viz. Obr.\ref{konvolucni_jadro}) hledaná hodnota pixelu (ve středu jádra) vznikne jako aritmetický průměr všech jeho okolních pixelů (průměrem okolních pixelů je myšleno průměr jejich jednotlivých barevných složek RGB). Pro snazší zápis konvolučních jader bude lepší když zavedeme váhu kterou vydělíme výslednou získanou barvu. V předchozím případě by jsme mohli nahradit všechny hodnoty jedničkou a váha by byla 9.
+
+\subsection{Square Blur}
+Tento konvoluční filtr má konvoluční matici K podle Obr. \ref{konvolucni_jadro}. Je to tedy aritmetický průměr okolních pixelů. Pro porovnání bude implementován filtr s konvoluční maticí 3x3 a 5x5. 
+
+\subsection{Gaussian Blur}
+\begin{wrapfigure}[9]{r}{6cm}
+\vspace{-20pt}
+\[
+  \begin{bmatrix}
+    2 	& 4 	& 5 	& 4 	& 2\\
+    4 	& 9 	& 12 	& 9 	& 4\\
+    5	& 12	& 15	& 12	& 5\\
+    4	& 9		& 12	& 9		& 4\\
+    2 	& 4 	& 5 	& 4 	& 2
+  \end{bmatrix}
+\]
+\caption{Konvoluční jádro s gaussovým rozložením váhy}
+\label{konvolucni_jadro_gauss}
+\end{wrapfigure}
+
+Tento filtr pracuje stejně jako \texttt{Suare Blur} s tím rozdílem že se již nejedná o aritmetický průměr, ale průměr okolních pixelů s váhou danou gaussovským rozložením podle vzdálenosti od hledaného pixelu. Ukázka konvolučního jádra viz Obr. \ref{konvolucni_jadro_gauss} by měla váhu 159 (váhou je třeba výsledné hodnoty vydělit). 
+
+\subsection{Motion Blur}
+Filtr simuluje rozmazaní pouze v nějakém směru například pro rozmazání ve vodorovném směru by jádro s váhou 3 mohlo vypadat takto:
+\[
+  \begin{bmatrix}
+    0 & 0 & 0\\
+    1 & 1 & 1\\
+    0 & 0 & 0
+  \end{bmatrix}
+\]
+
+\subsection{Edge a Embos}
+Detekce hran využívá možnosti zadání záporných vah do jádra. Záporná hodnota v jádru znamená že se ve skutečnosti odečtou od hledaného pixelu hodnoty pixelů se zápornou vahou (neboli přičtou se jejich negativní hodnoty). Pomocí záporných hodnot můžeme docílit zvýraznění hran. Jinak řečeno místa kde jsou si pixely podobné se jejich hodnoty navzájem odečtou a tím vzniká černá barva a naopak.
+
+\begin{wrapfigure}[8]{r}{6cm}
+\[
+  \begin{bmatrix}
+    1 & 1 & 1\\
+    0 & 0 & 0\\
+   -1 &-1 &-1
+  \end{bmatrix}
+\]
+\caption{Konvoluční jádro pro detekci hran}
+\label{konvolucni_jadro_edge}
+\end{wrapfigure}
+
+Konvoluční jádro podle Obr. \ref{konvolucni_jadro_edge} bude detekovat vodorovné hrany v obrázku. Všimněme si že je zde stejná suma záporných i kladných vah. Celkovou váhu kterou by jsme dělili výsledné hodnoty zde neuvažujeme, lze ji ovšem volit pro dolazení efektu. Dělením většími hodnotami ztmavuje obrázek. Dále zde vznikají problémy přetočení hodnot (záporná hodnota některého z kanálu RGB atp.) Je velmi vhodné omezit výsledné hodnoty na maximum a minimum. Bez ošetření obvykle vzniká značný šum v obrázku.
+
+Embos funguje stejně jako detekce hran s tím rozdílem že k výsledným hodnotám přičteme konstantu tak aby jsme se posunuli z černé barvy na šedé. Experimentálně vhodná hodnota je 128.
+
+\pagebreak
+\subsection{MyExposure}
+Tento filtr pracuje jako detekce hran s tím rozdílem že nedovolujeme záporné hodnoty. Tedy sčítáme hodnoty kanálů všech pixelů v matici označených jedničkou. Hodnoty kanálů jsou pomocí podmínek omezeny aby se nezvyšovali nad standardní hodnoty na intervalu \texttt{<0,1>} stejně jako u detekce hran. Výsledný efekt bývá velmi výrazné zesvětlení již světlých ploch. Je možné toto zesvětlení omezit zvednutím celkové váhy (tj. vydělení příspěvku hodnot jednotlivých pixelů zvolenou konstantou).
+
+
+\section{Uživatelská příručka}
+Po spuštění programu je třeba načíst obrázek pomocí tlačítka \texttt{Load Image}. Po úspěšném načtení obrázku se zpřístupní všechny ostatní volby. 
+
+Jednotlivými tlačítky lze používat přednastavené filtry na načtený obrázek. Filtry se skládají za sebe a je možné vrátit poslední akci zpět pomocí tlačítka \texttt{Back}. Tlačítkem \texttt{Save} je možné uložit aktuální obrázek pomocí ukládacího dialogu.
+
+\section{Závěr}
+Program demonstruje základní efekty pomocí konvoluční matice nad bitmapou obrázku. Všechny typy rozmazání jsou nejznatelnější na obrázcích s malým rozlišením. Při jednom aplikování např. \texttt{Gaussian blur} na obrázek s vysokým rozlišením nemusí být efekt znatelný. Podobně rozdíly mezi \texttt{Square blur} a \texttt{Gaussian blur} v různých rozměrech. 
+
+V průběhu implementace jsem experimentoval s detekcí hran v určitém směru v závislosti rozložení hodnot v konvoluční matici, ale ve výsledku jsem ponechal pouze detekci horizontálních hran, které je vhodnější pro např. pro krajinu.
+
+\end{document}

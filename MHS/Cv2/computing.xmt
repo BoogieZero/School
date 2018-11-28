@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XMT-A Scene Dump - GPAC version 0.6.0-DEV-rev14-gf540620-master -->
+<XMT-A xmlns="urn:mpeg:mpeg4:xmta:schema:2002" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:mpeg4:xmta:schema:2002 xmt-a.xsd">
+ <Header>
+ <InitialObjectDescriptor objectDescriptorID="od1" binaryID="1" >
+  <Profiles audioProfileLevelIndication="255" visualProfileLevelIndication="245" sceneProfileLevelIndication="255" graphicsProfileLevelIndication="255" ODProfileLevelIndication="255" />
+  <Descr>
+  	 <ES_Descriptor ES_ID="proud_deskriptoru" binaryID="2" >
+     <decConfigDescr>
+      <DecoderConfigDescriptor objectTypeIndication="MPEG4Systems1" streamType="ObjectDescriptor" >
+      </DecoderConfigDescriptor>
+     </decConfigDescr>
+     <slConfigDescr>
+      <SLConfigDescriptor><predefined value="2"/></SLConfigDescriptor>
+     </slConfigDescr>
+    </ES_Descriptor>
+  </Descr>
+ </InitialObjectDescriptor>
+ </Header>
+ <Body>
+ 	<replace>
+ 		<scene>
+		 	<Shape>
+		     <appearance>
+		      <Appearance>
+		       <material>
+		        <Material2D filled="TRUE"/>
+		       </material>
+		       <texture>
+		        <MovieTexture url=""od://video_OD""/>
+		       </texture>
+		      </Appearance>
+		     </appearance>
+		     <geometry>
+		      <Rectangle size="120 90"/>
+		     </geometry>
+		    </Shape>
+ 		</scene>
+ 	</replace>
+ </Body>
+</XMT-A>

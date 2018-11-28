@@ -1,0 +1,5 @@
+﻿  Source.cpp
+c:\github\school\zos\zos_fat_cpp\zos_fat\zos_fat\source.cpp(88): warning C4101: 'dir': unreferenced local variable
+c:\github\school\zos\zos_fat_cpp\zos_fat\zos_fat\source.cpp(38): warning C4101: 'fp': unreferenced local variable
+  ZOS_FAT.vcxproj -> C:\GitHub\School\ZOS\ZOS_FAT_cpp\ZOS_FAT\Debug\ZOS_FAT.exe
+  ZOS_FAT.vcxproj -> C:\GitHub\School\ZOS\ZOS_FAT_cpp\ZOS_FAT\Debug\ZOS_FAT.pdb (Partial PDB)

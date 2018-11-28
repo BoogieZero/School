@@ -1,0 +1,6 @@
+C:\GitHub\School\PRO\Sem2\StronglyConnectedComponent\Scc\bin\Debug\Scc.exe.config
+C:\GitHub\School\PRO\Sem2\StronglyConnectedComponent\Scc\bin\Debug\Scc.exe
+C:\GitHub\School\PRO\Sem2\StronglyConnectedComponent\Scc\bin\Debug\Scc.pdb
+C:\GitHub\School\PRO\Sem2\StronglyConnectedComponent\Scc\obj\Debug\Scc.csprojResolveAssemblyReference.cache
+C:\GitHub\School\PRO\Sem2\StronglyConnectedComponent\Scc\obj\Debug\Scc.exe
+C:\GitHub\School\PRO\Sem2\StronglyConnectedComponent\Scc\obj\Debug\Scc.pdb

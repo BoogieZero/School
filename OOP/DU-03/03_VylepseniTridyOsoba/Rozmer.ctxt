@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=
+comment0.target=int\ getSirka()
+comment1.params=
+comment1.target=int\ getVyska()
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment3.params=sirka\ vyska
+comment3.target=Rozmer(int,\ int)
+comment3.text=\r\n\ Constructor\ for\ objects\ of\ class\ Rozmer\r\n
+comment4.params=
+comment4.target=Rozmer()
+numComments=5

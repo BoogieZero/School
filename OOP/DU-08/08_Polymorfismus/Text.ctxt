@@ -1,0 +1,41 @@
+#BlueJ class context
+comment0.params=text
+comment0.target=Text(java.lang.String)
+comment0.text=\r\n\ P\u0159iprav\u00ED\ novou\ instanci\ s\ implicitn\u00EDm\ um\u00EDst\u011Bn\u00EDm,\ rozm\u011Bry\ a\ barvou.\r\n\ Instance\ bude\ um\u00EDst\u011Bna\ v\ lev\u00E9m\ horn\u00EDm\ rohu\ pl\u00E1tna\r\n\ a\ bude\ m\u00EDt\ implicitn\u00ED\ barvu,\r\n\ a\ vysazena\ implicitn\u00EDm\ p\u00EDsmem\ (tu\u010Dn\u00FDm\ 12bodov\u00FDm\ p\u00EDsmem\ Dialog).\r\n\r\n\ @param\ text\ \ Vypisovan\u00FD\ text\r\n
+comment1.params=text\ x\ y
+comment1.target=Text(java.lang.String,\ int,\ int)
+comment1.text=\r\n\ P\u0159iprav\u00ED\ novou\ instanci\ se\ zadanou\ pozic\u00ED\ a\ rozm\u011Bry\r\n\ implicitn\u00ED\ barvou\r\n\ a\ vysazovanou\ implicitn\u00EDm\ p\u00EDsmem\ (tu\u010Dn\u00FDm\ 12bodov\u00FDm\ p\u00EDsmem\ Dialog).\r\n\r\n\ @param\ text\ \ \ \ Vypisovan\u00FD\ text\r\n\ @param\ x\ \ \ \ \ \ \ Vodorovn\u00E1\ (x-ov\u00E1)\ sou\u0159adnice\ instance,\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ x\=0\ m\u00E1\ lev\u00FD\ okraj\ pl\u00E1tna,\ sou\u0159adnice\ roste\ doprava\r\n\ @param\ y\ \ \ \ \ \ \ Svisl\u00E1\ (y-ov\u00E1)\ sou\u0159adnice\ instance,\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ y\=0\ m\u00E1\ horn\u00ED\ okraj\ pl\u00E1tna,\ sou\u0159adnice\ roste\ dol\u016F\r\n
+comment10.params=
+comment10.target=java.lang.String\ toString()
+comment10.text=\r\n\ Vr\u00E1t\u00ED\ podpis\ instance,\ tj.\ jej\u00ED\ \u0159et\u011Bzcovou\ reprezentaci.\r\n\ Pou\u017E\u00EDv\u00E1\ se\ p\u0159edev\u0161\u00EDm\ p\u0159i\ lad\u011Bn\u00ED.\r\n\r\n\ @return\ \u0158et\u011Bzcov\u00E1\ reprezentace\ (podpis)\ dan\u00E9\ instance\r\n
+comment11.params=
+comment11.target=void\ nakresli()
+comment11.text=\r\n\ P\u0159ihl\u00E1s\u00ED\ se\ u\ spr\u00E1vce\ pl\u00E1tna.\r\n
+comment12.params=
+comment12.target=void\ smaz()
+comment12.text=\r\n\ Odhl\u00E1s\u00ED\ se\ u\ spr\u00E1vce\ pl\u00E1tna.\r\n
+comment2.params=x\ y\ text
+comment2.target=Text(int,\ int,\ java.lang.String)
+comment2.text=\r\n\ Vytvo\u0159\u00ED\ novou\ instanci\ se\ zadanou\ \ pozic\u00ED,\ rozm\u011Bry\r\n\ a\ implicitn\u00ED\ barvou\r\n\ a\ vysazena\ implicitn\u00EDm\ p\u00EDsmem\ (tu\u010Dn\u00FDm\ 12bodov\u00FDm\ p\u00EDsmem\ Dialog).\r\n\r\n\ @param\ x\ \ \ \ \ \ \ Vodorovn\u00E1\ (x-ov\u00E1)\ sou\u0159adnice\ instance,\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ x\=0\ m\u00E1\ lev\u00FD\ okraj\ pl\u00E1tna,\ sou\u0159adnice\ roste\ doprava\r\n\ @param\ y\ \ \ \ \ \ \ Svisl\u00E1\ (y-ov\u00E1)\ sou\u0159adnice\ instance,\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ y\=0\ m\u00E1\ horn\u00ED\ okraj\ pl\u00E1tna,\ sou\u0159adnice\ roste\ dol\u016F\r\n\ @param\ text\ \ \ \ Vypisovan\u00FD\ text\r\n
+comment3.params=
+comment3.target=Text\ kopie()
+comment3.text=\r\n\ Vr\u00E1t\u00ED\ svoji\ kopii,\ tj.\ instanci\ s\ naprosto\ shodn\u00FDmi\ vlastnostmi\r\n\ s\ v\u00FDjimkou\ t\u011Bch,\ kter\u00E9\ podle\ kontraktu\ shodn\u00E9\ b\u00FDt\ nesm\u011Bj\u00ED.\r\n\r\n\ @return\ Po\u017Eadovan\u00E1\ kopie\r\n
+comment4.params=
+comment4.target=int\ getX()
+comment4.text=\r\n\ Vr\u00E1t\u00ED\ x-ovou\ (vodorovnou)\ sou\u0159adnici\ pozice\ instance.\r\n\r\n\ @return\ \ Aktu\u00E1ln\u00ED\ vodorovn\u00E1\ (x-ov\u00E1)\ sou\u0159adnice\ instance,\r\n\ \ \ \ \ \ \ \ \ \ x\=0\ m\u00E1\ lev\u00FD\ okraj\ pl\u00E1tna,\ sou\u0159adnice\ roste\ doprava\r\n
+comment5.params=
+comment5.target=int\ getY()
+comment5.text=\r\n\ Vr\u00E1t\u00ED\ y-ovou\ (svislou)\ sou\u0159adnici\ pozice\ instance.\r\n\r\n\ @return\ \ Aktu\u00E1ln\u00ED\ svisl\u00E1\ (y-ov\u00E1)\ sou\u0159adnice\ instance,\r\n\ \ \ \ \ \ \ \ \ \ y\=0\ m\u00E1\ horn\u00ED\ okraj\ pl\u00E1tna,\ sou\u0159adnice\ roste\ dol\u016F\r\n
+comment6.params=x\ y
+comment6.target=void\ setPozice(int,\ int)
+comment6.text=\r\n\ Nastav\u00ED\ novou\ pozici\ instance.\r\n\r\n\ @param\ x\ \ Nov\u011B\ nastavovan\u00E1\ vodorovn\u00E1\ (x-ov\u00E1)\ sou\u0159adnice\ instance,\r\n\ \ \ \ \ \ \ \ \ \ \ x\=0\ m\u00E1\ lev\u00FD\ okraj\ pl\u00E1tna,\ sou\u0159adnice\ roste\ doprava\r\n\ @param\ y\ \ Nov\u011B\ nastavovan\u00E1\ svisl\u00E1\ (y-ov\u00E1)\ sou\u0159adnice\ instance,\r\n\ \ \ \ \ \ \ \ \ \ \ y\=0\ m\u00E1\ horn\u00ED\ okraj\ pl\u00E1tna,\ sou\u0159adnice\ roste\ dol\u016F\r\n
+comment7.params=
+comment7.target=java.lang.String\ getNazev()
+comment7.text=\r\n\ Tato\ metoda\ je\ tu\ jenom\ proto,\ aby\ se\ text\ sjednotil\ s\ ostatn\u00EDmi\r\n\ t\u0159\u00EDdami\ -\ jinak\ text\ ji\ samoz\u0159ejm\u011B\ nepot\u0159ebuje,\ proto\u017Ee\ ti\u0161t\u011Bn\u00FD\ text\r\n\ je\ s\u00E1m\ n\u00E1zvem\ instance.\r\n\r\n\ @return\ \ Ulo\u017Een\u00FD\ text.\r\n
+comment8.params=
+comment8.target=java.awt.Font\ getFont()
+comment8.text=\r\n\ Vr\u00E1t\u00ED\ font,\ kter\u00FDm\ se\ bude\ dan\u00FD\ text\ s\u00E1zet.\r\n\r\n\ @return\ Po\u017Eadovan\u00FD\ font\r\n
+comment9.params=nazev\ rez\ velikost
+comment9.target=void\ setFont(java.lang.String,\ int,\ int)
+comment9.text=\r\n\ Nastav\u00ED\ font,\ kter\u00FDm\ se\ bude\ dan\u00FD\ text\ s\u00E1zet.\r\n\r\n\ @param\ nazev\ \ \ \ \ N\u00E1zev\ fontu\ -\ je\ mo\u017Eno\ zadat\ jeden\ z\ n\u00E1zv\u016F\:\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "Dialog",\ "DialogInput",\ "Monospaced",\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "Serif",\ \ "SansSerif".\r\n\ @param\ rez\ \ \ \ \ \ \ Je\ mo\u017Eno\ zadat\ n\u011Bkter\u00FD\ z\ \u0159ez\u016F\:\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Text.OBY\u010CEJN\u00DD,\ Text.TU\u010CN\u00DD,\ Text.KURZIVA,\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ p\u0159\u00EDpadn\u011B\ Text.TU\u010CN\u00DD|Text.KURZIVA\r\n\ @param\ velikost\ \ Velikost\ p\u00EDsma\ v\ bodech.\r\n
+numComments=13

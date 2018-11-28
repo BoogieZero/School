@@ -1,0 +1,71 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files\Java\jdk1.8.0_20\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.8
+-classpath
+C:\Program Files (x86)\BlueJ\lib\bluejcore.jar;C:\Program Files (x86)\BlueJ\lib\junit-4.8.2.jar;C:\School\OOP\DU-07\07_RozsireniADedicnost
+-d
+C:\School\OOP\DU-07\07_RozsireniADedicnost\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+C:\Program Files (x86)\BlueJ\lib\bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+C:\School\OOP\DU-07\07_RozsireniADedicnost\SpravcePlatna.java
+<---- end of javadoc command ---->
+Loading source file C:\School\OOP\DU-07\07_RozsireniADedicnost\SpravcePlatna.java...
+Constructing Javadoc information...
+Standard Doclet version 1.8.0_20
+Building tree for all the packages and classes...
+Generating C:\School\OOP\DU-07\07_RozsireniADedicnost\doc\SpravcePlatna.html...
+C:\School\OOP\DU-07\07_RozsireniADedicnost\Zvyraznovac.java:50: error: cannot find symbol
+    public Obdelnik zvyrazniPozadi(IZvyrazneny objekt, Barva barva){
+                                   ^
+  symbol:   class IZvyrazneny
+  location: class Zvyraznovac
+C:\School\OOP\DU-07\07_RozsireniADedicnost\Zvyraznovac.java:66: error: cannot find symbol
+    public Elipsa zvyrazniPozadiElipsou(IZvyrazneny objekt, Barva barva){
+                                        ^
+  symbol:   class IZvyrazneny
+  location: class Zvyraznovac
+C:\School\OOP\DU-07\07_RozsireniADedicnost\Zvyraznovac.java:80: error: cannot find symbol
+    public Oblast zjistiOblastZvyrazneni(IZvyrazneny objekt){
+                                         ^
+  symbol:   class IZvyrazneny
+  location: class Zvyraznovac
+C:\School\OOP\DU-07\07_RozsireniADedicnost\TestRande.java:18: error: cannot find symbol
+  private Rande rande;
+          ^
+  symbol:   class Rande
+  location: class TestRande
+C:\School\OOP\DU-07\07_RozsireniADedicnost\Osoba.java:11: error: cannot find symbol
+public class Osoba implements IKresleny, IPosuvny, IMeritelny, IZvyrazneny
+                                                               ^
+  symbol: class IZvyrazneny
+C:\School\OOP\DU-07\07_RozsireniADedicnost\Par.java:72: error: cannot find symbol
+   public Par(Rande rande){
+              ^
+  symbol:   class Rande
+  location: class Par
+Generating C:\School\OOP\DU-07\07_RozsireniADedicnost\doc\package-frame.html...
+Generating C:\School\OOP\DU-07\07_RozsireniADedicnost\doc\package-summary.html...
+Generating C:\School\OOP\DU-07\07_RozsireniADedicnost\doc\constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating C:\School\OOP\DU-07\07_RozsireniADedicnost\doc\allclasses-frame.html...
+Generating C:\School\OOP\DU-07\07_RozsireniADedicnost\doc\allclasses-noframe.html...
+Generating C:\School\OOP\DU-07\07_RozsireniADedicnost\doc\index.html...
+Generating C:\School\OOP\DU-07\07_RozsireniADedicnost\doc\stylesheet.css...
+6 errors

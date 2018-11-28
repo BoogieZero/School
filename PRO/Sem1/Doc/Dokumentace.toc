@@ -1,0 +1,13 @@
+\select@language {czech}
+\contentsline {section}{\numberline {1}Abstrakt}{2}
+\contentsline {section}{\numberline {2}\IeC {\'U}vod}{2}
+\contentsline {subsection}{\numberline {2.1}Neuronov\IeC {\'a}\IeC {\'\i } s\IeC {\'\i }\IeC {\v t}}{3}
+\contentsline {section}{\numberline {3}P\IeC {\v r}edzpracov\IeC {\'a}n\IeC {\'\i } sn\IeC {\'\i }mku}{3}
+\contentsline {section}{\numberline {4}Neuronov\IeC {\'a} s\IeC {\'\i }\IeC {\v t}}{5}
+\contentsline {subsection}{\numberline {4.1}Inicializace s\IeC {\'\i }t\IeC {\v e}}{5}
+\contentsline {subsection}{\numberline {4.2}Activa\IeC {\v c}n\IeC {\'\i } funkce}{5}
+\contentsline {section}{\numberline {5}Genetick\IeC {\'y} algoritmus}{5}
+\contentsline {subsection}{\numberline {5.1}Reprezentace, populace a inicializace}{5}
+\contentsline {subsection}{\numberline {5.2}Fitness funkce}{6}
+\contentsline {subsection}{\numberline {5.3}Nov\IeC {\'a} generace, k\IeC {\v r}\IeC {\'\i }\IeC {\v z}en\IeC {\'\i } a mutace}{6}
+\contentsline {section}{\numberline {6}V\IeC {\'y}sledky}{7}

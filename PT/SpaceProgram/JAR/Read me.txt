@@ -1,0 +1,1 @@
+Folder "ResultReport" is required for final statistics!

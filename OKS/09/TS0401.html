@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="%20http://oks.kiv.zcu.cz/OsobniCislo/" />
+<title>TS0401</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TS0401</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Generování</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=paticka_hlavni_panel</td>
+	<td>Údaje označené * jsou povinné.</td>
+</tr>
+<!--TC.04.01.01 Fakulta-->
+<tr>
+	<td>verifyText</td>
+	<td>id=fakulta_NA</td>
+	<td>--- neuvedeno ---</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=fakulta_FAV</td>
+	<td>FAV - Fakulta aplikovaných věd</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=fakulta_FDU</td>
+	<td>FDU - Fakulta designu a umění Ladislava Sutnara</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=fakulta_FEK</td>
+	<td>FEK - Fakulta ekonomická</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=fakulta_FEL</td>
+	<td>FEL - Fakulta elektrotechnická</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=fakulta_FF</td>
+	<td>FF - Fakulta filosofická</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=fakulta_FPE</td>
+	<td>FPE - Fakulta pedagogická</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=fakulta_FPR</td>
+	<td>FPR - Fakulta právnická</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=fakulta_FST</td>
+	<td>FST - Fakulta strojní</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=fakulta_FZS</td>
+	<td>FZS - Fakulta zdravotnických studií</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=label_fakulta</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=label_fakulta</td>
+	<td>Fakulta*:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=fakulta</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEditable</td>
+	<td>id=fakulta</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifySelectedValue</td>
+	<td>id=fakulta</td>
+	<td>neuvedeno</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=label_fakulta@title</td>
+	<td>Vyberte fakultu</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=fakulta@title</td>
+	<td>Vyberte fakultu</td>
+</tr>
+<!--TC.04.01.02 Rok nástupu na ZČU-->
+<tr>
+	<td>verifyVisible</td>
+	<td>id=label_rok_nastupu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=label_rok_nastupu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=label_rok_nastupu</td>
+	<td>Rok nástupu na ZČU*:</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=rok_nastupu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=rok_nastupu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEditable</td>
+	<td>id=rok_nastupu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=rok_nastupu@placeholder</td>
+	<td>08</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=label_rok_nastupu@title</td>
+	<td>Zadejte poslední dvojčíslí kalendářního roku</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=rok_nastupu@title</td>
+	<td>Zadejte poslední dvojčíslí kalendářního roku</td>
+</tr>
+<!--TC.04.01.03 Typ studia-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=label_typ_studia</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=label_typ_studia</td>
+	<td>Typ studia*:</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=typ_studia_B</td>
+	<td>bakalářský</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=typ_studia_N</td>
+	<td>navazující</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=typ_studia_P</td>
+	<td>doktorský</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=typ_studia_M</td>
+	<td>magisterský</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=typ_studia</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=typ_studia</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifySelectedValue</td>
+	<td>id=typ_studia</td>
+	<td>B</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=label_typ_studia@title</td>
+	<td>Vyberte typ studia</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=typ_studia@title</td>
+	<td>Vyberte typ studia</td>
+</tr>
+<!--TC.04.01.04 Pořadové číslo-->
+<tr>
+	<td>verifyVisible</td>
+	<td>id=label_poradove_cislo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=label_poradove_cislo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=label_poradove_cislo</td>
+	<td>Pořadové číslo*:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=poradove_cislo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEditable</td>
+	<td>id=poradove_cislo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=poradove_cislo@placeholder</td>
+	<td>0001</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=label_poradove_cislo@title</td>
+	<td>Zadejte nezáporné celé číslo, max. 4 číslice</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=poradove_cislo@title</td>
+	<td>Zadejte nezáporné celé číslo, max. 4 číslice</td>
+</tr>
+<!--TC.04.01.05 Forma studia-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=label_forma_studia</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=label_forma_studia</td>
+	<td>Forma studia*:</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=label_forma_prezencni</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=label_forma_kombinovana</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=label_forma_distancni</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=label_forma_prezencni</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=label_forma_kombinovana</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=label_forma_distancni</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=forma_prezencni</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=forma_kombinovana</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=forma_distancni</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotChecked</td>
+	<td>id=forma_prezencni</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotChecked</td>
+	<td>id=forma_kombinovana</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotChecked</td>
+	<td>id=forma_distancni</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=label_forma_studia@title</td>
+	<td>Vyberte formu studia</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=label_forma_prezencni@title</td>
+	<td>Vyberte formu studia</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=label_forma_kombinovana@title</td>
+	<td>Vyberte formu studia</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=label_forma_distancni@title</td>
+	<td>Vyberte formu studia</td>
+</tr>
+<!--TC.04.01.06 Zahraniční student-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=label_zahranicni</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=label_zahranicni</td>
+	<td>Zahraniční student:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=zahranicni</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=zahranicni</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotChecked</td>
+	<td>id=zahranicni</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=label_zahranicni@title</td>
+	<td>Zaškrtněte, jedná-li se o zahraničního studenta</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=zahranicni@title</td>
+	<td>Zaškrtněte, jedná-li se o zahraničního studenta</td>
+</tr>
+<!--TC.04.01.07 Generuj osobní číslo-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=generovani</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=generovani</td>
+	<td>Generuj osobní číslo</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=generovani@value</td>
+	<td>Generuj osobní číslo</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=generovani@title</td>
+	<td>Stiskněte po zadání všech hodnot</td>
+</tr>
+<!--TC.04.01.08 Vymaž-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=mazani</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=mazani</td>
+	<td>Vymaž</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=mazani@value</td>
+	<td>Vymaž</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>id=mazani@title</td>
+	<td>Vymazání všech hodnot</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
